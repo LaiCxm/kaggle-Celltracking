@@ -1,0 +1,10 @@
+experiment: EXP028
+child: child-exp000
+purpose: grouped_oof_candidate_ranking_structural_selection
+input: EXP/EXP027/outputs/kaggle_v2/exp027_structural_selection/candidate_rows.csv
+oof_group: video
+features: [parent_distance_um, daughter_distance_um, focus_only_count]
+fixed_arms: [geometry_1_05_focus0, geometry_1_05_focus4, geometry_1_00_focus4]
+learned_arm: oof_logistic_3feat
+official_cv: false
+submission: false

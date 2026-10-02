@@ -1,0 +1,59 @@
+{
+  "experiment": "EXP021",
+  "stage": "division_event_candidate_recall_audit",
+  "official_cv": null,
+  "submission_generated": false,
+  "division_definition": "GT out-degree exactly 2, both daughters at parent_t+1",
+  "all_train_event_count": 151,
+  "audited_stems": [
+    "44b6_12dfb391",
+    "44b6_267148e4",
+    "6bba_062c8d37",
+    "6bba_07e24132"
+  ],
+  "audited_event_count": 5,
+  "node_match_radius_um": 7.0,
+  "max_parent_distance_um": 14.0,
+  "max_daughter_distance_um": 14.0,
+  "legacy_parent_distance_um": 9.9,
+  "mask_aware_candidate_inclusion": false,
+  "events": 5,
+  "runtime_seconds": {
+    "pilkwang_by_video": {
+      "44b6_12dfb391": 46.94660259899999,
+      "44b6_267148e4": 3.402339765000022,
+      "6bba_062c8d37": 51.28830633300004,
+      "6bba_07e24132": 41.146865811
+    },
+    "focus3d_by_video": {
+      "44b6_12dfb391": 103.93390130099999,
+      "44b6_267148e4": 42.44749823199993,
+      "6bba_062c8d37": 29.108976842999937,
+      "6bba_07e24132": 158.41469073400003
+    }
+  },
+  "source_summary": {
+    "pilkwang": {
+      "endpoint_hits": 15,
+      "endpoint_total": 15,
+      "complete_candidate_hits": 5,
+      "legacy_complete_candidate_hits": 5
+    },
+    "focus3d": {
+      "endpoint_hits": 15,
+      "endpoint_total": 15,
+      "complete_candidate_hits": 5,
+      "legacy_complete_candidate_hits": 4
+    },
+    "union": {
+      "endpoint_hits": 15,
+      "endpoint_total": 15,
+      "complete_candidate_hits": 5,
+      "legacy_complete_candidate_hits": 5
+    }
+  },
+  "union_added_endpoint_hits_vs_pil": 0,
+  "union_added_complete_candidates_vs_pil": 0,
+  "union_added_legacy_complete_candidates_vs_pil": 0,
+  "union_lost_endpoint_hits_vs_pil": 0
+}

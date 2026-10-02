@@ -1,0 +1,38 @@
+{
+  "radius_um": 7.0,
+  "events": 5,
+  "status_counts": {
+    "one_edge_in_preilp_pool": 4,
+    "both_edges_in_preilp_pool": 1
+  },
+  "manifests": [
+    {
+      "video": "44b6_12dfb391",
+      "path": "/kaggle/working/edge_candidates_preilp_single_44b6_12dfb391.npz",
+      "coords": 50697,
+      "candidate_edges": 44353,
+      "gt_divisions": 1
+    },
+    {
+      "video": "44b6_267148e4",
+      "path": "/kaggle/working/edge_candidates_preilp_single_44b6_267148e4.npz",
+      "coords": 26685,
+      "candidate_edges": 22596,
+      "gt_divisions": 1
+    },
+    {
+      "video": "6bba_062c8d37",
+      "path": "/kaggle/working/edge_candidates_preilp_single_6bba_062c8d37.npz",
+      "coords": 6651,
+      "candidate_edges": 6014,
+      "gt_divisions": 1
+    },
+    {
+      "video": "6bba_07e24132",
+      "path": "/kaggle/working/edge_candidates_preilp_single_6bba_07e24132.npz",
+      "coords": 36769,
+      "candidate_edges": 26603,
+      "gt_divisions": 2
+    }
+  ]
+}

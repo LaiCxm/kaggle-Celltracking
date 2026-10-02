@@ -1,0 +1,11 @@
+experiment: EXP023
+child: child-exp000
+purpose: instance_detection_confusion_matrix
+base: EXP021_common_30_frame_windows
+match_radius_um: 7.0
+voxel_scale_zyx_um: [1.625, 0.40625, 0.40625]
+sources:
+  - pilkwang
+  - focus3d
+  - union
+test_submission: false

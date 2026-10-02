@@ -1,0 +1,35 @@
+﻿# EXP003 — 复现 rockerritesh/0-926-biohub-divsub
+# 来源: https://www.kaggle.com/code/rockerritesh/0-926-biohub-divsub
+# 目标: 在 dual-seed + center-confirmed gap 基线上移植 division 后处理，争取非零 division_jaccard
+# 执行方式: tools/push_custom_kernel.py --exp EXP003 --kernel CELL_infer_0_926_divsub.ipynb ...
+
+competition: biohub-cell-tracking-during-development
+exp_name: EXP003
+method: dual-seed + center-confirmed gaps + ported division rule
+artifact_slugs:
+  - pilkwang/biohub-tracking-support-pack-50ep-v1
+  - pilkwang/biohub-temporal-unet3d-seed314159-v1
+  - pilkwang/biohub-deepcenter-unet3d-center-prior-v1
+
+# ---- rockerritesh/0-926 关键参数 ----
+det_threshold: 0.96875
+ilp_edge_weight: -1.0
+ilp_appearance_weight: 0.0
+ilp_disappearance_weight: 1.5
+ilp_division_weight: 1.0
+gap_close_um: 5.8
+output_min_track_len: 6
+safe_div_parent_max_um: 8.0
+safe_div_sister_max_um: 11.0
+safe_div_existing_child_max_um: 10.0
+safe_div_diverge_um: 2.25
+safe_div_require_divergence: true
+safe_div_require_mutual_nn: true
+use_deepcenter_veto: true
+deepcenter_expected_epoch: 500
+deepcenter_checkpoint: /kaggle/input/biohub-deepcenter-unet3d-center-prior-v1/weights/full_frame_center/checkpoint_last.pt
+deepcenter_safe_div_veto: false
+det_tta: 8-view D4
+
+# ---- 执行 ----
+submission: /kaggle/working/submission.csv

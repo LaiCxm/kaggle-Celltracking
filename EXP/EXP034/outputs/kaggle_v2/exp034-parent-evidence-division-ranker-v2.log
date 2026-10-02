@@ -1,0 +1,263 @@
+[{"stream_name":"stderr","time":7.803724252,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.803787073,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.803809829,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.803818629,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.419740378,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.419768596,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.419773055,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.419778655,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":45.356925733,"data":"CUDA: Tesla T4\n"}
+,{"stream_name":"stdout","time":45.356966409,"data":"event-bearing videos available: 83\n"}
+,{"stream_name":"stdout","time":45.356973026,"data":"selected videos: ['44b6_2a2eff9f', '44b6_587a1e22', '44b6_5f15d135', '44b6_74d0c52e', '44b6_996155de', '44b6_9be80b04', '44b6_aaf8b0ea', '44b6_c50204e0', '44b6_d2f34f90', '44b6_d754aa59', '44b6_deabac95', '44b6_eb2880fc', '6bba_05db0fb1', '6bba_207c6aaf', '6bba_32db13fc', '6bba_474be664', '6bba_5c039895', '6bba_705ec2c9', '6bba_7af54fde', '6bba_907271db', '6bba_afb141ff', '6bba_d1acb6ff', '6bba_e16ffc58', '6bba_fe670320']\n"}
+,{"stream_name":"stdout","time":45.356983011,"data":"selected events: 31 selected frames: 62\n"}
+,{"stream_name":"stderr","time":51.373764829,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":51.373796678,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":51.373804255,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":51.373810516,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stderr","time":51.373815922,"data":"\n"}
+,{"stream_name":"stderr","time":51.373822966,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":51.373833393,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":51.373837118,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":51.373841175,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stdout","time":63.724781152,"data":"Pilkwang 1/24 44b6_2a2eff9f nodes 1069 seconds 11.95\n"}
+,{"stream_name":"stdout","time":74.920811092,"data":"Pilkwang 2/24 44b6_587a1e22 nodes 470 seconds 11.2\n"}
+,{"stream_name":"stdout","time":96.748307209,"data":"Pilkwang 3/24 44b6_5f15d135 nodes 596 seconds 21.82\n"}
+,{"stream_name":"stdout","time":129.854699984,"data":"Pilkwang 4/24 44b6_74d0c52e nodes 232 seconds 33.11\n"}
+,{"stream_name":"stdout","time":141.788217317,"data":"Pilkwang 5/24 44b6_996155de nodes 193 seconds 11.94\n"}
+,{"stream_name":"stdout","time":192.011679342,"data":"Pilkwang 6/24 44b6_9be80b04 nodes 615 seconds 50.22\n"}
+,{"stream_name":"stdout","time":229.562264707,"data":"Pilkwang 7/24 44b6_aaf8b0ea nodes 390 seconds 37.55\n"}
+,{"stream_name":"stdout","time":274.400463541,"data":"Pilkwang 8/24 44b6_c50204e0 nodes 2134 seconds 44.84\n"}
+,{"stream_name":"stdout","time":312.838793559,"data":"Pilkwang 9/24 44b6_d2f34f90 nodes 878 seconds 38.44\n"}
+,{"stream_name":"stdout","time":350.209823052,"data":"Pilkwang 10/24 44b6_d754aa59 nodes 128 seconds 37.37\n"}
+,{"stream_name":"stdout","time":367.564450615,"data":"Pilkwang 11/24 44b6_deabac95 nodes 445 seconds 17.36\n"}
+,{"stream_name":"stdout","time":415.443516615,"data":"Pilkwang 12/24 44b6_eb2880fc nodes 753 seconds 47.87\n"}
+,{"stream_name":"stdout","time":464.809981462,"data":"Pilkwang 13/24 6bba_05db0fb1 nodes 3111 seconds 49.37\n"}
+,{"stream_name":"stdout","time":490.032927186,"data":"Pilkwang 14/24 6bba_207c6aaf nodes 717 seconds 25.23\n"}
+,{"stream_name":"stdout","time":494.874500288,"data":"Pilkwang 15/24 6bba_32db13fc nodes 1617 seconds 4.84\n"}
+,{"stream_name":"stdout","time":535.318049147,"data":"Pilkwang 16/24 6bba_474be664 nodes 758 seconds 40.44\n"}
+,{"stream_name":"stdout","time":569.754866202,"data":"Pilkwang 17/24 6bba_5c039895 nodes 410 seconds 34.44\n"}
+,{"stream_name":"stdout","time":594.257663647,"data":"Pilkwang 18/24 6bba_705ec2c9 nodes 172 seconds 24.51\n"}
+,{"stream_name":"stdout","time":626.783760053,"data":"Pilkwang 19/24 6bba_7af54fde nodes 381 seconds 32.52\n"}
+,{"stream_name":"stdout","time":683.137802351,"data":"Pilkwang 20/24 6bba_907271db nodes 93 seconds 56.35\n"}
+,{"stream_name":"stdout","time":711.420831674,"data":"Pilkwang 21/24 6bba_afb141ff nodes 251 seconds 28.29\n"}
+,{"stream_name":"stdout","time":752.462111963,"data":"Pilkwang 22/24 6bba_d1acb6ff nodes 327 seconds 41.04\n"}
+,{"stream_name":"stdout","time":768.100543212,"data":"Pilkwang 23/24 6bba_e16ffc58 nodes 151 seconds 15.64\n"}
+,{"stream_name":"stdout","time":806.679160865,"data":"Pilkwang 24/24 6bba_fe670320 nodes 446 seconds 38.57\n"}
+,{"stream_name":"stdout","time":812.514409254,"data":"Loading weights from: /kaggle/input/datasets/qiweiyin/focus3d-nuclei-runtime/models/model_final_nuclei.pth\n"}
+,{"stream_name":"stdout","time":875.635870691,"data":"FOCUS3D 1/24 44b6_2a2eff9f instances 1479 seconds 38.45\n"}
+,{"stream_name":"stdout","time":892.279789087,"data":"FOCUS3D 2/24 44b6_587a1e22 instances 532 seconds 16.64\n"}
+,{"stream_name":"stdout","time":926.080256369,"data":"FOCUS3D 3/24 44b6_5f15d135 instances 1274 seconds 33.79\n"}
+,{"stream_name":"stdout","time":944.669997989,"data":"FOCUS3D 4/24 44b6_74d0c52e instances 586 seconds 18.58\n"}
+,{"stream_name":"stdout","time":956.854316972,"data":"FOCUS3D 5/24 44b6_996155de instances 250 seconds 12.18\n"}
+,{"stream_name":"stdout","time":1006.864245243,"data":"FOCUS3D 6/24 44b6_9be80b04 instances 1900 seconds 50.0\n"}
+,{"stream_name":"stdout","time":1029.891453096,"data":"FOCUS3D 7/24 44b6_aaf8b0ea instances 759 seconds 23.02\n"}
+,{"stream_name":"stdout","time":1128.614806713,"data":"FOCUS3D 8/24 44b6_c50204e0 instances 3653 seconds 98.71\n"}
+,{"stream_name":"stdout","time":1186.717704438,"data":"FOCUS3D 9/24 44b6_d2f34f90 instances 2132 seconds 58.1\n"}
+,{"stream_name":"stdout","time":1197.088335756,"data":"FOCUS3D 10/24 44b6_d754aa59 instances 169 seconds 10.36\n"}
+,{"stream_name":"stdout","time":1214.334244972,"data":"FOCUS3D 11/24 44b6_deabac95 instances 491 seconds 17.24\n"}
+,{"stream_name":"stdout","time":1245.928710705,"data":"FOCUS3D 12/24 44b6_eb2880fc instances 1185 seconds 31.59\n"}
+,{"stream_name":"stdout","time":1327.836612885,"data":"FOCUS3D 13/24 6bba_05db0fb1 instances 3283 seconds 81.89\n"}
+,{"stream_name":"stdout","time":1346.024117403,"data":"FOCUS3D 14/24 6bba_207c6aaf instances 520 seconds 18.19\n"}
+,{"stream_name":"stdout","time":1387.275582937,"data":"FOCUS3D 15/24 6bba_32db13fc instances 1628 seconds 41.24\n"}
+,{"stream_name":"stdout","time":1420.323578947,"data":"FOCUS3D 16/24 6bba_474be664 instances 1238 seconds 33.04\n"}
+,{"stream_name":"stdout","time":1444.494496092,"data":"FOCUS3D 17/24 6bba_5c039895 instances 408 seconds 24.16\n"}
+,{"stream_name":"stdout","time":1456.036640674,"data":"FOCUS3D 18/24 6bba_705ec2c9 instances 186 seconds 11.53\n"}
+,{"stream_name":"stdout","time":1479.294209259,"data":"FOCUS3D 19/24 6bba_7af54fde instances 450 seconds 23.25\n"}
+,{"stream_name":"stdout","time":1489.100567189,"data":"FOCUS3D 20/24 6bba_907271db instances 107 seconds 9.8\n"}
+,{"stream_name":"stdout","time":1510.876740725,"data":"FOCUS3D 21/24 6bba_afb141ff instances 313 seconds 21.77\n"}
+,{"stream_name":"stdout","time":1526.281374519,"data":"FOCUS3D 22/24 6bba_d1acb6ff instances 379 seconds 15.4\n"}
+,{"stream_name":"stdout","time":1535.574754051,"data":"FOCUS3D 23/24 6bba_e16ffc58 instances 144 seconds 9.29\n"}
+,{"stream_name":"stdout","time":1559.049031906,"data":"FOCUS3D 24/24 6bba_fe670320 instances 460 seconds 23.46\n"}
+,{"stream_name":"stdout","time":1576.701315591,"data":"parent-blind 44b6_2a2eff9f:11 parents 540 daughters 758 candidates 34028 positives 1\n"}
+,{"stream_name":"stdout","time":1579.535523528,"data":"parent-blind 44b6_587a1e22:19 parents 237 daughters 267 candidates 7161 positives 1\n"}
+,{"stream_name":"stdout","time":1588.41982759,"data":"parent-blind 44b6_5f15d135:36 parents 285 daughters 656 candidates 24083 positives 1\n"}
+,{"stream_name":"stdout","time":1589.991970585,"data":"parent-blind 44b6_74d0c52e:58 parents 122 daughters 291 candidates 3380 positives 1\n"}
+,{"stream_name":"stdout","time":1590.517326824,"data":"parent-blind 44b6_996155de:19 parents 94 daughters 135 candidates 772 positives 1\n"}
+,{"stream_name":"stdout","time":1604.942632423,"data":"parent-blind 44b6_9be80b04:77 parents 300 daughters 998 candidates 41149 positives 1\n"}
+,{"stream_name":"stdout","time":1608.929771414,"data":"parent-blind 44b6_aaf8b0ea:61 parents 194 daughters 396 candidates 12277 positives 1\n"}
+,{"stream_name":"stdout","time":1638.942541748,"data":"parent-blind 44b6_c50204e0:28 parents 497 daughters 872 candidates 58191 positives 1\n"}
+,{"stream_name":"stdout","time":1655.677406014,"data":"parent-blind 44b6_c50204e0:65 parents 553 daughters 1068 candidates 71746 positives 1\n"}
+,{"stream_name":"stdout","time":1663.074956019,"data":"parent-blind 44b6_d2f34f90:51 parents 195 daughters 540 candidates 17153 positives 1\n"}
+,{"stream_name":"stdout","time":1666.836086101,"data":"parent-blind 44b6_d2f34f90:62 parents 226 daughters 542 candidates 18832 positives 1\n"}
+,{"stream_name":"stdout","time":1667.075127914,"data":"parent-blind 44b6_d754aa59:63 parents 66 daughters 95 candidates 483 positives 1\n"}
+,{"stream_name":"stdout","time":1670.021864116,"data":"parent-blind 44b6_deabac95:28 parents 230 daughters 264 candidates 9997 positives 1\n"}
+,{"stream_name":"stdout","time":1680.306775667,"data":"parent-blind 44b6_eb2880fc:72 parents 382 daughters 607 candidates 24020 positives 1\n"}
+,{"stream_name":"stdout","time":1727.932996988,"data":"parent-blind 6bba_05db0fb1:24 parents 826 daughters 1147 candidates 120164 positives 1\n"}
+,{"stream_name":"stdout","time":1748.339860766,"data":"parent-blind 6bba_05db0fb1:62 parents 727 daughters 968 candidates 97917 positives 1\n"}
+,{"stream_name":"stdout","time":1753.717852621,"data":"parent-blind 6bba_207c6aaf:41 parents 356 daughters 400 candidates 18314 positives 1\n"}
+,{"stream_name":"stdout","time":1785.592756899,"data":"parent-blind 6bba_32db13fc:5 parents 821 daughters 1053 candidates 72067 positives 1\n"}
+,{"stream_name":"stdout","time":1797.249388002,"data":"parent-blind 6bba_474be664:63 parents 378 daughters 648 candidates 39294 positives 1\n"}
+,{"stream_name":"stdout","time":1798.037201588,"data":"parent-blind 6bba_5c039895:10 parents 116 daughters 145 candidates 1270 positives 1\n"}
+,{"stream_name":"stdout","time":1798.245360318,"data":"parent-blind 6bba_5c039895:58 parents 89 daughters 104 candidates 520 positives 1\n"}
+,{"stream_name":"stdout","time":1798.662074205,"data":"parent-blind 6bba_705ec2c9:42 parents 84 daughters 125 candidates 1123 positives 1\n"}
+,{"stream_name":"stdout","time":1799.385760515,"data":"parent-blind 6bba_7af54fde:52 parents 95 daughters 127 candidates 1335 positives 1\n"}
+,{"stream_name":"stdout","time":1799.693447599,"data":"parent-blind 6bba_7af54fde:55 parents 96 daughters 121 candidates 1267 positives 1\n"}
+,{"stream_name":"stdout","time":1799.80282913,"data":"parent-blind 6bba_907271db:96 parents 44 daughters 64 candidates 79 positives 1\n"}
+,{"stream_name":"stdout","time":1800.131435933,"data":"parent-blind 6bba_afb141ff:28 parents 51 daughters 91 candidates 504 positives 1\n"}
+,{"stream_name":"stdout","time":1800.29634353,"data":"parent-blind 6bba_afb141ff:48 parents 65 daughters 83 candidates 490 positives 1\n"}
+,{"stream_name":"stdout","time":1801.751446354,"data":"parent-blind 6bba_d1acb6ff:67 parents 163 daughters 200 candidates 3795 positives 1\n"}
+,{"stream_name":"stdout","time":1802.041492394,"data":"parent-blind 6bba_e16ffc58:26 parents 73 daughters 91 candidates 444 positives 1\n"}
+,{"stream_name":"stdout","time":1802.758548191,"data":"parent-blind 6bba_fe670320:0 parents 47 daughters 48 candidates 78 positives 1\n"}
+,{"stream_name":"stdout","time":1803.761947587,"data":"parent-blind 6bba_fe670320:66 parents 173 daughters 218 candidates 4183 positives 1\n"}
+,{"stream_name":"stdout","time":1807.581062226,"data":"EXP034 candidate pool 686116 truth events 31 rankable 31\n"}
+,{"stream_name":"stdout","time":1809.410514002,"data":"OOF 1 / 24 44b6_2a2eff9f train 14390 valid 34028\n"}
+,{"stream_name":"stdout","time":1810.246120541,"data":"OOF 2 / 24 44b6_587a1e22 train 14390 valid 7161\n"}
+,{"stream_name":"stdout","time":1811.051985787,"data":"OOF 3 / 24 44b6_5f15d135 train 14390 valid 24083\n"}
+,{"stream_name":"stdout","time":1811.93479494,"data":"OOF 4 / 24 44b6_74d0c52e train 14390 valid 3380\n"}
+,{"stream_name":"stdout","time":1812.802689819,"data":"OOF 5 / 24 44b6_996155de train 14390 valid 772\n"}
+,{"stream_name":"stdout","time":1813.614079751,"data":"OOF 6 / 24 44b6_9be80b04 train 14390 valid 41149\n"}
+,{"stream_name":"stdout","time":1814.469993315,"data":"OOF 7 / 24 44b6_aaf8b0ea train 14390 valid 12277\n"}
+,{"stream_name":"stdout","time":1815.493495949,"data":"OOF 8 / 24 44b6_c50204e0 train 13877 valid 129937\n"}
+,{"stream_name":"stdout","time":1816.37255358,"data":"OOF 9 / 24 44b6_d2f34f90 train 13877 valid 35985\n"}
+,{"stream_name":"stdout","time":1817.249602487,"data":"OOF 10 / 24 44b6_d754aa59 train 14420 valid 483\n"}
+,{"stream_name":"stdout","time":1818.097921348,"data":"OOF 11 / 24 44b6_deabac95 train 14390 valid 9997\n"}
+,{"stream_name":"stdout","time":1818.946070219,"data":"OOF 12 / 24 44b6_eb2880fc train 14390 valid 24020\n"}
+,{"stream_name":"stdout","time":1819.618489651,"data":"OOF 13 / 24 6bba_05db0fb1 train 13877 valid 218081\n"}
+,{"stream_name":"stdout","time":1820.478055138,"data":"OOF 14 / 24 6bba_207c6aaf train 14390 valid 18314\n"}
+,{"stream_name":"stdout","time":1821.254266171,"data":"OOF 15 / 24 6bba_32db13fc train 14390 valid 72067\n"}
+,{"stream_name":"stdout","time":1822.132395577,"data":"OOF 16 / 24 6bba_474be664 train 14390 valid 39294\n"}
+,{"stream_name":"stdout","time":1822.950513436,"data":"OOF 17 / 24 6bba_5c039895 train 13877 valid 1790\n"}
+,{"stream_name":"stdout","time":1823.753237806,"data":"OOF 18 / 24 6bba_705ec2c9 train 14390 valid 1123\n"}
+,{"stream_name":"stdout","time":1824.56937652,"data":"OOF 19 / 24 6bba_7af54fde train 13877 valid 2602\n"}
+,{"stream_name":"stdout","time":1825.370696675,"data":"OOF 20 / 24 6bba_907271db train 14824 valid 79\n"}
+,{"stream_name":"stdout","time":1826.199683434,"data":"OOF 21 / 24 6bba_afb141ff train 13909 valid 994\n"}
+,{"stream_name":"stdout","time":1827.054933191,"data":"OOF 22 / 24 6bba_d1acb6ff train 14390 valid 3795\n"}
+,{"stream_name":"stdout","time":1827.916620709,"data":"OOF 23 / 24 6bba_e16ffc58 train 14459 valid 444\n"}
+,{"stream_name":"stdout","time":1828.765546453,"data":"OOF 24 / 24 6bba_fe670320 train 14312 valid 4261\n"}
+,{"stream_name":"stdout","time":1829.651911321,"data":"OOF 1 / 24 44b6_2a2eff9f train 14390 valid 34028\n"}
+,{"stream_name":"stdout","time":1830.603713775,"data":"OOF 2 / 24 44b6_587a1e22 train 14390 valid 7161\n"}
+,{"stream_name":"stdout","time":1831.437234732,"data":"OOF 3 / 24 44b6_5f15d135 train 14390 valid 24083\n"}
+,{"stream_name":"stdout","time":1832.292661638,"data":"OOF 4 / 24 44b6_74d0c52e train 14390 valid 3380\n"}
+,{"stream_name":"stdout","time":1833.150499387,"data":"OOF 5 / 24 44b6_996155de train 14390 valid 772\n"}
+,{"stream_name":"stdout","time":1833.996538216,"data":"OOF 6 / 24 44b6_9be80b04 train 14390 valid 41149\n"}
+,{"stream_name":"stdout","time":1834.928731433,"data":"OOF 7 / 24 44b6_aaf8b0ea train 14390 valid 12277\n"}
+,{"stream_name":"stdout","time":1835.759571516,"data":"OOF 8 / 24 44b6_c50204e0 train 13877 valid 129937\n"}
+,{"stream_name":"stdout","time":1836.680576752,"data":"OOF 9 / 24 44b6_d2f34f90 train 13877 valid 35985\n"}
+,{"stream_name":"stdout","time":1837.629462554,"data":"OOF 10 / 24 44b6_d754aa59 train 14420 valid 483\n"}
+,{"stream_name":"stdout","time":1838.456941593,"data":"OOF 11 / 24 44b6_deabac95 train 14390 valid 9997\n"}
+,{"stream_name":"stdout","time":1839.312249755,"data":"OOF 12 / 24 44b6_eb2880fc train 14390 valid 24020\n"}
+,{"stream_name":"stdout","time":1840.044948315,"data":"OOF 13 / 24 6bba_05db0fb1 train 13877 valid 218081\n"}
+,{"stream_name":"stdout","time":1840.972311796,"data":"OOF 14 / 24 6bba_207c6aaf train 14390 valid 18314\n"}
+,{"stream_name":"stdout","time":1841.789557983,"data":"OOF 15 / 24 6bba_32db13fc train 14390 valid 72067\n"}
+,{"stream_name":"stdout","time":1842.697361623,"data":"OOF 16 / 24 6bba_474be664 train 14390 valid 39294\n"}
+,{"stream_name":"stdout","time":1843.620117021,"data":"OOF 17 / 24 6bba_5c039895 train 13877 valid 1790\n"}
+,{"stream_name":"stdout","time":1844.486047822,"data":"OOF 18 / 24 6bba_705ec2c9 train 14390 valid 1123\n"}
+,{"stream_name":"stdout","time":1845.340296518,"data":"OOF 19 / 24 6bba_7af54fde train 13877 valid 2602\n"}
+,{"stream_name":"stdout","time":1846.211345263,"data":"OOF 20 / 24 6bba_907271db train 14824 valid 79\n"}
+,{"stream_name":"stdout","time":1847.05245513,"data":"OOF 21 / 24 6bba_afb141ff train 13909 valid 994\n"}
+,{"stream_name":"stdout","time":1847.901603296,"data":"OOF 22 / 24 6bba_d1acb6ff train 14390 valid 3795\n"}
+,{"stream_name":"stdout","time":1848.762630517,"data":"OOF 23 / 24 6bba_e16ffc58 train 14459 valid 444\n"}
+,{"stream_name":"stdout","time":1849.599323992,"data":"OOF 24 / 24 6bba_fe670320 train 14312 valid 4261\n"}
+,{"stream_name":"stdout","time":1850.555485446,"data":"OOF 1 / 24 44b6_2a2eff9f train 14390 valid 34028\n"}
+,{"stream_name":"stdout","time":1851.498041332,"data":"OOF 2 / 24 44b6_587a1e22 train 14390 valid 7161\n"}
+,{"stream_name":"stdout","time":1852.440324338,"data":"OOF 3 / 24 44b6_5f15d135 train 14390 valid 24083\n"}
+,{"stream_name":"stdout","time":1853.413069064,"data":"OOF 4 / 24 44b6_74d0c52e train 14390 valid 3380\n"}
+,{"stream_name":"stdout","time":1854.349684312,"data":"OOF 5 / 24 44b6_996155de train 14390 valid 772\n"}
+,{"stream_name":"stdout","time":1855.275542393,"data":"OOF 6 / 24 44b6_9be80b04 train 14390 valid 41149\n"}
+,{"stream_name":"stdout","time":1856.20466147,"data":"OOF 7 / 24 44b6_aaf8b0ea train 14390 valid 12277\n"}
+,{"stream_name":"stdout","time":1857.082844727,"data":"OOF 8 / 24 44b6_c50204e0 train 13877 valid 129937\n"}
+,{"stream_name":"stdout","time":1858.014134882,"data":"OOF 9 / 24 44b6_d2f34f90 train 13877 valid 35985\n"}
+,{"stream_name":"stdout","time":1858.958188076,"data":"OOF 10 / 24 44b6_d754aa59 train 14420 valid 483\n"}
+,{"stream_name":"stdout","time":1859.867705304,"data":"OOF 11 / 24 44b6_deabac95 train 14390 valid 9997\n"}
+,{"stream_name":"stdout","time":1860.781846304,"data":"OOF 12 / 24 44b6_eb2880fc train 14390 valid 24020\n"}
+,{"stream_name":"stdout","time":1861.693514246,"data":"OOF 13 / 24 6bba_05db0fb1 train 13877 valid 218081\n"}
+,{"stream_name":"stdout","time":1862.696498491,"data":"OOF 14 / 24 6bba_207c6aaf train 14390 valid 18314\n"}
+,{"stream_name":"stdout","time":1863.614349716,"data":"OOF 15 / 24 6bba_32db13fc train 14390 valid 72067\n"}
+,{"stream_name":"stdout","time":1864.583498878,"data":"OOF 16 / 24 6bba_474be664 train 14390 valid 39294\n"}
+,{"stream_name":"stdout","time":1865.540228294,"data":"OOF 17 / 24 6bba_5c039895 train 13877 valid 1790\n"}
+,{"stream_name":"stdout","time":1866.446307913,"data":"OOF 18 / 24 6bba_705ec2c9 train 14390 valid 1123\n"}
+,{"stream_name":"stdout","time":1867.352309909,"data":"OOF 19 / 24 6bba_7af54fde train 13877 valid 2602\n"}
+,{"stream_name":"stdout","time":1868.260795455,"data":"OOF 20 / 24 6bba_907271db train 14824 valid 79\n"}
+,{"stream_name":"stdout","time":1869.18589122,"data":"OOF 21 / 24 6bba_afb141ff train 13909 valid 994\n"}
+,{"stream_name":"stdout","time":1870.101872798,"data":"OOF 22 / 24 6bba_d1acb6ff train 14390 valid 3795\n"}
+,{"stream_name":"stdout","time":1871.02915486,"data":"OOF 23 / 24 6bba_e16ffc58 train 14459 valid 444\n"}
+,{"stream_name":"stdout","time":1871.982300345,"data":"OOF 24 / 24 6bba_fe670320 train 14312 valid 4261\n"}
+,{"stream_name":"stdout","time":1894.493112723,"data":"EXP034 parent-blind rank summary\n"}
+,{"stream_name":"stdout","time":1894.500577899,"data":"EXP034 exploratory no-division thresholds\n"}
+,{"stream_name":"stdout","time":1894.727839992,"data":"{\n"}
+,{"stream_name":"stdout","time":1894.727865243,"data":"  \"experiment\": \"EXP034\",\n"}
+,{"stream_name":"stdout","time":1894.727876455,"data":"  \"official_cv\": null,\n"}
+,{"stream_name":"stdout","time":1894.727880294,"data":"  \"submission_generated\": false,\n"}
+,{"stream_name":"stdout","time":1894.727883502,"data":"  \"parent_oracle_used\": false,\n"}
+,{"stream_name":"stdout","time":1894.727886578,"data":"  \"no_division_option\": \"score_threshold\",\n"}
+,{"stream_name":"stdout","time":1894.727889728,"data":"  \"selected_videos\": [\n"}
+,{"stream_name":"stdout","time":1894.727892676,"data":"    \"44b6_2a2eff9f\",\n"}
+,{"stream_name":"stdout","time":1894.727895692,"data":"    \"44b6_587a1e22\",\n"}
+,{"stream_name":"stdout","time":1894.727898612,"data":"    \"44b6_5f15d135\",\n"}
+,{"stream_name":"stdout","time":1894.727909918,"data":"    \"44b6_74d0c52e\",\n"}
+,{"stream_name":"stdout","time":1894.727912366,"data":"    \"44b6_996155de\",\n"}
+,{"stream_name":"stdout","time":1894.727914611,"data":"    \"44b6_9be80b04\",\n"}
+,{"stream_name":"stdout","time":1894.727916774,"data":"    \"44b6_aaf8b0ea\",\n"}
+,{"stream_name":"stdout","time":1894.727918935,"data":"    \"44b6_c50204e0\",\n"}
+,{"stream_name":"stdout","time":1894.727921106,"data":"    \"44b6_d2f34f90\",\n"}
+,{"stream_name":"stdout","time":1894.727923268,"data":"    \"44b6_d754aa59\",\n"}
+,{"stream_name":"stdout","time":1894.727925434,"data":"    \"44b6_deabac95\",\n"}
+,{"stream_name":"stdout","time":1894.727927673,"data":"    \"44b6_eb2880fc\",\n"}
+,{"stream_name":"stdout","time":1894.727929872,"data":"    \"6bba_05db0fb1\",\n"}
+,{"stream_name":"stdout","time":1894.727932076,"data":"    \"6bba_207c6aaf\",\n"}
+,{"stream_name":"stdout","time":1894.727934245,"data":"    \"6bba_32db13fc\",\n"}
+,{"stream_name":"stdout","time":1894.727936496,"data":"    \"6bba_474be664\",\n"}
+,{"stream_name":"stdout","time":1894.727938658,"data":"    \"6bba_5c039895\",\n"}
+,{"stream_name":"stdout","time":1894.727940838,"data":"    \"6bba_705ec2c9\",\n"}
+,{"stream_name":"stdout","time":1894.727943008,"data":"    \"6bba_7af54fde\",\n"}
+,{"stream_name":"stdout","time":1894.727945253,"data":"    \"6bba_907271db\",\n"}
+,{"stream_name":"stdout","time":1894.72794745,"data":"    \"6bba_afb141ff\",\n"}
+,{"stream_name":"stdout","time":1894.727949626,"data":"    \"6bba_d1acb6ff\",\n"}
+,{"stream_name":"stdout","time":1894.72795179,"data":"    \"6bba_e16ffc58\",\n"}
+,{"stream_name":"stdout","time":1894.727953948,"data":"    \"6bba_fe670320\"\n"}
+,{"stream_name":"stdout","time":1894.727956141,"data":"  ],\n"}
+,{"stream_name":"stdout","time":1894.727958268,"data":"  \"transitions\": 31,\n"}
+,{"stream_name":"stdout","time":1894.727960497,"data":"  \"truth_events\": 31,\n"}
+,{"stream_name":"stdout","time":1894.727962738,"data":"  \"endpoint_complete_events\": 31,\n"}
+,{"stream_name":"stdout","time":1894.727965435,"data":"  \"candidate_recalled_events\": 31,\n"}
+,{"stream_name":"stdout","time":1894.727968,"data":"  \"candidate_count\": 686116,\n"}
+,{"stream_name":"stdout","time":1894.727970293,"data":"  \"parent_pool\": \"pilkwang_or_consensus\",\n"}
+,{"stream_name":"stdout","time":1894.727972598,"data":"  \"daughter_pool\": \"union\",\n"}
+,{"stream_name":"stdout","time":1894.72797487,"data":"  \"candidate_gate_um\": {\n"}
+,{"stream_name":"stdout","time":1894.727977165,"data":"    \"parent\": 16.0,\n"}
+,{"stream_name":"stdout","time":1894.727979374,"data":"    \"daughter\": 20.0\n"}
+,{"stream_name":"stdout","time":1894.727981583,"data":"  },\n"}
+,{"stream_name":"stdout","time":1894.727983742,"data":"  \"features\": {\n"}
+,{"stream_name":"stdout","time":1894.727986031,"data":"    \"base\": [\n"}
+,{"stream_name":"stdout","time":1894.727988217,"data":"      \"parent_distance_um\",\n"}
+,{"stream_name":"stdout","time":1894.727990462,"data":"      \"daughter_distance_um\",\n"}
+,{"stream_name":"stdout","time":1894.72799275,"data":"      \"focus_only_count\"\n"}
+,{"stream_name":"stdout","time":1894.727995917,"data":"    ],\n"}
+,{"stream_name":"stdout","time":1894.727999261,"data":"    \"parent_evidence\": [\n"}
+,{"stream_name":"stdout","time":1894.728001748,"data":"      \"parent_distance_um\",\n"}
+,{"stream_name":"stdout","time":1894.72800406,"data":"      \"daughter_distance_um\",\n"}
+,{"stream_name":"stdout","time":1894.72800628,"data":"      \"focus_only_count\",\n"}
+,{"stream_name":"stdout","time":1894.728010873,"data":"      \"parent_center_score\",\n"}
+,{"stream_name":"stdout","time":1894.728013277,"data":"      \"parent_is_consensus\",\n"}
+,{"stream_name":"stdout","time":1894.728015467,"data":"      \"parent_focus_quality\",\n"}
+,{"stream_name":"stdout","time":1894.728017673,"data":"      \"parent_backward_distance_um\",\n"}
+,{"stream_name":"stdout","time":1894.728019885,"data":"      \"parent_forward_count\"\n"}
+,{"stream_name":"stdout","time":1894.728038705,"data":"    ],\n"}
+,{"stream_name":"stdout","time":1894.728041053,"data":"    \"parent_mask_geometry\": [\n"}
+,{"stream_name":"stdout","time":1894.728043608,"data":"      \"parent_distance_um\",\n"}
+,{"stream_name":"stdout","time":1894.728046029,"data":"      \"daughter_distance_um\",\n"}
+,{"stream_name":"stdout","time":1894.728048422,"data":"      \"focus_only_count\",\n"}
+,{"stream_name":"stdout","time":1894.728050856,"data":"      \"parent_center_score\",\n"}
+,{"stream_name":"stdout","time":1894.728053352,"data":"      \"parent_is_consensus\",\n"}
+,{"stream_name":"stdout","time":1894.728055812,"data":"      \"parent_focus_quality\",\n"}
+,{"stream_name":"stdout","time":1894.728058265,"data":"      \"parent_backward_distance_um\",\n"}
+,{"stream_name":"stdout","time":1894.728060719,"data":"      \"parent_forward_count\",\n"}
+,{"stream_name":"stdout","time":1894.728063218,"data":"      \"volume_balance\",\n"}
+,{"stream_name":"stdout","time":1894.728065638,"data":"      \"volume_conservation\",\n"}
+,{"stream_name":"stdout","time":1894.728068059,"data":"      \"parent_union_overlap\",\n"}
+,{"stream_name":"stdout","time":1894.728070475,"data":"      \"parent_union_parent_coverage\",\n"}
+,{"stream_name":"stdout","time":1894.728072949,"data":"      \"parent_union_daughter_coverage\"\n"}
+,{"stream_name":"stdout","time":1894.728075416,"data":"    ]\n"}
+,{"stream_name":"stdout","time":1894.728077769,"data":"  },\n"}
+,{"stream_name":"stdout","time":1894.72808033,"data":"  \"threshold_scope\": \"exploratory_global_oof_not_nested\"\n"}
+,{"stream_name":"stdout","time":1894.728082907,"data":"}\n"}
+,{"stream_name":"stdout","time":1894.728086191,"data":"Wrote: ['REPORT.md', 'arm_summary.csv', 'best_thresholds.csv', 'event_ranks.csv', 'no_division_threshold_scan.csv', 'parent_best_candidates.csv', 'summary.json', 'transition_summary.csv', 'truth_events.csv']\n"}
+,{"stream_name":"stderr","time":1900.075792245,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1900.075823132,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1900.246253388,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1900.246276775,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1900.937032618,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":1901.435329142,"data":"[NbConvertApp] Writing 869616 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":1903.950166894,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1905.034739785,"data":"[NbConvertApp] Writing 1109093 bytes to __results__.html\n"}
+]

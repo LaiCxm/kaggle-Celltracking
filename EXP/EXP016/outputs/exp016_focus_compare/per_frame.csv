@@ -1,0 +1,9 @@
+frame,gt_nodes,pilkwang_primary_nodes,pilkwang_primary_matched,pilkwang_primary_recall,pilkwang_primary_precision,pilkwang_primary_mean_match_um,pilkwang_primary_max_match_um,focus3d_centroid_nodes,focus3d_centroid_matched,focus3d_centroid_recall,focus3d_centroid_precision,focus3d_centroid_mean_match_um,focus3d_centroid_max_match_um
+0,0,172,0,,0.0,,,172,0,,0.0,,
+1,0,195,0,,0.0,,,188,0,,0.0,,
+2,0,214,0,,0.0,,,209,0,,0.0,,
+3,0,226,0,,0.0,,,218,0,,0.0,,
+4,0,238,0,,0.0,,,241,0,,0.0,,
+5,0,255,0,,0.0,,,253,0,,0.0,,
+6,0,266,0,,0.0,,,270,0,,0.0,,
+7,0,278,0,,0.0,,,300,0,,0.0,,

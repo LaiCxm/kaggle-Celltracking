@@ -1,0 +1,13 @@
+{
+  "cv": null,
+  "experiment": "EXP021",
+  "folds": [
+    0,
+    1
+  ],
+  "mean_cv": null,
+  "message": "No trainable model or official CV is run in EXP021 V1.",
+  "oof_score": null,
+  "stage": "observation_and_candidates",
+  "status": "diagnostic_only"
+}

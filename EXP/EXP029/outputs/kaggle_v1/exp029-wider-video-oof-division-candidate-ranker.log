@@ -1,0 +1,132 @@
+[{"stream_name":"stderr","time":6.081473465,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.081559368,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.081565389,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.081579124,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":6.638304869,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.63833713,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.638341576,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.638346749,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":41.184068126,"data":"CUDA: Tesla T4\n"}
+,{"stream_name":"stdout","time":41.184117542,"data":"event-bearing videos available: 83\n"}
+,{"stream_name":"stdout","time":41.184123554,"data":"selected videos: ['44b6_2a2eff9f', '44b6_587a1e22', '44b6_5f15d135', '44b6_74d0c52e', '44b6_996155de', '44b6_9be80b04', '44b6_aaf8b0ea', '44b6_c50204e0', '44b6_d2f34f90', '44b6_d754aa59', '44b6_deabac95', '44b6_eb2880fc', '6bba_05db0fb1', '6bba_207c6aaf', '6bba_32db13fc', '6bba_474be664', '6bba_5c039895', '6bba_705ec2c9', '6bba_7af54fde', '6bba_907271db', '6bba_afb141ff', '6bba_d1acb6ff', '6bba_e16ffc58', '6bba_fe670320']\n"}
+,{"stream_name":"stdout","time":41.18413067,"data":"selected events: 31 selected frames: 62\n"}
+,{"stream_name":"stderr","time":46.727521722,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":46.727556833,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":46.727562738,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":46.727568474,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stderr","time":46.727574925,"data":"\n"}
+,{"stream_name":"stderr","time":46.727584579,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":46.72758998,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":46.727593305,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":46.727597343,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stdout","time":58.350688168,"data":"Pilkwang 1/24 44b6_2a2eff9f nodes 1069 seconds 11.21\n"}
+,{"stream_name":"stdout","time":69.185171885,"data":"Pilkwang 2/24 44b6_587a1e22 nodes 470 seconds 10.83\n"}
+,{"stream_name":"stdout","time":90.35725925,"data":"Pilkwang 3/24 44b6_5f15d135 nodes 596 seconds 21.17\n"}
+,{"stream_name":"stdout","time":122.392562344,"data":"Pilkwang 4/24 44b6_74d0c52e nodes 232 seconds 32.03\n"}
+,{"stream_name":"stdout","time":133.447736542,"data":"Pilkwang 5/24 44b6_996155de nodes 193 seconds 11.06\n"}
+,{"stream_name":"stdout","time":179.623363186,"data":"Pilkwang 6/24 44b6_9be80b04 nodes 615 seconds 46.17\n"}
+,{"stream_name":"stdout","time":214.779979068,"data":"Pilkwang 7/24 44b6_aaf8b0ea nodes 390 seconds 35.16\n"}
+,{"stream_name":"stdout","time":256.213211267,"data":"Pilkwang 8/24 44b6_c50204e0 nodes 2134 seconds 41.43\n"}
+,{"stream_name":"stdout","time":292.015231081,"data":"Pilkwang 9/24 44b6_d2f34f90 nodes 878 seconds 35.8\n"}
+,{"stream_name":"stdout","time":326.693434325,"data":"Pilkwang 10/24 44b6_d754aa59 nodes 128 seconds 34.68\n"}
+,{"stream_name":"stdout","time":343.18596359,"data":"Pilkwang 11/24 44b6_deabac95 nodes 445 seconds 16.49\n"}
+,{"stream_name":"stdout","time":388.613865346,"data":"Pilkwang 12/24 44b6_eb2880fc nodes 753 seconds 45.42\n"}
+,{"stream_name":"stdout","time":434.839100218,"data":"Pilkwang 13/24 6bba_05db0fb1 nodes 3111 seconds 46.22\n"}
+,{"stream_name":"stdout","time":458.240147905,"data":"Pilkwang 14/24 6bba_207c6aaf nodes 717 seconds 23.4\n"}
+,{"stream_name":"stdout","time":462.784802393,"data":"Pilkwang 15/24 6bba_32db13fc nodes 1617 seconds 4.54\n"}
+,{"stream_name":"stdout","time":500.876127473,"data":"Pilkwang 16/24 6bba_474be664 nodes 758 seconds 38.09\n"}
+,{"stream_name":"stdout","time":533.145382648,"data":"Pilkwang 17/24 6bba_5c039895 nodes 410 seconds 32.27\n"}
+,{"stream_name":"stdout","time":556.589588591,"data":"Pilkwang 18/24 6bba_705ec2c9 nodes 172 seconds 23.45\n"}
+,{"stream_name":"stdout","time":587.42470811,"data":"Pilkwang 19/24 6bba_7af54fde nodes 381 seconds 30.83\n"}
+,{"stream_name":"stdout","time":639.71201391,"data":"Pilkwang 20/24 6bba_907271db nodes 93 seconds 52.29\n"}
+,{"stream_name":"stdout","time":666.386327372,"data":"Pilkwang 21/24 6bba_afb141ff nodes 251 seconds 26.68\n"}
+,{"stream_name":"stdout","time":704.575802938,"data":"Pilkwang 22/24 6bba_d1acb6ff nodes 327 seconds 38.18\n"}
+,{"stream_name":"stdout","time":719.25267297,"data":"Pilkwang 23/24 6bba_e16ffc58 nodes 151 seconds 14.68\n"}
+,{"stream_name":"stdout","time":755.548962839,"data":"Pilkwang 24/24 6bba_fe670320 nodes 446 seconds 36.29\n"}
+,{"stream_name":"stdout","time":760.976116104,"data":"Loading weights from: /kaggle/input/datasets/qiweiyin/focus3d-nuclei-runtime/models/model_final_nuclei.pth\n"}
+,{"stream_name":"stdout","time":821.422252027,"data":"FOCUS3D 1/24 44b6_2a2eff9f instances 1479 seconds 35.53\n"}
+,{"stream_name":"stdout","time":836.617665267,"data":"FOCUS3D 2/24 44b6_587a1e22 instances 532 seconds 15.2\n"}
+,{"stream_name":"stdout","time":866.86685453,"data":"FOCUS3D 3/24 44b6_5f15d135 instances 1274 seconds 30.24\n"}
+,{"stream_name":"stdout","time":883.800293972,"data":"FOCUS3D 4/24 44b6_74d0c52e instances 586 seconds 16.92\n"}
+,{"stream_name":"stdout","time":895.067427103,"data":"FOCUS3D 5/24 44b6_996155de instances 250 seconds 11.27\n"}
+,{"stream_name":"stdout","time":940.420914154,"data":"FOCUS3D 6/24 44b6_9be80b04 instances 1900 seconds 45.35\n"}
+,{"stream_name":"stdout","time":961.33868208,"data":"FOCUS3D 7/24 44b6_aaf8b0ea instances 759 seconds 20.91\n"}
+,{"stream_name":"stdout","time":1050.522509321,"data":"FOCUS3D 8/24 44b6_c50204e0 instances 3653 seconds 89.18\n"}
+,{"stream_name":"stdout","time":1104.168246679,"data":"FOCUS3D 9/24 44b6_d2f34f90 instances 2132 seconds 53.64\n"}
+,{"stream_name":"stdout","time":1113.820556264,"data":"FOCUS3D 10/24 44b6_d754aa59 instances 169 seconds 9.64\n"}
+,{"stream_name":"stdout","time":1129.456231378,"data":"FOCUS3D 11/24 44b6_deabac95 instances 491 seconds 15.63\n"}
+,{"stream_name":"stdout","time":1158.43947058,"data":"FOCUS3D 12/24 44b6_eb2880fc instances 1185 seconds 28.97\n"}
+,{"stream_name":"stdout","time":1233.260562759,"data":"FOCUS3D 13/24 6bba_05db0fb1 instances 3283 seconds 74.81\n"}
+,{"stream_name":"stdout","time":1250.044844048,"data":"FOCUS3D 14/24 6bba_207c6aaf instances 520 seconds 16.79\n"}
+,{"stream_name":"stdout","time":1287.39254034,"data":"FOCUS3D 15/24 6bba_32db13fc instances 1628 seconds 37.34\n"}
+,{"stream_name":"stdout","time":1318.0389518,"data":"FOCUS3D 16/24 6bba_474be664 instances 1238 seconds 30.64\n"}
+,{"stream_name":"stdout","time":1340.33604288,"data":"FOCUS3D 17/24 6bba_5c039895 instances 408 seconds 22.29\n"}
+,{"stream_name":"stdout","time":1351.047784697,"data":"FOCUS3D 18/24 6bba_705ec2c9 instances 186 seconds 10.71\n"}
+,{"stream_name":"stdout","time":1372.913848457,"data":"FOCUS3D 19/24 6bba_7af54fde instances 450 seconds 21.86\n"}
+,{"stream_name":"stdout","time":1382.169821464,"data":"FOCUS3D 20/24 6bba_907271db instances 107 seconds 9.25\n"}
+,{"stream_name":"stdout","time":1402.050028841,"data":"FOCUS3D 21/24 6bba_afb141ff instances 313 seconds 19.87\n"}
+,{"stream_name":"stdout","time":1416.159239096,"data":"FOCUS3D 22/24 6bba_d1acb6ff instances 379 seconds 14.1\n"}
+,{"stream_name":"stdout","time":1425.055951722,"data":"FOCUS3D 23/24 6bba_e16ffc58 instances 144 seconds 8.88\n"}
+,{"stream_name":"stdout","time":1447.190468734,"data":"FOCUS3D 24/24 6bba_fe670320 instances 460 seconds 22.14\n"}
+,{"stream_name":"stdout","time":1527.119704774,"data":"endpoint summary\n"}
+,{"stream_name":"stdout","time":1527.121975724,"data":"structural selection summary\n"}
+,{"stream_name":"stdout","time":1528.960380216,"data":"EXP029 OOF ranking summary\n"}
+,{"stream_name":"stdout","time":1529.071315722,"data":"{\n"}
+,{"stream_name":"stdout","time":1529.071341615,"data":"  \"experiment\": \"EXP029\",\n"}
+,{"stream_name":"stdout","time":1529.071348218,"data":"  \"official_cv\": null,\n"}
+,{"stream_name":"stdout","time":1529.071353575,"data":"  \"submission_generated\": false,\n"}
+,{"stream_name":"stdout","time":1529.071358673,"data":"  \"selected_videos\": [\n"}
+,{"stream_name":"stdout","time":1529.07136371,"data":"    \"44b6_2a2eff9f\",\n"}
+,{"stream_name":"stdout","time":1529.071368988,"data":"    \"44b6_587a1e22\",\n"}
+,{"stream_name":"stdout","time":1529.071373943,"data":"    \"44b6_5f15d135\",\n"}
+,{"stream_name":"stdout","time":1529.07137889,"data":"    \"44b6_74d0c52e\",\n"}
+,{"stream_name":"stdout","time":1529.071383772,"data":"    \"44b6_996155de\",\n"}
+,{"stream_name":"stdout","time":1529.071388619,"data":"    \"44b6_9be80b04\",\n"}
+,{"stream_name":"stdout","time":1529.071393463,"data":"    \"44b6_aaf8b0ea\",\n"}
+,{"stream_name":"stdout","time":1529.071398359,"data":"    \"44b6_c50204e0\",\n"}
+,{"stream_name":"stdout","time":1529.071403371,"data":"    \"44b6_d2f34f90\",\n"}
+,{"stream_name":"stdout","time":1529.071408392,"data":"    \"44b6_d754aa59\",\n"}
+,{"stream_name":"stdout","time":1529.071413365,"data":"    \"44b6_deabac95\",\n"}
+,{"stream_name":"stdout","time":1529.071418268,"data":"    \"44b6_eb2880fc\",\n"}
+,{"stream_name":"stdout","time":1529.07142328,"data":"    \"6bba_05db0fb1\",\n"}
+,{"stream_name":"stdout","time":1529.071427743,"data":"    \"6bba_207c6aaf\",\n"}
+,{"stream_name":"stdout","time":1529.071432441,"data":"    \"6bba_32db13fc\",\n"}
+,{"stream_name":"stdout","time":1529.071437293,"data":"    \"6bba_474be664\",\n"}
+,{"stream_name":"stdout","time":1529.071442034,"data":"    \"6bba_5c039895\",\n"}
+,{"stream_name":"stdout","time":1529.071459052,"data":"    \"6bba_705ec2c9\",\n"}
+,{"stream_name":"stdout","time":1529.071462919,"data":"    \"6bba_7af54fde\",\n"}
+,{"stream_name":"stdout","time":1529.071466457,"data":"    \"6bba_907271db\",\n"}
+,{"stream_name":"stdout","time":1529.071470146,"data":"    \"6bba_afb141ff\",\n"}
+,{"stream_name":"stdout","time":1529.071473866,"data":"    \"6bba_d1acb6ff\",\n"}
+,{"stream_name":"stdout","time":1529.071477574,"data":"    \"6bba_e16ffc58\",\n"}
+,{"stream_name":"stdout","time":1529.071481179,"data":"    \"6bba_fe670320\"\n"}
+,{"stream_name":"stdout","time":1529.071485336,"data":"  ],\n"}
+,{"stream_name":"stdout","time":1529.071489348,"data":"  \"events\": 31,\n"}
+,{"stream_name":"stdout","time":1529.071493119,"data":"  \"union_candidates\": 1967,\n"}
+,{"stream_name":"stdout","time":1529.071496829,"data":"  \"rank_features\": [\n"}
+,{"stream_name":"stdout","time":1529.071500277,"data":"    \"parent_distance_um\",\n"}
+,{"stream_name":"stdout","time":1529.071503859,"data":"    \"daughter_distance_um\",\n"}
+,{"stream_name":"stdout","time":1529.071507604,"data":"    \"focus_only_count\"\n"}
+,{"stream_name":"stdout","time":1529.071511532,"data":"  ],\n"}
+,{"stream_name":"stdout","time":1529.071515105,"data":"  \"oof_group\": \"video\",\n"}
+,{"stream_name":"stdout","time":1529.071518862,"data":"  \"arms\": [\n"}
+,{"stream_name":"stdout","time":1529.07152247,"data":"    \"geometry_1_05_focus0\",\n"}
+,{"stream_name":"stdout","time":1529.071525982,"data":"    \"geometry_1_05_focus4\",\n"}
+,{"stream_name":"stdout","time":1529.071529739,"data":"    \"geometry_1_00_focus4\",\n"}
+,{"stream_name":"stdout","time":1529.071533252,"data":"    \"oof_logistic_3feat\"\n"}
+,{"stream_name":"stdout","time":1529.071536689,"data":"  ],\n"}
+,{"stream_name":"stdout","time":1529.071540299,"data":"  \"candidate_gate_um\": {\n"}
+,{"stream_name":"stdout","time":1529.071544314,"data":"    \"parent\": 16.0,\n"}
+,{"stream_name":"stdout","time":1529.071547824,"data":"    \"daughter\": 20.0\n"}
+,{"stream_name":"stdout","time":1529.071551613,"data":"  }\n"}
+,{"stream_name":"stdout","time":1529.071555194,"data":"}\n"}
+,{"stream_name":"stdout","time":1529.07155907,"data":"Wrote: ['REPORT.md', 'arm_summary.csv', 'candidate_oof_scores.csv', 'candidate_rows.csv', 'endpoint_rows.csv', 'event_rows.csv', 'geometry_selected_candidates.csv', 'geometry_selection_summary.csv', 'ranker_selected_candidates.csv', 'summary.json']\n"}
+,{"stream_name":"stderr","time":1534.977879494,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1534.977918348,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1535.122050581,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1535.122076687,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1535.760554823,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":1536.219475914,"data":"[NbConvertApp] Writing 858001 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":1538.586623445,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1539.591444175,"data":"[NbConvertApp] Writing 1073845 bytes to __results__.html\n"}
+]

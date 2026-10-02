@@ -1,0 +1,6 @@
+arm,baseline,videos,events,mean_delta_events_per_video,ci95_low,ci95_high,positive_videos,zero_videos,negative_videos
+logistic_mask_geometry,logistic_base,24,31,0.125,-0.08333333333333333,0.375,3,20,1
+logistic_mask_quality,logistic_base,24,31,0.125,-0.08333333333333333,0.375,3,20,1
+logistic_mask_source,logistic_base,24,31,0.125,-0.08333333333333333,0.3333333333333333,3,20,1
+logistic_rich_all,logistic_base,24,31,0.125,-0.08333333333333333,0.375,3,20,1
+logistic_mask_geometry_permuted,logistic_base,24,31,0.0,-0.16666666666666666,0.16666666666666666,2,20,2

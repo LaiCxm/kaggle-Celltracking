@@ -1,0 +1,9 @@
+experiment: EXP018-B-child001
+parent: EXP018-A-child000
+notebook: CELL_infer_focus_mask_control.ipynb
+ablation:
+  BIOHUB_FOCUS_MASK_ENABLE: 0
+locked:
+  BIOHUB_VALIDATOR_ENABLE: 0
+  BIOHUB_MOTION_RELINK_TIGHT_UM: 6.0
+note: "Clean control for submission 56202599; all scored EXP018 v3 code is retained and only FOCUS3D mask arbitration is disabled."

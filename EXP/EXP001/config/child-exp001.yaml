@@ -1,0 +1,7 @@
+# EXP001-child001 — 单点优化:ILP appearance weight 0.0 -> 0.1
+# 基线: EXP001-child000 (clean-approach 0.908, CV 0.87893)
+# 改动: 仅 BIOHUB_ILP_APPEARANCE_WEIGHT 0.0 -> 0.1 (v4 默认值)
+# 理由: appearance=0.0 意味着新轨迹零代价,可能产生过多孤立/短轨;给 0.1 惩罚观察 FP 变化
+# 预期: FP 可能下降;需观察 score 变化(edge 项为主)
+# 验证: 固定8胚胎官方spec CV;score 提升则提交,否则回退
+# 内核: exp001-ilp-app01 (push_custom_kernel --kernel exp001_ilp_app01.ipynb)

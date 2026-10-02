@@ -1,0 +1,71 @@
+{
+  "experiment": "EXP027",
+  "official_cv": null,
+  "submission_generated": false,
+  "selected_videos": [
+    "44b6_2a2eff9f",
+    "44b6_706092f0",
+    "44b6_996155de",
+    "44b6_c50204e0",
+    "44b6_d5e7d891",
+    "44b6_eb2880fc",
+    "6bba_05db0fb1",
+    "6bba_3abfe10a",
+    "6bba_61ecbe65",
+    "6bba_87289e13",
+    "6bba_c328f2fd",
+    "6bba_fe670320"
+  ],
+  "events": 18,
+  "candidate_gate_um": {
+    "parent": 16.0,
+    "daughter": 20.0
+  },
+  "modes": [
+    "pil_only",
+    "union"
+  ],
+  "activation_costs_um": [
+    0.0,
+    2.0,
+    4.0,
+    8.0,
+    12.0
+  ],
+  "selection_constraints": [
+    "unique_parent",
+    "unique_daughter",
+    "one_candidate_per_event"
+  ],
+  "selection_algorithm": "deterministic_greedy_set_packing",
+  "runtime_seconds": {
+    "pilkwang": {
+      "44b6_2a2eff9f": 11.212730016999956,
+      "44b6_706092f0": 28.661884074,
+      "44b6_996155de": 11.064173588000017,
+      "44b6_c50204e0": 42.96934987999998,
+      "44b6_d5e7d891": 32.97423051300001,
+      "44b6_eb2880fc": 48.54793932000001,
+      "6bba_05db0fb1": 50.210066522000034,
+      "6bba_3abfe10a": 59.449231207000025,
+      "6bba_61ecbe65": 20.856689794999966,
+      "6bba_87289e13": 46.61873022399993,
+      "6bba_c328f2fd": 42.20215361099997,
+      "6bba_fe670320": 39.44383505500002
+    },
+    "focus3d": {
+      "44b6_2a2eff9f": 38.29351848099998,
+      "44b6_706092f0": 47.98333348400001,
+      "44b6_996155de": 12.556222624999918,
+      "44b6_c50204e0": 96.16046426399998,
+      "44b6_d5e7d891": 64.61016365899991,
+      "44b6_eb2880fc": 31.4715539419999,
+      "6bba_05db0fb1": 119.78522533899991,
+      "6bba_3abfe10a": 42.27729218599984,
+      "6bba_61ecbe65": 11.216423133000035,
+      "6bba_87289e13": 10.652383302999851,
+      "6bba_c328f2fd": 44.07887807199995,
+      "6bba_fe670320": 24.88756247099991
+    }
+  }
+}

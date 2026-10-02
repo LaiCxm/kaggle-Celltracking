@@ -1,0 +1,15 @@
+{
+  "experiment": "EXP038",
+  "official_cv": null,
+  "submission_generated": false,
+  "parent_oracle_used": false,
+  "candidate_count": 686116,
+  "truth_events": 31,
+  "transitions": 31,
+  "arms": [
+    "candidate_base",
+    "continuation_conflict",
+    "continuation_conflict_mask_geometry"
+  ],
+  "selection": "continuation_conflict_soft_rank_full_candidate_pool"
+}

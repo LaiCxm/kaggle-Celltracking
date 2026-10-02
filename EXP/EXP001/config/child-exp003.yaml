@@ -1,0 +1,6 @@
+# EXP001-child003 — 单点优化:det_threshold 0.96875 -> 0.95
+# 基线: EXP001-child000 (CV 0.87893)
+# 改动: 仅 BIOHUB_DET_THRESHOLD 0.96875 -> 0.95
+# 理由: 更低阈值保留更多弱候选,可能检测到更多真实低信号细胞(含分裂子细胞);
+#       风险是 FP 增加。观察 node_recall/edge FP 权衡
+# 历史: child001(app 0.1)和 child002(disp 1.2)均失败,ILP 权重已饱和

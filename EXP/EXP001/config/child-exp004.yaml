@@ -1,0 +1,10 @@
+# EXP001-child004 — 单点优化:放宽 safe-division 几何门
+# 基线: EXP001-child000 (CV 0.87893, LB 0.908)
+# 改动: BIOHUB_SAFE_DIV_MAX_UM 4.66->13, SISTER 8.5->13, EXISTING_CHILD 7.65->13 (caps 不变)
+# 依据(division 诊断):
+#   - ILP 从不产生 fork(out>=2),预测图 fork=0
+#   - 293 个 division_like_sources 全来自 safe_div 后处理
+#   - GT 7 个分裂父->子2距离 6.6~12.85um,远超 4.66um 门 → 被 safe_div 拒绝
+#   - 分裂1/3 预测已连好父->子1,只差补子2;分裂2 父0出边需另解
+# 预期: division TP 从 0 提升;注意 FP 风险(metric division FP 判定严)
+# 后续: 若有效,child005 处理分裂2(父0出边,需 ILP/motion relink 先连一子)

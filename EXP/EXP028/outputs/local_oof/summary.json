@@ -1,0 +1,22 @@
+{
+  "experiment": "EXP028",
+  "input": "D:\\kaggle\\CellTracking\\CellTracking\\EXP\\EXP027\\outputs\\kaggle_v2\\exp027_structural_selection\\candidate_rows.csv",
+  "candidate_mode": "union",
+  "videos": 12,
+  "events": 18,
+  "candidates": 1708,
+  "features": [
+    "parent_distance_um",
+    "daughter_distance_um",
+    "focus_only_count"
+  ],
+  "oof_group": "video",
+  "arms": [
+    "geometry_1_05_focus0",
+    "geometry_1_05_focus4",
+    "geometry_1_00_focus4",
+    "oof_logistic_3feat"
+  ],
+  "official_cv": null,
+  "submission_generated": false
+}

@@ -1,0 +1,23 @@
+{
+  "experiment": "EXP035",
+  "official_cv": null,
+  "submission_generated": false,
+  "parent_oracle_used": false,
+  "candidate_count": 686116,
+  "truth_events": 31,
+  "transitions": 31,
+  "k_values": [
+    1,
+    2,
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "arms": [
+    "candidate_base",
+    "candidate_mask_geometry"
+  ],
+  "selection": "parent_top_k_then_candidate_rank"
+}

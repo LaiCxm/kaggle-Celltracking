@@ -1,0 +1,25 @@
+# Local scratch data and downloaded browser artifacts
+temp/
+temp_*
+tmp_*/
+tmp_*
+*.html
+app.js
+vendor.js
+
+# Local caches and generated interpreter files
+.pytest_cache/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Local credentials and machine-specific configuration
+.env
+.env.*
+!.env.example
+.kaggle/
+kaggle.json
+credentials.json
+*_credentials.json
+*.pem
+*.key

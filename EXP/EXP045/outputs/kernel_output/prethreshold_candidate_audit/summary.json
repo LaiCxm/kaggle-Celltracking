@@ -1,0 +1,46 @@
+{
+  "threshold": 0.48,
+  "max_children": 2,
+  "max_parents": 1,
+  "radius_um": 7.0,
+  "gt_divisions": 5,
+  "gt_edges": 10,
+  "status_counts": {
+    "final_candidate": 6,
+    "prethreshold_topk_only": 4
+  },
+  "manifests": [
+    {
+      "video": "44b6_12dfb391",
+      "path": "/kaggle/working/edge_candidates_prethreshold_single_44b6_12dfb391.npz",
+      "coords": 50697,
+      "final_edges": 44353,
+      "raw_topk_edges": 1131311,
+      "gt_divisions": 1
+    },
+    {
+      "video": "44b6_267148e4",
+      "path": "/kaggle/working/edge_candidates_prethreshold_single_44b6_267148e4.npz",
+      "coords": 26685,
+      "final_edges": 22596,
+      "raw_topk_edges": 561322,
+      "gt_divisions": 1
+    },
+    {
+      "video": "6bba_062c8d37",
+      "path": "/kaggle/working/edge_candidates_prethreshold_single_6bba_062c8d37.npz",
+      "coords": 6651,
+      "final_edges": 6014,
+      "raw_topk_edges": 148716,
+      "gt_divisions": 1
+    },
+    {
+      "video": "6bba_07e24132",
+      "path": "/kaggle/working/edge_candidates_prethreshold_single_6bba_07e24132.npz",
+      "coords": 36769,
+      "final_edges": 26603,
+      "raw_topk_edges": 768590,
+      "gt_divisions": 2
+    }
+  ]
+}

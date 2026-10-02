@@ -1,0 +1,10 @@
+experiment: EXP032
+child: child-exp000
+purpose: wide_video_focus3d_mask_geometry_validation
+target_video_count: 48
+max_events_per_video: 2
+candidate_parent_radius_um: 16.0
+candidate_daughter_radius_um: 20.0
+oof_group: video
+official_cv: false
+submission: false

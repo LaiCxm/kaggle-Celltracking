@@ -1,0 +1,32 @@
+[{"stream_name":"stderr","time":6.492810876,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.492935805,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.492940138,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.492942783,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":7.063503546,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.063534172,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.063539361,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.063543281,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.327663412,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":8.327693655,"data":"  File \"\u003cstring\u003e\", line 1, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":8.32769745,"data":"  File \"/usr/local/lib/python3.12/dist-packages/papermill/execute.py\", line 131, in execute_notebook\n"}
+,{"stream_name":"stderr","time":8.327700145,"data":"    raise_for_execution_errors(nb, output_path)\n"}
+,{"stream_name":"stderr","time":8.327702642,"data":"  File \"/usr/local/lib/python3.12/dist-packages/papermill/execute.py\", line 251, in raise_for_execution_errors\n"}
+,{"stream_name":"stderr","time":8.327861297,"data":"    raise error\n"}
+,{"stream_name":"stderr","time":8.327900537,"data":"papermill.exceptions.PapermillExecutionError: \n"}
+,{"stream_name":"stderr","time":8.327925392,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":8.327929678,"data":"Exception encountered at \"In [1]\":\n"}
+,{"stream_name":"stderr","time":8.32793331,"data":"  File \"/tmp/ipykernel_24/2010463516.py\", line 3\n"}
+,{"stream_name":"stderr","time":8.327937082,"data":"    保持普通候选阈值 0.48，只为强第一边的父节点保留受限第二边。\n"}
+,{"stream_name":"stderr","time":8.327941728,"data":"                 ^\n"}
+,{"stream_name":"stderr","time":8.327945019,"data":"SyntaxError: invalid character '，' (U+FF0C)\n"}
+,{"stream_name":"stderr","time":8.327948565,"data":"\n"}
+,{"stream_name":"stderr","time":8.327951663,"data":"\n"}
+,{"stream_name":"stderr","time":10.424122131,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":10.424152397,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":10.573224002,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":10.573252352,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":11.287000338,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":11.591896994,"data":"[NbConvertApp] Writing 284642 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":13.942305479,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":15.36645295,"data":"[NbConvertApp] Writing 1199867 bytes to __results__.html\n"}
+]

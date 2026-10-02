@@ -1,0 +1,31 @@
+﻿# EXP007 — 在训练集上对比 EXP003 vs EXP006 的 division_jaccard
+# 目的：确认专精模型是否真的让 division 有分/变好
+# 执行方式: tools/push_custom_kernel.py --exp EXP007 --kernel CELL_diag_division_score_A.ipynb ...
+
+competition: biohub-cell-tracking-during-development
+exp_name: EXP007
+method: diagnostic division score comparison (EXP003 vs EXP006)
+artifact_slugs:
+  - pilkwang/biohub-tracking-support-pack-50ep-v1
+  - pilkwang/biohub-temporal-unet3d-seed314159-v1
+  - pilkwang/biohub-deepcenter-unet3d-center-prior-v1
+
+# 与 EXP006 相同
+det_threshold: 0.96875
+ilp_appearance_weight: 0.0
+ilp_disappearance_weight: 1.5
+ilp_division_weight: 1.0
+safe_div_parent_max_um: 8.0
+safe_div_sister_max_um: 11.0
+safe_div_existing_child_max_um: 10.0
+safe_div_diverge_um: 2.25
+use_deepcenter_veto: true
+deepcenter_expected_epoch: 500
+deepcenter_checkpoint: /kaggle/input/biohub-deepcenter-unet3d-center-prior-v1/weights/full_frame_center/checkpoint_last.pt
+deepcenter_safe_div_veto: false
+
+# 新增
+synthetic_division_model: true
+model_threshold: 0.5
+output_report: /kaggle/working/division_score_report.json
+submission: /kaggle/working/submission.csv

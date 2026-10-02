@@ -1,0 +1,11 @@
+experiment: EXP029
+child: child-exp000
+purpose: wider_video_oof_division_candidate_ranker
+target_video_count: 24
+max_events_per_video: 2
+candidate_parent_radius_um: 16.0
+candidate_daughter_radius_um: 20.0
+rank_features: [parent_distance_um, daughter_distance_um, focus_only_count]
+oof_group: video
+official_cv: false
+submission: false

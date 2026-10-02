@@ -1,0 +1,34 @@
+﻿# EXP009 — 独立 division proposal 模型 + 上层模型合并
+# 上层模型只输出 nodes/普通 edges，division 完全由原始图像 proposal 模型输出
+# 执行方式: tools/push_custom_kernel.py --exp EXP009 --kernel CELL_infer_division_proposal_A.ipynb ...
+
+competition: biohub-cell-tracking-during-development
+exp_name: EXP009
+method: upper model (no rule division) + independent raw-image division proposal
+artifact_slugs:
+  - pilkwang/biohub-tracking-support-pack-50ep-v1
+  - pilkwang/biohub-temporal-unet3d-seed314159-v1
+  - pilkwang/biohub-deepcenter-unet3d-center-prior-v1
+
+# 与 EXP003 相同基础配置
+det_threshold: 0.96875
+ilp_appearance_weight: 0.0
+ilp_disappearance_weight: 1.5
+ilp_division_weight: 1.0
+safe_div_parent_max_um: 8.0
+safe_div_sister_max_um: 11.0
+safe_div_existing_child_max_um: 10.0
+safe_div_diverge_um: 2.25
+use_deepcenter_veto: true
+deepcenter_expected_epoch: 500
+deepcenter_checkpoint: /kaggle/input/biohub-deepcenter-unet3d-center-prior-v1/weights/full_frame_center/checkpoint_last.pt
+deepcenter_safe_div_veto: false
+
+# 独立 division proposal 模型
+output_safe_divisions: false
+division_proposal_model: true
+division_proposal_window: 16
+division_proposal_stride: 8
+division_proposal_threshold: 0.5
+division_proposal_max_per_video: 200
+submission: /kaggle/working/submission.csv

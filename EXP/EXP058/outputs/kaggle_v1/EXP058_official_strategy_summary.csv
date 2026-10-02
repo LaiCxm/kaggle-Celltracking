@@ -1,0 +1,3 @@
+mode,n,edge_jaccard,division_jaccard,division_tp,division_fp,division_fn,node_recall,adj_edge_jaccard,n_adj,score,focus_checked,focus_accepted,focus_veto_removed,focus_frames_loaded,exp049_structural_candidates,exp049_deepcenter_rejected,exp049_divergence_rejected,exp049_added,exp049_rewired,exp049_cap_rejected,exp056_edge_guard_checked,exp056_edge_guard_passed,exp056_edge_guard_rejected,exp056_edge_guard_missing_prob,exp056_edge_guard_accepted
+exp049_cos060,4,0.9144764288694202,0.4,2,0,3,0.979074072722612,0.921398236905435,4,0.961398236905435,0,0,0,0,17,11,84,5,5,1,0,0,0,0,0
+off,4,0.9136780650542119,0.2,1,0,4,0.979074072722612,0.9205990662192864,4,0.9405990662192865,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0

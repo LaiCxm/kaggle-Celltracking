@@ -1,0 +1,46 @@
+{
+  "sample_id": "6bba_337b1b3a",
+  "max_frames": 8,
+  "match_radius_um": 7.0,
+  "scale_um": [
+    1.625,
+    0.40625,
+    0.40625
+  ],
+  "pilkwang_weight": "/kaggle/input/datasets/pilkwang/biohub-tracking-support-pack-50ep-v1/weights/unet_transformer/split_0/edge_predictor_best.pth",
+  "focus3d_weights": "/kaggle/input/datasets/qiweiyin/focus3d-nuclei-runtime/models/model_final_nuclei.pth",
+  "runtime_seconds": {
+    "pilkwang": 8.867576902999986,
+    "focus3d": 34.52957140199999
+  },
+  "complementarity": {
+    "gt_nodes_hit_by_both": 0,
+    "gt_nodes_only_pilkwang": 0,
+    "gt_nodes_only_focus3d": 0,
+    "gt_nodes_missed_by_both": 0,
+    "focus3d_extra_gt_unmatched_nodes": 1851,
+    "pilkwang_extra_gt_unmatched_nodes": 1844
+  },
+  "summary": [
+    {
+      "model": "Pilkwang-primary",
+      "pred_nodes": 1844,
+      "gt_nodes": 0,
+      "matched_nodes": 0,
+      "gt_recall": NaN,
+      "pred_precision": 0.0,
+      "mean_match_um": NaN,
+      "max_match_um": NaN
+    },
+    {
+      "model": "FOCUS3D-centroid",
+      "pred_nodes": 1851,
+      "gt_nodes": 0,
+      "matched_nodes": 0,
+      "gt_recall": NaN,
+      "pred_precision": 0.0,
+      "mean_match_um": NaN,
+      "max_match_um": NaN
+    }
+  ]
+}

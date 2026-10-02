@@ -1,0 +1,6 @@
+# EXP001-child006 — 双种子 low_margin_consensus 边融合
+# 基线: EXP001-child005 (dual-seed raw, CV 0.87871)
+# 改动: 仅 BIOHUB_SECONDARY_LINK_MODE raw -> low_margin_consensus
+# 依据: child005 双种子 recall↑(TP 3866)但 FP↑10 导致 score 持平;
+#       low_margin_consensus 只在主模型低置信时掺入次模型,可抑制 FP
+# 预期: 保留 recall 提升 + 控制 FP,score 应 > 0.87893

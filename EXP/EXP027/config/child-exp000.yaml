@@ -1,0 +1,12 @@
+experiment: EXP027
+child: child-exp000
+purpose: focus3d_structural_division_selection_diagnostic
+target_video_count: 12
+max_events_per_video: 3
+candidate_parent_radius_um: 16.0
+candidate_daughter_radius_um: 20.0
+geometry_cost: parent_distance_um_plus_half_daughter_distance_um
+focus_activation_costs_um: [0.0, 2.0, 4.0, 8.0, 12.0]
+selection_constraints: [unique_parent, unique_daughter, one_candidate_per_event]
+validation_unit: event_and_video_diagnostic
+test_submission: false

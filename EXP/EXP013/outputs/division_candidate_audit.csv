@@ -1,0 +1,6 @@
+video,event,gt_parent,gt_child1,gt_child2,pred_parent,pred_existing_child,pred_candidate_child,gate_status,selected_edge
+44b6_12dfb391,1,172000000050,173000000050,173000000051,32130,32619,32646,gt_daughter_has_incoming_edge,0
+44b6_267148e4,1,16000000001,17000000001,17000000002,649,848,839,gt_daughter_has_incoming_edge,0
+6bba_062c8d37,1,90001276,91001298,91001299,5997,6060,6056,candidate_survived_gates,1
+6bba_07e24132,1,36000309,37000317,37000318,14149,14523,14487,gt_daughter_has_incoming_edge,0
+6bba_07e24132,2,66000550,67000557,67000558,24663,25019,25003,deepcenter_gate,0

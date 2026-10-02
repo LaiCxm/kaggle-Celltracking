@@ -1,0 +1,12 @@
+experiment: EXP030
+child: child-exp000
+purpose: rich_focus3d_mask_aware_division_candidate_ranker
+target_video_count: 24
+max_events_per_video: 2
+candidate_parent_radius_um: 16.0
+candidate_daughter_radius_um: 20.0
+base_features: [parent_distance_um, daughter_distance_um, focus_only_count]
+mask_features: [daughter_separation_score, volume_balance, volume_conservation, parent_union_overlap, parent_union_parent_coverage, parent_union_daughter_coverage, focus_instance_count, consensus_count, focus_quality_mean]
+oof_group: video
+official_cv: false
+submission: false

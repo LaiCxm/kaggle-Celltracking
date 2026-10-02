@@ -1,0 +1,47 @@
+[{"stream_name":"stderr","time":6.059034371,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":6.059099259,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":6.89094443,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.890972425,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.890978452,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.890983086,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":7.48276022,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.482807308,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.48281337,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.482817514,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":23.208200213,"data":"CUDA: Tesla T4\n"}
+,{"stream_name":"stdout","time":23.208269454,"data":"sample: 6bba_337b1b3a eval_frames: [19, 20, 21, 22, 23, 24, 25, 26] predict_max_frames: 27 scale_um: [1.625, 0.40625, 0.40625]\n"}
+,{"stream_name":"stdout","time":23.208275891,"data":"support: /kaggle/input/datasets/pilkwang/biohub-tracking-support-pack-50ep-v1\n"}
+,{"stream_name":"stdout","time":23.208281071,"data":"focus3d: /kaggle/input/datasets/qiweiyin/focus3d-nuclei-runtime\n"}
+,{"stream_name":"stderr","time":31.357098662,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":31.35713773,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":31.357142874,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":31.357146603,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stderr","time":31.357149865,"data":"\n"}
+,{"stream_name":"stderr","time":31.357152917,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":31.357156492,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":31.357159373000002,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":31.357163008,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stdout","time":49.339610474,"data":"Pilkwang primary nodes: 2705 runtime_s: 17.5\n"}
+,{"stream_name":"stdout","time":49.339662077,"data":"Pilkwang settings: {'weight': '/kaggle/input/datasets/pilkwang/biohub-tracking-support-pack-50ep-v1/weights/unet_transformer/split_0/edge_predictor_best.pth', 'window': 2, 'downsample': (1, 4, 4), 'det_threshold': 0.96, 'det_tta': True}\n"}
+,{"stream_name":"stdout","time":54.851069309,"data":"Loading weights from: /kaggle/input/datasets/qiweiyin/focus3d-nuclei-runtime/models/model_final_nuclei.pth\n"}
+,{"stream_name":"stdout","time":117.644361328,"data":"FOCUS3D instance-centroid nodes: 2973 runtime_s: 35.77\n"}
+,{"stream_name":"stdout","time":117.644407158,"data":"FOCUS3D settings: {'weights': '/kaggle/input/datasets/qiweiyin/focus3d-nuclei-runtime/models/model_final_nuclei.pth', 'score_thresh': 0.6, 'mask_thresh': 0.5, 'stride': [32, 96, 96], 'cell_radius': 15.0}\n"}
+,{"stream_name":"stdout","time":117.71897528,"data":"GT GEFF: /kaggle/input/competitions/biohub-cell-tracking-during-development/train/6bba_337b1b3a.geff nodes: 15\n"}
+,{"stream_name":"stdout","time":117.732104865,"data":"complementarity: {\n"}
+,{"stream_name":"stdout","time":117.732127271,"data":"  \"gt_nodes_hit_by_both\": 15,\n"}
+,{"stream_name":"stdout","time":117.732133634,"data":"  \"gt_nodes_only_pilkwang\": 0,\n"}
+,{"stream_name":"stdout","time":117.732138499,"data":"  \"gt_nodes_only_focus3d\": 0,\n"}
+,{"stream_name":"stdout","time":117.732143652,"data":"  \"gt_nodes_missed_by_both\": 0,\n"}
+,{"stream_name":"stdout","time":117.732152416,"data":"  \"focus3d_extra_gt_unmatched_nodes\": 2958,\n"}
+,{"stream_name":"stdout","time":117.73216981,"data":"  \"pilkwang_extra_gt_unmatched_nodes\": 2690\n"}
+,{"stream_name":"stdout","time":117.732175439,"data":"}\n"}
+,{"stream_name":"stdout","time":117.753959755,"data":"Wrote: ['/kaggle/working/exp016_focus_compare/comparison.json', '/kaggle/working/exp016_focus_compare/focus3d_centroids.npy', '/kaggle/working/exp016_focus_compare/per_frame.csv', '/kaggle/working/exp016_focus_compare/pilkwang_nodes.npy', '/kaggle/working/exp016_focus_compare/summary.csv']\n"}
+,{"stream_name":"stderr","time":123.176990803,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":123.177023485,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":123.329488086,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":123.329508652,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":123.995255773,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":124.307628881,"data":"[NbConvertApp] Writing 131342 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":126.648386586,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":127.499914677,"data":"[NbConvertApp] Writing 436072 bytes to __results__.html\n"}
+]

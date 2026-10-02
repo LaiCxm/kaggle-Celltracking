@@ -1,0 +1,9 @@
+# EXP001-child007 — 单点优化：ILP division_weight 1.0 -> 0.3
+# 基线: EXP001-child000 (CV 0.87893, LB 0.908)
+# 改动: 仅 BIOHUB_ILP_DIVISION_WEIGHT 1.0 -> 0.3
+# 依据（division 攻坚诊断）：
+#   - ILP 层从不产生 fork(out>=2)，预测图 fork=0，division_jaccard=0
+#   - 后处理 safe_div 加447个仍0，ROI极低
+#   - 让 ILP 原生产生分裂更根本：降低分裂成本使 ILP 允许 fork
+# 预期：division TP 可能>0，但需观察 edge FP/FN 权衡
+# 验证：固定8胚胎官方spec CV

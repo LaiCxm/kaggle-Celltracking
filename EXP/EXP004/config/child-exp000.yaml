@@ -1,0 +1,38 @@
+﻿# EXP004 — Harmonic 双向调和 + EXP003 division 后处理融合
+# 基于 EXP003 divsub(0.926) 叠加 EXP002 harmonic(0.918) 的双向融合
+# 执行方式: tools/push_custom_kernel.py --exp EXP004 --kernel CELL_infer_harmonic_divsub.ipynb ...
+
+competition: biohub-cell-tracking-during-development
+exp_name: EXP004
+method: dual-seed + harmonic bidirectional fusion + ported division rule
+artifact_slugs:
+  - pilkwang/biohub-tracking-support-pack-50ep-v1
+  - pilkwang/biohub-temporal-unet3d-seed314159-v1
+  - pilkwang/biohub-deepcenter-unet3d-center-prior-v1
+
+# ---- 融合配置 ----
+det_threshold: 0.96875
+ilp_appearance_weight: 0.0
+ilp_disappearance_weight: 1.5
+ilp_division_weight: 1.0
+gap_close_um: 5.8
+output_min_track_len: 6
+
+# harmonic 部分（来自 EXP002 / kimi v17）
+bidirectional_edge_weight: 0.30
+bidirectional_fusion_mode: harmonic_probability
+
+# divsub 部分（来自 EXP003 / rockerritesh）
+safe_div_parent_max_um: 8.0
+safe_div_sister_max_um: 11.0
+safe_div_existing_child_max_um: 10.0
+safe_div_diverge_um: 2.25
+safe_div_require_divergence: true
+safe_div_require_mutual_nn: true
+use_deepcenter_veto: true
+deepcenter_expected_epoch: 500
+deepcenter_checkpoint: /kaggle/input/biohub-deepcenter-unet3d-center-prior-v1/weights/full_frame_center/checkpoint_last.pt
+deepcenter_safe_div_veto: false
+
+# ---- 执行 ----
+submission: /kaggle/working/submission.csv

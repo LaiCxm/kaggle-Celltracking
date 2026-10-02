@@ -1,0 +1,24 @@
+[
+  {
+    "gt_parent": 39000297,
+    "gt_daughters": [
+      40000311,
+      40000324
+    ],
+    "parent_detected": 0,
+    "daughter1_detected": 0,
+    "daughter2_detected": 0,
+    "complete_candidate": 0
+  },
+  {
+    "gt_parent": 59000663,
+    "gt_daughters": [
+      60000685,
+      60000686
+    ],
+    "parent_detected": 0,
+    "daughter1_detected": 0,
+    "daughter2_detected": 0,
+    "complete_candidate": 0
+  }
+]

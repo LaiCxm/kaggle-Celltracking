@@ -1,0 +1,112 @@
+[
+  {
+    "video": "44b6_12dfb391",
+    "event_index": 603,
+    "parent_id": 172000000050,
+    "parent_t": 66,
+    "daughter_ids": [
+      173000000050,
+      173000000051
+    ],
+    "daughter_frames": [
+      67,
+      67
+    ],
+    "window_frames": [
+      64,
+      65,
+      66,
+      67,
+      68,
+      69
+    ]
+  },
+  {
+    "video": "44b6_267148e4",
+    "event_index": 4,
+    "parent_id": 16000000001,
+    "parent_t": 3,
+    "daughter_ids": [
+      17000000001,
+      17000000002
+    ],
+    "daughter_frames": [
+      4,
+      4
+    ],
+    "window_frames": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "video": "6bba_062c8d37",
+    "event_index": 806,
+    "parent_id": 90001276,
+    "parent_t": 89,
+    "daughter_ids": [
+      91001298,
+      91001299
+    ],
+    "daughter_frames": [
+      90,
+      90
+    ],
+    "window_frames": [
+      87,
+      88,
+      89,
+      90,
+      91,
+      92
+    ]
+  },
+  {
+    "video": "6bba_07e24132",
+    "event_index": 117,
+    "parent_id": 36000309,
+    "parent_t": 35,
+    "daughter_ids": [
+      37000317,
+      37000318
+    ],
+    "daughter_frames": [
+      36,
+      36
+    ],
+    "window_frames": [
+      33,
+      34,
+      35,
+      36,
+      37,
+      38
+    ]
+  },
+  {
+    "video": "6bba_07e24132",
+    "event_index": 224,
+    "parent_id": 66000550,
+    "parent_t": 65,
+    "daughter_ids": [
+      67000557,
+      67000558
+    ],
+    "daughter_frames": [
+      66,
+      66
+    ],
+    "window_frames": [
+      63,
+      64,
+      65,
+      66,
+      67,
+      68
+    ]
+  }
+]

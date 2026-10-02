@@ -1,0 +1,63 @@
+{
+  "status": "ok",
+  "n_train": 12829,
+  "n_train_pos": 829,
+  "n_train_neg": 12000,
+  "n_val": 4293,
+  "n_val_pos": 293,
+  "n_val_neg": 4000,
+  "best_val_auc": 0.9535230375426621,
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.27579938704306917,
+      "val_auc": 0.9255571672354949
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.11307844042084586,
+      "val_auc": 0.9384368600682594
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.09465262696369978,
+      "val_auc": 0.9380784982935153
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.09109809395062021,
+      "val_auc": 0.9315597269624571
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.0890087681738341,
+      "val_auc": 0.9395349829351536
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.08805749893957404,
+      "val_auc": 0.9405511945392491
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.08950052969114139,
+      "val_auc": 0.9447807167235494
+    },
+    {
+      "epoch": 8,
+      "train_loss": 0.08691582205429556,
+      "val_auc": 0.9535230375426621
+    },
+    {
+      "epoch": 9,
+      "train_loss": 0.08738331797201196,
+      "val_auc": 0.9405827645051196
+    },
+    {
+      "epoch": 10,
+      "train_loss": 0.08449892107632817,
+      "val_auc": 0.9486083617747441
+    }
+  ],
+  "model_path": "F:\\dsh\\cell\\CellTracking\\EXP\\EXP008\\models\\division_proposal_synth.pth"
+}

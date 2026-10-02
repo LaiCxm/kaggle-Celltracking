@@ -1,0 +1,10 @@
+mode,stem,gt_parent,category,repairable,removed_edges,added_edges
+occupied_only,44b6_12dfb391,172000000050,daughter_occupied,1,"[[31927, 32394]]","[[31885, 32394]]"
+occupied_only,44b6_267148e4,16000000001,daughter_occupied,1,"[[634, 837]]","[[647, 837]]"
+occupied_only,6bba_07e24132,36000309,daughter_occupied,0,[],[]
+divergence_only,6bba_07e24132,66000550,divergence_gate,1,"[[36622, 24699]]","[[24363, 24699]]"
+all_repairable,44b6_12dfb391,172000000050,daughter_occupied,1,"[[31927, 32394]]","[[31885, 32394]]"
+all_repairable,44b6_267148e4,16000000001,daughter_occupied,1,"[[634, 837]]","[[647, 837]]"
+all_repairable,6bba_062c8d37,90001276,already_true_positive,1,[],[]
+all_repairable,6bba_07e24132,36000309,daughter_occupied,0,[],[]
+all_repairable,6bba_07e24132,66000550,divergence_gate,1,"[[36622, 24699]]","[[24363, 24699]]"

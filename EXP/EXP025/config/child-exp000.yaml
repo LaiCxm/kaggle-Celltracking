@@ -1,0 +1,12 @@
+experiment: EXP025
+child: child-exp000
+purpose: focus3d_division_candidate_evidence_calibration
+target_video_count: 12
+max_events_per_video: 3
+match_radius_um: 7.0
+candidate_parent_radius_um: 14.0
+candidate_daughter_radius_um: 14.0
+validation_unit: video_leave_one_out
+mask_permutation_seed: 20260917
+bootstrap_iterations: 10000
+test_submission: false

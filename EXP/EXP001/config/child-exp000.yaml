@@ -1,0 +1,56 @@
+# EXP001 — 复现 clean-approach (Biohub 132) 推理链,clean LB≈0.908
+# 来源 notebook: yusuketogashi/clean-approach-lightweight-local-cv-no-hack
+# 依赖 artifact: pilkwang/biohub-tracking-support-pack-50ep-v1 (公开)
+# 本实验无训练,纯推理复现。执行方式:推理内核 = EXP001/infer_clean_repro.ipynb
+
+# ---- 运行环境(重要) ----
+# 比赛限制:禁 internet + 仅允许 GPU T4 x2(编辑器只有 T4 x2 选项)。
+# 关键:kernel metadata 的 machine_shape 必须用 SDK 枚举 "NvidiaTeslaT4",
+#       不能用 "gpu_t4"(旧格式无效,会导致 Kaggle 分到 P100 → 运行报错 "cannot use P100")。
+# 防御性:P100 也可能被分配到,GPU cell 会检测 capability,若 sm_6x 则离线装 cu118 torch
+# 内核挂载: suioshion/p100-torch-wheels-cu118 (torch 2.5.1 cu118 cp312 + nvidia 依赖)
+# cell 6 自动检测:sm_75+(T4)= 用默认 torch;sm_6x(P100)= 离线重命名 wheel + --no-index --no-deps --force-reinstall
+# 已验证:v11 (T4 + machine_shape=NvidiaTeslaT4) CV 0.87893,与 P100 离线方案(v10)数值完全一致
+
+competition: biohub-cell-tracking-during-development
+exp_name: EXP001
+method: unet_transformer
+weights: weights/unet_transformer/split_0/edge_predictor_best.pth
+artifact_slug: pilkwang/biohub-tracking-support-pack-50ep-v1
+torch_wheel_dataset: suioshion/p100-torch-wheels-cu118
+
+# ---- preset (Biohub 132, no-hack) ----
+det_threshold: 0.96875
+ilp_edge_weight: -1.0
+ilp_appearance_weight: 0.0
+ilp_disappearance_weight: 1.575
+ilp_division_weight: 1.0
+motion_relink_tight_um: 6.0
+motion_relink_relaxed_um: 9.5
+motion_relink_learned_bonus: 1.0
+min_track_len: 6
+keep_division_components: true
+gap_density_adaptive: true
+gap_close_um: 5.8
+adaptive_short_track_rescue: true
+short_track_rescue_min_len: 5
+short_track_rescue_min_mean_edge_prob: 0.90
+short_track_rescue_max_mean_edge_dist_um: 2.75
+short_track_rescue_max_nodes_frac: 0.006
+short_track_rescue_max_nodes_abs: 60
+safe_div_parent_max_um: 4.66
+safe_div_sister_max_um: 8.5
+safe_div_existing_child_max_um: 7.65
+use_deepcenter_veto: false
+det_tta: 8-view D4 (notebook cell 10 patch)
+
+# ---- 评测 / CV ----
+metric_impl: 内置 official_spec_evaluate (royerlab/kaggle-cell-tracking-competition @075fc5f5),含单测
+cv_strategy: 固定8胚胎 official-spec Lite CV (CV_FIXED_DATASETS in notebook)
+cv_reference_124: 0.879219745066878
+expected_cv: ~0.879-0.888 (对应 LB 0.908)
+
+# ---- 输出 ----
+submission: /kaggle/working/submission.csv
+run_stats: /kaggle/working/run_stats.csv
+cv_status: /kaggle/working/127_lite_cv_status.json

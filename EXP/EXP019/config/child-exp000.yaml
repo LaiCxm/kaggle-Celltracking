@@ -1,0 +1,19 @@
+experiment: EXP019-child000
+notebook: CELL_focus3d_strategy_official_compare.ipynb
+purpose: compare_focus3d_mask_use_mechanisms
+validation:
+  full_movies: 4
+  per_embryo_prefix: 2
+  scorer: dalloliogm/biohub-official-scorer-patched
+  legacy_proxy_for_ranking: false
+strategies:
+  - off
+  - broad_rescue
+  - selected_rescue
+  - veto_only
+  - hybrid_selected
+locked:
+  model_lineage: EXP017
+  motion_relink_tight_um: 6.0
+  max_conflicts_per_movie: 4
+  max_focus_frames_per_movie: 4

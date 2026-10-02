@@ -1,0 +1,6 @@
+dataset,gt_parent,category,repairable,pred_parent,pred_daughters,baseline_tp,after_tp,removed_edges,added_edges,edge_tp_delta,edge_fp_delta,edge_fn_delta,division_tp_delta,division_fp_delta,division_fn_delta,movie_adj_edge_delta
+44b6_12dfb391,172000000050,daughter_occupied,1,31885,"[[32368, 32394]]",0,1,"[[31927, 32394]]","[[31885, 32394]]",1,-1,-1,1,0,-1,0.002437387393689483
+44b6_267148e4,16000000001,daughter_occupied,1,647,"[[837, 846]]",0,1,"[[634, 837]]","[[647, 837]]",1,-1,-1,1,0,-1,0.005717807614148973
+6bba_062c8d37,90001276,already_true_positive,1,5968,"[[6027, 6031]]",1,1,[],[],0,0,0,0,0,0,0.0
+6bba_07e24132,36000309,daughter_occupied,0,13973,[],0,0,[],[],0,0,0,0,0,0,0.0
+6bba_07e24132,66000550,divergence_gate,1,24363,"[[24699, 24715]]",0,1,"[[36622, 24699]]","[[24363, 24699]]",1,-1,-1,1,0,-1,0.004862263829239821

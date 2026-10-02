@@ -1,0 +1,107 @@
+[{"stream_name":"stderr","time":7.152034669,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.152095442,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.152100878,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.152104487,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":7.757010506,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.757046276,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.757050344,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.757053367,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":44.48842566,"data":"CUDA: Tesla T4\n"}
+,{"stream_name":"stdout","time":44.488480793,"data":"event-bearing videos available: 83\n"}
+,{"stream_name":"stdout","time":44.488488244,"data":"selected videos: ['44b6_2a2eff9f', '44b6_706092f0', '44b6_996155de', '44b6_c50204e0', '44b6_d5e7d891', '44b6_eb2880fc', '6bba_05db0fb1', '6bba_3abfe10a', '6bba_61ecbe65', '6bba_87289e13', '6bba_c328f2fd', '6bba_fe670320']\n"}
+,{"stream_name":"stdout","time":44.488496822,"data":"selected events: 18 selected frames: 36\n"}
+,{"stream_name":"stderr","time":50.371296996,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":50.371347544,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":50.371353494,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":50.371363353,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stderr","time":50.371366502,"data":"\n"}
+,{"stream_name":"stderr","time":50.371369515,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":50.37137326,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":50.371376473,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":50.37137982,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stdout","time":63.173742365,"data":"Pilkwang 1/12 44b6_2a2eff9f nodes 1069 seconds 12.28\n"}
+,{"stream_name":"stdout","time":96.420266178,"data":"Pilkwang 2/12 44b6_706092f0 nodes 640 seconds 33.24\n"}
+,{"stream_name":"stdout","time":108.471246106,"data":"Pilkwang 3/12 44b6_996155de nodes 193 seconds 12.05\n"}
+,{"stream_name":"stdout","time":154.968263462,"data":"Pilkwang 4/12 44b6_c50204e0 nodes 2134 seconds 46.49\n"}
+,{"stream_name":"stdout","time":187.831204521,"data":"Pilkwang 5/12 44b6_d5e7d891 nodes 1863 seconds 32.86\n"}
+,{"stream_name":"stdout","time":237.72824069,"data":"Pilkwang 6/12 44b6_eb2880fc nodes 753 seconds 49.9\n"}
+,{"stream_name":"stdout","time":288.922812431,"data":"Pilkwang 7/12 6bba_05db0fb1 nodes 4607 seconds 51.19\n"}
+,{"stream_name":"stdout","time":351.75988344,"data":"Pilkwang 8/12 6bba_3abfe10a nodes 1632 seconds 62.84\n"}
+,{"stream_name":"stdout","time":372.235202897,"data":"Pilkwang 9/12 6bba_61ecbe65 nodes 121 seconds 20.48\n"}
+,{"stream_name":"stdout","time":420.70888775,"data":"Pilkwang 10/12 6bba_87289e13 nodes 146 seconds 48.47\n"}
+,{"stream_name":"stdout","time":464.951547283,"data":"Pilkwang 11/12 6bba_c328f2fd nodes 1347 seconds 44.24\n"}
+,{"stream_name":"stdout","time":505.136037993,"data":"Pilkwang 12/12 6bba_fe670320 nodes 446 seconds 40.18\n"}
+,{"stream_name":"stdout","time":510.713195323,"data":"Loading weights from: /kaggle/input/datasets/qiweiyin/focus3d-nuclei-runtime/models/model_final_nuclei.pth\n"}
+,{"stream_name":"stdout","time":576.345109034,"data":"FOCUS3D 1/12 44b6_2a2eff9f instances 1479 seconds 36.38\n"}
+,{"stream_name":"stdout","time":621.498004315,"data":"FOCUS3D 2/12 44b6_706092f0 instances 1977 seconds 45.14\n"}
+,{"stream_name":"stdout","time":632.668697984,"data":"FOCUS3D 3/12 44b6_996155de instances 250 seconds 11.17\n"}
+,{"stream_name":"stdout","time":724.092559194,"data":"FOCUS3D 4/12 44b6_c50204e0 instances 3653 seconds 91.42\n"}
+,{"stream_name":"stdout","time":785.160058793,"data":"FOCUS3D 5/12 44b6_d5e7d891 instances 2437 seconds 61.06\n"}
+,{"stream_name":"stdout","time":814.537390218,"data":"FOCUS3D 6/12 44b6_eb2880fc instances 1185 seconds 29.37\n"}
+,{"stream_name":"stdout","time":927.135489759,"data":"FOCUS3D 7/12 6bba_05db0fb1 instances 4937 seconds 112.59\n"}
+,{"stream_name":"stdout","time":966.699189775,"data":"FOCUS3D 8/12 6bba_3abfe10a instances 1638 seconds 39.56\n"}
+,{"stream_name":"stdout","time":976.35528383,"data":"FOCUS3D 9/12 6bba_61ecbe65 instances 123 seconds 9.65\n"}
+,{"stream_name":"stdout","time":985.222869548,"data":"FOCUS3D 10/12 6bba_87289e13 instances 136 seconds 8.86\n"}
+,{"stream_name":"stdout","time":1026.410249673,"data":"FOCUS3D 11/12 6bba_c328f2fd instances 1628 seconds 41.18\n"}
+,{"stream_name":"stdout","time":1048.880554646,"data":"FOCUS3D 12/12 6bba_fe670320 instances 460 seconds 22.46\n"}
+,{"stream_name":"stderr","time":1142.829759336,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":1142.829797639,"data":"  File \"\u003cstring\u003e\", line 1, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":1142.829805261,"data":"  File \"/usr/local/lib/python3.12/dist-packages/papermill/execute.py\", line 131, in execute_notebook\n"}
+,{"stream_name":"stderr","time":1142.829900563,"data":"    raise_for_execution_errors(nb, output_path)\n"}
+,{"stream_name":"stderr","time":1142.829922268,"data":"  File \"/usr/local/lib/python3.12/dist-packages/papermill/execute.py\", line 251, in raise_for_execution_errors\n"}
+,{"stream_name":"stderr","time":1142.830162323,"data":"    raise error\n"}
+,{"stream_name":"stderr","time":1142.830382178,"data":"papermill.exceptions.PapermillExecutionError: \n"}
+,{"stream_name":"stderr","time":1142.830394491,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":1142.830399479,"data":"Exception encountered at \"In [5]\":\n"}
+,{"stream_name":"stderr","time":1142.830404314,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":1142.830408463,"data":"KeyError                                  Traceback (most recent call last)\n"}
+,{"stream_name":"stderr","time":1142.830422859,"data":"/usr/local/lib/python3.12/dist-packages/pandas/core/indexes/base.py in get_loc(self, key)\n"}
+,{"stream_name":"stderr","time":1142.830426444,"data":"   3811         try:\n"}
+,{"stream_name":"stderr","time":1142.830429831,"data":"-\u003e 3812             return self._engine.get_loc(casted_key)\n"}
+,{"stream_name":"stderr","time":1142.830433876,"data":"   3813         except KeyError as err:\n"}
+,{"stream_name":"stderr","time":1142.830437255,"data":"\n"}
+,{"stream_name":"stderr","time":1142.830440397,"data":"pandas/_libs/index.pyx in pandas._libs.index.IndexEngine.get_loc()\n"}
+,{"stream_name":"stderr","time":1142.83044361,"data":"\n"}
+,{"stream_name":"stderr","time":1142.83044665,"data":"pandas/_libs/index.pyx in pandas._libs.index.IndexEngine.get_loc()\n"}
+,{"stream_name":"stderr","time":1142.830450421,"data":"\n"}
+,{"stream_name":"stderr","time":1142.830454113,"data":"pandas/_libs/hashtable_class_helper.pxi in pandas._libs.hashtable.PyObjectHashTable.get_item()\n"}
+,{"stream_name":"stderr","time":1142.830458566,"data":"\n"}
+,{"stream_name":"stderr","time":1142.830462661,"data":"pandas/_libs/hashtable_class_helper.pxi in pandas._libs.hashtable.PyObjectHashTable.get_item()\n"}
+,{"stream_name":"stderr","time":1142.830466144,"data":"\n"}
+,{"stream_name":"stderr","time":1142.830469548,"data":"KeyError: False\n"}
+,{"stream_name":"stderr","time":1142.830472768,"data":"\n"}
+,{"stream_name":"stderr","time":1142.830476053,"data":"The above exception was the direct cause of the following exception:\n"}
+,{"stream_name":"stderr","time":1142.830479239,"data":"\n"}
+,{"stream_name":"stderr","time":1142.830482156,"data":"KeyError                                  Traceback (most recent call last)\n"}
+,{"stream_name":"stderr","time":1142.830485539,"data":"/tmp/ipykernel_22/3676455557.py in \u003ccell line: 0\u003e()\n"}
+,{"stream_name":"stderr","time":1142.83048896,"data":"    148                           if item_mode == mode for item in rows]\n"}
+,{"stream_name":"stderr","time":1142.830492694,"data":"    149         metrics = selection_metrics(all_candidates, all_selected)\n"}
+,{"stream_name":"stderr","time":1142.830496111,"data":"--\u003e 150         event_lookup = event_df[event_df.mode == mode]\n"}
+,{"stream_name":"stderr","time":1142.83049973,"data":"    151         expected_events = int(event_lookup.event_id.nunique())\n"}
+,{"stream_name":"stderr","time":1142.830502959,"data":"    152         selected_positive = int(metrics['selected_positive_count'])\n"}
+,{"stream_name":"stderr","time":1142.830506546,"data":"\n"}
+,{"stream_name":"stderr","time":1142.830509991,"data":"/usr/local/lib/python3.12/dist-packages/pandas/core/frame.py in __getitem__(self, key)\n"}
+,{"stream_name":"stderr","time":1142.830513193,"data":"   4111             if self.columns.nlevels \u003e 1:\n"}
+,{"stream_name":"stderr","time":1142.830516482,"data":"   4112                 return self._getitem_multilevel(key)\n"}
+,{"stream_name":"stderr","time":1142.830519734,"data":"-\u003e 4113             indexer = self.columns.get_loc(key)\n"}
+,{"stream_name":"stderr","time":1142.830523071,"data":"   4114             if is_integer(indexer):\n"}
+,{"stream_name":"stderr","time":1142.830526408,"data":"   4115                 indexer = [indexer]\n"}
+,{"stream_name":"stderr","time":1142.830530435,"data":"\n"}
+,{"stream_name":"stderr","time":1142.830533903,"data":"/usr/local/lib/python3.12/dist-packages/pandas/core/indexes/base.py in get_loc(self, key)\n"}
+,{"stream_name":"stderr","time":1142.830537888,"data":"   3817             ):\n"}
+,{"stream_name":"stderr","time":1142.83054103,"data":"   3818                 raise InvalidIndexError(key)\n"}
+,{"stream_name":"stderr","time":1142.830549615,"data":"-\u003e 3819             raise KeyError(key) from err\n"}
+,{"stream_name":"stderr","time":1142.830553359,"data":"   3820         except TypeError:\n"}
+,{"stream_name":"stderr","time":1142.830558584,"data":"   3821             # If we have a listlike key, _check_indexing_error will raise\n"}
+,{"stream_name":"stderr","time":1142.830562011,"data":"\n"}
+,{"stream_name":"stderr","time":1142.830565355,"data":"KeyError: False\n"}
+,{"stream_name":"stderr","time":1142.830568978,"data":"\n"}
+,{"stream_name":"stderr","time":1144.975518218,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1144.975543718,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1145.145963242,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1145.145987565,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1145.818919092,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":1146.211551564,"data":"[NbConvertApp] Writing 534875 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":1148.581521693,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1149.522205502,"data":"[NbConvertApp] Writing 799242 bytes to __results__.html\n"}
+]

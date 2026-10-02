@@ -1,0 +1,35 @@
+{
+  "pilkwang": {
+    "gt_instances": 167,
+    "pred_instances": 8992,
+    "tp": 167,
+    "fp": 8825,
+    "fn": 0,
+    "precision": 0.0185720640569395,
+    "recall": 1.0,
+    "f1": 0.036466863194671906,
+    "mean_match_um": 1.5882266412214503
+  },
+  "focus3d": {
+    "gt_instances": 167,
+    "pred_instances": 12765,
+    "tp": 164,
+    "fp": 12601,
+    "fn": 3,
+    "precision": 0.012847630238934586,
+    "recall": 0.9820359281437125,
+    "f1": 0.025363439529848437,
+    "mean_match_um": 1.4860575683586443
+  },
+  "union": {
+    "gt_instances": 167,
+    "pred_instances": 13589,
+    "tp": 167,
+    "fp": 13422,
+    "fn": 0,
+    "precision": 0.012289351681507101,
+    "recall": 1.0,
+    "f1": 0.02428031404478046,
+    "mean_match_um": 1.4887020242267277
+  }
+}

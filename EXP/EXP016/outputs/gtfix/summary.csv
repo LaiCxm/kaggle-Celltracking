@@ -1,0 +1,3 @@
+model,pred_nodes,gt_nodes,matched_nodes,gt_recall,pred_precision,mean_match_um,max_match_um
+Pilkwang-primary,2705,15,15,1.0,0.005545286506469501,1.076142680644989,1.9902104139328003
+FOCUS3D-centroid,2973,15,15,1.0,0.005045408678102927,1.156732592980067,2.1046266555786133

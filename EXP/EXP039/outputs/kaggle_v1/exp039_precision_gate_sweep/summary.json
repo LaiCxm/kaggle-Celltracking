@@ -1,0 +1,28 @@
+{
+  "experiment": "EXP039",
+  "official_cv": null,
+  "submission_generated": false,
+  "parent_oracle_used": false,
+  "max_candidate_count": 686116,
+  "truth_events": 31,
+  "transitions": 31,
+  "parent_gates_um": [
+    8.0,
+    10.0,
+    12.0,
+    14.0,
+    16.0
+  ],
+  "daughter_gates_um": [
+    10.0,
+    12.0,
+    14.0,
+    16.0,
+    20.0
+  ],
+  "arms": [
+    "candidate_base",
+    "continuation_conflict"
+  ],
+  "selection": "fixed_oof_ranker_precision_first_gate_sweep"
+}

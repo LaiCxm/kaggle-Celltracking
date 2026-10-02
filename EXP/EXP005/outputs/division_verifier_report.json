@@ -1,0 +1,23 @@
+{
+  "status": "ok",
+  "n_candidates": 4374,
+  "n_positives": 0,
+  "n_negatives": 4374,
+  "auc_cv": null,
+  "feature_names": [
+    "parent_dist_um",
+    "sister_dist_um",
+    "child_dist_um",
+    "t",
+    "deepcenter_candidate",
+    "deepcenter_child"
+  ],
+  "train_stems": [
+    "44b6_12dfb391",
+    "44b6_267148e4",
+    "44b6_2a2eff9f",
+    "44b6_341df25f",
+    "44b6_587a1e22",
+    "44b6_5f15d135"
+  ]
+}

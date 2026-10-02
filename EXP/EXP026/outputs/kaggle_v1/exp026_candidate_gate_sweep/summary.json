@@ -1,0 +1,97 @@
+{
+  "experiment": "EXP026",
+  "official_cv": null,
+  "submission_generated": false,
+  "selected_videos": [
+    "44b6_2a2eff9f",
+    "44b6_706092f0",
+    "44b6_996155de",
+    "44b6_c50204e0",
+    "44b6_d5e7d891",
+    "44b6_eb2880fc",
+    "6bba_05db0fb1",
+    "6bba_3abfe10a",
+    "6bba_61ecbe65",
+    "6bba_87289e13",
+    "6bba_c328f2fd",
+    "6bba_fe670320"
+  ],
+  "events": 18,
+  "all_endpoints_matched_events": 18,
+  "max_gate_positive_events": 18,
+  "gate_levels_um": [
+    14.0,
+    16.0,
+    18.0,
+    20.0,
+    24.0,
+    28.0,
+    32.0
+  ],
+  "baseline_14": {
+    "parent_radius_um": 14.0,
+    "daughter_radius_um": 14.0,
+    "recalled_events": 14.0,
+    "total_events": 18.0,
+    "candidate_recall": 0.7777777777777778,
+    "candidate_count": 506.0,
+    "focus_only_candidate_count": 250.0,
+    "mean_candidates_per_event": 28.11111111111111,
+    "median_candidates_per_event": 25.0,
+    "p95_candidates_per_event": 60.3,
+    "max_candidates_per_event": 62.0
+  },
+  "selected_full_recall_gate": {
+    "parent_radius_um": 16.0,
+    "daughter_radius_um": 20.0,
+    "recalled_events": 18,
+    "total_events": 18,
+    "candidate_recall": 1.0,
+    "candidate_count": 1708,
+    "focus_only_candidate_count": 776,
+    "mean_candidates_per_event": 94.88888888888889,
+    "median_candidates_per_event": 82.5,
+    "p95_candidates_per_event": 197.79999999999998,
+    "max_candidates_per_event": 208,
+    "candidate_multiplier_vs_14": 3.375494071146245
+  },
+  "maximum_gate_candidate_count": 48002,
+  "runtime_seconds": {
+    "pilkwang": {
+      "44b6_2a2eff9f": 10.976189411999997,
+      "44b6_706092f0": 28.052534733000016,
+      "44b6_996155de": 10.601112328,
+      "44b6_c50204e0": 41.216238707,
+      "44b6_d5e7d891": 29.43235292899999,
+      "44b6_eb2880fc": 45.28247494499999,
+      "6bba_05db0fb1": 46.51129570699999,
+      "6bba_3abfe10a": 57.009887365,
+      "6bba_61ecbe65": 19.641343362000043,
+      "6bba_87289e13": 46.00634822400002,
+      "6bba_c328f2fd": 39.765485847000036,
+      "6bba_fe670320": 36.68916085000001
+    },
+    "focus3d": {
+      "44b6_2a2eff9f": 37.65325615100005,
+      "44b6_706092f0": 47.18791753200003,
+      "44b6_996155de": 11.543122788000005,
+      "44b6_c50204e0": 95.59357701199997,
+      "44b6_d5e7d891": 63.098925906999966,
+      "44b6_eb2880fc": 30.398539153,
+      "6bba_05db0fb1": 118.16235846200016,
+      "6bba_3abfe10a": 41.64200751899989,
+      "6bba_61ecbe65": 9.748777362000055,
+      "6bba_87289e13": 9.082844331999922,
+      "6bba_c328f2fd": 43.4192093759998,
+      "6bba_fe670320": 23.19060586599994
+    }
+  },
+  "selection_rule": [
+    "full event recall",
+    "minimum candidate count",
+    "minimum maximum radius",
+    "minimum radius sum",
+    "minimum parent radius",
+    "minimum daughter radius"
+  ]
+}

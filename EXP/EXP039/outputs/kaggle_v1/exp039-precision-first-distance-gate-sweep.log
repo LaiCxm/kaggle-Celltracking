@@ -1,0 +1,164 @@
+[{"stream_name":"stderr","time":6.327792172,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.327852636,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.327859432,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.3278645000000004,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":6.908748064,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.908778244,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.90878366,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.908787868,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":40.982842005,"data":"CUDA: Tesla T4\n"}
+,{"stream_name":"stdout","time":40.982885723,"data":"event-bearing videos available: 83\n"}
+,{"stream_name":"stdout","time":40.982897274,"data":"selected videos: ['44b6_2a2eff9f', '44b6_587a1e22', '44b6_5f15d135', '44b6_74d0c52e', '44b6_996155de', '44b6_9be80b04', '44b6_aaf8b0ea', '44b6_c50204e0', '44b6_d2f34f90', '44b6_d754aa59', '44b6_deabac95', '44b6_eb2880fc', '6bba_05db0fb1', '6bba_207c6aaf', '6bba_32db13fc', '6bba_474be664', '6bba_5c039895', '6bba_705ec2c9', '6bba_7af54fde', '6bba_907271db', '6bba_afb141ff', '6bba_d1acb6ff', '6bba_e16ffc58', '6bba_fe670320']\n"}
+,{"stream_name":"stdout","time":40.982902473,"data":"selected events: 31 selected frames: 62\n"}
+,{"stream_name":"stderr","time":46.590074035,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":46.59010774,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":46.590114757,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":46.590121096,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stderr","time":46.590133575,"data":"\n"}
+,{"stream_name":"stderr","time":46.590137624,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":46.590142007,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":46.590145618,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":46.590149621,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stdout","time":58.873432742,"data":"Pilkwang 1/24 44b6_2a2eff9f nodes 1069 seconds 11.87\n"}
+,{"stream_name":"stdout","time":70.568043803,"data":"Pilkwang 2/24 44b6_587a1e22 nodes 470 seconds 11.69\n"}
+,{"stream_name":"stdout","time":94.049662212,"data":"Pilkwang 3/24 44b6_5f15d135 nodes 596 seconds 23.48\n"}
+,{"stream_name":"stdout","time":130.000758691,"data":"Pilkwang 4/24 44b6_74d0c52e nodes 232 seconds 35.95\n"}
+,{"stream_name":"stdout","time":142.414041212,"data":"Pilkwang 5/24 44b6_996155de nodes 193 seconds 12.42\n"}
+,{"stream_name":"stdout","time":193.925102896,"data":"Pilkwang 6/24 44b6_9be80b04 nodes 615 seconds 51.51\n"}
+,{"stream_name":"stdout","time":232.991685945,"data":"Pilkwang 7/24 44b6_aaf8b0ea nodes 390 seconds 39.07\n"}
+,{"stream_name":"stdout","time":279.38653001,"data":"Pilkwang 8/24 44b6_c50204e0 nodes 2134 seconds 46.39\n"}
+,{"stream_name":"stdout","time":319.735641718,"data":"Pilkwang 9/24 44b6_d2f34f90 nodes 878 seconds 40.35\n"}
+,{"stream_name":"stdout","time":359.513264562,"data":"Pilkwang 10/24 44b6_d754aa59 nodes 128 seconds 39.78\n"}
+,{"stream_name":"stdout","time":379.024291821,"data":"Pilkwang 11/24 44b6_deabac95 nodes 445 seconds 19.51\n"}
+,{"stream_name":"stdout","time":431.443210607,"data":"Pilkwang 12/24 44b6_eb2880fc nodes 753 seconds 52.41\n"}
+,{"stream_name":"stdout","time":484.337191929,"data":"Pilkwang 13/24 6bba_05db0fb1 nodes 3111 seconds 52.89\n"}
+,{"stream_name":"stdout","time":511.461128397,"data":"Pilkwang 14/24 6bba_207c6aaf nodes 717 seconds 27.13\n"}
+,{"stream_name":"stdout","time":516.668628978,"data":"Pilkwang 15/24 6bba_32db13fc nodes 1617 seconds 5.2\n"}
+,{"stream_name":"stdout","time":561.460687611,"data":"Pilkwang 16/24 6bba_474be664 nodes 758 seconds 44.79\n"}
+,{"stream_name":"stdout","time":598.473513036,"data":"Pilkwang 17/24 6bba_5c039895 nodes 410 seconds 37.01\n"}
+,{"stream_name":"stdout","time":624.920166858,"data":"Pilkwang 18/24 6bba_705ec2c9 nodes 172 seconds 26.45\n"}
+,{"stream_name":"stdout","time":660.083962576,"data":"Pilkwang 19/24 6bba_7af54fde nodes 381 seconds 35.16\n"}
+,{"stream_name":"stdout","time":722.100170039,"data":"Pilkwang 20/24 6bba_907271db nodes 93 seconds 62.01\n"}
+,{"stream_name":"stdout","time":753.043135918,"data":"Pilkwang 21/24 6bba_afb141ff nodes 251 seconds 30.94\n"}
+,{"stream_name":"stdout","time":796.816613454,"data":"Pilkwang 22/24 6bba_d1acb6ff nodes 327 seconds 43.77\n"}
+,{"stream_name":"stdout","time":813.745216167,"data":"Pilkwang 23/24 6bba_e16ffc58 nodes 151 seconds 16.93\n"}
+,{"stream_name":"stdout","time":855.253274797,"data":"Pilkwang 24/24 6bba_fe670320 nodes 446 seconds 41.5\n"}
+,{"stream_name":"stdout","time":860.835084512,"data":"Loading weights from: /kaggle/input/datasets/qiweiyin/focus3d-nuclei-runtime/models/model_final_nuclei.pth\n"}
+,{"stream_name":"stdout","time":934.581824408,"data":"FOCUS3D 1/24 44b6_2a2eff9f instances 1479 seconds 36.41\n"}
+,{"stream_name":"stdout","time":950.316259383,"data":"FOCUS3D 2/24 44b6_587a1e22 instances 532 seconds 15.73\n"}
+,{"stream_name":"stdout","time":981.213475938,"data":"FOCUS3D 3/24 44b6_5f15d135 instances 1274 seconds 30.89\n"}
+,{"stream_name":"stdout","time":998.865491771,"data":"FOCUS3D 4/24 44b6_74d0c52e instances 586 seconds 17.64\n"}
+,{"stream_name":"stdout","time":1010.285262407,"data":"FOCUS3D 5/24 44b6_996155de instances 250 seconds 11.42\n"}
+,{"stream_name":"stdout","time":1057.357964869,"data":"FOCUS3D 6/24 44b6_9be80b04 instances 1900 seconds 47.07\n"}
+,{"stream_name":"stdout","time":1078.546365208,"data":"FOCUS3D 7/24 44b6_aaf8b0ea instances 759 seconds 21.18\n"}
+,{"stream_name":"stdout","time":1176.175210609,"data":"FOCUS3D 8/24 44b6_c50204e0 instances 3653 seconds 97.62\n"}
+,{"stream_name":"stdout","time":1236.207734082,"data":"FOCUS3D 9/24 44b6_d2f34f90 instances 2132 seconds 60.02\n"}
+,{"stream_name":"stdout","time":1246.114635012,"data":"FOCUS3D 10/24 44b6_d754aa59 instances 169 seconds 9.9\n"}
+,{"stream_name":"stdout","time":1262.387584168,"data":"FOCUS3D 11/24 44b6_deabac95 instances 491 seconds 16.26\n"}
+,{"stream_name":"stdout","time":1292.736432531,"data":"FOCUS3D 12/24 44b6_eb2880fc instances 1185 seconds 30.33\n"}
+,{"stream_name":"stdout","time":1370.251254766,"data":"FOCUS3D 13/24 6bba_05db0fb1 instances 3283 seconds 77.5\n"}
+,{"stream_name":"stdout","time":1387.960052679,"data":"FOCUS3D 14/24 6bba_207c6aaf instances 520 seconds 17.67\n"}
+,{"stream_name":"stdout","time":1426.678445387,"data":"FOCUS3D 15/24 6bba_32db13fc instances 1628 seconds 38.68\n"}
+,{"stream_name":"stdout","time":1458.179059411,"data":"FOCUS3D 16/24 6bba_474be664 instances 1238 seconds 31.49\n"}
+,{"stream_name":"stdout","time":1481.338307253,"data":"FOCUS3D 17/24 6bba_5c039895 instances 408 seconds 23.15\n"}
+,{"stream_name":"stdout","time":1492.590238406,"data":"FOCUS3D 18/24 6bba_705ec2c9 instances 186 seconds 11.24\n"}
+,{"stream_name":"stdout","time":1515.275939713,"data":"FOCUS3D 19/24 6bba_7af54fde instances 450 seconds 22.67\n"}
+,{"stream_name":"stdout","time":1524.884493775,"data":"FOCUS3D 20/24 6bba_907271db instances 107 seconds 9.6\n"}
+,{"stream_name":"stdout","time":1545.543334193,"data":"FOCUS3D 21/24 6bba_afb141ff instances 313 seconds 20.65\n"}
+,{"stream_name":"stdout","time":1560.284188459,"data":"FOCUS3D 22/24 6bba_d1acb6ff instances 379 seconds 14.73\n"}
+,{"stream_name":"stdout","time":1569.481210138,"data":"FOCUS3D 23/24 6bba_e16ffc58 instances 144 seconds 9.19\n"}
+,{"stream_name":"stdout","time":1592.624822828,"data":"FOCUS3D 24/24 6bba_fe670320 instances 460 seconds 23.14\n"}
+,{"stream_name":"stdout","time":1629.474842472,"data":"parent-blind 44b6_2a2eff9f:11 parents 540 daughters 758 candidates 34028 positives 1\n"}
+,{"stream_name":"stdout","time":1634.421575317,"data":"parent-blind 44b6_587a1e22:19 parents 237 daughters 267 candidates 7161 positives 1\n"}
+,{"stream_name":"stdout","time":1648.924224331,"data":"parent-blind 44b6_5f15d135:36 parents 285 daughters 656 candidates 24083 positives 1\n"}
+,{"stream_name":"stdout","time":1651.20212697,"data":"parent-blind 44b6_74d0c52e:58 parents 122 daughters 291 candidates 3380 positives 1\n"}
+,{"stream_name":"stdout","time":1651.973781906,"data":"parent-blind 44b6_996155de:19 parents 94 daughters 135 candidates 772 positives 1\n"}
+,{"stream_name":"stdout","time":1675.748270572,"data":"parent-blind 44b6_9be80b04:77 parents 300 daughters 998 candidates 41149 positives 1\n"}
+,{"stream_name":"stdout","time":1681.490486439,"data":"parent-blind 44b6_aaf8b0ea:61 parents 194 daughters 396 candidates 12277 positives 1\n"}
+,{"stream_name":"stdout","time":1731.393343295,"data":"parent-blind 44b6_c50204e0:28 parents 497 daughters 872 candidates 58191 positives 1\n"}
+,{"stream_name":"stdout","time":1775.898069548,"data":"parent-blind 44b6_c50204e0:65 parents 553 daughters 1068 candidates 71746 positives 1\n"}
+,{"stream_name":"stdout","time":1786.500418565,"data":"parent-blind 44b6_d2f34f90:51 parents 195 daughters 540 candidates 17153 positives 1\n"}
+,{"stream_name":"stdout","time":1793.867744076,"data":"parent-blind 44b6_d2f34f90:62 parents 226 daughters 542 candidates 18832 positives 1\n"}
+,{"stream_name":"stdout","time":1794.290582809,"data":"parent-blind 44b6_d754aa59:63 parents 66 daughters 95 candidates 483 positives 1\n"}
+,{"stream_name":"stdout","time":1799.09393222,"data":"parent-blind 44b6_deabac95:28 parents 230 daughters 264 candidates 9997 positives 1\n"}
+,{"stream_name":"stdout","time":1817.853464663,"data":"parent-blind 44b6_eb2880fc:72 parents 382 daughters 607 candidates 24020 positives 1\n"}
+,{"stream_name":"stdout","time":1926.277333556,"data":"parent-blind 6bba_05db0fb1:24 parents 826 daughters 1147 candidates 120164 positives 1\n"}
+,{"stream_name":"stdout","time":1986.947739719,"data":"parent-blind 6bba_05db0fb1:62 parents 727 daughters 968 candidates 97917 positives 1\n"}
+,{"stream_name":"stdout","time":1997.63424682,"data":"parent-blind 6bba_207c6aaf:41 parents 356 daughters 400 candidates 18314 positives 1\n"}
+,{"stream_name":"stdout","time":2084.605187763,"data":"parent-blind 6bba_32db13fc:5 parents 821 daughters 1053 candidates 72067 positives 1\n"}
+,{"stream_name":"stdout","time":2106.20478625,"data":"parent-blind 6bba_474be664:63 parents 378 daughters 648 candidates 39294 positives 1\n"}
+,{"stream_name":"stdout","time":2107.385701815,"data":"parent-blind 6bba_5c039895:10 parents 116 daughters 145 candidates 1270 positives 1\n"}
+,{"stream_name":"stdout","time":2107.751827129,"data":"parent-blind 6bba_5c039895:58 parents 89 daughters 104 candidates 520 positives 1\n"}
+,{"stream_name":"stdout","time":2108.409928798,"data":"parent-blind 6bba_705ec2c9:42 parents 84 daughters 125 candidates 1123 positives 1\n"}
+,{"stream_name":"stdout","time":2109.410016707,"data":"parent-blind 6bba_7af54fde:52 parents 95 daughters 127 candidates 1335 positives 1\n"}
+,{"stream_name":"stdout","time":2109.94562975,"data":"parent-blind 6bba_7af54fde:55 parents 96 daughters 121 candidates 1267 positives 1\n"}
+,{"stream_name":"stdout","time":2110.110920449,"data":"parent-blind 6bba_907271db:96 parents 44 daughters 64 candidates 79 positives 1\n"}
+,{"stream_name":"stdout","time":2110.51596156,"data":"parent-blind 6bba_afb141ff:28 parents 51 daughters 91 candidates 504 positives 1\n"}
+,{"stream_name":"stdout","time":2110.766446648,"data":"parent-blind 6bba_afb141ff:48 parents 65 daughters 83 candidates 490 positives 1\n"}
+,{"stream_name":"stdout","time":2113.137878409,"data":"parent-blind 6bba_d1acb6ff:67 parents 163 daughters 200 candidates 3795 positives 1\n"}
+,{"stream_name":"stdout","time":2113.519055613,"data":"parent-blind 6bba_e16ffc58:26 parents 73 daughters 91 candidates 444 positives 1\n"}
+,{"stream_name":"stdout","time":2114.287153134,"data":"parent-blind 6bba_fe670320:0 parents 47 daughters 48 candidates 78 positives 1\n"}
+,{"stream_name":"stdout","time":2116.25219433,"data":"parent-blind 6bba_fe670320:66 parents 173 daughters 218 candidates 4183 positives 1\n"}
+,{"stream_name":"stdout","time":2122.251994374,"data":"EXP034 candidate pool 686116 truth events 31 rankable 31\n"}
+,{"stream_name":"stdout","time":2124.555417931,"data":"OOF 1 / 24 44b6_2a2eff9f train_candidates 14390 valid_candidates 34028\n"}
+,{"stream_name":"stdout","time":2125.540473323,"data":"OOF 2 / 24 44b6_587a1e22 train_candidates 14390 valid_candidates 7161\n"}
+,{"stream_name":"stdout","time":2126.572447008,"data":"OOF 3 / 24 44b6_5f15d135 train_candidates 14390 valid_candidates 24083\n"}
+,{"stream_name":"stdout","time":2127.620056146,"data":"OOF 4 / 24 44b6_74d0c52e train_candidates 14390 valid_candidates 3380\n"}
+,{"stream_name":"stdout","time":2128.613302233,"data":"OOF 5 / 24 44b6_996155de train_candidates 14390 valid_candidates 772\n"}
+,{"stream_name":"stdout","time":2129.650513142,"data":"OOF 6 / 24 44b6_9be80b04 train_candidates 14390 valid_candidates 41149\n"}
+,{"stream_name":"stdout","time":2130.656229629,"data":"OOF 7 / 24 44b6_aaf8b0ea train_candidates 14390 valid_candidates 12277\n"}
+,{"stream_name":"stdout","time":2131.624532439,"data":"OOF 8 / 24 44b6_c50204e0 train_candidates 13877 valid_candidates 129937\n"}
+,{"stream_name":"stdout","time":2132.688728361,"data":"OOF 9 / 24 44b6_d2f34f90 train_candidates 13877 valid_candidates 35985\n"}
+,{"stream_name":"stdout","time":2133.738339915,"data":"OOF 10 / 24 44b6_d754aa59 train_candidates 14420 valid_candidates 483\n"}
+,{"stream_name":"stdout","time":2134.766689942,"data":"OOF 11 / 24 44b6_deabac95 train_candidates 14390 valid_candidates 9997\n"}
+,{"stream_name":"stdout","time":2135.773421423,"data":"OOF 12 / 24 44b6_eb2880fc train_candidates 14390 valid_candidates 24020\n"}
+,{"stream_name":"stdout","time":2136.757110661,"data":"OOF 13 / 24 6bba_05db0fb1 train_candidates 13877 valid_candidates 218081\n"}
+,{"stream_name":"stdout","time":2137.759488554,"data":"OOF 14 / 24 6bba_207c6aaf train_candidates 14390 valid_candidates 18314\n"}
+,{"stream_name":"stdout","time":2138.817643146,"data":"OOF 15 / 24 6bba_32db13fc train_candidates 14390 valid_candidates 72067\n"}
+,{"stream_name":"stdout","time":2139.837484788,"data":"OOF 16 / 24 6bba_474be664 train_candidates 14390 valid_candidates 39294\n"}
+,{"stream_name":"stdout","time":2140.873279076,"data":"OOF 17 / 24 6bba_5c039895 train_candidates 13877 valid_candidates 1790\n"}
+,{"stream_name":"stdout","time":2141.894491807,"data":"OOF 18 / 24 6bba_705ec2c9 train_candidates 14390 valid_candidates 1123\n"}
+,{"stream_name":"stdout","time":2142.942787422,"data":"OOF 19 / 24 6bba_7af54fde train_candidates 13877 valid_candidates 2602\n"}
+,{"stream_name":"stdout","time":2143.981645851,"data":"OOF 20 / 24 6bba_907271db train_candidates 14824 valid_candidates 79\n"}
+,{"stream_name":"stdout","time":2145.004774022,"data":"OOF 21 / 24 6bba_afb141ff train_candidates 13909 valid_candidates 994\n"}
+,{"stream_name":"stdout","time":2146.008384163,"data":"OOF 22 / 24 6bba_d1acb6ff train_candidates 14390 valid_candidates 3795\n"}
+,{"stream_name":"stdout","time":2147.014998531,"data":"OOF 23 / 24 6bba_e16ffc58 train_candidates 14459 valid_candidates 444\n"}
+,{"stream_name":"stdout","time":2148.027136986,"data":"OOF 24 / 24 6bba_fe670320 train_candidates 14312 valid_candidates 4261\n"}
+,{"stream_name":"stdout","time":2156.044318611,"data":"{\n"}
+,{"stream_name":"stdout","time":2156.04438441,"data":"  \"experiment\": \"EXP039\",\n"}
+,{"stream_name":"stdout","time":2156.044392172,"data":"  \"official_cv\": null,\n"}
+,{"stream_name":"stdout","time":2156.044399322,"data":"  \"submission_generated\": false,\n"}
+,{"stream_name":"stdout","time":2156.044404881,"data":"  \"parent_oracle_used\": false,\n"}
+,{"stream_name":"stdout","time":2156.044410436,"data":"  \"max_candidate_count\": 686116,\n"}
+,{"stream_name":"stdout","time":2156.044415907,"data":"  \"truth_events\": 31,\n"}
+,{"stream_name":"stdout","time":2156.044420619,"data":"  \"transitions\": 31,\n"}
+,{"stream_name":"stdout","time":2156.044425213,"data":"  \"parent_gates_um\": [\n"}
+,{"stream_name":"stdout","time":2156.044429806,"data":"    8.0,\n"}
+,{"stream_name":"stdout","time":2156.044434398,"data":"    10.0,\n"}
+,{"stream_name":"stdout","time":2156.044438932,"data":"    12.0,\n"}
+,{"stream_name":"stdout","time":2156.044449268,"data":"    14.0,\n"}
+,{"stream_name":"stdout","time":2156.044452824,"data":"    16.0\n"}
+,{"stream_name":"stdout","time":2156.044455988,"data":"  ],\n"}
+,{"stream_name":"stdout","time":2156.04445904,"data":"  \"daughter_gates_um\": [\n"}
+,{"stream_name":"stdout","time":2156.044462724,"data":"    10.0,\n"}
+,{"stream_name":"stdout","time":2156.044465896,"data":"    12.0,\n"}
+,{"stream_name":"stdout","time":2156.044468966,"data":"    14.0,\n"}
+,{"stream_name":"stdout","time":2156.04447198,"data":"    16.0,\n"}
+,{"stream_name":"stdout","time":2156.044475124,"data":"    20.0\n"}
+,{"stream_name":"stdout","time":2156.044479577,"data":"  ],\n"}
+,{"stream_name":"stdout","time":2156.04450404,"data":"  \"arms\": [\n"}
+,{"stream_name":"stdout","time":2156.044509846,"data":"    \"candidate_base\",\n"}
+,{"stream_name":"stdout","time":2156.044515242,"data":"    \"continuation_conflict\"\n"}
+,{"stream_name":"stdout","time":2156.044520067,"data":"  ],\n"}
+,{"stream_name":"stdout","time":2156.044534558,"data":"  \"selection\": \"fixed_oof_ranker_precision_first_gate_sweep\"\n"}
+,{"stream_name":"stdout","time":2156.044538529,"data":"}\n"}
+,{"stream_name":"stdout","time":2156.044541998,"data":"Wrote: ['REPORT.md', 'event_ranks.csv', 'gate_summary.csv', 'summary.json', 'transition_summary.csv', 'truth_events.csv']\n"}
+,{"stream_name":"stderr","time":2161.559418639,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":2161.559454585,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":2161.706772472,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":2161.706798382,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":2162.457808822,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":2162.951558545,"data":"[NbConvertApp] Writing 911679 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":2165.442985806,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":2166.514219186,"data":"[NbConvertApp] Writing 1126847 bytes to __results__.html\n"}
+]

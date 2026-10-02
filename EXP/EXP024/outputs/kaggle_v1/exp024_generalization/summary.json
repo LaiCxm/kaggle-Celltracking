@@ -1,0 +1,67 @@
+{
+  "experiment": "EXP024",
+  "scope": {
+    "excluded_previously_inspected_videos": [
+      "44b6_12dfb391",
+      "44b6_267148e4",
+      "6bba_062c8d37",
+      "6bba_07e24132",
+      "6bba_337b1b3a"
+    ],
+    "evaluated_videos": 12,
+    "selected_frames": 76,
+    "target_video_count": 12,
+    "target_labeled_nodes": 500,
+    "frame_pool_per_video": 16,
+    "sampling_seed": 20260917,
+    "gt_labeled_nodes": 501,
+    "sparse_gt_warning": "Unmatched predictions are not false positives."
+  },
+  "pilkwang": {
+    "hits": 501,
+    "misses": 0,
+    "micro_recall": 1.0,
+    "mean_match_distance_um": 1.6834764525945634,
+    "median_match_distance_um": 1.6750116604071745,
+    "p95_match_distance_um": 3.471001521535247,
+    "pred_nodes": 18706
+  },
+  "focus3d": {
+    "hits": 485,
+    "misses": 16,
+    "micro_recall": 0.9680638722554891,
+    "mean_match_distance_um": 1.7572785262298143,
+    "median_match_distance_um": 1.4104007259567262,
+    "p95_match_distance_um": 4.733696313200259,
+    "pred_nodes": 26427
+  },
+  "paired_hit_categories": {
+    "both_hit": 485,
+    "pilkwang_only_hit": 16,
+    "focus3d_only_hit": 0,
+    "both_miss": 0
+  },
+  "video_level_recall_difference_pil_minus_focus": {
+    "mean": 0.022349932538288698,
+    "ci95_low": 0.004133597883597878,
+    "ci95_high": 0.0509046002196687,
+    "bootstrap_probability_gt_zero": 0.9982,
+    "units": 12,
+    "iterations": 10000,
+    "seed": 20260917
+  },
+  "video_level_common_hit_distance_difference_pil_minus_focus_um": {
+    "mean": -0.15476999793604962,
+    "ci95_low": -0.3555170138576137,
+    "ci95_high": 0.01596568662721256,
+    "bootstrap_probability_gt_zero": 0.0395,
+    "units": 12,
+    "iterations": 10000,
+    "seed": 20260918
+  },
+  "video_direction_counts": {
+    "pilkwang_higher_recall": 5,
+    "equal_recall": 7,
+    "focus3d_higher_recall": 0
+  }
+}

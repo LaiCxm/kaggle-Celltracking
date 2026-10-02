@@ -1,0 +1,30 @@
+{
+  "experiment": "EXP021",
+  "stage": "candidate_layer_only",
+  "sample_id": "6bba_337b1b3a",
+  "eval_frames": [
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26
+  ],
+  "runtime_seconds": {
+    "pilkwang": 18.088829310000023,
+    "focus3d": 81.71849461300002
+  },
+  "node_counts": {
+    "gt_nodes": 15,
+    "proposal_nodes": 3071,
+    "consensus": 2607,
+    "pilkwang_only": 98,
+    "focus_only": 366,
+    "matched_gt_nodes": 15
+  },
+  "division_rows": [],
+  "formal_cv": null,
+  "submission_generated": false
+}

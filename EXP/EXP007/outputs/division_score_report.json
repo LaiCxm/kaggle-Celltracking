@@ -1,0 +1,102 @@
+{
+  "variants": {
+    "exp003": {
+      "tp": 0,
+      "fp": 500,
+      "fn": 6,
+      "division_jaccard": 0.0
+    },
+    "exp006": {
+      "tp": 0,
+      "fp": 15,
+      "fn": 6,
+      "division_jaccard": 0.0
+    }
+  },
+  "per_video": {
+    "44b6_12dfb391": {
+      "exp003": {
+        "tp": 0,
+        "fp": 118,
+        "fn": 1,
+        "division_jaccard": 0.0
+      },
+      "exp006": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 1,
+        "division_jaccard": 0.0
+      }
+    },
+    "44b6_267148e4": {
+      "exp003": {
+        "tp": 0,
+        "fp": 80,
+        "fn": 1,
+        "division_jaccard": 0.0
+      },
+      "exp006": {
+        "tp": 0,
+        "fp": 3,
+        "fn": 1,
+        "division_jaccard": 0.0
+      }
+    },
+    "44b6_2a2eff9f": {
+      "exp003": {
+        "tp": 0,
+        "fp": 133,
+        "fn": 1,
+        "division_jaccard": 0.0
+      },
+      "exp006": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 1,
+        "division_jaccard": 0.0
+      }
+    },
+    "44b6_341df25f": {
+      "exp003": {
+        "tp": 0,
+        "fp": 25,
+        "fn": 1,
+        "division_jaccard": 0.0
+      },
+      "exp006": {
+        "tp": 0,
+        "fp": 1,
+        "fn": 1,
+        "division_jaccard": 0.0
+      }
+    },
+    "44b6_587a1e22": {
+      "exp003": {
+        "tp": 0,
+        "fp": 66,
+        "fn": 1,
+        "division_jaccard": 0.0
+      },
+      "exp006": {
+        "tp": 0,
+        "fp": 5,
+        "fn": 1,
+        "division_jaccard": 0.0
+      }
+    },
+    "44b6_5f15d135": {
+      "exp003": {
+        "tp": 0,
+        "fp": 78,
+        "fn": 1,
+        "division_jaccard": 0.0
+      },
+      "exp006": {
+        "tp": 0,
+        "fp": 4,
+        "fn": 1,
+        "division_jaccard": 0.0
+      }
+    }
+  }
+}

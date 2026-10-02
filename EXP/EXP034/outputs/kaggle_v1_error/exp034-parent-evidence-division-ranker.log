@@ -1,0 +1,37 @@
+[{"stream_name":"stderr","time":5.781672987,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":5.781741585,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":5.781746625,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":5.78174914,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":6.346742767,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.346773705,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.346778927,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.346782551,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":24.93477306,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":24.934826228,"data":"  File \"\u003cstring\u003e\", line 1, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":24.934834946,"data":"  File \"/usr/local/lib/python3.12/dist-packages/papermill/execute.py\", line 131, in execute_notebook\n"}
+,{"stream_name":"stderr","time":24.934908497,"data":"    raise_for_execution_errors(nb, output_path)\n"}
+,{"stream_name":"stderr","time":24.934971815,"data":"  File \"/usr/local/lib/python3.12/dist-packages/papermill/execute.py\", line 251, in raise_for_execution_errors\n"}
+,{"stream_name":"stderr","time":24.935137015,"data":"    raise error\n"}
+,{"stream_name":"stderr","time":24.935199846,"data":"papermill.exceptions.PapermillExecutionError: \n"}
+,{"stream_name":"stderr","time":24.935211283,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":24.935216815,"data":"Exception encountered at \"In [1]\":\n"}
+,{"stream_name":"stderr","time":24.935221315,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":24.935225633,"data":"NameError                                 Traceback (most recent call last)\n"}
+,{"stream_name":"stderr","time":24.935229987,"data":"/tmp/ipykernel_23/2490701362.py in \u003ccell line: 0\u003e()\n"}
+,{"stream_name":"stderr","time":24.935234656,"data":"    102         continue\n"}
+,{"stream_name":"stderr","time":24.935238809,"data":"    103     nodes, edges = read_gt(gt_path)\n"}
+,{"stream_name":"stderr","time":24.935243103,"data":"--\u003e 104     events = extract_division_events(nodes, edges, require_next_frame=True)\n"}
+,{"stream_name":"stderr","time":24.935247456,"data":"    105     if not events:\n"}
+,{"stream_name":"stderr","time":24.935251622,"data":"    106         continue\n"}
+,{"stream_name":"stderr","time":24.935255762,"data":"\n"}
+,{"stream_name":"stderr","time":24.935260039,"data":"NameError: name 'extract_division_events' is not defined\n"}
+,{"stream_name":"stderr","time":24.935269371,"data":"\n"}
+,{"stream_name":"stderr","time":26.964949231,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":26.964976027,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":27.104688857,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":27.104710212,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":28.095396363,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":28.391384676,"data":"[NbConvertApp] Writing 114866 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":30.812165976,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":31.753189853,"data":"[NbConvertApp] Writing 510049 bytes to __results__.html\n"}
+]

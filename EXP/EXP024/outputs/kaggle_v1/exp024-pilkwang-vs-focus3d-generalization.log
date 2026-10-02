@@ -1,0 +1,125 @@
+[{"stream_name":"stderr","time":12.701924138999999,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":12.701993907,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":12.701998828,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":12.702001869,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":13.617564905,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":13.617611625,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":13.617617599999999,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":13.617622204,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":71.26070779,"data":"CUDA: Tesla T4\n"}
+,{"stream_name":"stdout","time":71.260780541,"data":"available unseen labeled videos: 194\n"}
+,{"stream_name":"stdout","time":71.260788492,"data":"selected videos: 12 ['44b6_0113de3b', '44b6_3bb3690f', '44b6_7a302da0', '44b6_9bfa6a0a', '44b6_d29c9ab2', '44b6_f28707c6', '6bba_05b6850b', '6bba_3a1849c2', '6bba_6ca87370', '6bba_969618f6', '6bba_d1acb6ff', '6bba_fe670320']\n"}
+,{"stream_name":"stdout","time":71.260797216,"data":"target labeled nodes: 500\n"}
+,{"stream_name":"stdout","time":71.260802554,"data":"selected frames: 76\n"}
+,{"stream_name":"stdout","time":71.260807425,"data":"selected labeled nodes: 501\n"}
+,{"stream_name":"stderr","time":80.152052126,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":80.152122267,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":80.152127687,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":80.152132008,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stderr","time":80.152135573,"data":"\n"}
+,{"stream_name":"stderr","time":80.152138971,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":80.152143026,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":80.152146536,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":80.15215663,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stdout","time":125.750856408,"data":"Pilkwang 1/12 44b6_0113de3b selected_frames 7 predicted_through 69 nodes 1936 seconds 44.73\n"}
+,{"stream_name":"stdout","time":184.179670271,"data":"Pilkwang 2/12 44b6_3bb3690f selected_frames 7 predicted_through 100 nodes 1352 seconds 58.42\n"}
+,{"stream_name":"stdout","time":237.584880099,"data":"Pilkwang 3/12 44b6_7a302da0 selected_frames 7 predicted_through 74 nodes 4132 seconds 53.4\n"}
+,{"stream_name":"stdout","time":298.613092271,"data":"Pilkwang 4/12 44b6_9bfa6a0a selected_frames 7 predicted_through 93 nodes 3177 seconds 61.02\n"}
+,{"stream_name":"stdout","time":353.399437461,"data":"Pilkwang 5/12 44b6_d29c9ab2 selected_frames 6 predicted_through 87 nodes 2310 seconds 54.78\n"}
+,{"stream_name":"stdout","time":397.545020357,"data":"Pilkwang 6/12 44b6_f28707c6 selected_frames 6 predicted_through 73 nodes 1446 seconds 44.14\n"}
+,{"stream_name":"stdout","time":447.656530266,"data":"Pilkwang 7/12 6bba_05b6850b selected_frames 6 predicted_through 87 nodes 460 seconds 50.11\n"}
+,{"stream_name":"stdout","time":493.840420355,"data":"Pilkwang 8/12 6bba_3a1849c2 selected_frames 6 predicted_through 80 nodes 497 seconds 46.18\n"}
+,{"stream_name":"stdout","time":551.637485395,"data":"Pilkwang 9/12 6bba_6ca87370 selected_frames 6 predicted_through 100 nodes 470 seconds 57.8\n"}
+,{"stream_name":"stdout","time":610.275002767,"data":"Pilkwang 10/12 6bba_969618f6 selected_frames 6 predicted_through 100 nodes 1042 seconds 58.63\n"}
+,{"stream_name":"stdout","time":653.914498906,"data":"Pilkwang 11/12 6bba_d1acb6ff selected_frames 6 predicted_through 74 nodes 1437 seconds 43.64\n"}
+,{"stream_name":"stdout","time":696.142900249,"data":"Pilkwang 12/12 6bba_fe670320 selected_frames 6 predicted_through 74 nodes 447 seconds 42.23\n"}
+,{"stream_name":"stdout","time":703.041698291,"data":"Loading weights from: /kaggle/input/datasets/qiweiyin/focus3d-nuclei-runtime/models/model_final_nuclei.pth\n"}
+,{"stream_name":"stdout","time":809.852437322,"data":"FOCUS3D 1/12 44b6_0113de3b frames 7 nodes 2158 seconds 77.24\n"}
+,{"stream_name":"stdout","time":944.908152931,"data":"FOCUS3D 2/12 44b6_3bb3690f frames 7 nodes 4408 seconds 135.04\n"}
+,{"stream_name":"stdout","time":1112.222582242,"data":"FOCUS3D 3/12 44b6_7a302da0 frames 7 nodes 5513 seconds 167.31\n"}
+,{"stream_name":"stdout","time":1268.402398624,"data":"FOCUS3D 4/12 44b6_9bfa6a0a frames 7 nodes 5383 seconds 156.16\n"}
+,{"stream_name":"stdout","time":1350.655557344,"data":"FOCUS3D 5/12 44b6_d29c9ab2 frames 6 nodes 2559 seconds 82.23\n"}
+,{"stream_name":"stdout","time":1408.091489645,"data":"FOCUS3D 6/12 44b6_f28707c6 frames 6 nodes 1482 seconds 57.43\n"}
+,{"stream_name":"stdout","time":1444.518789317,"data":"FOCUS3D 7/12 6bba_05b6850b frames 6 nodes 560 seconds 36.41\n"}
+,{"stream_name":"stdout","time":1482.564606361,"data":"FOCUS3D 8/12 6bba_3a1849c2 frames 6 nodes 608 seconds 38.04\n"}
+,{"stream_name":"stdout","time":1518.272565868,"data":"FOCUS3D 9/12 6bba_6ca87370 frames 6 nodes 464 seconds 35.69\n"}
+,{"stream_name":"stdout","time":1571.019899416,"data":"FOCUS3D 10/12 6bba_969618f6 frames 6 nodes 1236 seconds 52.74\n"}
+,{"stream_name":"stdout","time":1631.998758643,"data":"FOCUS3D 11/12 6bba_d1acb6ff frames 6 nodes 1572 seconds 60.95\n"}
+,{"stream_name":"stdout","time":1666.483690471,"data":"FOCUS3D 12/12 6bba_fe670320 frames 6 nodes 484 seconds 34.48\n"}
+,{"stream_name":"stdout","time":1666.655255899,"data":"{\n"}
+,{"stream_name":"stdout","time":1666.655434923,"data":"  \"experiment\": \"EXP024\",\n"}
+,{"stream_name":"stdout","time":1666.655442555,"data":"  \"scope\": {\n"}
+,{"stream_name":"stdout","time":1666.655453567,"data":"    \"excluded_previously_inspected_videos\": [\n"}
+,{"stream_name":"stdout","time":1666.655458877,"data":"      \"44b6_12dfb391\",\n"}
+,{"stream_name":"stdout","time":1666.655476447,"data":"      \"44b6_267148e4\",\n"}
+,{"stream_name":"stdout","time":1666.655482661,"data":"      \"6bba_062c8d37\",\n"}
+,{"stream_name":"stdout","time":1666.655550846,"data":"      \"6bba_07e24132\",\n"}
+,{"stream_name":"stdout","time":1666.655556595,"data":"      \"6bba_337b1b3a\"\n"}
+,{"stream_name":"stdout","time":1666.655560989,"data":"    ],\n"}
+,{"stream_name":"stdout","time":1666.655565429,"data":"    \"evaluated_videos\": 12,\n"}
+,{"stream_name":"stdout","time":1666.655570279,"data":"    \"selected_frames\": 76,\n"}
+,{"stream_name":"stdout","time":1666.655574626,"data":"    \"target_video_count\": 12,\n"}
+,{"stream_name":"stdout","time":1666.65557876,"data":"    \"target_labeled_nodes\": 500,\n"}
+,{"stream_name":"stdout","time":1666.655582565,"data":"    \"frame_pool_per_video\": 16,\n"}
+,{"stream_name":"stdout","time":1666.655586779,"data":"    \"sampling_seed\": 20260917,\n"}
+,{"stream_name":"stdout","time":1666.655591496,"data":"    \"gt_labeled_nodes\": 501,\n"}
+,{"stream_name":"stdout","time":1666.655595816,"data":"    \"sparse_gt_warning\": \"Unmatched predictions are not false positives.\"\n"}
+,{"stream_name":"stdout","time":1666.655599772,"data":"  },\n"}
+,{"stream_name":"stdout","time":1666.655602986,"data":"  \"pilkwang\": {\n"}
+,{"stream_name":"stdout","time":1666.655607314,"data":"    \"hits\": 501,\n"}
+,{"stream_name":"stdout","time":1666.655611359,"data":"    \"misses\": 0,\n"}
+,{"stream_name":"stdout","time":1666.655615497,"data":"    \"micro_recall\": 1.0,\n"}
+,{"stream_name":"stdout","time":1666.655619883,"data":"    \"mean_match_distance_um\": 1.6834764525945634,\n"}
+,{"stream_name":"stdout","time":1666.655624299,"data":"    \"median_match_distance_um\": 1.6750116604071745,\n"}
+,{"stream_name":"stdout","time":1666.655628677,"data":"    \"p95_match_distance_um\": 3.471001521535247,\n"}
+,{"stream_name":"stdout","time":1666.655633215,"data":"    \"pred_nodes\": 18706\n"}
+,{"stream_name":"stdout","time":1666.655637474,"data":"  },\n"}
+,{"stream_name":"stdout","time":1666.655642057,"data":"  \"focus3d\": {\n"}
+,{"stream_name":"stdout","time":1666.655646091,"data":"    \"hits\": 485,\n"}
+,{"stream_name":"stdout","time":1666.655649784,"data":"    \"misses\": 16,\n"}
+,{"stream_name":"stdout","time":1666.655654243,"data":"    \"micro_recall\": 0.9680638722554891,\n"}
+,{"stream_name":"stdout","time":1666.655658534,"data":"    \"mean_match_distance_um\": 1.7572785262298143,\n"}
+,{"stream_name":"stdout","time":1666.655663144,"data":"    \"median_match_distance_um\": 1.4104007259567262,\n"}
+,{"stream_name":"stdout","time":1666.655667674,"data":"    \"p95_match_distance_um\": 4.733696313200259,\n"}
+,{"stream_name":"stdout","time":1666.655671996,"data":"    \"pred_nodes\": 26427\n"}
+,{"stream_name":"stdout","time":1666.655676358,"data":"  },\n"}
+,{"stream_name":"stdout","time":1666.655680522,"data":"  \"paired_hit_categories\": {\n"}
+,{"stream_name":"stdout","time":1666.6556843,"data":"    \"both_hit\": 485,\n"}
+,{"stream_name":"stdout","time":1666.655688168,"data":"    \"pilkwang_only_hit\": 16,\n"}
+,{"stream_name":"stdout","time":1666.655691992,"data":"    \"focus3d_only_hit\": 0,\n"}
+,{"stream_name":"stdout","time":1666.655695923,"data":"    \"both_miss\": 0\n"}
+,{"stream_name":"stdout","time":1666.655699752,"data":"  },\n"}
+,{"stream_name":"stdout","time":1666.655703472,"data":"  \"video_level_recall_difference_pil_minus_focus\": {\n"}
+,{"stream_name":"stdout","time":1666.65570745,"data":"    \"mean\": 0.022349932538288698,\n"}
+,{"stream_name":"stdout","time":1666.655711344,"data":"    \"ci95_low\": 0.004133597883597878,\n"}
+,{"stream_name":"stdout","time":1666.655715296,"data":"    \"ci95_high\": 0.0509046002196687,\n"}
+,{"stream_name":"stdout","time":1666.655719212,"data":"    \"bootstrap_probability_gt_zero\": 0.9982,\n"}
+,{"stream_name":"stdout","time":1666.65573032,"data":"    \"units\": 12,\n"}
+,{"stream_name":"stdout","time":1666.6557343,"data":"    \"iterations\": 10000,\n"}
+,{"stream_name":"stdout","time":1666.655739984,"data":"    \"seed\": 20260917\n"}
+,{"stream_name":"stdout","time":1666.655743884,"data":"  },\n"}
+,{"stream_name":"stdout","time":1666.655747617,"data":"  \"video_level_common_hit_distance_difference_pil_minus_focus_um\": {\n"}
+,{"stream_name":"stdout","time":1666.655753589,"data":"    \"mean\": -0.15476999793604962,\n"}
+,{"stream_name":"stdout","time":1666.655757364,"data":"    \"ci95_low\": -0.3555170138576137,\n"}
+,{"stream_name":"stdout","time":1666.655761812,"data":"    \"ci95_high\": 0.01596568662721256,\n"}
+,{"stream_name":"stdout","time":1666.655766632,"data":"    \"bootstrap_probability_gt_zero\": 0.0395,\n"}
+,{"stream_name":"stdout","time":1666.655771536,"data":"    \"units\": 12,\n"}
+,{"stream_name":"stdout","time":1666.655776174,"data":"    \"iterations\": 10000,\n"}
+,{"stream_name":"stdout","time":1666.655780653,"data":"    \"seed\": 20260918\n"}
+,{"stream_name":"stdout","time":1666.655784535,"data":"  },\n"}
+,{"stream_name":"stdout","time":1666.655788644,"data":"  \"video_direction_counts\": {\n"}
+,{"stream_name":"stdout","time":1666.655792865,"data":"    \"pilkwang_higher_recall\": 5,\n"}
+,{"stream_name":"stdout","time":1666.655796721,"data":"    \"equal_recall\": 7,\n"}
+,{"stream_name":"stdout","time":1666.655800549,"data":"    \"focus3d_higher_recall\": 0\n"}
+,{"stream_name":"stdout","time":1666.655804512,"data":"  }\n"}
+,{"stream_name":"stdout","time":1666.655808244,"data":"}\n"}
+,{"stream_name":"stdout","time":1666.655812038,"data":"Wrote: ['REPORT.md', 'per_frame.csv', 'per_gt.csv', 'per_video.csv', 'selection_manifest.csv', 'summary.json']\n"}
+,{"stream_name":"stderr","time":1672.905110306,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1672.905166951,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1673.1527509,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1673.152782066,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1674.151111926,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":1674.757404047,"data":"[NbConvertApp] Writing 960582 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":1677.866240189,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1679.119148434,"data":"[NbConvertApp] Writing 1124482 bytes to __results__.html\n"}
+]

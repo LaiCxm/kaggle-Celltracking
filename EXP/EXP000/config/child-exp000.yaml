@@ -1,0 +1,15 @@
+exp_name: EXP000
+seed: 42
+n_folds: 5
+epochs: 3
+lr: 0.001
+batch_size: 16
+metric: accuracy
+
+# 比赛数据布局(在 Kaggle 内核中 /kaggle/input/competitions/<slug>/)
+data_dir: /kaggle/input/competitions/csiro-biomass
+train_csv: train.csv
+test_csv: test.csv
+id_column: id
+image_col: image_path
+target_cols: [label]

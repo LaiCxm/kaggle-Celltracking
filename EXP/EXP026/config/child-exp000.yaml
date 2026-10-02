@@ -1,0 +1,11 @@
+experiment: EXP026
+child: child-exp000
+purpose: division_candidate_geometry_gate_sweep
+target_video_count: 12
+max_events_per_video: 3
+match_radius_um: 7.0
+parent_radius_grid_um: [14.0, 16.0, 18.0, 20.0, 24.0, 28.0, 32.0]
+daughter_radius_grid_um: [14.0, 16.0, 18.0, 20.0, 24.0, 28.0, 32.0]
+maximum_superset_radius_um: 32.0
+selection_rule: full_recall_then_minimum_candidate_count
+test_submission: false

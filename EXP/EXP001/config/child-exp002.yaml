@@ -1,0 +1,6 @@
+# EXP001-child002 — 单点优化:ILP disappearance weight 1.575 -> 1.2
+# 基线: EXP001-child000 (CV 0.87893)
+# 改动: 仅 BIOHUB_ILP_DISAPPEARANCE_WEIGHT 1.575 -> 1.2
+# 理由: disappearance 1.575 很激进(强惩罚轨迹中断),可能迫使 ILP 把边连到较远错误目标产生 FP;
+#       降到 1.2 观察 edge FP/FN 变化
+# 预期: FP 或 FN 之一改善;score 提升则保留,否则回退

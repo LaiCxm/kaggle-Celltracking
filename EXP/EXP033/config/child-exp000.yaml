@@ -1,0 +1,12 @@
+experiment: EXP033
+child: child-exp000
+purpose: parent_blind_division_discovery_with_no_division_option
+target_video_count: 24
+max_events_per_video: 2
+candidate_parent_radius_um: 16.0
+candidate_daughter_radius_um: 20.0
+parent_pool: pilkwang_or_consensus
+daughter_pool: union
+oof_group: video
+official_cv: false
+submission: false

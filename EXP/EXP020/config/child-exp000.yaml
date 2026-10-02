@@ -1,0 +1,9 @@
+experiment: EXP020
+child: child-exp000
+description: aggressive_focus3d_weighted_selected_rescue
+focus_weight: 1.75
+focus_min_division_score: 0.20
+focus_min_margin: 0.02
+focus_max_conflicts_per_movie: 64
+focus_max_frames_per_movie: 16
+focus_max_frames_global: 80

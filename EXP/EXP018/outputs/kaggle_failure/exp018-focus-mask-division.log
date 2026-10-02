@@ -1,0 +1,37 @@
+[{"stream_name":"stderr","time":7.483007255,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.483047987,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.483052189,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.483054672,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.0967421,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.096769854,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.096774731,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.096778561,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":9.491246796,"data":"Traceback (most recent call last):\n"}
+,{"stream_name":"stderr","time":9.491280475,"data":"  File \"\u003cstring\u003e\", line 1, in \u003cmodule\u003e\n"}
+,{"stream_name":"stderr","time":9.491284838,"data":"  File \"/usr/local/lib/python3.12/dist-packages/papermill/execute.py\", line 131, in execute_notebook\n"}
+,{"stream_name":"stderr","time":9.491401101,"data":"    raise_for_execution_errors(nb, output_path)\n"}
+,{"stream_name":"stderr","time":9.491409515,"data":"  File \"/usr/local/lib/python3.12/dist-packages/papermill/execute.py\", line 251, in raise_for_execution_errors\n"}
+,{"stream_name":"stderr","time":9.491608286,"data":"    raise error\n"}
+,{"stream_name":"stderr","time":9.491731002,"data":"papermill.exceptions.PapermillExecutionError: \n"}
+,{"stream_name":"stderr","time":9.49174546,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":9.491750442,"data":"Exception encountered at \"In [2]\":\n"}
+,{"stream_name":"stderr","time":9.491754975,"data":"---------------------------------------------------------------------------\n"}
+,{"stream_name":"stderr","time":9.491758413,"data":"RuntimeError                              Traceback (most recent call last)\n"}
+,{"stream_name":"stderr","time":9.491761615,"data":"/tmp/ipykernel_23/3357359082.py in \u003ccell line: 0\u003e()\n"}
+,{"stream_name":"stderr","time":9.491765318,"data":"     33 \n"}
+,{"stream_name":"stderr","time":9.491769105,"data":"     34 if _drift:\n"}
+,{"stream_name":"stderr","time":9.491772819,"data":"---\u003e 35     raise RuntimeError(\n"}
+,{"stream_name":"stderr","time":9.491776286,"data":"     36         \"Configuration drift detected: \" + _guard_json.dumps(_drift, sort_keys=True)\n"}
+,{"stream_name":"stderr","time":9.491779759,"data":"     37     )\n"}
+,{"stream_name":"stderr","time":9.491782927,"data":"\n"}
+,{"stream_name":"stderr","time":9.491786629,"data":"RuntimeError: Configuration drift detected: {\"BIOHUB_BIDIRECTIONAL_EDGE_WEIGHT\": \"missing\", \"BIOHUB_BIDIRECTIONAL_FUSION_MODE\": {\"actual\": null, \"expected\": \"harmonic_probability\"}, \"BIOHUB_DET_THRESHOLD\": \"missing\", \"BIOHUB_DUAL_SEED_MIN_CANDIDATE_RETENTION\": {\"actual\": null, \"expected\": \"0.90\"}, \"BIOHUB_GAP_CLOSE_UM\": \"missing\", \"BIOHUB_ILP_APPEARANCE_WEIGHT\": \"missing\", \"BIOHUB_ILP_DISAPPEARANCE_WEIGHT\": \"missing\", \"BIOHUB_OUTPUT_MIN_TRACK_LEN\": \"missing\"}\n"}
+,{"stream_name":"stderr","time":9.491795518,"data":"\n"}
+,{"stream_name":"stderr","time":11.701528287,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":11.701584135000001,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":11.860388874,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":11.860414483,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":12.510284583,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":12.807615439,"data":"[NbConvertApp] Writing 277666 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":15.144322583,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":16.655939889,"data":"[NbConvertApp] Writing 1210543 bytes to __results__.html\n"}
+]

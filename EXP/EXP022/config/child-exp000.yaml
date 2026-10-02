@@ -1,0 +1,13 @@
+experiment: EXP022
+child: child-exp000
+purpose: division_edge_selection_oracle_headroom
+base_graph: EXP019_focus_strategy_off
+validation_movies:
+  - 44b6_12dfb391
+  - 44b6_267148e4
+  - 6bba_062c8d37
+  - 6bba_07e24132
+metric: patched_official_scorer
+match_radius_um: 7.0
+voxel_scale_zyx_um: [1.625, 0.40625, 0.40625]
+test_submission: false

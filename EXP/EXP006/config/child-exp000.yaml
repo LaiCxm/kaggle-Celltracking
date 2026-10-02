@@ -1,0 +1,30 @@
+﻿# EXP006 — 将本地合成数据 division verifier 接入 EXP003 pipeline
+# 先用很初步的 16-sequence 合成模型对 EXP003 硬规则候选做 rerank
+# 执行方式: tools/push_custom_kernel.py --exp EXP006 --kernel CELL_infer_synth_division_A.ipynb ...
+
+competition: biohub-cell-tracking-during-development
+exp_name: EXP006
+method: EXP003 divsub + synthetic division verifier (rerank)
+artifact_slugs:
+  - pilkwang/biohub-tracking-support-pack-50ep-v1
+  - pilkwang/biohub-temporal-unet3d-seed314159-v1
+  - pilkwang/biohub-deepcenter-unet3d-center-prior-v1
+
+# 与 EXP003 相同
+det_threshold: 0.96875
+ilp_appearance_weight: 0.0
+ilp_disappearance_weight: 1.5
+ilp_division_weight: 1.0
+safe_div_parent_max_um: 8.0
+safe_div_sister_max_um: 11.0
+safe_div_existing_child_max_um: 10.0
+safe_div_diverge_um: 2.25
+use_deepcenter_veto: true
+deepcenter_expected_epoch: 500
+deepcenter_checkpoint: /kaggle/input/biohub-deepcenter-unet3d-center-prior-v1/weights/full_frame_center/checkpoint_last.pt
+deepcenter_safe_div_veto: false
+
+# 新增
+synthetic_division_model: true
+model_threshold: 0.5
+submission: /kaggle/working/submission.csv

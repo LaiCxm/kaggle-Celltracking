@@ -1,0 +1,17 @@
+{
+  "selected": "exp054_joint_top2",
+  "arms": {
+    "exp054_joint_top2": {
+      "path": "/kaggle/working/submission_exp054_joint_top2.csv",
+      "sha256": "ad5b398bbde6a6b6d2f45e387b2a04f04ab89a1ba9059f43f8c5bd9581972f78",
+      "rows": 234268,
+      "stats_path": "/kaggle/working/run_stats_exp054_joint_top2.csv"
+    },
+    "exp054_joint_top3": {
+      "path": "/kaggle/working/submission_exp054_joint_top3.csv",
+      "sha256": "ad5b398bbde6a6b6d2f45e387b2a04f04ab89a1ba9059f43f8c5bd9581972f78",
+      "rows": 234268,
+      "stats_path": "/kaggle/working/run_stats_exp054_joint_top3.csv"
+    }
+  }
+}

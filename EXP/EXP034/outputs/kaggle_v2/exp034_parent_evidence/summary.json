@@ -1,0 +1,77 @@
+{
+  "experiment": "EXP034",
+  "official_cv": null,
+  "submission_generated": false,
+  "parent_oracle_used": false,
+  "no_division_option": "score_threshold",
+  "selected_videos": [
+    "44b6_2a2eff9f",
+    "44b6_587a1e22",
+    "44b6_5f15d135",
+    "44b6_74d0c52e",
+    "44b6_996155de",
+    "44b6_9be80b04",
+    "44b6_aaf8b0ea",
+    "44b6_c50204e0",
+    "44b6_d2f34f90",
+    "44b6_d754aa59",
+    "44b6_deabac95",
+    "44b6_eb2880fc",
+    "6bba_05db0fb1",
+    "6bba_207c6aaf",
+    "6bba_32db13fc",
+    "6bba_474be664",
+    "6bba_5c039895",
+    "6bba_705ec2c9",
+    "6bba_7af54fde",
+    "6bba_907271db",
+    "6bba_afb141ff",
+    "6bba_d1acb6ff",
+    "6bba_e16ffc58",
+    "6bba_fe670320"
+  ],
+  "transitions": 31,
+  "truth_events": 31,
+  "endpoint_complete_events": 31,
+  "candidate_recalled_events": 31,
+  "candidate_count": 686116,
+  "parent_pool": "pilkwang_or_consensus",
+  "daughter_pool": "union",
+  "candidate_gate_um": {
+    "parent": 16.0,
+    "daughter": 20.0
+  },
+  "features": {
+    "base": [
+      "parent_distance_um",
+      "daughter_distance_um",
+      "focus_only_count"
+    ],
+    "parent_evidence": [
+      "parent_distance_um",
+      "daughter_distance_um",
+      "focus_only_count",
+      "parent_center_score",
+      "parent_is_consensus",
+      "parent_focus_quality",
+      "parent_backward_distance_um",
+      "parent_forward_count"
+    ],
+    "parent_mask_geometry": [
+      "parent_distance_um",
+      "daughter_distance_um",
+      "focus_only_count",
+      "parent_center_score",
+      "parent_is_consensus",
+      "parent_focus_quality",
+      "parent_backward_distance_um",
+      "parent_forward_count",
+      "volume_balance",
+      "volume_conservation",
+      "parent_union_overlap",
+      "parent_union_parent_coverage",
+      "parent_union_daughter_coverage"
+    ]
+  },
+  "threshold_scope": "exploratory_global_oof_not_nested"
+}

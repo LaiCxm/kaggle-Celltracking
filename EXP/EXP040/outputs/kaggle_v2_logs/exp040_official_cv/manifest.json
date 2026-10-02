@@ -1,0 +1,42 @@
+{
+  "experiment": "EXP040",
+  "official_patched_scorer": "/kaggle/input/datasets/dalloliogm/biohub-official-scorer-patched/tracking_cellmot_075fc5f/src/tracking_cellmot/metrics.py",
+  "submission_generated": false,
+  "modes": {
+    "base": {
+      "parent_gate_um": null,
+      "daughter_gate_um": null
+    },
+    "compact_10_14": {
+      "parent_gate_um": 10.0,
+      "daughter_gate_um": 14.0,
+      "divergence_um": 2.25,
+      "max_changes_per_frame": 1,
+      "max_changes_per_dataset": 6,
+      "require_divergence": true
+    },
+    "compact_12_14": {
+      "parent_gate_um": 12.0,
+      "daughter_gate_um": 14.0,
+      "divergence_um": 2.25,
+      "max_changes_per_frame": 1,
+      "max_changes_per_dataset": 6,
+      "require_divergence": true
+    },
+    "compact_14_14": {
+      "parent_gate_um": 14.0,
+      "daughter_gate_um": 14.0,
+      "divergence_um": 2.25,
+      "max_changes_per_frame": 1,
+      "max_changes_per_dataset": 6,
+      "require_divergence": true
+    }
+  },
+  "held_out_movies": [
+    "44b6_12dfb391",
+    "44b6_267148e4",
+    "6bba_062c8d37",
+    "6bba_07e24132"
+  ],
+  "method": "post-safe-division local occupied-daughter one-delete-one-add rewire"
+}

@@ -1,0 +1,32 @@
+{
+  "score": 0.87892959136423,
+  "adj_edge_jaccard": 0.87892959136423,
+  "edge_jaccard_micro": 0.8774487471526196,
+  "division_jaccard": 0.0,
+  "edge_tp": 3852,
+  "edge_fp": 287,
+  "edge_fn": 251,
+  "division_tp": 0,
+  "division_fp": 6,
+  "division_fn": 7,
+  "node_recall": 0.9804152902312412,
+  "metric_label": "offline_official_spec_v1",
+  "exact_official_source_copy": false,
+  "official_repository": "royerlab/kaggle-cell-tracking-competition",
+  "official_spec_commit": "075fc5f5a52d11077f9dc2b074644618f26939e2",
+  "official_spec_document": "metrics.md",
+  "offline_evaluator_fingerprint": "f34d5dc46344bffa28c50fcf27de60919fb0190cd10e923483493935fec8f14d",
+  "cv_split_kind": "manual_override",
+  "cv_split_source": "manual override",
+  "datasets": [
+    "44b6_0113de3b",
+    "44b6_0b24845f",
+    "44b6_341df25f",
+    "44b6_e57ff5c6",
+    "6bba_05b6850b",
+    "6bba_05db0fb1",
+    "6bba_969618f6",
+    "6bba_fc83837d"
+  ],
+  "max_match_um": 7.0
+}

@@ -1,0 +1,11 @@
+# EXP001-child005 — 双种子 logit 融合
+# 基线: EXP001-child000 (CV 0.87893, LB 0.908)
+# 依据: pilkwang two-seeds-logit-blend notebook(LB 0.908 -> 0.915,公开验证)
+# 改动:
+#   - 主模型 50ep + 次模型 seed314159 双模型推理
+#   - 检测 logits mean/std 校准对齐后 α=0.475 融合
+#   - 边 logits raw blend β=0.15
+#   - 复用作者验证的 predict_unet_transformer.py 运行时 patch(已验证与 D4 TTA 兼容)
+# 依赖 artifact: 新增挂载 pilkwang/biohub-temporal-unet3d-seed314159-v1
+# 后处理/ILP 配置保持基线不变(隔离融合效果)
+# 预期: CV 提升,division 可能不受影响(需观察)

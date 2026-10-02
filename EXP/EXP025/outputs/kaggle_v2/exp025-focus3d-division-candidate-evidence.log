@@ -1,0 +1,197 @@
+[{"stream_name":"stderr","time":7.829813794,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.829873202,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.829877771,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.829880408,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.474798977,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.474838890000001,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.474843125,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.474845787,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":50.861160952,"data":"CUDA: Tesla T4\n"}
+,{"stream_name":"stdout","time":50.8611957,"data":"event-bearing videos available: 83\n"}
+,{"stream_name":"stdout","time":50.861200028,"data":"selected videos: ['44b6_2a2eff9f', '44b6_706092f0', '44b6_996155de', '44b6_c50204e0', '44b6_d5e7d891', '44b6_eb2880fc', '6bba_05db0fb1', '6bba_3abfe10a', '6bba_61ecbe65', '6bba_87289e13', '6bba_c328f2fd', '6bba_fe670320']\n"}
+,{"stream_name":"stdout","time":50.861205078,"data":"selected events: 18 selected frames: 36\n"}
+,{"stream_name":"stderr","time":57.264310767,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":57.264359727,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":57.264364795,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":57.264368583,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stderr","time":57.264371833,"data":"\n"}
+,{"stream_name":"stderr","time":57.264374857,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":57.264378617,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":57.26438164,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":57.264385099,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stdout","time":69.909713487,"data":"Pilkwang 1/12 44b6_2a2eff9f nodes 1069 seconds 12.06\n"}
+,{"stream_name":"stdout","time":99.215361527,"data":"Pilkwang 2/12 44b6_706092f0 nodes 640 seconds 29.3\n"}
+,{"stream_name":"stdout","time":110.425232759,"data":"Pilkwang 3/12 44b6_996155de nodes 193 seconds 11.21\n"}
+,{"stream_name":"stdout","time":153.370157186,"data":"Pilkwang 4/12 44b6_c50204e0 nodes 2134 seconds 42.94\n"}
+,{"stream_name":"stdout","time":183.641008024,"data":"Pilkwang 5/12 44b6_d5e7d891 nodes 1863 seconds 30.27\n"}
+,{"stream_name":"stdout","time":230.924886271,"data":"Pilkwang 6/12 44b6_eb2880fc nodes 753 seconds 47.28\n"}
+,{"stream_name":"stdout","time":278.832152357,"data":"Pilkwang 7/12 6bba_05db0fb1 nodes 4607 seconds 47.91\n"}
+,{"stream_name":"stdout","time":336.414379567,"data":"Pilkwang 8/12 6bba_3abfe10a nodes 1632 seconds 57.58\n"}
+,{"stream_name":"stdout","time":355.753933573,"data":"Pilkwang 9/12 6bba_61ecbe65 nodes 121 seconds 19.34\n"}
+,{"stream_name":"stdout","time":401.777618621,"data":"Pilkwang 10/12 6bba_87289e13 nodes 146 seconds 46.02\n"}
+,{"stream_name":"stdout","time":442.836090005,"data":"Pilkwang 11/12 6bba_c328f2fd nodes 1347 seconds 41.06\n"}
+,{"stream_name":"stdout","time":480.675406969,"data":"Pilkwang 12/12 6bba_fe670320 nodes 446 seconds 37.84\n"}
+,{"stream_name":"stdout","time":486.543170325,"data":"Loading weights from: /kaggle/input/datasets/qiweiyin/focus3d-nuclei-runtime/models/model_final_nuclei.pth\n"}
+,{"stream_name":"stdout","time":559.187757229,"data":"FOCUS3D 1/12 44b6_2a2eff9f instances 1479 seconds 37.42\n"}
+,{"stream_name":"stdout","time":605.919216598,"data":"FOCUS3D 2/12 44b6_706092f0 instances 1977 seconds 46.73\n"}
+,{"stream_name":"stdout","time":617.365969062,"data":"FOCUS3D 3/12 44b6_996155de instances 250 seconds 11.44\n"}
+,{"stream_name":"stdout","time":711.869544526,"data":"FOCUS3D 4/12 44b6_c50204e0 instances 3653 seconds 94.5\n"}
+,{"stream_name":"stdout","time":774.97622061,"data":"FOCUS3D 5/12 44b6_d5e7d891 instances 2437 seconds 63.1\n"}
+,{"stream_name":"stdout","time":805.122220892,"data":"FOCUS3D 6/12 44b6_eb2880fc instances 1185 seconds 30.14\n"}
+,{"stream_name":"stdout","time":922.80619972,"data":"FOCUS3D 7/12 6bba_05db0fb1 instances 4937 seconds 117.67\n"}
+,{"stream_name":"stdout","time":964.654892226,"data":"FOCUS3D 8/12 6bba_3abfe10a instances 1638 seconds 41.84\n"}
+,{"stream_name":"stdout","time":974.500801835,"data":"FOCUS3D 9/12 6bba_61ecbe65 instances 123 seconds 9.83\n"}
+,{"stream_name":"stdout","time":983.615871339,"data":"FOCUS3D 10/12 6bba_87289e13 instances 136 seconds 9.11\n"}
+,{"stream_name":"stdout","time":1026.775344056,"data":"FOCUS3D 11/12 6bba_c328f2fd instances 1628 seconds 43.15\n"}
+,{"stream_name":"stdout","time":1049.687430208,"data":"FOCUS3D 12/12 6bba_fe670320 instances 460 seconds 22.9\n"}
+,{"stream_name":"stdout","time":1142.628098862,"data":"events total/rankable: 18 14\n"}
+,{"stream_name":"stdout","time":1142.628158149,"data":"candidates total/rankable: 506 433\n"}
+,{"stream_name":"stdout","time":1142.628163109,"data":"FOCUS-only candidates: 250\n"}
+,{"stream_name":"stdout","time":1144.961691716,"data":"{\n"}
+,{"stream_name":"stdout","time":1144.961735931,"data":"  \"experiment\": \"EXP025\",\n"}
+,{"stream_name":"stdout","time":1144.961743316,"data":"  \"official_cv\": null,\n"}
+,{"stream_name":"stdout","time":1144.961748791,"data":"  \"submission_generated\": false,\n"}
+,{"stream_name":"stdout","time":1144.961754915,"data":"  \"selected_videos\": [\n"}
+,{"stream_name":"stdout","time":1144.961760803,"data":"    \"44b6_2a2eff9f\",\n"}
+,{"stream_name":"stdout","time":1144.961766306,"data":"    \"44b6_706092f0\",\n"}
+,{"stream_name":"stdout","time":1144.961772287,"data":"    \"44b6_996155de\",\n"}
+,{"stream_name":"stdout","time":1144.961777556,"data":"    \"44b6_c50204e0\",\n"}
+,{"stream_name":"stdout","time":1144.961794995,"data":"    \"44b6_d5e7d891\",\n"}
+,{"stream_name":"stdout","time":1144.961800175,"data":"    \"44b6_eb2880fc\",\n"}
+,{"stream_name":"stdout","time":1144.961805317,"data":"    \"6bba_05db0fb1\",\n"}
+,{"stream_name":"stdout","time":1144.961821339,"data":"    \"6bba_3abfe10a\",\n"}
+,{"stream_name":"stdout","time":1144.961826424,"data":"    \"6bba_61ecbe65\",\n"}
+,{"stream_name":"stdout","time":1144.961829923,"data":"    \"6bba_87289e13\",\n"}
+,{"stream_name":"stdout","time":1144.961833318,"data":"    \"6bba_c328f2fd\",\n"}
+,{"stream_name":"stdout","time":1144.961837075,"data":"    \"6bba_fe670320\"\n"}
+,{"stream_name":"stdout","time":1144.961841492,"data":"  ],\n"}
+,{"stream_name":"stdout","time":1144.961845051,"data":"  \"events\": 18,\n"}
+,{"stream_name":"stdout","time":1144.961849113,"data":"  \"rankable_events\": 14,\n"}
+,{"stream_name":"stdout","time":1144.961853001,"data":"  \"candidate_rows\": 506,\n"}
+,{"stream_name":"stdout","time":1144.961857679,"data":"  \"focus_only_candidate_rows\": 250,\n"}
+,{"stream_name":"stdout","time":1144.961862235,"data":"  \"mask_feature_definition\": \"single motion-compensated parent mask versus daughter-mask union\",\n"}
+,{"stream_name":"stdout","time":1144.961866815,"data":"  \"arms\": [\n"}
+,{"stream_name":"stdout","time":1144.961870947,"data":"    {\n"}
+,{"stream_name":"stdout","time":1144.961875171,"data":"      \"arm\": \"distance_only\",\n"}
+,{"stream_name":"stdout","time":1144.961879587,"data":"      \"features\": \"[\\\"parent_distance_um\\\", \\\"daughter_distance_um\\\", \\\"daughter_separation_score\\\"]\",\n"}
+,{"stream_name":"stdout","time":1144.961884928,"data":"      \"candidate_roc_auc\": 0.8900443232185477,\n"}
+,{"stream_name":"stdout","time":1144.961889905,"data":"      \"candidate_average_precision\": 0.4865413990250928,\n"}
+,{"stream_name":"stdout","time":1144.961894389,"data":"      \"events\": 14,\n"}
+,{"stream_name":"stdout","time":1144.961898609,"data":"      \"rankable_events\": 14,\n"}
+,{"stream_name":"stdout","time":1144.961903278,"data":"      \"missing_positive_events\": 0,\n"}
+,{"stream_name":"stdout","time":1144.961907194,"data":"      \"multiple_positive_events\": 0,\n"}
+,{"stream_name":"stdout","time":1144.961911041,"data":"      \"top1_recall\": 0.42857142857142855,\n"}
+,{"stream_name":"stdout","time":1144.961914463,"data":"      \"top3_recall\": 0.7857142857142857,\n"}
+,{"stream_name":"stdout","time":1144.961918017,"data":"      \"top5_recall\": 0.7857142857142857,\n"}
+,{"stream_name":"stdout","time":1144.961921549,"data":"      \"mean_reciprocal_rank\": 0.6324263038548753,\n"}
+,{"stream_name":"stdout","time":1144.961925189,"data":"      \"median_rank\": 2.0\n"}
+,{"stream_name":"stdout","time":1144.961929038,"data":"    },\n"}
+,{"stream_name":"stdout","time":1144.961932337,"data":"    {\n"}
+,{"stream_name":"stdout","time":1144.961935613,"data":"      \"arm\": \"centroid_volume\",\n"}
+,{"stream_name":"stdout","time":1144.961939263,"data":"      \"features\": \"[\\\"parent_distance_um\\\", \\\"daughter_distance_um\\\", \\\"daughter_separation_score\\\", \\\"volume_balance\\\", \\\"volume_conservation\\\"]\",\n"}
+,{"stream_name":"stdout","time":1144.961943887,"data":"      \"candidate_roc_auc\": 0.8828844186839413,\n"}
+,{"stream_name":"stdout","time":1144.961948221,"data":"      \"candidate_average_precision\": 0.433608441791265,\n"}
+,{"stream_name":"stdout","time":1144.96195186,"data":"      \"events\": 14,\n"}
+,{"stream_name":"stdout","time":1144.961955599,"data":"      \"rankable_events\": 14,\n"}
+,{"stream_name":"stdout","time":1144.961959004,"data":"      \"missing_positive_events\": 0,\n"}
+,{"stream_name":"stdout","time":1144.961962505,"data":"      \"multiple_positive_events\": 0,\n"}
+,{"stream_name":"stdout","time":1144.961966017,"data":"      \"top1_recall\": 0.5,\n"}
+,{"stream_name":"stdout","time":1144.961969604,"data":"      \"top3_recall\": 0.8571428571428571,\n"}
+,{"stream_name":"stdout","time":1144.961979089,"data":"      \"top5_recall\": 0.8571428571428571,\n"}
+,{"stream_name":"stdout","time":1144.961983627,"data":"      \"mean_reciprocal_rank\": 0.6697278911564626,\n"}
+,{"stream_name":"stdout","time":1144.96198719,"data":"      \"median_rank\": 1.5\n"}
+,{"stream_name":"stdout","time":1144.961990769,"data":"    },\n"}
+,{"stream_name":"stdout","time":1144.961994256,"data":"    {\n"}
+,{"stream_name":"stdout","time":1144.961998868,"data":"      \"arm\": \"real_mask\",\n"}
+,{"stream_name":"stdout","time":1144.962003182,"data":"      \"features\": \"[\\\"parent_distance_um\\\", \\\"daughter_distance_um\\\", \\\"daughter_separation_score\\\", \\\"volume_balance\\\", \\\"volume_conservation\\\", \\\"parent_union_overlap\\\", \\\"parent_union_parent_coverage\\\", \\\"parent_union_daughter_coverage\\\"]\",\n"}
+,{"stream_name":"stdout","time":1144.962014461,"data":"      \"candidate_roc_auc\": 0.8758949880668258,\n"}
+,{"stream_name":"stdout","time":1144.962018788,"data":"      \"candidate_average_precision\": 0.4745513407029472,\n"}
+,{"stream_name":"stdout","time":1144.962022943,"data":"      \"events\": 14,\n"}
+,{"stream_name":"stdout","time":1144.962027275,"data":"      \"rankable_events\": 14,\n"}
+,{"stream_name":"stdout","time":1144.96203168,"data":"      \"missing_positive_events\": 0,\n"}
+,{"stream_name":"stdout","time":1144.962035401,"data":"      \"multiple_positive_events\": 0,\n"}
+,{"stream_name":"stdout","time":1144.962038941,"data":"      \"top1_recall\": 0.5,\n"}
+,{"stream_name":"stdout","time":1144.962042623,"data":"      \"top3_recall\": 0.7857142857142857,\n"}
+,{"stream_name":"stdout","time":1144.962046247,"data":"      \"top5_recall\": 0.8571428571428571,\n"}
+,{"stream_name":"stdout","time":1144.962049859,"data":"      \"mean_reciprocal_rank\": 0.6716931216931218,\n"}
+,{"stream_name":"stdout","time":1144.962053659,"data":"      \"median_rank\": 1.5\n"}
+,{"stream_name":"stdout","time":1144.962057402,"data":"    },\n"}
+,{"stream_name":"stdout","time":1144.962060869,"data":"    {\n"}
+,{"stream_name":"stdout","time":1144.962064311,"data":"      \"arm\": \"permuted_mask\",\n"}
+,{"stream_name":"stdout","time":1144.962068631,"data":"      \"features\": \"[\\\"parent_distance_um\\\", \\\"daughter_distance_um\\\", \\\"daughter_separation_score\\\", \\\"volume_balance\\\", \\\"volume_conservation\\\", \\\"parent_union_overlap\\\", \\\"parent_union_parent_coverage\\\", \\\"parent_union_daughter_coverage\\\"]\",\n"}
+,{"stream_name":"stdout","time":1144.962074083,"data":"      \"candidate_roc_auc\": 0.8774292533242414,\n"}
+,{"stream_name":"stdout","time":1144.962077795,"data":"      \"candidate_average_precision\": 0.44969092591797283,\n"}
+,{"stream_name":"stdout","time":1144.962081566,"data":"      \"events\": 14,\n"}
+,{"stream_name":"stdout","time":1144.962084919,"data":"      \"rankable_events\": 14,\n"}
+,{"stream_name":"stdout","time":1144.962088758,"data":"      \"missing_positive_events\": 0,\n"}
+,{"stream_name":"stdout","time":1144.962092985,"data":"      \"multiple_positive_events\": 0,\n"}
+,{"stream_name":"stdout","time":1144.962097259,"data":"      \"top1_recall\": 0.6428571428571429,\n"}
+,{"stream_name":"stdout","time":1144.962101529,"data":"      \"top3_recall\": 0.7857142857142857,\n"}
+,{"stream_name":"stdout","time":1144.962105227,"data":"      \"top5_recall\": 0.8571428571428571,\n"}
+,{"stream_name":"stdout","time":1144.962108867,"data":"      \"mean_reciprocal_rank\": 0.7321428571428571,\n"}
+,{"stream_name":"stdout","time":1144.962112492,"data":"      \"median_rank\": 1.0\n"}
+,{"stream_name":"stdout","time":1144.962116079,"data":"    }\n"}
+,{"stream_name":"stdout","time":1144.962131845,"data":"  ],\n"}
+,{"stream_name":"stdout","time":1144.96213466,"data":"  \"paired_video_bootstrap\": [\n"}
+,{"stream_name":"stdout","time":1144.962137097,"data":"    {\n"}
+,{"stream_name":"stdout","time":1144.962139403,"data":"      \"left\": \"real_mask\",\n"}
+,{"stream_name":"stdout","time":1144.962141958,"data":"      \"right\": \"centroid_volume\",\n"}
+,{"stream_name":"stdout","time":1144.962144419,"data":"      \"video_mean_top1_delta\": 0.05555555555555555,\n"}
+,{"stream_name":"stdout","time":1144.962146869,"data":"      \"ci95_low\": -0.16666666666666666,\n"}
+,{"stream_name":"stdout","time":1144.962149296,"data":"      \"ci95_high\": 0.3333333333333333,\n"}
+,{"stream_name":"stdout","time":1144.962151781,"data":"      \"probability_gt_zero\": 0.5477,\n"}
+,{"stream_name":"stdout","time":1144.96215423,"data":"      \"videos\": 9,\n"}
+,{"stream_name":"stdout","time":1144.962156596,"data":"      \"iterations\": 10000\n"}
+,{"stream_name":"stdout","time":1144.962159021,"data":"    },\n"}
+,{"stream_name":"stdout","time":1144.962161344,"data":"    {\n"}
+,{"stream_name":"stdout","time":1144.962163637,"data":"      \"left\": \"real_mask\",\n"}
+,{"stream_name":"stdout","time":1144.962166025,"data":"      \"right\": \"permuted_mask\",\n"}
+,{"stream_name":"stdout","time":1144.962168465,"data":"      \"video_mean_top1_delta\": -0.09259259259259259,\n"}
+,{"stream_name":"stdout","time":1144.962170965,"data":"      \"ci95_low\": -0.2222222222222222,\n"}
+,{"stream_name":"stdout","time":1144.962173366,"data":"      \"ci95_high\": 0.0,\n"}
+,{"stream_name":"stdout","time":1144.962175757,"data":"      \"probability_gt_zero\": 0.0,\n"}
+,{"stream_name":"stdout","time":1144.962199349,"data":"      \"videos\": 9,\n"}
+,{"stream_name":"stdout","time":1144.962201972,"data":"      \"iterations\": 10000\n"}
+,{"stream_name":"stdout","time":1144.962204643,"data":"    }\n"}
+,{"stream_name":"stdout","time":1144.962207058,"data":"  ],\n"}
+,{"stream_name":"stdout","time":1144.962209462,"data":"  \"runtime_seconds\": {\n"}
+,{"stream_name":"stdout","time":1144.962212008,"data":"    \"pilkwang\": {\n"}
+,{"stream_name":"stdout","time":1144.962214589,"data":"      \"44b6_2a2eff9f\": 12.058049934999985,\n"}
+,{"stream_name":"stdout","time":1144.962217198,"data":"      \"44b6_706092f0\": 29.30185475600001,\n"}
+,{"stream_name":"stdout","time":1144.962219756,"data":"      \"44b6_996155de\": 11.212096645000031,\n"}
+,{"stream_name":"stdout","time":1144.962222345,"data":"      \"44b6_c50204e0\": 42.94017329999997,\n"}
+,{"stream_name":"stdout","time":1144.962238247,"data":"      \"44b6_d5e7d891\": 30.269662649999987,\n"}
+,{"stream_name":"stdout","time":1144.962240826,"data":"      \"44b6_eb2880fc\": 47.28348029099999,\n"}
+,{"stream_name":"stdout","time":1144.962243232,"data":"      \"6bba_05db0fb1\": 47.90609063900001,\n"}
+,{"stream_name":"stdout","time":1144.962246132,"data":"      \"6bba_3abfe10a\": 57.58226099000001,\n"}
+,{"stream_name":"stdout","time":1144.962248556,"data":"      \"6bba_61ecbe65\": 19.341917515999967,\n"}
+,{"stream_name":"stdout","time":1144.962250961,"data":"      \"6bba_87289e13\": 46.019880687999944,\n"}
+,{"stream_name":"stdout","time":1144.962253508,"data":"      \"6bba_c328f2fd\": 41.056629980000025,\n"}
+,{"stream_name":"stdout","time":1144.962255924,"data":"      \"6bba_fe670320\": 37.83974479300002\n"}
+,{"stream_name":"stdout","time":1144.962258378,"data":"    },\n"}
+,{"stream_name":"stdout","time":1144.962260664,"data":"    \"focus3d\": {\n"}
+,{"stream_name":"stdout","time":1144.962263063,"data":"      \"44b6_2a2eff9f\": 37.41984470099999,\n"}
+,{"stream_name":"stdout","time":1144.962268121,"data":"      \"44b6_706092f0\": 46.72825744199997,\n"}
+,{"stream_name":"stdout","time":1144.962270639,"data":"      \"44b6_996155de\": 11.435320739000076,\n"}
+,{"stream_name":"stdout","time":1144.962273011,"data":"      \"44b6_c50204e0\": 94.49511218999999,\n"}
+,{"stream_name":"stdout","time":1144.962275387,"data":"      \"44b6_d5e7d891\": 63.097733921999975,\n"}
+,{"stream_name":"stdout","time":1144.962277777,"data":"      \"44b6_eb2880fc\": 30.141051683000114,\n"}
+,{"stream_name":"stdout","time":1144.962280188,"data":"      \"6bba_05db0fb1\": 117.67170606399986,\n"}
+,{"stream_name":"stdout","time":1144.962282564,"data":"      \"6bba_3abfe10a\": 41.843341065999994,\n"}
+,{"stream_name":"stdout","time":1144.962284943,"data":"      \"6bba_61ecbe65\": 9.82845728999996,\n"}
+,{"stream_name":"stdout","time":1144.962287332,"data":"      \"6bba_87289e13\": 9.114781956000115,\n"}
+,{"stream_name":"stdout","time":1144.962289719,"data":"      \"6bba_c328f2fd\": 43.151682144999995,\n"}
+,{"stream_name":"stdout","time":1144.96229209,"data":"      \"6bba_fe670320\": 22.898156429999972\n"}
+,{"stream_name":"stdout","time":1144.962294497,"data":"    }\n"}
+,{"stream_name":"stdout","time":1144.962296763,"data":"  }\n"}
+,{"stream_name":"stdout","time":1144.962299078,"data":"}\n"}
+,{"stream_name":"stdout","time":1144.96230144,"data":"Wrote: ['REPORT.md', 'arm_summary.csv', 'candidate_rows.csv', 'event_rows.csv', 'oof_candidate_scores.csv', 'summary.json']\n"}
+,{"stream_name":"stderr","time":1150.788335364,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1150.788369015,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1150.979863165,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1150.979887194,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1151.71971933,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":1152.123670113,"data":"[NbConvertApp] Writing 545079 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":1154.630696393,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1155.652040445,"data":"[NbConvertApp] Writing 811133 bytes to __results__.html\n"}
+]

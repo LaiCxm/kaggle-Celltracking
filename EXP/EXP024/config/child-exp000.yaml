@@ -1,0 +1,12 @@
+experiment: EXP024
+child: child-exp000
+purpose: cross_video_sparse_gt_instance_recall_generalization
+target_video_count: 12
+target_labeled_nodes: 500
+frame_pool_per_video: 16
+sampling_seed: 20260917
+match_radius_um: 7.0
+voxel_scale_zyx_um: [1.625, 0.40625, 0.40625]
+bootstrap_unit: video
+bootstrap_iterations: 10000
+test_submission: false

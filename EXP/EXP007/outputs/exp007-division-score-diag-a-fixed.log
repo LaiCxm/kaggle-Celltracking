@@ -1,0 +1,782 @@
+[{"stream_name":"stderr","time":7.017149845,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":7.017238622,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":7.898356179,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.898400949,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.898407321,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.898411675,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":8.533880132,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":8.533919226,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":8.53392435,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":8.533928658,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":9.719844498,"data":"BIOHUB_PRESET: dual_seed_near_balanced_center_confirmed_synthetic_gap\n"}
+,{"stream_name":"stdout","time":9.719901736,"data":"BIOHUB_SCORE_AXIS: near-balanced shared detections with marginal synthetic-gap confirmation\n"}
+,{"stream_name":"stdout","time":9.719907472,"data":"ported safe-div: 8/11/10, diverge 2.25\n"}
+,{"stream_name":"stdout","time":10.613274258,"data":"Biohub learned UNet + node-transformer + ILP submission\n"}
+,{"stream_name":"stdout","time":10.613310079,"data":"COMP_DIR: /kaggle/input/competitions/biohub-cell-tracking-during-development exists: True\n"}
+,{"stream_name":"stdout","time":10.613315316,"data":"TEST_DIR: /kaggle/input/competitions/biohub-cell-tracking-during-development/test exists: True\n"}
+,{"stream_name":"stdout","time":10.613319938,"data":"{\n"}
+,{"stream_name":"stdout","time":10.613323966,"data":"  \"adaptive_short_track_rescue\": false,\n"}
+,{"stream_name":"stdout","time":10.613327964,"data":"  \"allow_artifact_fallback\": false,\n"}
+,{"stream_name":"stdout","time":10.613331503,"data":"  \"allow_pip_install\": false,\n"}
+,{"stream_name":"stdout","time":10.613335075,"data":"  \"deepcenter_checkpoint_default\": \"/kaggle/input/biohub-deepcenter-unet3d-center-prior-v1/weights/full_frame_center/checkpoint_last.pt\",\n"}
+,{"stream_name":"stdout","time":10.613339505,"data":"  \"deepcenter_expected_epoch\": 500,\n"}
+,{"stream_name":"stdout","time":10.613343394,"data":"  \"deepcenter_gap_add_gate\": true,\n"}
+,{"stream_name":"stdout","time":10.61334708,"data":"  \"deepcenter_gap_confirm_min_span_um\": 8.5,\n"}
+,{"stream_name":"stdout","time":10.613350914,"data":"  \"deepcenter_gap_threshold\": 0.25,\n"}
+,{"stream_name":"stdout","time":10.61335489,"data":"  \"deepcenter_safe_div_add_gate\": false,\n"}
+,{"stream_name":"stdout","time":10.613359046,"data":"  \"deepcenter_safe_div_threshold\": 0.12,\n"}
+,{"stream_name":"stdout","time":10.613363543,"data":"  \"det_threshold\": 0.96875,\n"}
+,{"stream_name":"stdout","time":10.613367321,"data":"  \"div_drop_to_single_if_bad\": true,\n"}
+,{"stream_name":"stdout","time":10.613371099,"data":"  \"div_parent_max_um\": 10.5,\n"}
+,{"stream_name":"stdout","time":10.613404739,"data":"  \"div_sister_max_um\": 8.0,\n"}
+,{"stream_name":"stdout","time":10.613408869,"data":"  \"experiment_tag\": \"selected_101_dual_seed_near_balanced_center_confirmed_synthetic_gap\",\n"}
+,{"stream_name":"stdout","time":10.613413068,"data":"  \"gap2_frame_frac_cap\": 0.006,\n"}
+,{"stream_name":"stdout","time":10.613416967,"data":"  \"gap2_max_links_abs\": 180,\n"}
+,{"stream_name":"stdout","time":10.613420985,"data":"  \"gap2_max_links_frac\": 0.0045,\n"}
+,{"stream_name":"stdout","time":10.613424957,"data":"  \"gap2_max_step_um\": 4.4,\n"}
+,{"stream_name":"stdout","time":10.613428973,"data":"  \"gap2_max_total_um\": 10.2,\n"}
+,{"stream_name":"stdout","time":10.613432955,"data":"  \"gap2_require_context\": true,\n"}
+,{"stream_name":"stdout","time":10.613436845,"data":"  \"gap_close_effective_max_gap\": 1,\n"}
+,{"stream_name":"stdout","time":10.613440838,"data":"  \"gap_close_max_added_abs\": 2000,\n"}
+,{"stream_name":"stdout","time":10.613444741,"data":"  \"gap_close_max_added_frac\": 0.05,\n"}
+,{"stream_name":"stdout","time":10.613448897,"data":"  \"gap_close_max_gap\": 2,\n"}
+,{"stream_name":"stdout","time":10.613452721,"data":"  \"gap_close_reuse_existing\": true,\n"}
+,{"stream_name":"stdout","time":10.613456683,"data":"  \"gap_close_reuse_um\": 3.2,\n"}
+,{"stream_name":"stdout","time":10.613460491,"data":"  \"gap_close_um\": 5.8,\n"}
+,{"stream_name":"stdout","time":10.61346443,"data":"  \"gap_density_adaptive\": true,\n"}
+,{"stream_name":"stdout","time":10.613468279,"data":"  \"gap_density_gain\": 0.04,\n"}
+,{"stream_name":"stdout","time":10.613472087,"data":"  \"gap_density_max_step_delta_um\": 0.125,\n"}
+,{"stream_name":"stdout","time":10.61347601,"data":"  \"gap_density_neighbors\": 3,\n"}
+,{"stream_name":"stdout","time":10.613480057,"data":"  \"gap_density_reference_um\": 6.5,\n"}
+,{"stream_name":"stdout","time":10.613484013,"data":"  \"gap_refine_max_shift_um\": 3.2,\n"}
+,{"stream_name":"stdout","time":10.613488141,"data":"  \"gap_refine_synthetic\": true,\n"}
+,{"stream_name":"stdout","time":10.613492129,"data":"  \"gap_refine_win_yx\": 3,\n"}
+,{"stream_name":"stdout","time":10.613495957,"data":"  \"gap_refine_win_z\": 1,\n"}
+,{"stream_name":"stdout","time":10.613499872,"data":"  \"ilp_appearance_weight\": 0.0,\n"}
+,{"stream_name":"stdout","time":10.613503772,"data":"  \"ilp_disappearance_weight\": 1.5,\n"}
+,{"stream_name":"stdout","time":10.61350768,"data":"  \"ilp_division_weight\": 1.0,\n"}
+,{"stream_name":"stdout","time":10.613511748,"data":"  \"ilp_edge_weight\": -1.0,\n"}
+,{"stream_name":"stdout","time":10.613515939,"data":"  \"method\": \"unet_transformer\",\n"}
+,{"stream_name":"stdout","time":10.613519884,"data":"  \"motion_relink_learned_bonus\": 1.0,\n"}
+,{"stream_name":"stdout","time":10.613524213,"data":"  \"motion_relink_max_frame_nodes\": 2600,\n"}
+,{"stream_name":"stdout","time":10.613528115,"data":"  \"motion_relink_relaxed_um\": 10.0,\n"}
+,{"stream_name":"stdout","time":10.613531919,"data":"  \"motion_relink_tight_um\": 6.0,\n"}
+,{"stream_name":"stdout","time":10.613535767,"data":"  \"motion_relink_velocity_weight\": 0.5,\n"}
+,{"stream_name":"stdout","time":10.613539612,"data":"  \"output_division_geometry_filter\": false,\n"}
+,{"stream_name":"stdout","time":10.613543607,"data":"  \"output_edge_max_um\": 14.0,\n"}
+,{"stream_name":"stdout","time":10.613550496,"data":"  \"output_enforce_next_frame\": true,\n"}
+,{"stream_name":"stdout","time":10.613554816,"data":"  \"output_filter_short_tracks\": true,\n"}
+,{"stream_name":"stdout","time":10.613558679,"data":"  \"output_gap2_recovery\": false,\n"}
+,{"stream_name":"stdout","time":10.613566225,"data":"  \"output_gap_close\": true,\n"}
+,{"stream_name":"stdout","time":10.613570239,"data":"  \"output_keep_division_components\": true,\n"}
+,{"stream_name":"stdout","time":10.613574327,"data":"  \"output_linefit_smooth\": true,\n"}
+,{"stream_name":"stdout","time":10.613578187,"data":"  \"output_linefit_weight\": 0.8,\n"}
+,{"stream_name":"stdout","time":10.617973678,"data":"  \"output_linefit_window\": 2,\n"}
+,{"stream_name":"stdout","time":10.617990243,"data":"  \"output_min_track_len\": 6,\n"}
+,{"stream_name":"stdout","time":10.617995428,"data":"  \"output_motion_relink\": true,\n"}
+,{"stream_name":"stdout","time":10.618000252,"data":"  \"output_prune_isolated\": true,\n"}
+,{"stream_name":"stdout","time":10.618005005,"data":"  \"output_safe_divisions\": true,\n"}
+,{"stream_name":"stdout","time":10.618010064,"data":"  \"output_single_child_repair\": false,\n"}
+,{"stream_name":"stdout","time":10.618014603,"data":"  \"output_single_parent_repair\": true,\n"}
+,{"stream_name":"stdout","time":10.618019255,"data":"  \"primary_artifact_manifest\": \"/kaggle/input/datasets/pilkwang/biohub-tracking-support-pack-50ep-v1/ARTIFACT_MANIFEST.json\",\n"}
+,{"stream_name":"stdout","time":10.61802419,"data":"  \"safe_div_existing_child_max_um\": 10.0,\n"}
+,{"stream_name":"stdout","time":10.618028437,"data":"  \"safe_div_frame_frac_cap\": 0.0076,\n"}
+,{"stream_name":"stdout","time":10.618032986,"data":"  \"safe_div_global_frac_cap\": 0.00375,\n"}
+,{"stream_name":"stdout","time":10.618037542,"data":"  \"safe_div_max_um\": 8.0,\n"}
+,{"stream_name":"stdout","time":10.618042071,"data":"  \"safe_div_sister_max_um\": 11.0,\n"}
+,{"stream_name":"stdout","time":10.618046768,"data":"  \"short_track_rescue_max_mean_edge_dist_um\": 3.25,\n"}
+,{"stream_name":"stdout","time":10.618051492,"data":"  \"short_track_rescue_max_nodes_abs\": 180,\n"}
+,{"stream_name":"stdout","time":10.618055952,"data":"  \"short_track_rescue_max_nodes_frac\": 0.018,\n"}
+,{"stream_name":"stdout","time":10.61806074,"data":"  \"short_track_rescue_min_len\": 4,\n"}
+,{"stream_name":"stdout","time":10.618065669,"data":"  \"short_track_rescue_min_mean_edge_prob\": 0.82,\n"}
+,{"stream_name":"stdout","time":10.618069721,"data":"  \"short_track_rescue_trigger_removed_frac\": 0.1,\n"}
+,{"stream_name":"stdout","time":10.618077517,"data":"  \"slice\": \"\",\n"}
+,{"stream_name":"stdout","time":10.618080529,"data":"  \"target_artifact_slug\": \"biohub-tracking-support-pack-50ep-v1\",\n"}
+,{"stream_name":"stdout","time":10.618083267,"data":"  \"unet_batch_size\": 4,\n"}
+,{"stream_name":"stdout","time":10.618085855,"data":"  \"use_deepcenter_add_only_gate\": true,\n"}
+,{"stream_name":"stdout","time":10.618088582,"data":"  \"use_ilp\": true,\n"}
+,{"stream_name":"stdout","time":10.618091197,"data":"  \"weights\": \"weights/unet_transformer/split_0/edge_predictor_best.pth\"\n"}
+,{"stream_name":"stdout","time":10.618093916,"data":"}\n"}
+,{"stream_name":"stdout","time":10.831717171,"data":"ARTIFACTS: /kaggle/input/datasets/pilkwang/biohub-tracking-support-pack-50ep-v1\n"}
+,{"stream_name":"stdout","time":10.831753761,"data":"Has offline wheels: True\n"}
+,{"stream_name":"stdout","time":10.831757887,"data":"Artifact name: biohub-tracking-support-pack-400ep-snapshot-v1\n"}
+,{"stream_name":"stdout","time":10.831760702,"data":"Weight sha256: 12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771\n"}
+,{"stream_name":"stdout","time":10.831763438,"data":"Weight path: weights/unet_transformer/split_0/edge_predictor_best.pth\n"}
+,{"stream_name":"stdout","time":11.675743909,"data":"Installing missing packages from offline package dirs: ['polars']\n"}
+,{"stream_name":"stdout","time":11.675770976999999,"data":"Dependency resolver is disabled with --no-deps to avoid replacing Kaggle numpy/scipy in a live kernel.\n"}
+,{"stream_name":"stdout","time":11.675775934,"data":"Offline package dirs: ['/kaggle/input/datasets/pilkwang/biohub-tracking-support-pack-50ep-v1/wheels']\n"}
+,{"stream_name":"stdout","time":18.103672618,"data":"Offline dependency install succeeded.\n"}
+,{"stream_name":"stdout","time":18.103715906,"data":"Installing missing packages from offline package dirs: ['tracksdata', 'zarr', 'pyscipopt', 'geff', 'geff_spec', 'ilpy', 'imagecodecs', 'rustworkx', 'numcodecs', 'donfig', 'bidict']\n"}
+,{"stream_name":"stdout","time":18.103721896,"data":"Dependency resolver is disabled with --no-deps to avoid replacing Kaggle numpy/scipy in a live kernel.\n"}
+,{"stream_name":"stdout","time":18.103737904,"data":"Offline package dirs: ['/kaggle/input/datasets/pilkwang/biohub-tracking-support-pack-50ep-v1/wheels']\n"}
+,{"stream_name":"stdout","time":43.811375587,"data":"Offline dependency install succeeded.\n"}
+,{"stream_name":"stderr","time":51.430274346,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":51.430310358,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":51.430323444,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":51.430327583,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stderr","time":51.430330705,"data":"\n"}
+,{"stream_name":"stderr","time":51.430333658,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":51.430337142,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":51.430340151,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":51.430343866,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stdout","time":51.677063509999996,"data":"Required graph/Zarr/ILP packages import successfully.\n"}
+,{"stream_name":"stdout","time":51.677112804,"data":"Inference repo: /kaggle/working/tracking_repo\n"}
+,{"stream_name":"stdout","time":51.677119408,"data":"Weights: /kaggle/working/tracking_repo/weights/unet_transformer/split_0/edge_predictor_best.pth\n"}
+,{"stream_name":"stdout","time":339.952037298,"data":"Secondary artifact: /kaggle/input/datasets/pilkwang/biohub-temporal-unet3d-seed314159-v1\n"}
+,{"stream_name":"stdout","time":339.952079906,"data":"Secondary weight: /kaggle/working/secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth\n"}
+,{"stream_name":"stdout","time":339.952084538,"data":"Secondary SHA256: 9bac2fa0dadc4a6fc1899e0caf187f4b553e0a7cd90ba1261a68b35ffe9e305f\n"}
+,{"stream_name":"stdout","time":339.952094795,"data":"Secondary edge-logit weight: 0.15\n"}
+,{"stream_name":"stdout","time":344.435672175,"data":"CUDA device: Tesla T4\n"}
+,{"stream_name":"stdout","time":344.435702398,"data":"TTA patch applied (400ep spatial D4-style)\n"}
+,{"stream_name":"stdout","time":344.435707136,"data":"Calibrated dual-seed runtime patch applied\n"}
+,{"stream_name":"stdout","time":344.435710745,"data":"Frozen frame retention guard applied at 0.90\n"}
+,{"stream_name":"stdout","time":344.435714757,"data":"Found 4 test videos\n"}
+,{"stream_name":"stdout","time":344.435718314,"data":"['44b6_0113de3b', '44b6_0b24845f', '6bba_05b6850b', '6bba_05db0fb1']\n"}
+,{"stream_name":"stdout","time":344.435722145,"data":"Launching 2 independent video shards on CUDA devices ['0', '1']\n"}
+,{"stream_name":"stdout","time":344.435726169,"data":"GPU shard 0: CUDA_VISIBLE_DEVICES=0 | /usr/bin/python3 scripts/predict_unet_transformer.py --data-dir /kaggle/input/competitions/biohub-cell-tracking-during-development/test --splits kaggle_test_splits_50ep.json --split 0 --weights weights/unet_transformer/split_0/edge_predictor_best.pth --unet-batch-size 4 --det-threshold 0.96875 --ilp-edge-weight -1.0 --ilp-appearance-weight 0.0 --ilp-disappearance-weight 1.5 --ilp-division-weight 1.0 --use-ilp --method unet_transformer_gpu0 --slice 0::2\n"}
+,{"stream_name":"stdout","time":344.437537501,"data":"GPU shard 1: CUDA_VISIBLE_DEVICES=1 | /usr/bin/python3 scripts/predict_unet_transformer.py --data-dir /kaggle/input/competitions/biohub-cell-tracking-during-development/test --splits kaggle_test_splits_50ep.json --split 0 --weights weights/unet_transformer/split_0/edge_predictor_best.pth --unet-batch-size 4 --det-threshold 0.96875 --ilp-edge-weight -1.0 --ilp-appearance-weight 0.0 --ilp-disappearance-weight 1.5 --ilp-division-weight 1.0 --use-ilp --method unet_transformer_gpu1 --slice 1::2\n"}
+,{"stream_name":"stderr","time":349.818428041,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":349.818464826,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":349.823617437,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":349.823643238,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stderr","time":349.86630509,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":349.866331,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":349.871718287,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":349.871743735,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stderr","time":350.021453577,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":350.021496497,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":350.021502026,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":350.021506847,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stderr","time":350.021510451,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":350.021515252,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":350.021518977,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":350.021523189,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stderr","time":350.021526793,"data":"\n"}
+,{"stream_name":"stderr","time":350.021530355,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":350.021534893,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":350.021538707,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":350.021543139,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stderr","time":350.021549261,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":350.021553228,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":350.021556854,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":350.021566349,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stdout","time":350.609438779,"data":"Secondary model: /kaggle/working/secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth | edge weight=0.150 | detection weight=0.475 | link mode=low_margin_consensus | temperature=1.000 | low-margin max=0.350 | edge threshold=0.480\n"}
+,{"stream_name":"stdout","time":350.60947414,"data":"Fold 0: 2 datasets | weights=weights/unet_transformer/split_0/edge_predictor_best.pth | device=cuda | window_size=2 | pool_kernel_um=3.0\n"}
+,{"stream_name":"stdout","time":350.609488056,"data":"Secondary model: /kaggle/working/secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth | edge weight=0.150 | detection weight=0.475 | link mode=low_margin_consensus | temperature=1.000 | low-margin max=0.350 | edge threshold=0.480\n"}
+,{"stream_name":"stdout","time":350.609491258,"data":"Fold 0: 2 datasets | weights=weights/unet_transformer/split_0/edge_predictor_best.pth | device=cuda | window_size=2 | pool_kernel_um=3.0\n"}
+,{"stream_name":"stdout","time":350.811627105,"data":"Secondary model: /kaggle/working/secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth | edge weight=0.150 | detection weight=0.475 | link mode=low_margin_consensus | temperature=1.000 | low-margin max=0.350 | edge threshold=0.480\n"}
+,{"stream_name":"stdout","time":350.811658938,"data":"Fold 0: 2 datasets | weights=weights/unet_transformer/split_0/edge_predictor_best.pth | device=cuda | window_size=2 | pool_kernel_um=3.0\n"}
+,{"stream_name":"stdout","time":350.811663424,"data":"Secondary model: /kaggle/working/secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth | edge weight=0.150 | detection weight=0.475 | link mode=low_margin_consensus | temperature=1.000 | low-margin max=0.350 | edge threshold=0.480\n"}
+,{"stream_name":"stdout","time":350.811667514,"data":"Fold 0: 2 datasets | weights=weights/unet_transformer/split_0/edge_predictor_best.pth | device=cuda | window_size=2 | pool_kernel_um=3.0\n"}
+,{"stream_name":"stdout","time":353.569706711,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 397, \"dataset\": \"44b6_0b24845f\", \"frame\": 0, \"minimum_retention\": 0.9, \"primary_candidates\": 456, \"retention\": 0.8706140350877193, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":353.571100715,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 393, \"dataset\": \"44b6_0b24845f\", \"frame\": 1, \"minimum_retention\": 0.9, \"primary_candidates\": 437, \"retention\": 0.8993135011441648, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":353.772754221,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 397, \"dataset\": \"44b6_0b24845f\", \"frame\": 0, \"minimum_retention\": 0.9, \"primary_candidates\": 456, \"retention\": 0.8706140350877193, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":353.772787128,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 393, \"dataset\": \"44b6_0b24845f\", \"frame\": 1, \"minimum_retention\": 0.9, \"primary_candidates\": 437, \"retention\": 0.8993135011441648, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":358.44554169,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 344, \"dataset\": \"44b6_0b24845f\", \"frame\": 2, \"minimum_retention\": 0.9, \"primary_candidates\": 387, \"retention\": 0.8888888888888888, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":358.648730801,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 344, \"dataset\": \"44b6_0b24845f\", \"frame\": 2, \"minimum_retention\": 0.9, \"primary_candidates\": 387, \"retention\": 0.8888888888888888, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":360.301833125,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 375, \"dataset\": \"44b6_0b24845f\", \"frame\": 3, \"minimum_retention\": 0.9, \"primary_candidates\": 419, \"retention\": 0.8949880668257757, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":360.50527875,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 375, \"dataset\": \"44b6_0b24845f\", \"frame\": 3, \"minimum_retention\": 0.9, \"primary_candidates\": 419, \"retention\": 0.8949880668257757, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":362.170427144,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 338, \"dataset\": \"44b6_0b24845f\", \"frame\": 4, \"minimum_retention\": 0.9, \"primary_candidates\": 395, \"retention\": 0.8556962025316456, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":362.373481096,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 338, \"dataset\": \"44b6_0b24845f\", \"frame\": 4, \"minimum_retention\": 0.9, \"primary_candidates\": 395, \"retention\": 0.8556962025316456, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":364.020406157,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 321, \"dataset\": \"44b6_0b24845f\", \"frame\": 5, \"minimum_retention\": 0.9, \"primary_candidates\": 378, \"retention\": 0.8492063492063492, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":364.223381512,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 321, \"dataset\": \"44b6_0b24845f\", \"frame\": 5, \"minimum_retention\": 0.9, \"primary_candidates\": 378, \"retention\": 0.8492063492063492, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":365.890132172,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 348, \"dataset\": \"44b6_0b24845f\", \"frame\": 6, \"minimum_retention\": 0.9, \"primary_candidates\": 390, \"retention\": 0.8923076923076924, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":366.09328523,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 348, \"dataset\": \"44b6_0b24845f\", \"frame\": 6, \"minimum_retention\": 0.9, \"primary_candidates\": 390, \"retention\": 0.8923076923076924, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":367.759532007,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 334, \"dataset\": \"44b6_0b24845f\", \"frame\": 7, \"minimum_retention\": 0.9, \"primary_candidates\": 380, \"retention\": 0.8789473684210526, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":367.964057392,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 334, \"dataset\": \"44b6_0b24845f\", \"frame\": 7, \"minimum_retention\": 0.9, \"primary_candidates\": 380, \"retention\": 0.8789473684210526, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":373.538567138,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 355, \"dataset\": \"44b6_0b24845f\", \"frame\": 10, \"minimum_retention\": 0.9, \"primary_candidates\": 412, \"retention\": 0.8616504854368932, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":373.757643467,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 355, \"dataset\": \"44b6_0b24845f\", \"frame\": 10, \"minimum_retention\": 0.9, \"primary_candidates\": 412, \"retention\": 0.8616504854368932, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":377.332776646,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 311, \"dataset\": \"44b6_0b24845f\", \"frame\": 12, \"minimum_retention\": 0.9, \"primary_candidates\": 354, \"retention\": 0.8785310734463276, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":377.535917276,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 311, \"dataset\": \"44b6_0b24845f\", \"frame\": 12, \"minimum_retention\": 0.9, \"primary_candidates\": 354, \"retention\": 0.8785310734463276, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":379.209346437,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 314, \"dataset\": \"44b6_0b24845f\", \"frame\": 13, \"minimum_retention\": 0.9, \"primary_candidates\": 380, \"retention\": 0.8263157894736842, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":379.412478974,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 314, \"dataset\": \"44b6_0b24845f\", \"frame\": 13, \"minimum_retention\": 0.9, \"primary_candidates\": 380, \"retention\": 0.8263157894736842, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":392.698610841,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 281, \"dataset\": \"44b6_0b24845f\", \"frame\": 20, \"minimum_retention\": 0.9, \"primary_candidates\": 313, \"retention\": 0.8977635782747604, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":392.901658731,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 281, \"dataset\": \"44b6_0b24845f\", \"frame\": 20, \"minimum_retention\": 0.9, \"primary_candidates\": 313, \"retention\": 0.8977635782747604, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":394.594642115,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 273, \"dataset\": \"44b6_0b24845f\", \"frame\": 21, \"minimum_retention\": 0.9, \"primary_candidates\": 316, \"retention\": 0.8639240506329114, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":394.798169072,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 273, \"dataset\": \"44b6_0b24845f\", \"frame\": 21, \"minimum_retention\": 0.9, \"primary_candidates\": 316, \"retention\": 0.8639240506329114, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":396.525962476,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 282, \"dataset\": \"44b6_0b24845f\", \"frame\": 22, \"minimum_retention\": 0.9, \"primary_candidates\": 317, \"retention\": 0.889589905362776, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":396.729419185,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 282, \"dataset\": \"44b6_0b24845f\", \"frame\": 22, \"minimum_retention\": 0.9, \"primary_candidates\": 317, \"retention\": 0.889589905362776, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":400.429623788,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 259, \"dataset\": \"44b6_0b24845f\", \"frame\": 24, \"minimum_retention\": 0.9, \"primary_candidates\": 301, \"retention\": 0.8604651162790697, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":400.6329767,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 259, \"dataset\": \"44b6_0b24845f\", \"frame\": 24, \"minimum_retention\": 0.9, \"primary_candidates\": 301, \"retention\": 0.8604651162790697, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":406.302980194,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 265, \"dataset\": \"44b6_0b24845f\", \"frame\": 27, \"minimum_retention\": 0.9, \"primary_candidates\": 299, \"retention\": 0.8862876254180602, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":406.522824476,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 265, \"dataset\": \"44b6_0b24845f\", \"frame\": 27, \"minimum_retention\": 0.9, \"primary_candidates\": 299, \"retention\": 0.8862876254180602, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":412.177312423,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 271, \"dataset\": \"44b6_0b24845f\", \"frame\": 30, \"minimum_retention\": 0.9, \"primary_candidates\": 302, \"retention\": 0.8973509933774835, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":412.380131862,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 271, \"dataset\": \"44b6_0b24845f\", \"frame\": 30, \"minimum_retention\": 0.9, \"primary_candidates\": 302, \"retention\": 0.8973509933774835, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":416.170440421,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 252, \"dataset\": \"44b6_0b24845f\", \"frame\": 32, \"minimum_retention\": 0.9, \"primary_candidates\": 289, \"retention\": 0.8719723183391004, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":416.373710314,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 252, \"dataset\": \"44b6_0b24845f\", \"frame\": 32, \"minimum_retention\": 0.9, \"primary_candidates\": 289, \"retention\": 0.8719723183391004, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":446.590802911,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 266, \"dataset\": \"44b6_0b24845f\", \"frame\": 47, \"minimum_retention\": 0.9, \"primary_candidates\": 304, \"retention\": 0.875, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":446.811502158,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 266, \"dataset\": \"44b6_0b24845f\", \"frame\": 47, \"minimum_retention\": 0.9, \"primary_candidates\": 304, \"retention\": 0.875, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":450.781356159,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 265, \"dataset\": \"44b6_0b24845f\", \"frame\": 49, \"minimum_retention\": 0.9, \"primary_candidates\": 301, \"retention\": 0.8803986710963455, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":450.985629917,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 265, \"dataset\": \"44b6_0b24845f\", \"frame\": 49, \"minimum_retention\": 0.9, \"primary_candidates\": 301, \"retention\": 0.8803986710963455, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":454.928468407,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 315, \"dataset\": \"44b6_0b24845f\", \"frame\": 51, \"minimum_retention\": 0.9, \"primary_candidates\": 356, \"retention\": 0.8848314606741573, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":455.131135638,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 315, \"dataset\": \"44b6_0b24845f\", \"frame\": 51, \"minimum_retention\": 0.9, \"primary_candidates\": 356, \"retention\": 0.8848314606741573, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":465.535469831,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 386, \"dataset\": \"44b6_0b24845f\", \"frame\": 56, \"minimum_retention\": 0.9, \"primary_candidates\": 431, \"retention\": 0.8955916473317865, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":465.73795595,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 386, \"dataset\": \"44b6_0b24845f\", \"frame\": 56, \"minimum_retention\": 0.9, \"primary_candidates\": 431, \"retention\": 0.8955916473317865, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":467.597059662,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 265, \"dataset\": \"44b6_0b24845f\", \"frame\": 57, \"minimum_retention\": 0.9, \"primary_candidates\": 296, \"retention\": 0.8952702702702703, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":467.800022863,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 265, \"dataset\": \"44b6_0b24845f\", \"frame\": 57, \"minimum_retention\": 0.9, \"primary_candidates\": 296, \"retention\": 0.8952702702702703, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":469.67614231,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 266, \"dataset\": \"44b6_0b24845f\", \"frame\": 58, \"minimum_retention\": 0.9, \"primary_candidates\": 308, \"retention\": 0.8636363636363636, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":469.879182047,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 266, \"dataset\": \"44b6_0b24845f\", \"frame\": 58, \"minimum_retention\": 0.9, \"primary_candidates\": 308, \"retention\": 0.8636363636363636, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":471.708951044,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 306, \"dataset\": \"44b6_0b24845f\", \"frame\": 59, \"minimum_retention\": 0.9, \"primary_candidates\": 342, \"retention\": 0.8947368421052632, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":471.911711292,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 306, \"dataset\": \"44b6_0b24845f\", \"frame\": 59, \"minimum_retention\": 0.9, \"primary_candidates\": 342, \"retention\": 0.8947368421052632, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":473.737617833,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 339, \"dataset\": \"44b6_0b24845f\", \"frame\": 60, \"minimum_retention\": 0.9, \"primary_candidates\": 384, \"retention\": 0.8828125, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":473.940603101,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 339, \"dataset\": \"44b6_0b24845f\", \"frame\": 60, \"minimum_retention\": 0.9, \"primary_candidates\": 384, \"retention\": 0.8828125, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":475.747960572,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 278, \"dataset\": \"44b6_0b24845f\", \"frame\": 61, \"minimum_retention\": 0.9, \"primary_candidates\": 320, \"retention\": 0.86875, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":475.951237023,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 278, \"dataset\": \"44b6_0b24845f\", \"frame\": 61, \"minimum_retention\": 0.9, \"primary_candidates\": 320, \"retention\": 0.86875, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":477.779162448,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 293, \"dataset\": \"44b6_0b24845f\", \"frame\": 62, \"minimum_retention\": 0.9, \"primary_candidates\": 340, \"retention\": 0.861764705882353, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":477.994455111,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 293, \"dataset\": \"44b6_0b24845f\", \"frame\": 62, \"minimum_retention\": 0.9, \"primary_candidates\": 340, \"retention\": 0.861764705882353, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":481.797539727,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 289, \"dataset\": \"44b6_0b24845f\", \"frame\": 64, \"minimum_retention\": 0.9, \"primary_candidates\": 332, \"retention\": 0.8704819277108434, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":482.000031776,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 289, \"dataset\": \"44b6_0b24845f\", \"frame\": 64, \"minimum_retention\": 0.9, \"primary_candidates\": 332, \"retention\": 0.8704819277108434, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":485.845808787,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 316, \"dataset\": \"44b6_0b24845f\", \"frame\": 66, \"minimum_retention\": 0.9, \"primary_candidates\": 369, \"retention\": 0.8563685636856369, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":486.048726587,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 316, \"dataset\": \"44b6_0b24845f\", \"frame\": 66, \"minimum_retention\": 0.9, \"primary_candidates\": 369, \"retention\": 0.8563685636856369, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":487.871454257,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 266, \"dataset\": \"44b6_0b24845f\", \"frame\": 67, \"minimum_retention\": 0.9, \"primary_candidates\": 306, \"retention\": 0.869281045751634, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":488.074463515,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 266, \"dataset\": \"44b6_0b24845f\", \"frame\": 67, \"minimum_retention\": 0.9, \"primary_candidates\": 306, \"retention\": 0.869281045751634, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":494.042170937,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 255, \"dataset\": \"44b6_0b24845f\", \"frame\": 70, \"minimum_retention\": 0.9, \"primary_candidates\": 298, \"retention\": 0.8557046979865772, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":494.244855014,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 255, \"dataset\": \"44b6_0b24845f\", \"frame\": 70, \"minimum_retention\": 0.9, \"primary_candidates\": 298, \"retention\": 0.8557046979865772, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":496.077412419,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 273, \"dataset\": \"44b6_0b24845f\", \"frame\": 71, \"minimum_retention\": 0.9, \"primary_candidates\": 318, \"retention\": 0.8584905660377359, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":496.279954627,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 273, \"dataset\": \"44b6_0b24845f\", \"frame\": 71, \"minimum_retention\": 0.9, \"primary_candidates\": 318, \"retention\": 0.8584905660377359, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":500.169515771,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 202, \"dataset\": \"44b6_0b24845f\", \"frame\": 73, \"minimum_retention\": 0.9, \"primary_candidates\": 257, \"retention\": 0.7859922178988327, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":500.372158187,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 202, \"dataset\": \"44b6_0b24845f\", \"frame\": 73, \"minimum_retention\": 0.9, \"primary_candidates\": 257, \"retention\": 0.7859922178988327, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":502.195555671,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 230, \"dataset\": \"44b6_0b24845f\", \"frame\": 74, \"minimum_retention\": 0.9, \"primary_candidates\": 285, \"retention\": 0.8070175438596491, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":502.398257347,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 230, \"dataset\": \"44b6_0b24845f\", \"frame\": 74, \"minimum_retention\": 0.9, \"primary_candidates\": 285, \"retention\": 0.8070175438596491, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":504.220394303,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 300, \"dataset\": \"44b6_0b24845f\", \"frame\": 75, \"minimum_retention\": 0.9, \"primary_candidates\": 367, \"retention\": 0.8174386920980926, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":504.422804696,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 300, \"dataset\": \"44b6_0b24845f\", \"frame\": 75, \"minimum_retention\": 0.9, \"primary_candidates\": 367, \"retention\": 0.8174386920980926, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":506.264060953,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 317, \"dataset\": \"44b6_0b24845f\", \"frame\": 76, \"minimum_retention\": 0.9, \"primary_candidates\": 369, \"retention\": 0.8590785907859079, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":506.466848472,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 317, \"dataset\": \"44b6_0b24845f\", \"frame\": 76, \"minimum_retention\": 0.9, \"primary_candidates\": 369, \"retention\": 0.8590785907859079, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":508.289546017,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 255, \"dataset\": \"44b6_0b24845f\", \"frame\": 77, \"minimum_retention\": 0.9, \"primary_candidates\": 323, \"retention\": 0.7894736842105263, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":508.505305824,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 255, \"dataset\": \"44b6_0b24845f\", \"frame\": 77, \"minimum_retention\": 0.9, \"primary_candidates\": 323, \"retention\": 0.7894736842105263, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":510.283856039,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 315, \"dataset\": \"44b6_0b24845f\", \"frame\": 78, \"minimum_retention\": 0.9, \"primary_candidates\": 388, \"retention\": 0.8118556701030928, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":510.486728563,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 315, \"dataset\": \"44b6_0b24845f\", \"frame\": 78, \"minimum_retention\": 0.9, \"primary_candidates\": 388, \"retention\": 0.8118556701030928, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":512.319923942,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 323, \"dataset\": \"44b6_0b24845f\", \"frame\": 79, \"minimum_retention\": 0.9, \"primary_candidates\": 420, \"retention\": 0.7690476190476191, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":512.522854259,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 323, \"dataset\": \"44b6_0b24845f\", \"frame\": 79, \"minimum_retention\": 0.9, \"primary_candidates\": 420, \"retention\": 0.7690476190476191, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":514.36116278,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 314, \"dataset\": \"44b6_0b24845f\", \"frame\": 80, \"minimum_retention\": 0.9, \"primary_candidates\": 382, \"retention\": 0.8219895287958116, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":514.563551232,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 314, \"dataset\": \"44b6_0b24845f\", \"frame\": 80, \"minimum_retention\": 0.9, \"primary_candidates\": 382, \"retention\": 0.8219895287958116, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":516.401375389,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 307, \"dataset\": \"44b6_0b24845f\", \"frame\": 81, \"minimum_retention\": 0.9, \"primary_candidates\": 378, \"retention\": 0.8121693121693122, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":516.604019466,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 307, \"dataset\": \"44b6_0b24845f\", \"frame\": 81, \"minimum_retention\": 0.9, \"primary_candidates\": 378, \"retention\": 0.8121693121693122, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":518.4160617,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 302, \"dataset\": \"44b6_0b24845f\", \"frame\": 82, \"minimum_retention\": 0.9, \"primary_candidates\": 377, \"retention\": 0.8010610079575596, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":518.619003127,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 302, \"dataset\": \"44b6_0b24845f\", \"frame\": 82, \"minimum_retention\": 0.9, \"primary_candidates\": 377, \"retention\": 0.8010610079575596, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":520.439475104,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 283, \"dataset\": \"44b6_0b24845f\", \"frame\": 83, \"minimum_retention\": 0.9, \"primary_candidates\": 368, \"retention\": 0.7690217391304348, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":520.642640735,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 283, \"dataset\": \"44b6_0b24845f\", \"frame\": 83, \"minimum_retention\": 0.9, \"primary_candidates\": 368, \"retention\": 0.7690217391304348, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":522.485510104,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 291, \"dataset\": \"44b6_0b24845f\", \"frame\": 84, \"minimum_retention\": 0.9, \"primary_candidates\": 359, \"retention\": 0.8105849582172702, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":522.688452081,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 291, \"dataset\": \"44b6_0b24845f\", \"frame\": 84, \"minimum_retention\": 0.9, \"primary_candidates\": 359, \"retention\": 0.8105849582172702, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":524.560832629,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 233, \"dataset\": \"44b6_0b24845f\", \"frame\": 85, \"minimum_retention\": 0.9, \"primary_candidates\": 289, \"retention\": 0.8062283737024222, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":524.763735512,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 233, \"dataset\": \"44b6_0b24845f\", \"frame\": 85, \"minimum_retention\": 0.9, \"primary_candidates\": 289, \"retention\": 0.8062283737024222, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":526.603777382,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 195, \"dataset\": \"44b6_0b24845f\", \"frame\": 86, \"minimum_retention\": 0.9, \"primary_candidates\": 276, \"retention\": 0.7065217391304348, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":526.806903277,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 195, \"dataset\": \"44b6_0b24845f\", \"frame\": 86, \"minimum_retention\": 0.9, \"primary_candidates\": 276, \"retention\": 0.7065217391304348, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":528.609915167,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 243, \"dataset\": \"44b6_0b24845f\", \"frame\": 87, \"minimum_retention\": 0.9, \"primary_candidates\": 314, \"retention\": 0.7738853503184714, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":528.812671133,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 243, \"dataset\": \"44b6_0b24845f\", \"frame\": 87, \"minimum_retention\": 0.9, \"primary_candidates\": 314, \"retention\": 0.7738853503184714, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":530.678508659,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 295, \"dataset\": \"44b6_0b24845f\", \"frame\": 88, \"minimum_retention\": 0.9, \"primary_candidates\": 356, \"retention\": 0.8286516853932584, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":530.881138434,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 295, \"dataset\": \"44b6_0b24845f\", \"frame\": 88, \"minimum_retention\": 0.9, \"primary_candidates\": 356, \"retention\": 0.8286516853932584, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":532.746119031,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 245, \"dataset\": \"44b6_0b24845f\", \"frame\": 89, \"minimum_retention\": 0.9, \"primary_candidates\": 312, \"retention\": 0.7852564102564102, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":532.94897744,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 245, \"dataset\": \"44b6_0b24845f\", \"frame\": 89, \"minimum_retention\": 0.9, \"primary_candidates\": 312, \"retention\": 0.7852564102564102, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":534.766790882,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 186, \"dataset\": \"44b6_0b24845f\", \"frame\": 90, \"minimum_retention\": 0.9, \"primary_candidates\": 266, \"retention\": 0.6992481203007519, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":534.969427992,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 186, \"dataset\": \"44b6_0b24845f\", \"frame\": 90, \"minimum_retention\": 0.9, \"primary_candidates\": 266, \"retention\": 0.6992481203007519, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":536.774397629,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 166, \"dataset\": \"44b6_0b24845f\", \"frame\": 91, \"minimum_retention\": 0.9, \"primary_candidates\": 232, \"retention\": 0.7155172413793104, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":536.977062093,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 166, \"dataset\": \"44b6_0b24845f\", \"frame\": 91, \"minimum_retention\": 0.9, \"primary_candidates\": 232, \"retention\": 0.7155172413793104, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":538.778140207,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 191, \"dataset\": \"44b6_0b24845f\", \"frame\": 92, \"minimum_retention\": 0.9, \"primary_candidates\": 283, \"retention\": 0.6749116607773852, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":539.001632964,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 191, \"dataset\": \"44b6_0b24845f\", \"frame\": 92, \"minimum_retention\": 0.9, \"primary_candidates\": 283, \"retention\": 0.6749116607773852, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":540.809421778,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 155, \"dataset\": \"44b6_0b24845f\", \"frame\": 93, \"minimum_retention\": 0.9, \"primary_candidates\": 249, \"retention\": 0.6224899598393574, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":541.012189708,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 155, \"dataset\": \"44b6_0b24845f\", \"frame\": 93, \"minimum_retention\": 0.9, \"primary_candidates\": 249, \"retention\": 0.6224899598393574, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":542.899635528,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 197, \"dataset\": \"44b6_0b24845f\", \"frame\": 94, \"minimum_retention\": 0.9, \"primary_candidates\": 283, \"retention\": 0.696113074204947, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":543.102802804,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 197, \"dataset\": \"44b6_0b24845f\", \"frame\": 94, \"minimum_retention\": 0.9, \"primary_candidates\": 283, \"retention\": 0.696113074204947, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":544.932825817,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 176, \"dataset\": \"44b6_0b24845f\", \"frame\": 95, \"minimum_retention\": 0.9, \"primary_candidates\": 295, \"retention\": 0.5966101694915255, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":545.136166902,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 176, \"dataset\": \"44b6_0b24845f\", \"frame\": 95, \"minimum_retention\": 0.9, \"primary_candidates\": 295, \"retention\": 0.5966101694915255, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":546.939136896,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 155, \"dataset\": \"44b6_0b24845f\", \"frame\": 96, \"minimum_retention\": 0.9, \"primary_candidates\": 268, \"retention\": 0.5783582089552238, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":547.142732451,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 155, \"dataset\": \"44b6_0b24845f\", \"frame\": 96, \"minimum_retention\": 0.9, \"primary_candidates\": 268, \"retention\": 0.5783582089552238, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":548.972727489,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 216, \"dataset\": \"44b6_0b24845f\", \"frame\": 97, \"minimum_retention\": 0.9, \"primary_candidates\": 316, \"retention\": 0.6835443037974683, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":549.175929804,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 216, \"dataset\": \"44b6_0b24845f\", \"frame\": 97, \"minimum_retention\": 0.9, \"primary_candidates\": 316, \"retention\": 0.6835443037974683, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":550.998791901,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 202, \"dataset\": \"44b6_0b24845f\", \"frame\": 98, \"minimum_retention\": 0.9, \"primary_candidates\": 284, \"retention\": 0.7112676056338029, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":551.201441331,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 202, \"dataset\": \"44b6_0b24845f\", \"frame\": 98, \"minimum_retention\": 0.9, \"primary_candidates\": 284, \"retention\": 0.7112676056338029, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":553.064853876,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 124, \"dataset\": \"44b6_0b24845f\", \"frame\": 99, \"minimum_retention\": 0.9, \"primary_candidates\": 214, \"retention\": 0.5794392523364486, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":553.268921001,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 124, \"dataset\": \"44b6_0b24845f\", \"frame\": 99, \"minimum_retention\": 0.9, \"primary_candidates\": 214, \"retention\": 0.5794392523364486, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":779.459184924,"data":"Saved 2 predictions to /kaggle/working/tracking_repo/predictions/unknown/unet_transformer_gpu0/split_0\n"}
+,{"stream_name":"stdout","time":779.670997397,"data":"Saved 2 predictions to /kaggle/working/tracking_repo/predictions/unknown/unet_transformer_gpu0/split_0\n"}
+,{"stream_name":"stdout","time":862.794407942,"data":"Saved 2 predictions to /kaggle/working/tracking_repo/predictions/unknown/unet_transformer_gpu1/split_0\n"}
+,{"stream_name":"stdout","time":863.0060148,"data":"Saved 2 predictions to /kaggle/working/tracking_repo/predictions/unknown/unet_transformer_gpu1/split_0\n"}
+,{"stream_name":"stdout","time":865.716621223,"data":"Merged 4 prediction graphs into /kaggle/working/tracking_repo/predictions/unknown/unet_transformer/split_0\n"}
+,{"stream_name":"stdout","time":865.716655838,"data":"Test prediction completed in 8.68 minutes\n"}
+,{"stream_name":"stdout","time":907.942935047,"data":"Train stems for division scoring: ['44b6_12dfb391', '44b6_267148e4', '44b6_2a2eff9f', '44b6_341df25f', '44b6_587a1e22', '44b6_5f15d135']\n"}
+,{"stream_name":"stdout","time":907.942990761,"data":"Running train prediction for division scoring ...\n"}
+,{"stream_name":"stderr","time":912.386578254,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":912.386645077,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":912.391695632,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":912.391722757,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stderr","time":912.589054771,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":912.589086561,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":912.589091178,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":912.589095451,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stderr","time":912.589100627,"data":"\n"}
+,{"stream_name":"stderr","time":912.589108041,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":912.589111151,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":912.589113555,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":912.589116338,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stdout","time":912.877501674,"data":"Secondary model: /kaggle/working/secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth | edge weight=0.150 | detection weight=0.475 | link mode=low_margin_consensus | temperature=1.000 | low-margin max=0.350 | edge threshold=0.480\n"}
+,{"stream_name":"stdout","time":912.877541748,"data":"Fold 0: 6 datasets | weights=weights/unet_transformer/split_0/edge_predictor_best.pth | device=cuda | window_size=2 | pool_kernel_um=3.0\n"}
+,{"stream_name":"stdout","time":913.07991673,"data":"Secondary model: /kaggle/working/secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth | edge weight=0.150 | detection weight=0.475 | link mode=low_margin_consensus | temperature=1.000 | low-margin max=0.350 | edge threshold=0.480\n"}
+,{"stream_name":"stdout","time":913.079971648,"data":"Fold 0: 6 datasets | weights=weights/unet_transformer/split_0/edge_predictor_best.pth | device=cuda | window_size=2 | pool_kernel_um=3.0\n"}
+,{"stream_name":"stdout","time":1061.260512644,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 503, \"dataset\": \"44b6_12dfb391\", \"frame\": 69, \"minimum_retention\": 0.9, \"primary_candidates\": 564, \"retention\": 0.8918439716312057, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1061.472420114,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 503, \"dataset\": \"44b6_12dfb391\", \"frame\": 69, \"minimum_retention\": 0.9, \"primary_candidates\": 564, \"retention\": 0.8918439716312057, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1074.348997454,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 502, \"dataset\": \"44b6_12dfb391\", \"frame\": 75, \"minimum_retention\": 0.9, \"primary_candidates\": 559, \"retention\": 0.8980322003577818, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1074.551178908,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 502, \"dataset\": \"44b6_12dfb391\", \"frame\": 75, \"minimum_retention\": 0.9, \"primary_candidates\": 559, \"retention\": 0.8980322003577818, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1383.187431266,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 495, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 0, \"minimum_retention\": 0.9, \"primary_candidates\": 555, \"retention\": 0.8918918918918919, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1383.399422046,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 495, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 0, \"minimum_retention\": 0.9, \"primary_candidates\": 555, \"retention\": 0.8918918918918919, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1393.375878885,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 487, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 6, \"minimum_retention\": 0.9, \"primary_candidates\": 543, \"retention\": 0.8968692449355433, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1393.5786868,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 487, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 6, \"minimum_retention\": 0.9, \"primary_candidates\": 543, \"retention\": 0.8968692449355433, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1395.443532583,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 469, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 7, \"minimum_retention\": 0.9, \"primary_candidates\": 526, \"retention\": 0.8916349809885932, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1395.645767088,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 469, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 7, \"minimum_retention\": 0.9, \"primary_candidates\": 526, \"retention\": 0.8916349809885932, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1397.530733591,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 461, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 8, \"minimum_retention\": 0.9, \"primary_candidates\": 522, \"retention\": 0.8831417624521073, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1397.73296775,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 461, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 8, \"minimum_retention\": 0.9, \"primary_candidates\": 522, \"retention\": 0.8831417624521073, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1401.782253019,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 449, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 10, \"minimum_retention\": 0.9, \"primary_candidates\": 513, \"retention\": 0.8752436647173489, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1401.984715262,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 449, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 10, \"minimum_retention\": 0.9, \"primary_candidates\": 513, \"retention\": 0.8752436647173489, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1410.239078929,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 435, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 14, \"minimum_retention\": 0.9, \"primary_candidates\": 496, \"retention\": 0.8770161290322581, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1410.441560733,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 435, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 14, \"minimum_retention\": 0.9, \"primary_candidates\": 496, \"retention\": 0.8770161290322581, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1414.499370933,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 404, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 16, \"minimum_retention\": 0.9, \"primary_candidates\": 474, \"retention\": 0.8523206751054853, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1414.711899521,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 404, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 16, \"minimum_retention\": 0.9, \"primary_candidates\": 474, \"retention\": 0.8523206751054853, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1416.583568145,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 387, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 17, \"minimum_retention\": 0.9, \"primary_candidates\": 453, \"retention\": 0.8543046357615894, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1416.786076424,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 387, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 17, \"minimum_retention\": 0.9, \"primary_candidates\": 453, \"retention\": 0.8543046357615894, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1420.770356439,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 418, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 19, \"minimum_retention\": 0.9, \"primary_candidates\": 472, \"retention\": 0.885593220338983, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1420.972731051,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 418, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 19, \"minimum_retention\": 0.9, \"primary_candidates\": 472, \"retention\": 0.885593220338983, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1422.846028012,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 444, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 20, \"minimum_retention\": 0.9, \"primary_candidates\": 500, \"retention\": 0.888, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1423.048539147,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 444, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 20, \"minimum_retention\": 0.9, \"primary_candidates\": 500, \"retention\": 0.888, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1426.981171374,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 411, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 22, \"minimum_retention\": 0.9, \"primary_candidates\": 466, \"retention\": 0.8819742489270386, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1427.183702032,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 411, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 22, \"minimum_retention\": 0.9, \"primary_candidates\": 466, \"retention\": 0.8819742489270386, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1431.065407171,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 415, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 24, \"minimum_retention\": 0.9, \"primary_candidates\": 467, \"retention\": 0.8886509635974305, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1431.2683564,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 415, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 24, \"minimum_retention\": 0.9, \"primary_candidates\": 467, \"retention\": 0.8886509635974305, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1433.096715031,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 398, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 25, \"minimum_retention\": 0.9, \"primary_candidates\": 446, \"retention\": 0.8923766816143498, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1433.299492748,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 398, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 25, \"minimum_retention\": 0.9, \"primary_candidates\": 446, \"retention\": 0.8923766816143498, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1435.131512974,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 393, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 26, \"minimum_retention\": 0.9, \"primary_candidates\": 437, \"retention\": 0.8993135011441648, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1435.334670962,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 393, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 26, \"minimum_retention\": 0.9, \"primary_candidates\": 437, \"retention\": 0.8993135011441648, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1437.162540835,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 409, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 27, \"minimum_retention\": 0.9, \"primary_candidates\": 468, \"retention\": 0.8739316239316239, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1437.365532179,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 409, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 27, \"minimum_retention\": 0.9, \"primary_candidates\": 468, \"retention\": 0.8739316239316239, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1441.21550831,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 396, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 29, \"minimum_retention\": 0.9, \"primary_candidates\": 465, \"retention\": 0.8516129032258064, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1441.418683272,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 396, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 29, \"minimum_retention\": 0.9, \"primary_candidates\": 465, \"retention\": 0.8516129032258064, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1443.257394855,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 406, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 30, \"minimum_retention\": 0.9, \"primary_candidates\": 456, \"retention\": 0.8903508771929824, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1443.459984334,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 406, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 30, \"minimum_retention\": 0.9, \"primary_candidates\": 456, \"retention\": 0.8903508771929824, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1445.271019701,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 406, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 31, \"minimum_retention\": 0.9, \"primary_candidates\": 453, \"retention\": 0.8962472406181016, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1445.48335471,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 406, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 31, \"minimum_retention\": 0.9, \"primary_candidates\": 453, \"retention\": 0.8962472406181016, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1447.294028753,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 410, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 32, \"minimum_retention\": 0.9, \"primary_candidates\": 459, \"retention\": 0.8932461873638344, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1447.496496455,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 410, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 32, \"minimum_retention\": 0.9, \"primary_candidates\": 459, \"retention\": 0.8932461873638344, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1449.310038732,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 396, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 33, \"minimum_retention\": 0.9, \"primary_candidates\": 450, \"retention\": 0.88, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1449.512485903,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 396, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 33, \"minimum_retention\": 0.9, \"primary_candidates\": 450, \"retention\": 0.88, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1451.325930458,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 395, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 34, \"minimum_retention\": 0.9, \"primary_candidates\": 467, \"retention\": 0.8458244111349036, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1451.528882391,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 395, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 34, \"minimum_retention\": 0.9, \"primary_candidates\": 467, \"retention\": 0.8458244111349036, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1453.340977432,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 406, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 35, \"minimum_retention\": 0.9, \"primary_candidates\": 459, \"retention\": 0.8845315904139434, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1453.543717065,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 406, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 35, \"minimum_retention\": 0.9, \"primary_candidates\": 459, \"retention\": 0.8845315904139434, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1455.382675676,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 386, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 36, \"minimum_retention\": 0.9, \"primary_candidates\": 446, \"retention\": 0.8654708520179372, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1455.585760667,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 386, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 36, \"minimum_retention\": 0.9, \"primary_candidates\": 446, \"retention\": 0.8654708520179372, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1459.420345768,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 368, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 38, \"minimum_retention\": 0.9, \"primary_candidates\": 430, \"retention\": 0.8558139534883721, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1459.623380588,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 368, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 38, \"minimum_retention\": 0.9, \"primary_candidates\": 430, \"retention\": 0.8558139534883721, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1463.432716851,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 363, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 40, \"minimum_retention\": 0.9, \"primary_candidates\": 422, \"retention\": 0.8601895734597157, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1463.635103471,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 363, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 40, \"minimum_retention\": 0.9, \"primary_candidates\": 422, \"retention\": 0.8601895734597157, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1469.479211909,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 366, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 43, \"minimum_retention\": 0.9, \"primary_candidates\": 414, \"retention\": 0.8840579710144928, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1469.681532406,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 366, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 43, \"minimum_retention\": 0.9, \"primary_candidates\": 414, \"retention\": 0.8840579710144928, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1471.493532728,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 382, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 44, \"minimum_retention\": 0.9, \"primary_candidates\": 437, \"retention\": 0.8741418764302059, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1471.69666991,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 382, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 44, \"minimum_retention\": 0.9, \"primary_candidates\": 437, \"retention\": 0.8741418764302059, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1473.561523387,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 371, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 45, \"minimum_retention\": 0.9, \"primary_candidates\": 423, \"retention\": 0.8770685579196218, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1473.764338951,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 371, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 45, \"minimum_retention\": 0.9, \"primary_candidates\": 423, \"retention\": 0.8770685579196218, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1475.588219384,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 378, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 46, \"minimum_retention\": 0.9, \"primary_candidates\": 432, \"retention\": 0.875, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1475.808499315,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 378, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 46, \"minimum_retention\": 0.9, \"primary_candidates\": 432, \"retention\": 0.875, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1479.686746531,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 359, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 48, \"minimum_retention\": 0.9, \"primary_candidates\": 416, \"retention\": 0.8629807692307693, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1479.889342113,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 359, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 48, \"minimum_retention\": 0.9, \"primary_candidates\": 416, \"retention\": 0.8629807692307693, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1481.723526953,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 341, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 49, \"minimum_retention\": 0.9, \"primary_candidates\": 407, \"retention\": 0.8378378378378378, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1481.926095362,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 341, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 49, \"minimum_retention\": 0.9, \"primary_candidates\": 407, \"retention\": 0.8378378378378378, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1483.758477861,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 329, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 50, \"minimum_retention\": 0.9, \"primary_candidates\": 404, \"retention\": 0.8143564356435643, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1483.961811474,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 329, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 50, \"minimum_retention\": 0.9, \"primary_candidates\": 404, \"retention\": 0.8143564356435643, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1485.795159222,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 346, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 51, \"minimum_retention\": 0.9, \"primary_candidates\": 402, \"retention\": 0.8606965174129353, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1485.997502739,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 346, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 51, \"minimum_retention\": 0.9, \"primary_candidates\": 402, \"retention\": 0.8606965174129353, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1487.865152639,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 342, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 52, \"minimum_retention\": 0.9, \"primary_candidates\": 401, \"retention\": 0.8528678304239401, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1488.06806687,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 342, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 52, \"minimum_retention\": 0.9, \"primary_candidates\": 401, \"retention\": 0.8528678304239401, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1489.906056859,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 353, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 53, \"minimum_retention\": 0.9, \"primary_candidates\": 412, \"retention\": 0.8567961165048543, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1490.109090634,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 353, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 53, \"minimum_retention\": 0.9, \"primary_candidates\": 412, \"retention\": 0.8567961165048543, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1491.948074892,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 323, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 54, \"minimum_retention\": 0.9, \"primary_candidates\": 385, \"retention\": 0.8389610389610389, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1492.150800749,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 323, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 54, \"minimum_retention\": 0.9, \"primary_candidates\": 385, \"retention\": 0.8389610389610389, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1494.05212452,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 319, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 55, \"minimum_retention\": 0.9, \"primary_candidates\": 401, \"retention\": 0.7955112219451371, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1494.254713627,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 319, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 55, \"minimum_retention\": 0.9, \"primary_candidates\": 401, \"retention\": 0.7955112219451371, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1496.099878965,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 336, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 56, \"minimum_retention\": 0.9, \"primary_candidates\": 416, \"retention\": 0.8076923076923077, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1496.30238677,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 336, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 56, \"minimum_retention\": 0.9, \"primary_candidates\": 416, \"retention\": 0.8076923076923077, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1498.150363281,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 360, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 57, \"minimum_retention\": 0.9, \"primary_candidates\": 443, \"retention\": 0.8126410835214447, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1498.35271853,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 360, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 57, \"minimum_retention\": 0.9, \"primary_candidates\": 443, \"retention\": 0.8126410835214447, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1500.20352043,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 337, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 58, \"minimum_retention\": 0.9, \"primary_candidates\": 420, \"retention\": 0.8023809523809524, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1500.406769422,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 337, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 58, \"minimum_retention\": 0.9, \"primary_candidates\": 420, \"retention\": 0.8023809523809524, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1502.250847393,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 390, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 59, \"minimum_retention\": 0.9, \"primary_candidates\": 462, \"retention\": 0.8441558441558441, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1502.453732187,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 390, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 59, \"minimum_retention\": 0.9, \"primary_candidates\": 462, \"retention\": 0.8441558441558441, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1504.314502395,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 347, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 60, \"minimum_retention\": 0.9, \"primary_candidates\": 430, \"retention\": 0.8069767441860465, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1504.517572775,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 347, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 60, \"minimum_retention\": 0.9, \"primary_candidates\": 430, \"retention\": 0.8069767441860465, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1506.386272713,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 381, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 61, \"minimum_retention\": 0.9, \"primary_candidates\": 449, \"retention\": 0.8485523385300668, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1506.599712421,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 381, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 61, \"minimum_retention\": 0.9, \"primary_candidates\": 449, \"retention\": 0.8485523385300668, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1510.491196187,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 393, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 63, \"minimum_retention\": 0.9, \"primary_candidates\": 461, \"retention\": 0.8524945770065075, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1510.694016479,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 393, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 63, \"minimum_retention\": 0.9, \"primary_candidates\": 461, \"retention\": 0.8524945770065075, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1512.536872422,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 387, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 64, \"minimum_retention\": 0.9, \"primary_candidates\": 461, \"retention\": 0.8394793926247288, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1512.739401423,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 387, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 64, \"minimum_retention\": 0.9, \"primary_candidates\": 461, \"retention\": 0.8394793926247288, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1514.589954368,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 416, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 65, \"minimum_retention\": 0.9, \"primary_candidates\": 490, \"retention\": 0.8489795918367347, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1514.792368193,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 416, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 65, \"minimum_retention\": 0.9, \"primary_candidates\": 490, \"retention\": 0.8489795918367347, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1516.639744914,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 370, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 66, \"minimum_retention\": 0.9, \"primary_candidates\": 451, \"retention\": 0.8203991130820399, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1516.842193722,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 370, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 66, \"minimum_retention\": 0.9, \"primary_candidates\": 451, \"retention\": 0.8203991130820399, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1518.682827949,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 401, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 67, \"minimum_retention\": 0.9, \"primary_candidates\": 451, \"retention\": 0.8891352549889135, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1518.88539657,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 401, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 67, \"minimum_retention\": 0.9, \"primary_candidates\": 451, \"retention\": 0.8891352549889135, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1520.718134958,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 395, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 68, \"minimum_retention\": 0.9, \"primary_candidates\": 449, \"retention\": 0.8797327394209354, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1520.921110695,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 395, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 68, \"minimum_retention\": 0.9, \"primary_candidates\": 449, \"retention\": 0.8797327394209354, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1522.748689009,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 388, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 69, \"minimum_retention\": 0.9, \"primary_candidates\": 455, \"retention\": 0.8527472527472527, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1522.951684314,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 388, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 69, \"minimum_retention\": 0.9, \"primary_candidates\": 455, \"retention\": 0.8527472527472527, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1526.806494896,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 391, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 71, \"minimum_retention\": 0.9, \"primary_candidates\": 451, \"retention\": 0.8669623059866962, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1527.009602078,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 391, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 71, \"minimum_retention\": 0.9, \"primary_candidates\": 451, \"retention\": 0.8669623059866962, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1528.832025233,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 402, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 72, \"minimum_retention\": 0.9, \"primary_candidates\": 470, \"retention\": 0.8553191489361702, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1529.035202768,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 402, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 72, \"minimum_retention\": 0.9, \"primary_candidates\": 470, \"retention\": 0.8553191489361702, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1530.865456999,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 335, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 73, \"minimum_retention\": 0.9, \"primary_candidates\": 425, \"retention\": 0.788235294117647, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1531.068564643,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 335, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 73, \"minimum_retention\": 0.9, \"primary_candidates\": 425, \"retention\": 0.788235294117647, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1532.886770216,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 365, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 74, \"minimum_retention\": 0.9, \"primary_candidates\": 444, \"retention\": 0.8220720720720721, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1533.089402562,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 365, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 74, \"minimum_retention\": 0.9, \"primary_candidates\": 444, \"retention\": 0.8220720720720721, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1534.935691525,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 344, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 75, \"minimum_retention\": 0.9, \"primary_candidates\": 447, \"retention\": 0.7695749440715883, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1535.138558274,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 344, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 75, \"minimum_retention\": 0.9, \"primary_candidates\": 447, \"retention\": 0.7695749440715883, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1536.98731397,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 332, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 76, \"minimum_retention\": 0.9, \"primary_candidates\": 449, \"retention\": 0.7394209354120267, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1537.213437165,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 332, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 76, \"minimum_retention\": 0.9, \"primary_candidates\": 449, \"retention\": 0.7394209354120267, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1539.009044616,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 344, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 77, \"minimum_retention\": 0.9, \"primary_candidates\": 442, \"retention\": 0.7782805429864253, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1539.21173548,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 344, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 77, \"minimum_retention\": 0.9, \"primary_candidates\": 442, \"retention\": 0.7782805429864253, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1541.033554209,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 417, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 78, \"minimum_retention\": 0.9, \"primary_candidates\": 494, \"retention\": 0.8441295546558705, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1541.237463626,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 417, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 78, \"minimum_retention\": 0.9, \"primary_candidates\": 494, \"retention\": 0.8441295546558705, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1543.087378466,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 432, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 79, \"minimum_retention\": 0.9, \"primary_candidates\": 496, \"retention\": 0.8709677419354839, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1543.289717782,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 432, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 79, \"minimum_retention\": 0.9, \"primary_candidates\": 496, \"retention\": 0.8709677419354839, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1545.140915447,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 362, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 80, \"minimum_retention\": 0.9, \"primary_candidates\": 466, \"retention\": 0.776824034334764, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1545.343714735,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 362, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 80, \"minimum_retention\": 0.9, \"primary_candidates\": 466, \"retention\": 0.776824034334764, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1547.180280918,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 393, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 81, \"minimum_retention\": 0.9, \"primary_candidates\": 460, \"retention\": 0.8543478260869565, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1547.383329981,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 393, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 81, \"minimum_retention\": 0.9, \"primary_candidates\": 460, \"retention\": 0.8543478260869565, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1549.214865425,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 376, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 82, \"minimum_retention\": 0.9, \"primary_candidates\": 457, \"retention\": 0.8227571115973742, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1549.417528322,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 376, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 82, \"minimum_retention\": 0.9, \"primary_candidates\": 457, \"retention\": 0.8227571115973742, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1551.283631708,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 339, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 83, \"minimum_retention\": 0.9, \"primary_candidates\": 429, \"retention\": 0.7902097902097902, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1551.48603628,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 339, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 83, \"minimum_retention\": 0.9, \"primary_candidates\": 429, \"retention\": 0.7902097902097902, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1553.322749704,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 360, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 84, \"minimum_retention\": 0.9, \"primary_candidates\": 456, \"retention\": 0.7894736842105263, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1553.524922775,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 360, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 84, \"minimum_retention\": 0.9, \"primary_candidates\": 456, \"retention\": 0.7894736842105263, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1555.351182031,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 391, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 85, \"minimum_retention\": 0.9, \"primary_candidates\": 471, \"retention\": 0.8301486199575372, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1555.553583295,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 391, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 85, \"minimum_retention\": 0.9, \"primary_candidates\": 471, \"retention\": 0.8301486199575372, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1557.424259433,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 413, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 86, \"minimum_retention\": 0.9, \"primary_candidates\": 483, \"retention\": 0.855072463768116, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1557.626450449,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 413, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 86, \"minimum_retention\": 0.9, \"primary_candidates\": 483, \"retention\": 0.855072463768116, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1559.466411719,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 398, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 87, \"minimum_retention\": 0.9, \"primary_candidates\": 472, \"retention\": 0.8432203389830508, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1559.668478834,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 398, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 87, \"minimum_retention\": 0.9, \"primary_candidates\": 472, \"retention\": 0.8432203389830508, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1561.518056995,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 345, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 88, \"minimum_retention\": 0.9, \"primary_candidates\": 441, \"retention\": 0.782312925170068, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1561.720670014,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 345, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 88, \"minimum_retention\": 0.9, \"primary_candidates\": 441, \"retention\": 0.782312925170068, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1563.562477652,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 357, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 89, \"minimum_retention\": 0.9, \"primary_candidates\": 465, \"retention\": 0.7677419354838709, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1563.765022737,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 357, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 89, \"minimum_retention\": 0.9, \"primary_candidates\": 465, \"retention\": 0.7677419354838709, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1565.646542891,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 401, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 90, \"minimum_retention\": 0.9, \"primary_candidates\": 467, \"retention\": 0.8586723768736617, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1565.848996715,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 401, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 90, \"minimum_retention\": 0.9, \"primary_candidates\": 467, \"retention\": 0.8586723768736617, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1567.702612335,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 387, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 91, \"minimum_retention\": 0.9, \"primary_candidates\": 467, \"retention\": 0.828693790149893, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1567.916473374,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 387, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 91, \"minimum_retention\": 0.9, \"primary_candidates\": 467, \"retention\": 0.828693790149893, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1569.755466746,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 392, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 92, \"minimum_retention\": 0.9, \"primary_candidates\": 460, \"retention\": 0.8521739130434782, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1569.958009508,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 392, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 92, \"minimum_retention\": 0.9, \"primary_candidates\": 460, \"retention\": 0.8521739130434782, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1571.809418367,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 394, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 93, \"minimum_retention\": 0.9, \"primary_candidates\": 483, \"retention\": 0.8157349896480331, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1572.011996584,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 394, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 93, \"minimum_retention\": 0.9, \"primary_candidates\": 483, \"retention\": 0.8157349896480331, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1573.866292543,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 415, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 94, \"minimum_retention\": 0.9, \"primary_candidates\": 489, \"retention\": 0.8486707566462167, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1574.068846633,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 415, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 94, \"minimum_retention\": 0.9, \"primary_candidates\": 489, \"retention\": 0.8486707566462167, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1575.956756138,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 411, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 95, \"minimum_retention\": 0.9, \"primary_candidates\": 475, \"retention\": 0.8652631578947368, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1576.159193812,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 411, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 95, \"minimum_retention\": 0.9, \"primary_candidates\": 475, \"retention\": 0.8652631578947368, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1578.044011859,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 386, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 96, \"minimum_retention\": 0.9, \"primary_candidates\": 462, \"retention\": 0.8354978354978355, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1578.24640757,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 386, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 96, \"minimum_retention\": 0.9, \"primary_candidates\": 462, \"retention\": 0.8354978354978355, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1580.112254924,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 360, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 97, \"minimum_retention\": 0.9, \"primary_candidates\": 438, \"retention\": 0.821917808219178, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1580.314687268,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 360, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 97, \"minimum_retention\": 0.9, \"primary_candidates\": 438, \"retention\": 0.821917808219178, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1582.17868817,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 393, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 98, \"minimum_retention\": 0.9, \"primary_candidates\": 487, \"retention\": 0.8069815195071869, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1582.381671785,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 393, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 98, \"minimum_retention\": 0.9, \"primary_candidates\": 487, \"retention\": 0.8069815195071869, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1584.236122441,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 349, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 99, \"minimum_retention\": 0.9, \"primary_candidates\": 446, \"retention\": 0.7825112107623319, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1584.43873759,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 349, \"dataset\": \"44b6_2a2eff9f\", \"frame\": 99, \"minimum_retention\": 0.9, \"primary_candidates\": 446, \"retention\": 0.7825112107623319, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2089.886507809,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 256, \"dataset\": \"44b6_5f15d135\", \"frame\": 28, \"minimum_retention\": 0.9, \"primary_candidates\": 302, \"retention\": 0.847682119205298, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2090.101810268,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 256, \"dataset\": \"44b6_5f15d135\", \"frame\": 28, \"minimum_retention\": 0.9, \"primary_candidates\": 302, \"retention\": 0.847682119205298, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2156.823124667,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 277, \"dataset\": \"44b6_5f15d135\", \"frame\": 60, \"minimum_retention\": 0.9, \"primary_candidates\": 308, \"retention\": 0.8993506493506493, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2157.037287594,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 277, \"dataset\": \"44b6_5f15d135\", \"frame\": 60, \"minimum_retention\": 0.9, \"primary_candidates\": 308, \"retention\": 0.8993506493506493, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2158.948357311,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 237, \"dataset\": \"44b6_5f15d135\", \"frame\": 61, \"minimum_retention\": 0.9, \"primary_candidates\": 267, \"retention\": 0.8876404494382022, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2159.150529715,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 237, \"dataset\": \"44b6_5f15d135\", \"frame\": 61, \"minimum_retention\": 0.9, \"primary_candidates\": 267, \"retention\": 0.8876404494382022, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2161.075708897,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 230, \"dataset\": \"44b6_5f15d135\", \"frame\": 62, \"minimum_retention\": 0.9, \"primary_candidates\": 266, \"retention\": 0.8646616541353384, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2161.278633113,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 230, \"dataset\": \"44b6_5f15d135\", \"frame\": 62, \"minimum_retention\": 0.9, \"primary_candidates\": 266, \"retention\": 0.8646616541353384, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2163.167376945,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 203, \"dataset\": \"44b6_5f15d135\", \"frame\": 63, \"minimum_retention\": 0.9, \"primary_candidates\": 255, \"retention\": 0.796078431372549, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2163.36988632,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 203, \"dataset\": \"44b6_5f15d135\", \"frame\": 63, \"minimum_retention\": 0.9, \"primary_candidates\": 255, \"retention\": 0.796078431372549, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2165.254661836,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 195, \"dataset\": \"44b6_5f15d135\", \"frame\": 64, \"minimum_retention\": 0.9, \"primary_candidates\": 251, \"retention\": 0.7768924302788844, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2165.457200326,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 195, \"dataset\": \"44b6_5f15d135\", \"frame\": 64, \"minimum_retention\": 0.9, \"primary_candidates\": 251, \"retention\": 0.7768924302788844, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2167.335679813,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 203, \"dataset\": \"44b6_5f15d135\", \"frame\": 65, \"minimum_retention\": 0.9, \"primary_candidates\": 260, \"retention\": 0.7807692307692308, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2167.53817231,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 203, \"dataset\": \"44b6_5f15d135\", \"frame\": 65, \"minimum_retention\": 0.9, \"primary_candidates\": 260, \"retention\": 0.7807692307692308, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2169.359279222,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 203, \"dataset\": \"44b6_5f15d135\", \"frame\": 66, \"minimum_retention\": 0.9, \"primary_candidates\": 269, \"retention\": 0.7546468401486989, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2169.561646512,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 203, \"dataset\": \"44b6_5f15d135\", \"frame\": 66, \"minimum_retention\": 0.9, \"primary_candidates\": 269, \"retention\": 0.7546468401486989, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2171.408675237,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 219, \"dataset\": \"44b6_5f15d135\", \"frame\": 67, \"minimum_retention\": 0.9, \"primary_candidates\": 268, \"retention\": 0.8171641791044776, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2171.610645614,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 219, \"dataset\": \"44b6_5f15d135\", \"frame\": 67, \"minimum_retention\": 0.9, \"primary_candidates\": 268, \"retention\": 0.8171641791044776, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2173.546439205,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 209, \"dataset\": \"44b6_5f15d135\", \"frame\": 68, \"minimum_retention\": 0.9, \"primary_candidates\": 256, \"retention\": 0.81640625, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2173.748964093,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 209, \"dataset\": \"44b6_5f15d135\", \"frame\": 68, \"minimum_retention\": 0.9, \"primary_candidates\": 256, \"retention\": 0.81640625, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2175.627951699,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 197, \"dataset\": \"44b6_5f15d135\", \"frame\": 69, \"minimum_retention\": 0.9, \"primary_candidates\": 241, \"retention\": 0.8174273858921162, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2175.830448546,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 197, \"dataset\": \"44b6_5f15d135\", \"frame\": 69, \"minimum_retention\": 0.9, \"primary_candidates\": 241, \"retention\": 0.8174273858921162, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2181.795695908,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 191, \"dataset\": \"44b6_5f15d135\", \"frame\": 72, \"minimum_retention\": 0.9, \"primary_candidates\": 231, \"retention\": 0.8268398268398268, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2181.998118342,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 191, \"dataset\": \"44b6_5f15d135\", \"frame\": 72, \"minimum_retention\": 0.9, \"primary_candidates\": 231, \"retention\": 0.8268398268398268, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2183.863134907,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 190, \"dataset\": \"44b6_5f15d135\", \"frame\": 73, \"minimum_retention\": 0.9, \"primary_candidates\": 232, \"retention\": 0.8189655172413793, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2184.065541636,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 190, \"dataset\": \"44b6_5f15d135\", \"frame\": 73, \"minimum_retention\": 0.9, \"primary_candidates\": 232, \"retention\": 0.8189655172413793, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2185.930815839,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 176, \"dataset\": \"44b6_5f15d135\", \"frame\": 74, \"minimum_retention\": 0.9, \"primary_candidates\": 215, \"retention\": 0.8186046511627907, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2186.13344397,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 176, \"dataset\": \"44b6_5f15d135\", \"frame\": 74, \"minimum_retention\": 0.9, \"primary_candidates\": 215, \"retention\": 0.8186046511627907, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2187.999391508,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 151, \"dataset\": \"44b6_5f15d135\", \"frame\": 75, \"minimum_retention\": 0.9, \"primary_candidates\": 200, \"retention\": 0.755, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2188.214879957,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 151, \"dataset\": \"44b6_5f15d135\", \"frame\": 75, \"minimum_retention\": 0.9, \"primary_candidates\": 200, \"retention\": 0.755, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2190.094369664,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 147, \"dataset\": \"44b6_5f15d135\", \"frame\": 76, \"minimum_retention\": 0.9, \"primary_candidates\": 190, \"retention\": 0.7736842105263158, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2190.296749029,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 147, \"dataset\": \"44b6_5f15d135\", \"frame\": 76, \"minimum_retention\": 0.9, \"primary_candidates\": 190, \"retention\": 0.7736842105263158, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2192.188346916,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 167, \"dataset\": \"44b6_5f15d135\", \"frame\": 77, \"minimum_retention\": 0.9, \"primary_candidates\": 204, \"retention\": 0.8186274509803921, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2192.390514915,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 167, \"dataset\": \"44b6_5f15d135\", \"frame\": 77, \"minimum_retention\": 0.9, \"primary_candidates\": 204, \"retention\": 0.8186274509803921, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2194.284686415,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 156, \"dataset\": \"44b6_5f15d135\", \"frame\": 78, \"minimum_retention\": 0.9, \"primary_candidates\": 212, \"retention\": 0.7358490566037735, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2194.486989815,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 156, \"dataset\": \"44b6_5f15d135\", \"frame\": 78, \"minimum_retention\": 0.9, \"primary_candidates\": 212, \"retention\": 0.7358490566037735, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2196.351702465,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 194, \"dataset\": \"44b6_5f15d135\", \"frame\": 79, \"minimum_retention\": 0.9, \"primary_candidates\": 231, \"retention\": 0.8398268398268398, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2196.553899634,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 194, \"dataset\": \"44b6_5f15d135\", \"frame\": 79, \"minimum_retention\": 0.9, \"primary_candidates\": 231, \"retention\": 0.8398268398268398, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2198.396686328,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 192, \"dataset\": \"44b6_5f15d135\", \"frame\": 80, \"minimum_retention\": 0.9, \"primary_candidates\": 221, \"retention\": 0.8687782805429864, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2198.599316376,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 192, \"dataset\": \"44b6_5f15d135\", \"frame\": 80, \"minimum_retention\": 0.9, \"primary_candidates\": 221, \"retention\": 0.8687782805429864, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2200.500930208,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 206, \"dataset\": \"44b6_5f15d135\", \"frame\": 81, \"minimum_retention\": 0.9, \"primary_candidates\": 243, \"retention\": 0.8477366255144033, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2200.703451608,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 206, \"dataset\": \"44b6_5f15d135\", \"frame\": 81, \"minimum_retention\": 0.9, \"primary_candidates\": 243, \"retention\": 0.8477366255144033, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2202.628455246,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 203, \"dataset\": \"44b6_5f15d135\", \"frame\": 82, \"minimum_retention\": 0.9, \"primary_candidates\": 255, \"retention\": 0.796078431372549, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2202.830788237,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 203, \"dataset\": \"44b6_5f15d135\", \"frame\": 82, \"minimum_retention\": 0.9, \"primary_candidates\": 255, \"retention\": 0.796078431372549, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2204.680287931,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 142, \"dataset\": \"44b6_5f15d135\", \"frame\": 83, \"minimum_retention\": 0.9, \"primary_candidates\": 209, \"retention\": 0.6794258373205742, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2204.882631058,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 142, \"dataset\": \"44b6_5f15d135\", \"frame\": 83, \"minimum_retention\": 0.9, \"primary_candidates\": 209, \"retention\": 0.6794258373205742, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2206.790997347,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 130, \"dataset\": \"44b6_5f15d135\", \"frame\": 84, \"minimum_retention\": 0.9, \"primary_candidates\": 187, \"retention\": 0.6951871657754011, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2206.993198768,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 130, \"dataset\": \"44b6_5f15d135\", \"frame\": 84, \"minimum_retention\": 0.9, \"primary_candidates\": 187, \"retention\": 0.6951871657754011, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2208.91650072,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 142, \"dataset\": \"44b6_5f15d135\", \"frame\": 85, \"minimum_retention\": 0.9, \"primary_candidates\": 196, \"retention\": 0.7244897959183674, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2209.11897767,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 142, \"dataset\": \"44b6_5f15d135\", \"frame\": 85, \"minimum_retention\": 0.9, \"primary_candidates\": 196, \"retention\": 0.7244897959183674, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2211.019627784,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 138, \"dataset\": \"44b6_5f15d135\", \"frame\": 86, \"minimum_retention\": 0.9, \"primary_candidates\": 203, \"retention\": 0.6798029556650246, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2211.221932089,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 138, \"dataset\": \"44b6_5f15d135\", \"frame\": 86, \"minimum_retention\": 0.9, \"primary_candidates\": 203, \"retention\": 0.6798029556650246, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2213.131098162,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 154, \"dataset\": \"44b6_5f15d135\", \"frame\": 87, \"minimum_retention\": 0.9, \"primary_candidates\": 223, \"retention\": 0.6905829596412556, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2213.333746667,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 154, \"dataset\": \"44b6_5f15d135\", \"frame\": 87, \"minimum_retention\": 0.9, \"primary_candidates\": 223, \"retention\": 0.6905829596412556, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2215.239731937,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 122, \"dataset\": \"44b6_5f15d135\", \"frame\": 88, \"minimum_retention\": 0.9, \"primary_candidates\": 164, \"retention\": 0.7439024390243902, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2215.442158198,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 122, \"dataset\": \"44b6_5f15d135\", \"frame\": 88, \"minimum_retention\": 0.9, \"primary_candidates\": 164, \"retention\": 0.7439024390243902, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2217.31902911,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 128, \"dataset\": \"44b6_5f15d135\", \"frame\": 89, \"minimum_retention\": 0.9, \"primary_candidates\": 193, \"retention\": 0.6632124352331606, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2217.521417039,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 128, \"dataset\": \"44b6_5f15d135\", \"frame\": 89, \"minimum_retention\": 0.9, \"primary_candidates\": 193, \"retention\": 0.6632124352331606, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2219.394324228,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 159, \"dataset\": \"44b6_5f15d135\", \"frame\": 90, \"minimum_retention\": 0.9, \"primary_candidates\": 190, \"retention\": 0.8368421052631579, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2219.612284253,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 159, \"dataset\": \"44b6_5f15d135\", \"frame\": 90, \"minimum_retention\": 0.9, \"primary_candidates\": 190, \"retention\": 0.8368421052631579, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2221.47413285,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 131, \"dataset\": \"44b6_5f15d135\", \"frame\": 91, \"minimum_retention\": 0.9, \"primary_candidates\": 186, \"retention\": 0.7043010752688172, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2221.676304166,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 131, \"dataset\": \"44b6_5f15d135\", \"frame\": 91, \"minimum_retention\": 0.9, \"primary_candidates\": 186, \"retention\": 0.7043010752688172, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2223.632542292,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 102, \"dataset\": \"44b6_5f15d135\", \"frame\": 92, \"minimum_retention\": 0.9, \"primary_candidates\": 173, \"retention\": 0.5895953757225434, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2223.834701415,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 102, \"dataset\": \"44b6_5f15d135\", \"frame\": 92, \"minimum_retention\": 0.9, \"primary_candidates\": 173, \"retention\": 0.5895953757225434, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2225.711215303,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 122, \"dataset\": \"44b6_5f15d135\", \"frame\": 93, \"minimum_retention\": 0.9, \"primary_candidates\": 186, \"retention\": 0.6559139784946236, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2225.914062992,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 122, \"dataset\": \"44b6_5f15d135\", \"frame\": 93, \"minimum_retention\": 0.9, \"primary_candidates\": 186, \"retention\": 0.6559139784946236, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2227.8091672,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 148, \"dataset\": \"44b6_5f15d135\", \"frame\": 94, \"minimum_retention\": 0.9, \"primary_candidates\": 197, \"retention\": 0.751269035532995, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2228.011400619,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 148, \"dataset\": \"44b6_5f15d135\", \"frame\": 94, \"minimum_retention\": 0.9, \"primary_candidates\": 197, \"retention\": 0.751269035532995, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2229.886281496,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 123, \"dataset\": \"44b6_5f15d135\", \"frame\": 95, \"minimum_retention\": 0.9, \"primary_candidates\": 167, \"retention\": 0.7365269461077845, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2230.088559815,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 123, \"dataset\": \"44b6_5f15d135\", \"frame\": 95, \"minimum_retention\": 0.9, \"primary_candidates\": 167, \"retention\": 0.7365269461077845, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2231.93511837,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 109, \"dataset\": \"44b6_5f15d135\", \"frame\": 96, \"minimum_retention\": 0.9, \"primary_candidates\": 180, \"retention\": 0.6055555555555555, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2232.13749853,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 109, \"dataset\": \"44b6_5f15d135\", \"frame\": 96, \"minimum_retention\": 0.9, \"primary_candidates\": 180, \"retention\": 0.6055555555555555, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2233.924135354,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 139, \"dataset\": \"44b6_5f15d135\", \"frame\": 97, \"minimum_retention\": 0.9, \"primary_candidates\": 214, \"retention\": 0.6495327102803738, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2234.126441764,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 139, \"dataset\": \"44b6_5f15d135\", \"frame\": 97, \"minimum_retention\": 0.9, \"primary_candidates\": 214, \"retention\": 0.6495327102803738, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2235.972041625,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 114, \"dataset\": \"44b6_5f15d135\", \"frame\": 98, \"minimum_retention\": 0.9, \"primary_candidates\": 193, \"retention\": 0.5906735751295337, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2236.174288732,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 114, \"dataset\": \"44b6_5f15d135\", \"frame\": 98, \"minimum_retention\": 0.9, \"primary_candidates\": 193, \"retention\": 0.5906735751295337, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2238.117626041,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 126, \"dataset\": \"44b6_5f15d135\", \"frame\": 99, \"minimum_retention\": 0.9, \"primary_candidates\": 201, \"retention\": 0.6268656716417911, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2238.31994621,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 126, \"dataset\": \"44b6_5f15d135\", \"frame\": 99, \"minimum_retention\": 0.9, \"primary_candidates\": 201, \"retention\": 0.6268656716417911, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2255.727205257,"data":"Saved 6 predictions to /kaggle/working/tracking_repo/predictions/unknown/unet_transformer_train/split_0\n"}
+,{"stream_name":"stdout","time":2255.942375637,"data":"Saved 6 predictions to /kaggle/working/tracking_repo/predictions/unknown/unet_transformer_train/split_0\n"}
+,{"stream_name":"stdout","time":2257.269717537,"data":"Train prediction completed in 22.49 minutes\n"}
+,{"stream_name":"stdout","time":2656.161088043,"data":"Trying DeepCenter add-only gate checkpoint: /kaggle/input/datasets/pilkwang/biohub-deepcenter-unet3d-center-prior-v1/weights/full_frame_center/checkpoint_last.pt\n"}
+,{"stream_name":"stdout","time":2657.164330037,"data":"Loaded DeepCenter add-only gate checkpoint: /kaggle/input/datasets/pilkwang/biohub-deepcenter-unet3d-center-prior-v1/weights/full_frame_center/checkpoint_last.pt\n"}
+,{"stream_name":"stdout","time":2657.164380528,"data":"DeepCenter checkpoint epoch: 500 best_score: -0.04500306242456039\n"}
+,{"stream_name":"stdout","time":2815.698771187,"data":"44b6_12dfb391 {'exp003': {'tp': 0, 'fp': 118, 'fn': 1, 'division_jaccard': 0.0}, 'exp006': {'tp': 0, 'fp': 1, 'fn': 1, 'division_jaccard': 0.0}}\n"}
+,{"stream_name":"stdout","time":2869.749520354,"data":"44b6_267148e4 {'exp003': {'tp': 0, 'fp': 80, 'fn': 1, 'division_jaccard': 0.0}, 'exp006': {'tp': 0, 'fp': 3, 'fn': 1, 'division_jaccard': 0.0}}\n"}
+,{"stream_name":"stdout","time":2987.909308804,"data":"44b6_2a2eff9f {'exp003': {'tp': 0, 'fp': 133, 'fn': 1, 'division_jaccard': 0.0}, 'exp006': {'tp': 0, 'fp': 1, 'fn': 1, 'division_jaccard': 0.0}}\n"}
+,{"stream_name":"stdout","time":3000.225978485,"data":"44b6_341df25f {'exp003': {'tp': 0, 'fp': 25, 'fn': 1, 'division_jaccard': 0.0}, 'exp006': {'tp': 0, 'fp': 1, 'fn': 1, 'division_jaccard': 0.0}}\n"}
+,{"stream_name":"stdout","time":3039.573758326,"data":"44b6_587a1e22 {'exp003': {'tp': 0, 'fp': 66, 'fn': 1, 'division_jaccard': 0.0}, 'exp006': {'tp': 0, 'fp': 5, 'fn': 1, 'division_jaccard': 0.0}}\n"}
+,{"stream_name":"stdout","time":3096.921123022,"data":"44b6_5f15d135 {'exp003': {'tp': 0, 'fp': 78, 'fn': 1, 'division_jaccard': 0.0}, 'exp006': {'tp': 0, 'fp': 4, 'fn': 1, 'division_jaccard': 0.0}}\n"}
+,{"stream_name":"stdout","time":3096.921159209,"data":"Division score report: {\n"}
+,{"stream_name":"stdout","time":3096.921164968,"data":"  \"variants\": {\n"}
+,{"stream_name":"stdout","time":3096.921169569,"data":"    \"exp003\": {\n"}
+,{"stream_name":"stdout","time":3096.921174122,"data":"      \"tp\": 0,\n"}
+,{"stream_name":"stdout","time":3096.921180067,"data":"      \"fp\": 500,\n"}
+,{"stream_name":"stdout","time":3096.921188601,"data":"      \"fn\": 6,\n"}
+,{"stream_name":"stdout","time":3096.921191965,"data":"      \"division_jaccard\": 0.0\n"}
+,{"stream_name":"stdout","time":3096.921195085,"data":"    },\n"}
+,{"stream_name":"stdout","time":3096.921198028,"data":"    \"exp006\": {\n"}
+,{"stream_name":"stdout","time":3096.921201013,"data":"      \"tp\": 0,\n"}
+,{"stream_name":"stdout","time":3096.921203957,"data":"      \"fp\": 15,\n"}
+,{"stream_name":"stdout","time":3096.921206974,"data":"      \"fn\": 6,\n"}
+,{"stream_name":"stdout","time":3096.921209882,"data":"      \"division_jaccard\": 0.0\n"}
+,{"stream_name":"stdout","time":3096.921212828,"data":"    }\n"}
+,{"stream_name":"stdout","time":3096.921215743,"data":"  },\n"}
+,{"stream_name":"stdout","time":3096.921218582,"data":"  \"per_video\": {\n"}
+,{"stream_name":"stdout","time":3096.921221482,"data":"    \"44b6_12dfb391\": {\n"}
+,{"stream_name":"stdout","time":3096.921224428,"data":"      \"exp003\": {\n"}
+,{"stream_name":"stdout","time":3096.921227409,"data":"        \"tp\": 0,\n"}
+,{"stream_name":"stdout","time":3096.921230347,"data":"        \"fp\": 118,\n"}
+,{"stream_name":"stdout","time":3096.921233247,"data":"        \"fn\": 1,\n"}
+,{"stream_name":"stdout","time":3096.92123612,"data":"        \"division_jaccard\": 0.0\n"}
+,{"stream_name":"stdout","time":3096.921239064,"data":"      },\n"}
+,{"stream_name":"stdout","time":3096.921241977,"data":"      \"exp006\": {\n"}
+,{"stream_name":"stdout","time":3096.921247078,"data":"        \"tp\": 0,\n"}
+,{"stream_name":"stdout","time":3096.921250033,"data":"        \"fp\": 1,\n"}
+,{"stream_name":"stdout","time":3096.921252972,"data":"        \"fn\": 1,\n"}
+,{"stream_name":"stdout","time":3096.92125582,"data":"        \"division_jaccard\": 0.0\n"}
+,{"stream_name":"stdout","time":3096.921258751,"data":"      }\n"}
+,{"stream_name":"stdout","time":3096.921261646,"data":"    },\n"}
+,{"stream_name":"stdout","time":3096.921264474,"data":"    \"44b6_267148e4\": {\n"}
+,{"stream_name":"stdout","time":3096.921267675,"data":"      \"exp003\": {\n"}
+,{"stream_name":"stdout","time":3096.921270545,"data":"        \"tp\": 0,\n"}
+,{"stream_name":"stdout","time":3096.921273521,"data":"        \"fp\": 80,\n"}
+,{"stream_name":"stdout","time":3096.921276422,"data":"        \"fn\": 1,\n"}
+,{"stream_name":"stdout","time":3096.921279297,"data":"        \"division_jaccard\": 0.0\n"}
+,{"stream_name":"stdout","time":3096.921291515,"data":"      },\n"}
+,{"stream_name":"stdout","time":3096.921293864,"data":"      \"exp006\": {\n"}
+,{"stream_name":"stdout","time":3096.921296037,"data":"        \"tp\": 0,\n"}
+,{"stream_name":"stdout","time":3096.921298187,"data":"        \"fp\": 3,\n"}
+,{"stream_name":"stdout","time":3096.921300334,"data":"        \"fn\": 1,\n"}
+,{"stream_name":"stdout","time":3096.921302594,"data":"        \"division_jaccard\": 0.0\n"}
+,{"stream_name":"stdout","time":3096.921304797,"data":"      }\n"}
+,{"stream_name":"stdout","time":3096.921307007,"data":"    },\n"}
+,{"stream_name":"stdout","time":3096.921309119,"data":"    \"44b6_2a2eff9f\": {\n"}
+,{"stream_name":"stdout","time":3096.92131139,"data":"      \"exp003\": {\n"}
+,{"stream_name":"stdout","time":3096.921313652,"data":"        \"tp\": 0,\n"}
+,{"stream_name":"stdout","time":3096.921315803,"data":"        \"fp\": 133,\n"}
+,{"stream_name":"stdout","time":3096.921317979,"data":"        \"fn\": 1,\n"}
+,{"stream_name":"stdout","time":3096.921320243,"data":"        \"division_jaccard\": 0.0\n"}
+,{"stream_name":"stdout","time":3096.921322553,"data":"      },\n"}
+,{"stream_name":"stdout","time":3096.921324669,"data":"      \"exp006\": {\n"}
+,{"stream_name":"stdout","time":3096.921326821,"data":"        \"tp\": 0,\n"}
+,{"stream_name":"stdout","time":3096.921328979,"data":"        \"fp\": 1,\n"}
+,{"stream_name":"stdout","time":3096.921331128,"data":"        \"fn\": 1,\n"}
+,{"stream_name":"stdout","time":3096.921333273,"data":"        \"division_jaccard\": 0.0\n"}
+,{"stream_name":"stdout","time":3096.921335445,"data":"      }\n"}
+,{"stream_name":"stdout","time":3096.921337592,"data":"    },\n"}
+,{"stream_name":"stdout","time":3096.921339702,"data":"    \"44b6_341df25f\": {\n"}
+,{"stream_name":"stdout","time":3096.921341864,"data":"      \"exp003\": {\n"}
+,{"stream_name":"stdout","time":3096.921344023,"data":"        \"tp\": 0,\n"}
+,{"stream_name":"stdout","time":3096.921346168,"data":"        \"fp\": 25,\n"}
+,{"stream_name":"stdout","time":3096.921348342,"data":"        \"fn\": 1,\n"}
+,{"stream_name":"stdout","time":3096.921350478,"data":"        \"division_jaccard\": 0.0\n"}
+,{"stream_name":"stdout","time":3096.921352663,"data":"      },\n"}
+,{"stream_name":"stdout","time":3096.9213548,"data":"      \"exp006\": {\n"}
+,{"stream_name":"stdout","time":3096.921356951,"data":"        \"tp\": 0,\n"}
+,{"stream_name":"stdout","time":3096.921359092,"data":"        \"fp\": 1,\n"}
+,{"stream_name":"stdout","time":3096.921361238,"data":"        \"fn\": 1,\n"}
+,{"stream_name":"stdout","time":3096.921363672,"data":"        \"division_jaccard\": 0.0\n"}
+,{"stream_name":"stdout","time":3096.921367017,"data":"      }\n"}
+,{"stream_name":"stdout","time":3096.921369862,"data":"    },\n"}
+,{"stream_name":"stdout","time":3096.921372028,"data":"    \"44b6_587a1e22\": {\n"}
+,{"stream_name":"stdout","time":3096.921374327,"data":"      \"exp003\": {\n"}
+,{"stream_name":"stdout","time":3096.921376633,"data":"        \"tp\": 0,\n"}
+,{"stream_name":"stdout","time":3096.92137885,"data":"        \"fp\": 66,\n"}
+,{"stream_name":"stdout","time":3096.921381017,"data":"        \"fn\": 1,\n"}
+,{"stream_name":"stdout","time":3096.921383239,"data":"        \"division_jaccard\": 0.0\n"}
+,{"stream_name":"stdout","time":3096.921385504,"data":"      },\n"}
+,{"stream_name":"stdout","time":3096.921387605,"data":"      \"exp006\": {\n"}
+,{"stream_name":"stdout","time":3096.92138989,"data":"        \"tp\": 0,\n"}
+,{"stream_name":"stdout","time":3096.921392073,"data":"        \"fp\": 5,\n"}
+,{"stream_name":"stdout","time":3096.921396878,"data":"        \"fn\": 1,\n"}
+,{"stream_name":"stdout","time":3096.921399154,"data":"        \"division_jaccard\": 0.0\n"}
+,{"stream_name":"stdout","time":3096.921401327,"data":"      }\n"}
+,{"stream_name":"stdout","time":3096.921403425,"data":"    },\n"}
+,{"stream_name":"stdout","time":3096.921405526,"data":"    \"44b6_5f15d135\": {\n"}
+,{"stream_name":"stdout","time":3096.921407693,"data":"      \"exp003\": {\n"}
+,{"stream_name":"stdout","time":3096.921409853,"data":"        \"tp\": 0,\n"}
+,{"stream_name":"stdout","time":3096.921412014,"data":"        \"fp\": 78,\n"}
+,{"stream_name":"stdout","time":3096.921414221,"data":"        \"fn\": 1,\n"}
+,{"stream_name":"stdout","time":3096.921416365,"data":"        \"division_jaccard\": 0.0\n"}
+,{"stream_name":"stdout","time":3096.92141857,"data":"      },\n"}
+,{"stream_name":"stdout","time":3096.921420675,"data":"      \"exp006\": {\n"}
+,{"stream_name":"stdout","time":3096.921422846,"data":"        \"tp\": 0,\n"}
+,{"stream_name":"stdout","time":3096.921425002,"data":"        \"fp\": 4,\n"}
+,{"stream_name":"stdout","time":3096.921427162,"data":"        \"fn\": 1,\n"}
+,{"stream_name":"stdout","time":3096.921429345,"data":"        \"division_jaccard\": 0.0\n"}
+,{"stream_name":"stdout","time":3096.921431537,"data":"      }\n"}
+,{"stream_name":"stdout","time":3096.92143365,"data":"    }\n"}
+,{"stream_name":"stdout","time":3096.921435798,"data":"  }\n"}
+,{"stream_name":"stdout","time":3096.92143791,"data":"}\n"}
+,{"stream_name":"stdout","time":3096.921440066,"data":"Found 4 prediction graphs\n"}
+,{"stream_name":"stdout","time":3337.385173005,"data":"Wrote /kaggle/working/submission.csv with 236,713 rows\n"}
+,{"stream_name":"stdout","time":3337.385208984,"data":"Node rows: 120,600 | edge rows: 116,113\n"}
+,{"stream_name":"stdout","time":3337.385213452,"data":"Wrote /kaggle/working/run_stats.csv\n"}
+,{"stream_name":"stdout","time":3338.101886183,"data":"{\n"}
+,{"stream_name":"stdout","time":3338.101942253,"data":"  \"configuration\": {\n"}
+,{"stream_name":"stdout","time":3338.101949157,"data":"    \"deepcenter_gap_confirm_min_span_um\": 8.5,\n"}
+,{"stream_name":"stdout","time":3338.101954685,"data":"    \"deepcenter_gap_threshold\": 0.25,\n"}
+,{"stream_name":"stdout","time":3338.101959643,"data":"    \"detector_threshold\": 0.96875,\n"}
+,{"stream_name":"stdout","time":3338.101965128,"data":"    \"edge_candidate_threshold\": 0.48,\n"}
+,{"stream_name":"stdout","time":3338.10197073,"data":"    \"fallback_scope\": \"individual_frame\",\n"}
+,{"stream_name":"stdout","time":3338.101976434,"data":"    \"gap_close_um\": 5.8,\n"}
+,{"stream_name":"stdout","time":3338.101981385,"data":"    \"ilp_appearance_weight\": 0.0,\n"}
+,{"stream_name":"stdout","time":3338.101986358,"data":"    \"ilp_disappearance_weight\": 1.5,\n"}
+,{"stream_name":"stdout","time":3338.102002905,"data":"    \"minimum_candidate_retention\": 0.9,\n"}
+,{"stream_name":"stdout","time":3338.102008005,"data":"    \"secondary_detection_weight\": 0.475,\n"}
+,{"stream_name":"stdout","time":3338.102013478,"data":"    \"secondary_edge_weight\": 0.15,\n"}
+,{"stream_name":"stdout","time":3338.10201838,"data":"    \"secondary_link_mode\": \"low_margin_consensus\",\n"}
+,{"stream_name":"stdout","time":3338.102023207,"data":"    \"secondary_low_margin_max\": 0.35\n"}
+,{"stream_name":"stdout","time":3338.102027928,"data":"  },\n"}
+,{"stream_name":"stdout","time":3338.102032314,"data":"  \"diagnostics\": {\n"}
+,{"stream_name":"stdout","time":3338.102036978,"data":"    \"by_movie\": {\n"}
+,{"stream_name":"stdout","time":3338.102047815,"data":"      \"44b6_0113de3b\": {\n"}
+,{"stream_name":"stdout","time":3338.102062994,"data":"        \"fallback_frames\": 0,\n"}
+,{"stream_name":"stdout","time":3338.102065793,"data":"        \"frames\": 100,\n"}
+,{"stream_name":"stdout","time":3338.102068354,"data":"        \"median_retention\": 1.007207417796478,\n"}
+,{"stream_name":"stdout","time":3338.102070791,"data":"        \"minimum_retention\": 0.9871244635193133\n"}
+,{"stream_name":"stdout","time":3338.102073189,"data":"      },\n"}
+,{"stream_name":"stdout","time":3338.102075472,"data":"      \"44b6_0b24845f\": {\n"}
+,{"stream_name":"stdout","time":3338.10207788,"data":"        \"fallback_frames\": 60,\n"}
+,{"stream_name":"stdout","time":3338.102080257,"data":"        \"frames\": 100,\n"}
+,{"stream_name":"stdout","time":3338.102082606,"data":"        \"median_retention\": 0.8875882571534746,\n"}
+,{"stream_name":"stdout","time":3338.102084983,"data":"        \"minimum_retention\": 0.5783582089552238\n"}
+,{"stream_name":"stdout","time":3338.102087473,"data":"      },\n"}
+,{"stream_name":"stdout","time":3338.102089732,"data":"      \"6bba_05b6850b\": {\n"}
+,{"stream_name":"stdout","time":3338.102092067,"data":"        \"fallback_frames\": 0,\n"}
+,{"stream_name":"stdout","time":3338.10209442,"data":"        \"frames\": 100,\n"}
+,{"stream_name":"stdout","time":3338.102097228,"data":"        \"median_retention\": 0.9858091787439613,\n"}
+,{"stream_name":"stdout","time":3338.102116036,"data":"        \"minimum_retention\": 0.9\n"}
+,{"stream_name":"stdout","time":3338.102120462,"data":"      },\n"}
+,{"stream_name":"stdout","time":3338.102124287,"data":"      \"6bba_05db0fb1\": {\n"}
+,{"stream_name":"stdout","time":3338.102128504,"data":"        \"fallback_frames\": 0,\n"}
+,{"stream_name":"stdout","time":3338.102132443,"data":"        \"frames\": 100,\n"}
+,{"stream_name":"stdout","time":3338.102136018,"data":"        \"median_retention\": 1.002805402268323,\n"}
+,{"stream_name":"stdout","time":3338.102139659,"data":"        \"minimum_retention\": 0.9774330042313117\n"}
+,{"stream_name":"stdout","time":3338.102143268,"data":"      }\n"}
+,{"stream_name":"stdout","time":3338.10214667,"data":"    },\n"}
+,{"stream_name":"stdout","time":3338.102150027,"data":"    \"fallback_frames\": 60,\n"}
+,{"stream_name":"stdout","time":3338.102153603,"data":"    \"rows\": 400\n"}
+,{"stream_name":"stdout","time":3338.102157198,"data":"  },\n"}
+,{"stream_name":"stdout","time":3338.10216127,"data":"  \"experiment\": \"dual_seed_frame_retention_guard_production_v1\",\n"}
+,{"stream_name":"stdout","time":3338.102166326,"data":"  \"hardware\": {\n"}
+,{"stream_name":"stdout","time":3338.102170623,"data":"    \"visible_gpu_count\": 2\n"}
+,{"stream_name":"stdout","time":3338.102174281,"data":"  },\n"}
+,{"stream_name":"stdout","time":3338.102177639,"data":"  \"leaderboard_feedback_used_for_configuration\": false,\n"}
+,{"stream_name":"stdout","time":3338.10218129,"data":"  \"method_attribution\": \"Pilkwang Kim public two-seed logit blend plus owned retention guard\",\n"}
+,{"stream_name":"stdout","time":3338.102185703,"data":"  \"metric_hack_used\": false,\n"}
+,{"stream_name":"stdout","time":3338.102190072,"data":"  \"organizer_labels_used_for_configuration\": false,\n"}
+,{"stream_name":"stdout","time":3338.102194503,"data":"  \"parent_experiment\": \"two_seed_center_confirmed_clean_benchmark_v1\",\n"}
+,{"stream_name":"stdout","time":3338.102198816,"data":"  \"public_output_used\": false,\n"}
+,{"stream_name":"stdout","time":3338.102202506,"data":"  \"source_kernel\": \"pilkwang/biohub-cell-tracking-two-seeds-logit-blend\",\n"}
+,{"stream_name":"stdout","time":3338.102206308,"data":"  \"source_notebook_sha256\": \"a2e660c6c5d66af5671643fb0e91b4d19faac5907077837116000daa1fee38ac\",\n"}
+,{"stream_name":"stdout","time":3338.102214512,"data":"  \"status\": \"verified_output\",\n"}
+,{"stream_name":"stdout","time":3338.102229003,"data":"  \"submission\": {\n"}
+,{"stream_name":"stdout","time":3338.10223231,"data":"    \"datasets\": [\n"}
+,{"stream_name":"stdout","time":3338.102235728,"data":"      \"44b6_0113de3b\",\n"}
+,{"stream_name":"stdout","time":3338.102243154,"data":"      \"44b6_0b24845f\",\n"}
+,{"stream_name":"stdout","time":3338.102246545,"data":"      \"6bba_05b6850b\",\n"}
+,{"stream_name":"stdout","time":3338.102251504,"data":"      \"6bba_05db0fb1\"\n"}
+,{"stream_name":"stdout","time":3338.102255301,"data":"    ],\n"}
+,{"stream_name":"stdout","time":3338.102258873,"data":"    \"rows\": 236713,\n"}
+,{"stream_name":"stdout","time":3338.102263081,"data":"    \"sha256\": \"2245841d0a6e430dd4daf9581f88681c6a7b3133d00a4cad62cd874a9c3de8f3\"\n"}
+,{"stream_name":"stdout","time":3338.1022665,"data":"  },\n"}
+,{"stream_name":"stdout","time":3338.102269862,"data":"  \"topology\": {\n"}
+,{"stream_name":"stdout","time":3338.102273006,"data":"    \"44b6_0113de3b\": {\n"}
+,{"stream_name":"stdout","time":3338.102276216,"data":"      \"division_parents\": 10,\n"}
+,{"stream_name":"stdout","time":3338.102279206,"data":"      \"edges\": 24561,\n"}
+,{"stream_name":"stdout","time":3338.102282431,"data":"      \"max_indegree\": 1,\n"}
+,{"stream_name":"stdout","time":3338.102285594,"data":"      \"max_outdegree\": 2,\n"}
+,{"stream_name":"stdout","time":3338.10228886,"data":"      \"nodes\": 25340\n"}
+,{"stream_name":"stdout","time":3338.102292037,"data":"    },\n"}
+,{"stream_name":"stdout","time":3338.102295217,"data":"    \"44b6_0b24845f\": {\n"}
+,{"stream_name":"stdout","time":3338.102298664,"data":"      \"division_parents\": 27,\n"}
+,{"stream_name":"stdout","time":3338.102302063,"data":"      \"edges\": 18289,\n"}
+,{"stream_name":"stdout","time":3338.102305401,"data":"      \"max_indegree\": 1,\n"}
+,{"stream_name":"stdout","time":3338.102309036,"data":"      \"max_outdegree\": 2,\n"}
+,{"stream_name":"stdout","time":3338.102312161,"data":"      \"nodes\": 19584\n"}
+,{"stream_name":"stdout","time":3338.102315248,"data":"    },\n"}
+,{"stream_name":"stdout","time":3338.102318461,"data":"    \"6bba_05b6850b\": {\n"}
+,{"stream_name":"stdout","time":3338.102322489,"data":"      \"division_parents\": 1,\n"}
+,{"stream_name":"stdout","time":3338.102325869,"data":"      \"edges\": 5935,\n"}
+,{"stream_name":"stdout","time":3338.10232916,"data":"      \"max_indegree\": 1,\n"}
+,{"stream_name":"stdout","time":3338.102332864,"data":"      \"max_outdegree\": 2,\n"}
+,{"stream_name":"stdout","time":3338.102348249,"data":"      \"nodes\": 6147\n"}
+,{"stream_name":"stdout","time":3338.102351727,"data":"    },\n"}
+,{"stream_name":"stdout","time":3338.10235488,"data":"    \"6bba_05db0fb1\": {\n"}
+,{"stream_name":"stdout","time":3338.102358071,"data":"      \"division_parents\": 33,\n"}
+,{"stream_name":"stdout","time":3338.102361853,"data":"      \"edges\": 67328,\n"}
+,{"stream_name":"stdout","time":3338.102365109,"data":"      \"max_indegree\": 1,\n"}
+,{"stream_name":"stdout","time":3338.102368265,"data":"      \"max_outdegree\": 2,\n"}
+,{"stream_name":"stdout","time":3338.102371723,"data":"      \"nodes\": 69529\n"}
+,{"stream_name":"stdout","time":3338.102375063,"data":"    }\n"}
+,{"stream_name":"stdout","time":3338.102378372,"data":"  }\n"}
+,{"stream_name":"stdout","time":3338.102381694,"data":"}\n"}
+,{"stream_name":"stderr","time":3343.609279877,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":3343.60931675,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":3343.755759436,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":3343.755806376,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":3344.507758724,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":3344.846301941,"data":"[NbConvertApp] Writing 397853 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":3347.428337385,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":3348.874065528,"data":"[NbConvertApp] Writing 1183017 bytes to __results__.html\n"}
+]

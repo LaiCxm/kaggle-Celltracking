@@ -1,0 +1,93 @@
+# EXP015 FOCUS3D candidate-node union.  The extra detector is used only as a
+# source of orphan candidate nodes; Pilkwang remains the edge/track model.
+if os.environ.get("BIOHUB_FOCUS3D_UNION", "0") != "0":
+    _focus_candidates = [
+        Path(os.environ.get("BIOHUB_FOCUS3D_ROOT", "/kaggle/input/datasets/hengck23/hengck23-cell-point-detector-demo")),
+        Path("/kaggle/input/hengck23-cell-point-detector-demo"),
+    ]
+    _focus_root = next((path for path in _focus_candidates if (path / "00000030.pth").is_file()), None)
+    if _focus_root is None:
+        _focus_hits = list(Path("/kaggle/input").glob("**/00000030.pth"))
+        if len(_focus_hits) != 1:
+            raise FileNotFoundError(f"FOCUS3D detector checkpoint not found uniquely: {_focus_hits}")
+        _focus_root = _focus_hits[0].parent
+    os.environ["BIOHUB_FOCUS3D_ROOT"] = str(_focus_root)
+    _focus_helper = r"""
+import sys as _focus_sys
+from scipy.spatial import cKDTree as _focus_cKDTree
+_FOCUS3D_MODEL = None
+_FOCUS3D_MODEL_ROOT = Path(os.environ.get("BIOHUB_FOCUS3D_ROOT", "/kaggle/input/datasets/hengck23/hengck23-cell-point-detector-demo"))
+
+def _focus3d_load(device):
+    global _FOCUS3D_MODEL
+    if _FOCUS3D_MODEL is None:
+        _focus_sys.path.insert(0, str(_FOCUS3D_MODEL_ROOT))
+        from model_v5 import StrongUNet3D3Level
+        _model = StrongUNet3D3Level(in_channels=1, channels=(64, 128, 256), node_channels=1, gradient_checkpointing=False).to(device)
+        _state = torch.load(_FOCUS3D_MODEL_ROOT / "00000030.pth", map_location=device, weights_only=False)
+        _model.load_state_dict(_state["model_state_dict"])
+        _model.eval()
+        _FOCUS3D_MODEL = _model
+        print("FOCUS3D-derived point detector loaded:", _FOCUS3D_MODEL_ROOT, flush=True)
+    return _FOCUS3D_MODEL
+
+@torch.no_grad()
+def _focus3d_extra_coords(zarr_arr, q_low, q_high, total_frames, device, base_coords, ds_arr):
+    _model = _focus3d_load(device)
+    _threshold = float(os.environ.get("BIOHUB_FOCUS3D_THRESHOLD", "0.5"))
+    _dedup_um = float(os.environ.get("BIOHUB_FOCUS3D_DEDUP_UM", "2.0"))
+    _batch = max(1, int(os.environ.get("BIOHUB_FOCUS3D_BATCH", "8")))
+    _scale_um = np.array((1.625, 0.40625, 0.40625), dtype=np.float32)
+    _parts = []
+    for _start in range(0, int(total_frames), _batch):
+        _stop = min(int(total_frames), _start + _batch)
+        _volume = zarr_arr[_start:_stop, ::1, ::4, ::4].astype(np.float32)
+        _volume = np.clip((_volume - float(q_low)) / (float(q_high) - float(q_low) + 1e-6), 0.0, None)
+        _tensor = torch.from_numpy(_volume).to(device)
+        with torch.amp.autocast("cuda", dtype=torch.float16):
+            _, _logits = _model(_tensor)
+        _prob = torch.sigmoid(_logits.float())
+        _pool = torch.nn.functional.max_pool3d(_prob[:, None], 3, 1, 1)[:, 0]
+        _keep = (_prob >= _pool) & (_prob >= _threshold)
+        for _bi in range(_stop - _start):
+            _idx = torch.nonzero(_keep[_bi], as_tuple=False).cpu().numpy()
+            if len(_idx):
+                _row = np.zeros((len(_idx), 4), dtype=np.float32)
+                _row[:, 0] = _start + _bi
+                _row[:, 1:] = _idx.astype(np.float32) * ds_arr[None, :]
+                _parts.append(_row)
+        del _tensor, _logits, _prob, _pool, _keep
+    if not _parts:
+        return np.empty((0, 4), dtype=np.int16)
+    _extra = np.concatenate(_parts, axis=0)
+    _kept = []
+    for _t in np.unique(_extra[:, 0].astype(np.int64)):
+        _cand = _extra[_extra[:, 0].astype(np.int64) == int(_t)]
+        _base = base_coords[base_coords[:, 0].astype(np.int64) == int(_t)]
+        if len(_base):
+            _tree = _focus_cKDTree(_base[:, 1:].astype(np.float32) * _scale_um[None, :])
+            _dist, _ = _tree.query(_cand[:, 1:].astype(np.float32) * _scale_um[None, :], k=1)
+            _cand = _cand[_dist > _dedup_um]
+        if len(_cand):
+            _kept.append(_cand)
+    return np.concatenate(_kept, axis=0).astype(np.int16) if _kept else np.empty((0, 4), dtype=np.int16)
+"""
+    _import_anchor = "from biohub_tracking.metrics import summarise\n"
+    if "_FOCUS3D_MODEL_ROOT" not in _s:
+        if _s.count(_import_anchor) != 1:
+            raise RuntimeError("FOCUS3D import anchor not found")
+        _s = _s.replace(_import_anchor, _import_anchor + _focus_helper, 1)
+    _call = """    if os.environ.get("BIOHUB_FOCUS3D_UNION", "0") != "0":
+        _focus_extra = _focus3d_extra_coords(zarr_arr, q_low, q_high, T, device, coords, ds_arr)
+        if len(_focus_extra):
+            coords = np.concatenate([coords, _focus_extra], axis=0)
+        print(f"FOCUS3D union extra candidate nodes: {len(_focus_extra)}", flush=True)
+
+"""
+    _return_anchor = "    return coords, all_edges"
+    if _s.count(_return_anchor) != 1:
+        raise RuntimeError("FOCUS3D return anchor not found")
+    _s = _s.replace(_return_anchor, _call + _return_anchor, 1)
+    compile(_s, str(_ps), "exec")
+    _ps.write_text(_s)
+    print("FOCUS3D candidate-node union patch applied")

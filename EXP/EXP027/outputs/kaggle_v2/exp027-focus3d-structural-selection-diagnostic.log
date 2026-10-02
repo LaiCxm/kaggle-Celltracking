@@ -1,0 +1,129 @@
+[{"stream_name":"stderr","time":6.292840316,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.292923395,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.292928919,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.292931498,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":6.865196413,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.865231977,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.86523745,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.865241359,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":38.749561935,"data":"CUDA: Tesla T4\n"}
+,{"stream_name":"stdout","time":38.749628463,"data":"event-bearing videos available: 83\n"}
+,{"stream_name":"stdout","time":38.749636658,"data":"selected videos: ['44b6_2a2eff9f', '44b6_706092f0', '44b6_996155de', '44b6_c50204e0', '44b6_d5e7d891', '44b6_eb2880fc', '6bba_05db0fb1', '6bba_3abfe10a', '6bba_61ecbe65', '6bba_87289e13', '6bba_c328f2fd', '6bba_fe670320']\n"}
+,{"stream_name":"stdout","time":38.749656217,"data":"selected events: 18 selected frames: 36\n"}
+,{"stream_name":"stderr","time":44.35116242,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":44.351199864,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":44.351210748,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":44.351214873,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stderr","time":44.351218027,"data":"\n"}
+,{"stream_name":"stderr","time":44.351221064,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":44.351224627,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":44.351228085,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":44.351231548,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stdout","time":55.989143275,"data":"Pilkwang 1/12 44b6_2a2eff9f nodes 1069 seconds 11.21\n"}
+,{"stream_name":"stdout","time":84.655053387,"data":"Pilkwang 2/12 44b6_706092f0 nodes 640 seconds 28.66\n"}
+,{"stream_name":"stdout","time":95.716722703,"data":"Pilkwang 3/12 44b6_996155de nodes 193 seconds 11.06\n"}
+,{"stream_name":"stdout","time":138.690630496,"data":"Pilkwang 4/12 44b6_c50204e0 nodes 2134 seconds 42.97\n"}
+,{"stream_name":"stdout","time":171.666027084,"data":"Pilkwang 5/12 44b6_d5e7d891 nodes 1863 seconds 32.97\n"}
+,{"stream_name":"stdout","time":220.214303368,"data":"Pilkwang 6/12 44b6_eb2880fc nodes 753 seconds 48.55\n"}
+,{"stream_name":"stdout","time":270.425633183,"data":"Pilkwang 7/12 6bba_05db0fb1 nodes 4607 seconds 50.21\n"}
+,{"stream_name":"stdout","time":329.874973289,"data":"Pilkwang 8/12 6bba_3abfe10a nodes 1632 seconds 59.45\n"}
+,{"stream_name":"stdout","time":350.729113099,"data":"Pilkwang 9/12 6bba_61ecbe65 nodes 121 seconds 20.86\n"}
+,{"stream_name":"stdout","time":397.352420238,"data":"Pilkwang 10/12 6bba_87289e13 nodes 146 seconds 46.62\n"}
+,{"stream_name":"stdout","time":439.555832617,"data":"Pilkwang 11/12 6bba_c328f2fd nodes 1347 seconds 42.2\n"}
+,{"stream_name":"stdout","time":479.003675421,"data":"Pilkwang 12/12 6bba_fe670320 nodes 446 seconds 39.44\n"}
+,{"stream_name":"stdout","time":484.528141307,"data":"Loading weights from: /kaggle/input/datasets/qiweiyin/focus3d-nuclei-runtime/models/model_final_nuclei.pth\n"}
+,{"stream_name":"stdout","time":544.482956061,"data":"FOCUS3D 1/12 44b6_2a2eff9f instances 1479 seconds 38.29\n"}
+,{"stream_name":"stdout","time":592.467827552,"data":"FOCUS3D 2/12 44b6_706092f0 instances 1977 seconds 47.98\n"}
+,{"stream_name":"stdout","time":605.030704948,"data":"FOCUS3D 3/12 44b6_996155de instances 250 seconds 12.56\n"}
+,{"stream_name":"stdout","time":701.198847332,"data":"FOCUS3D 4/12 44b6_c50204e0 instances 3653 seconds 96.16\n"}
+,{"stream_name":"stdout","time":765.816997821,"data":"FOCUS3D 5/12 44b6_d5e7d891 instances 2437 seconds 64.61\n"}
+,{"stream_name":"stdout","time":797.294006968,"data":"FOCUS3D 6/12 44b6_eb2880fc instances 1185 seconds 31.47\n"}
+,{"stream_name":"stdout","time":917.088409378,"data":"FOCUS3D 7/12 6bba_05db0fb1 instances 4937 seconds 119.79\n"}
+,{"stream_name":"stdout","time":959.371366163,"data":"FOCUS3D 8/12 6bba_3abfe10a instances 1638 seconds 42.28\n"}
+,{"stream_name":"stdout","time":970.599439336,"data":"FOCUS3D 9/12 6bba_61ecbe65 instances 123 seconds 11.22\n"}
+,{"stream_name":"stdout","time":981.259136187,"data":"FOCUS3D 10/12 6bba_87289e13 instances 136 seconds 10.65\n"}
+,{"stream_name":"stdout","time":1025.344887283,"data":"FOCUS3D 11/12 6bba_c328f2fd instances 1628 seconds 44.08\n"}
+,{"stream_name":"stdout","time":1050.240268891,"data":"FOCUS3D 12/12 6bba_fe670320 instances 460 seconds 24.89\n"}
+,{"stream_name":"stdout","time":1139.521805772,"data":"endpoint summary\n"}
+,{"stream_name":"stdout","time":1139.52408381,"data":"structural selection summary\n"}
+,{"stream_name":"stdout","time":1139.583927405,"data":"{\n"}
+,{"stream_name":"stdout","time":1139.583957658,"data":"  \"experiment\": \"EXP027\",\n"}
+,{"stream_name":"stdout","time":1139.583963091,"data":"  \"official_cv\": null,\n"}
+,{"stream_name":"stdout","time":1139.583969502,"data":"  \"submission_generated\": false,\n"}
+,{"stream_name":"stdout","time":1139.583978003,"data":"  \"selected_videos\": [\n"}
+,{"stream_name":"stdout","time":1139.583981498,"data":"    \"44b6_2a2eff9f\",\n"}
+,{"stream_name":"stdout","time":1139.583984537,"data":"    \"44b6_706092f0\",\n"}
+,{"stream_name":"stdout","time":1139.583987565,"data":"    \"44b6_996155de\",\n"}
+,{"stream_name":"stdout","time":1139.584018797,"data":"    \"44b6_c50204e0\",\n"}
+,{"stream_name":"stdout","time":1139.58402352,"data":"    \"44b6_d5e7d891\",\n"}
+,{"stream_name":"stdout","time":1139.584028297,"data":"    \"44b6_eb2880fc\",\n"}
+,{"stream_name":"stdout","time":1139.584033359,"data":"    \"6bba_05db0fb1\",\n"}
+,{"stream_name":"stdout","time":1139.584037668,"data":"    \"6bba_3abfe10a\",\n"}
+,{"stream_name":"stdout","time":1139.584053703,"data":"    \"6bba_61ecbe65\",\n"}
+,{"stream_name":"stdout","time":1139.584057191,"data":"    \"6bba_87289e13\",\n"}
+,{"stream_name":"stdout","time":1139.58406058,"data":"    \"6bba_c328f2fd\",\n"}
+,{"stream_name":"stdout","time":1139.584064019,"data":"    \"6bba_fe670320\"\n"}
+,{"stream_name":"stdout","time":1139.584067383,"data":"  ],\n"}
+,{"stream_name":"stdout","time":1139.584070741,"data":"  \"events\": 18,\n"}
+,{"stream_name":"stdout","time":1139.584074725,"data":"  \"candidate_gate_um\": {\n"}
+,{"stream_name":"stdout","time":1139.584079846,"data":"    \"parent\": 16.0,\n"}
+,{"stream_name":"stdout","time":1139.584086466,"data":"    \"daughter\": 20.0\n"}
+,{"stream_name":"stdout","time":1139.584088982,"data":"  },\n"}
+,{"stream_name":"stdout","time":1139.584091173,"data":"  \"modes\": [\n"}
+,{"stream_name":"stdout","time":1139.584093395,"data":"    \"pil_only\",\n"}
+,{"stream_name":"stdout","time":1139.58409655,"data":"    \"union\"\n"}
+,{"stream_name":"stdout","time":1139.584114628,"data":"  ],\n"}
+,{"stream_name":"stdout","time":1139.584118313,"data":"  \"activation_costs_um\": [\n"}
+,{"stream_name":"stdout","time":1139.58412238,"data":"    0.0,\n"}
+,{"stream_name":"stdout","time":1139.584125886,"data":"    2.0,\n"}
+,{"stream_name":"stdout","time":1139.5841297,"data":"    4.0,\n"}
+,{"stream_name":"stdout","time":1139.584133392,"data":"    8.0,\n"}
+,{"stream_name":"stdout","time":1139.5841406,"data":"    12.0\n"}
+,{"stream_name":"stdout","time":1139.584144886,"data":"  ],\n"}
+,{"stream_name":"stdout","time":1139.584148183,"data":"  \"selection_constraints\": [\n"}
+,{"stream_name":"stdout","time":1139.584152071,"data":"    \"unique_parent\",\n"}
+,{"stream_name":"stdout","time":1139.584155946,"data":"    \"unique_daughter\",\n"}
+,{"stream_name":"stdout","time":1139.584159895,"data":"    \"one_candidate_per_event\"\n"}
+,{"stream_name":"stdout","time":1139.584163331,"data":"  ],\n"}
+,{"stream_name":"stdout","time":1139.584166626,"data":"  \"selection_algorithm\": \"deterministic_greedy_set_packing\",\n"}
+,{"stream_name":"stdout","time":1139.584170141,"data":"  \"runtime_seconds\": {\n"}
+,{"stream_name":"stdout","time":1139.584173634,"data":"    \"pilkwang\": {\n"}
+,{"stream_name":"stdout","time":1139.58417704,"data":"      \"44b6_2a2eff9f\": 11.212730016999956,\n"}
+,{"stream_name":"stdout","time":1139.584180564,"data":"      \"44b6_706092f0\": 28.661884074,\n"}
+,{"stream_name":"stdout","time":1139.584184271,"data":"      \"44b6_996155de\": 11.064173588000017,\n"}
+,{"stream_name":"stdout","time":1139.584187856,"data":"      \"44b6_c50204e0\": 42.96934987999998,\n"}
+,{"stream_name":"stdout","time":1139.584191413,"data":"      \"44b6_d5e7d891\": 32.97423051300001,\n"}
+,{"stream_name":"stdout","time":1139.584194811,"data":"      \"44b6_eb2880fc\": 48.54793932000001,\n"}
+,{"stream_name":"stdout","time":1139.584198279,"data":"      \"6bba_05db0fb1\": 50.210066522000034,\n"}
+,{"stream_name":"stdout","time":1139.584202371,"data":"      \"6bba_3abfe10a\": 59.449231207000025,\n"}
+,{"stream_name":"stdout","time":1139.584206477,"data":"      \"6bba_61ecbe65\": 20.856689794999966,\n"}
+,{"stream_name":"stdout","time":1139.584210896,"data":"      \"6bba_87289e13\": 46.61873022399993,\n"}
+,{"stream_name":"stdout","time":1139.58421512,"data":"      \"6bba_c328f2fd\": 42.20215361099997,\n"}
+,{"stream_name":"stdout","time":1139.584218635,"data":"      \"6bba_fe670320\": 39.44383505500002\n"}
+,{"stream_name":"stdout","time":1139.584222031,"data":"    },\n"}
+,{"stream_name":"stdout","time":1139.5842253,"data":"    \"focus3d\": {\n"}
+,{"stream_name":"stdout","time":1139.584233395,"data":"      \"44b6_2a2eff9f\": 38.29351848099998,\n"}
+,{"stream_name":"stdout","time":1139.58423689,"data":"      \"44b6_706092f0\": 47.98333348400001,\n"}
+,{"stream_name":"stdout","time":1139.584240279,"data":"      \"44b6_996155de\": 12.556222624999918,\n"}
+,{"stream_name":"stdout","time":1139.584243751,"data":"      \"44b6_c50204e0\": 96.16046426399998,\n"}
+,{"stream_name":"stdout","time":1139.58424716,"data":"      \"44b6_d5e7d891\": 64.61016365899991,\n"}
+,{"stream_name":"stdout","time":1139.584250505,"data":"      \"44b6_eb2880fc\": 31.4715539419999,\n"}
+,{"stream_name":"stdout","time":1139.584253922,"data":"      \"6bba_05db0fb1\": 119.78522533899991,\n"}
+,{"stream_name":"stdout","time":1139.584257347,"data":"      \"6bba_3abfe10a\": 42.27729218599984,\n"}
+,{"stream_name":"stdout","time":1139.584260748,"data":"      \"6bba_61ecbe65\": 11.216423133000035,\n"}
+,{"stream_name":"stdout","time":1139.584264115,"data":"      \"6bba_87289e13\": 10.652383302999851,\n"}
+,{"stream_name":"stdout","time":1139.584267516,"data":"      \"6bba_c328f2fd\": 44.07887807199995,\n"}
+,{"stream_name":"stdout","time":1139.584272718,"data":"      \"6bba_fe670320\": 24.88756247099991\n"}
+,{"stream_name":"stdout","time":1139.584279676,"data":"    }\n"}
+,{"stream_name":"stdout","time":1139.584296718,"data":"  }\n"}
+,{"stream_name":"stdout","time":1139.584300508,"data":"}\n"}
+,{"stream_name":"stdout","time":1139.584304465,"data":"Wrote: ['REPORT.md', 'candidate_rows.csv', 'endpoint_rows.csv', 'event_rows.csv', 'selected_candidates.csv', 'selection_summary.csv', 'summary.json']\n"}
+,{"stream_name":"stderr","time":1145.043946025,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":1145.043982189,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":1145.195582968,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":1145.195608073,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":1145.848093159,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":1146.245456656,"data":"[NbConvertApp] Writing 539573 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":1148.755992979,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":1149.696054728,"data":"[NbConvertApp] Writing 799349 bytes to __results__.html\n"}
+]

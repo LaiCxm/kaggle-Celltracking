@@ -1,0 +1,2 @@
+mode,n,edge_jaccard,division_jaccard,division_tp,division_fp,division_fn,node_recall,adj_edge_jaccard,n_adj,score,focus_checked,focus_accepted,focus_veto_removed,focus_frames_loaded
+off,4,0.9136780650542119,0.2,1,0,4,0.979074072722612,0.9206682101946045,4,0.9406682101946046,0,0,0,0

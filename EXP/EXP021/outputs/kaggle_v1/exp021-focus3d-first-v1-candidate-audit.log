@@ -1,0 +1,122 @@
+[{"stream_name":"stderr","time":6.2542627379999995,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":6.254329216,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":7.075476365,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.075519233,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.07552542,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.075529645,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":7.666905921,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":7.66693408,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":7.666940797,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":7.66694818,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":25.276492279,"data":"CUDA: Tesla T4\n"}
+,{"stream_name":"stdout","time":25.276546304,"data":"sample: 6bba_337b1b3a frames: [19, 20, 21, 22, 23, 24, 25, 26]\n"}
+,{"stream_name":"stderr","time":32.541082976,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":32.541144186,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":32.541153647,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":32.541159184,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stderr","time":32.541164035,"data":"\n"}
+,{"stream_name":"stderr","time":32.541168346,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":32.541173649,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":32.541182764,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":32.541186647,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stdout","time":51.846928628,"data":"Pilkwang centers: 2705 seconds: 18.7\n"}
+,{"stream_name":"stdout","time":57.391507659,"data":"Loading weights from: /kaggle/input/datasets/qiweiyin/focus3d-nuclei-runtime/models/model_final_nuclei.pth\n"}
+,{"stream_name":"stdout","time":185.803191584,"data":"FOCUS3D instances: 2973 seconds: 82.08\n"}
+,{"stream_name":"stdout","time":213.706314249,"data":"{\n"}
+,{"stream_name":"stdout","time":213.706351379,"data":"  \"experiment\": \"EXP021\",\n"}
+,{"stream_name":"stdout","time":213.706357539,"data":"  \"stage\": \"candidate_layer_only\",\n"}
+,{"stream_name":"stdout","time":213.706362217,"data":"  \"sample_id\": \"6bba_337b1b3a\",\n"}
+,{"stream_name":"stdout","time":213.706366696,"data":"  \"eval_frames\": [\n"}
+,{"stream_name":"stdout","time":213.706373378,"data":"    19,\n"}
+,{"stream_name":"stdout","time":213.706381084,"data":"    20,\n"}
+,{"stream_name":"stdout","time":213.706384409,"data":"    21,\n"}
+,{"stream_name":"stdout","time":213.706387272,"data":"    22,\n"}
+,{"stream_name":"stdout","time":213.706390179,"data":"    23,\n"}
+,{"stream_name":"stdout","time":213.706392992,"data":"    24,\n"}
+,{"stream_name":"stdout","time":213.70639588,"data":"    25,\n"}
+,{"stream_name":"stdout","time":213.706398762,"data":"    26\n"}
+,{"stream_name":"stdout","time":213.706401569,"data":"  ],\n"}
+,{"stream_name":"stdout","time":213.706404426,"data":"  \"runtime_seconds\": {\n"}
+,{"stream_name":"stdout","time":213.706407349,"data":"    \"pilkwang\": 18.701331863000007,\n"}
+,{"stream_name":"stdout","time":213.706423734,"data":"    \"focus3d\": 82.08333714499997\n"}
+,{"stream_name":"stdout","time":213.706429055,"data":"  },\n"}
+,{"stream_name":"stdout","time":213.706434031,"data":"  \"node_counts\": {\n"}
+,{"stream_name":"stdout","time":213.706439032,"data":"    \"gt_nodes\": 1272,\n"}
+,{"stream_name":"stdout","time":213.706444078,"data":"    \"proposal_nodes\": 3071,\n"}
+,{"stream_name":"stdout","time":213.706448457,"data":"    \"consensus\": 2607,\n"}
+,{"stream_name":"stdout","time":213.706452649,"data":"    \"pilkwang_only\": 98,\n"}
+,{"stream_name":"stdout","time":213.706457027,"data":"    \"focus_only\": 366,\n"}
+,{"stream_name":"stdout","time":213.706461299,"data":"    \"matched_gt_nodes\": 15\n"}
+,{"stream_name":"stdout","time":213.706465994,"data":"  },\n"}
+,{"stream_name":"stdout","time":213.706470119,"data":"  \"division_rows\": [\n"}
+,{"stream_name":"stdout","time":213.706474527,"data":"    {\n"}
+,{"stream_name":"stdout","time":213.706478746,"data":"      \"gt_parent\": 39000297,\n"}
+,{"stream_name":"stdout","time":213.706483101,"data":"      \"gt_daughters\": [\n"}
+,{"stream_name":"stdout","time":213.706489101,"data":"        40000311,\n"}
+,{"stream_name":"stdout","time":213.706496259,"data":"        40000324\n"}
+,{"stream_name":"stdout","time":213.706499192,"data":"      ],\n"}
+,{"stream_name":"stdout","time":213.706502027,"data":"      \"parent_detected\": 0,\n"}
+,{"stream_name":"stdout","time":213.706504867,"data":"      \"daughter1_detected\": 0,\n"}
+,{"stream_name":"stdout","time":213.706508147,"data":"      \"daughter2_detected\": 0,\n"}
+,{"stream_name":"stdout","time":213.706524855,"data":"      \"complete_candidate\": 0\n"}
+,{"stream_name":"stdout","time":213.706530089,"data":"    },\n"}
+,{"stream_name":"stdout","time":213.706535371,"data":"    {\n"}
+,{"stream_name":"stdout","time":213.706540136,"data":"      \"gt_parent\": 59000663,\n"}
+,{"stream_name":"stdout","time":213.706544625,"data":"      \"gt_daughters\": [\n"}
+,{"stream_name":"stdout","time":213.706549032,"data":"        60000685,\n"}
+,{"stream_name":"stdout","time":213.706553283,"data":"        60000686\n"}
+,{"stream_name":"stdout","time":213.706557526,"data":"      ],\n"}
+,{"stream_name":"stdout","time":213.706561728,"data":"      \"parent_detected\": 0,\n"}
+,{"stream_name":"stdout","time":213.706576039,"data":"      \"daughter1_detected\": 0,\n"}
+,{"stream_name":"stdout","time":213.706579682,"data":"      \"daughter2_detected\": 0,\n"}
+,{"stream_name":"stdout","time":213.706583113,"data":"      \"complete_candidate\": 0\n"}
+,{"stream_name":"stdout","time":213.706586384,"data":"    }\n"}
+,{"stream_name":"stdout","time":213.70658966,"data":"  ],\n"}
+,{"stream_name":"stdout","time":213.706592892,"data":"  \"formal_cv\": null,\n"}
+,{"stream_name":"stdout","time":213.706601767,"data":"  \"submission_generated\": false\n"}
+,{"stream_name":"stdout","time":213.706605046,"data":"}\n"}
+,{"stream_name":"stderr","time":219.359074627,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":219.359105508,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":219.508144274,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":219.508172293,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":220.174239389,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":220.215296128,"data":"[NbConvertApp] ERROR | Notebook JSON is invalid: Additional properties are not allowed ('execution_count', 'outputs' were unexpected)\n"}
+,{"stream_name":"stderr","time":220.215320238,"data":"\n"}
+,{"stream_name":"stderr","time":220.215325464,"data":"Failed validating 'additionalProperties' in markdown_cell:\n"}
+,{"stream_name":"stderr","time":220.215330107,"data":"\n"}
+,{"stream_name":"stderr","time":220.215334386,"data":"On instance['cells'][0]:\n"}
+,{"stream_name":"stderr","time":220.215338812,"data":"{'cell_type': 'markdown',\n"}
+,{"stream_name":"stderr","time":220.21534342,"data":" 'execution_count': None,\n"}
+,{"stream_name":"stderr","time":220.215347952,"data":" 'id': '6a9bc8c1',\n"}
+,{"stream_name":"stderr","time":220.21535249,"data":" 'metadata': {'papermill': {'duration': 0.00343,\n"}
+,{"stream_name":"stderr","time":220.215357595,"data":"                            'end_time': '2026-09-16T08:13:48.263450+00:00',\n"}
+,{"stream_name":"stderr","time":220.215362435,"data":"                            'exception': False,\n"}
+,{"stream_name":"stderr","time":220.215366975,"data":"                            'start_time': '2026-09-16T08:13:48.260020+00:00',\n"}
+,{"stream_name":"stderr","time":220.215371503,"data":"                            'status': 'completed'},\n"}
+,{"stream_name":"stderr","time":220.215376229,"data":"              'tags': []},\n"}
+,{"stream_name":"stderr","time":220.215380843,"data":" 'outputs': ['...0 outputs...'],\n"}
+,{"stream_name":"stderr","time":220.215385344,"data":" 'source': '# EXP021 FOCUS3D-first V1 candidate audit\\n'\n"}
+,{"stream_name":"stderr","time":220.215389841,"data":"           '\\n'\n"}
+,{"stream_name":"stderr","time":220.215394321,"data":"           'Standalone diagnostic...'}\n"}
+,{"stream_name":"stderr","time":220.48542444,"data":"[NbConvertApp] Writing 153620 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":222.878592082,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":222.919289359,"data":"[NbConvertApp] ERROR | Notebook JSON is invalid: Additional properties are not allowed ('execution_count', 'outputs' were unexpected)\n"}
+,{"stream_name":"stderr","time":222.919333142,"data":"\n"}
+,{"stream_name":"stderr","time":222.919351504,"data":"Failed validating 'additionalProperties' in markdown_cell:\n"}
+,{"stream_name":"stderr","time":222.919356513,"data":"\n"}
+,{"stream_name":"stderr","time":222.919359915,"data":"On instance['cells'][0]:\n"}
+,{"stream_name":"stderr","time":222.919364231,"data":"{'cell_type': 'markdown',\n"}
+,{"stream_name":"stderr","time":222.919367781,"data":" 'execution_count': None,\n"}
+,{"stream_name":"stderr","time":222.919371283,"data":" 'id': '6a9bc8c1',\n"}
+,{"stream_name":"stderr","time":222.919375071,"data":" 'metadata': {'papermill': {'duration': 0.00343,\n"}
+,{"stream_name":"stderr","time":222.919378449,"data":"                            'end_time': '2026-09-16T08:13:48.263450+00:00',\n"}
+,{"stream_name":"stderr","time":222.919381904,"data":"                            'exception': False,\n"}
+,{"stream_name":"stderr","time":222.919385289,"data":"                            'start_time': '2026-09-16T08:13:48.260020+00:00',\n"}
+,{"stream_name":"stderr","time":222.919388999,"data":"                            'status': 'completed'},\n"}
+,{"stream_name":"stderr","time":222.919397349,"data":"              'tags': []},\n"}
+,{"stream_name":"stderr","time":222.919399872,"data":" 'outputs': ['...0 outputs...'],\n"}
+,{"stream_name":"stderr","time":222.919402177,"data":" 'source': '# EXP021 FOCUS3D-first V1 candidate audit\\n'\n"}
+,{"stream_name":"stderr","time":222.919404547,"data":"           '\\n'\n"}
+,{"stream_name":"stderr","time":222.919406913,"data":"           'Standalone diagnostic...'}\n"}
+,{"stream_name":"stderr","time":223.715993698,"data":"[NbConvertApp] Writing 454264 bytes to __results__.html\n"}
+]

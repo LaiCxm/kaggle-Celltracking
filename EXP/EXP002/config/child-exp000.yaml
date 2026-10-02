@@ -1,0 +1,37 @@
+﻿# EXP002 — Harmonic 双向调和双种子 (复刻 kimi-notebook-v17)
+# 来源: https://www.kaggle.com/code/yunusgmsoy/kimi-notebook-v17
+# 目标: 在 EXP001 0.908 基础上复现公开 0.915 路线
+# 执行方式: tools/push_custom_kernel.py --exp EXP002 --kernel infer_harmonic_dualseed.ipynb ...
+
+competition: biohub-cell-tracking-during-development
+exp_name: EXP002
+method: unet_transformer + dual-seed + harmonic bidirectional fusion
+artifact_slugs:
+  - pilkwang/biohub-tracking-support-pack-50ep-v1
+  - pilkwang/biohub-temporal-unet3d-seed314159-v1
+  - pilkwang/biohub-deepcenter-unet3d-center-prior-v1
+
+# ---- kimi v17 关键参数 ----
+det_threshold: 0.96875
+ilp_edge_weight: -1.0
+ilp_appearance_weight: 0.0
+ilp_disappearance_weight: 1.5
+ilp_division_weight: 1.0
+gap_close_um: 5.8
+output_min_track_len: 6
+safe_div_parent_max_um: 12.0
+safe_div_sister_max_um: 15.0
+safe_div_existing_child_max_um: 10.0
+safe_div_require_divergence: true
+safe_div_require_mutual_nn: true
+use_deepcenter_veto: true
+deepcenter_expected_epoch: 2
+deepcenter_checkpoint: /kaggle/input/biohub-deepcenter-unet3d-center-prior-v1/weights/full_frame_center/best.pt
+bidirectional_edge_weight: 0.30
+bidirectional_fusion_mode: harmonic_probability
+dual_seed_min_candidate_retention: 0.90
+det_tta: 8-view D4
+
+# ---- 执行 ----
+validator_enabled: false  # 本实验只生成 submission，跳过训练集 validator 以加快完成
+submission: /kaggle/working/submission.csv

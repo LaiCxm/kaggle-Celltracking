@@ -1,0 +1,63 @@
+{
+  "status": "ok",
+  "n_train": 16678,
+  "n_train_pos": 829,
+  "n_train_neg": 15849,
+  "n_val": 5815,
+  "n_val_pos": 293,
+  "n_val_neg": 5522,
+  "best_val_auc": 0.9483004995222337,
+  "history": [
+    {
+      "epoch": 21,
+      "train_loss": 0.07963401743109556,
+      "val_auc": 0.9400771101136873
+    },
+    {
+      "epoch": 22,
+      "train_loss": 0.08008108247397172,
+      "val_auc": 0.9378804978658125
+    },
+    {
+      "epoch": 23,
+      "train_loss": 0.08009667372899935,
+      "val_auc": 0.9451489728334567
+    },
+    {
+      "epoch": 24,
+      "train_loss": 0.07959738100312327,
+      "val_auc": 0.9412316603891602
+    },
+    {
+      "epoch": 25,
+      "train_loss": 0.07958842478741672,
+      "val_auc": 0.941438713034922
+    },
+    {
+      "epoch": 26,
+      "train_loss": 0.0795888398488172,
+      "val_auc": 0.9419971371108801
+    },
+    {
+      "epoch": 27,
+      "train_loss": 0.07921763143817903,
+      "val_auc": 0.9398694394003262
+    },
+    {
+      "epoch": 28,
+      "train_loss": 0.07930121859324495,
+      "val_auc": 0.941776177944134
+    },
+    {
+      "epoch": 29,
+      "train_loss": 0.07851236831074725,
+      "val_auc": 0.9373736824343953
+    },
+    {
+      "epoch": 30,
+      "train_loss": 0.0796728136127591,
+      "val_auc": 0.9410573653261605
+    }
+  ],
+  "model_path": "F:\\dsh\\cell\\CellTracking\\EXP\\EXP006\\models\\division_verifier_synth.pth"
+}

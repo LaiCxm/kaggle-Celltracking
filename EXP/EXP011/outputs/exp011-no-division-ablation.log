@@ -1,0 +1,652 @@
+[{"stream_name":"stderr","time":5.538465552,"data":"/usr/local/lib/python3.12/dist-packages/nbformat/__init__.py:96: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.\n"}
+,{"stream_name":"stderr","time":5.538533883,"data":"  validate(nb)\n"}
+,{"stream_name":"stderr","time":6.27850104,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.278532209,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.278537411,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.278541555,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stderr","time":6.865561529,"data":"0.00s - Debugger warning: It seems that frozen modules are being used, which may\n"}
+,{"stream_name":"stderr","time":6.865599335,"data":"0.00s - make the debugger miss breakpoints. Please pass -Xfrozen_modules=off\n"}
+,{"stream_name":"stderr","time":6.865603529,"data":"0.00s - to python to disable frozen modules.\n"}
+,{"stream_name":"stderr","time":6.865606219,"data":"0.00s - Note: Debugging will proceed. Set PYDEVD_DISABLE_FILE_VALIDATION=1 to disable this validation.\n"}
+,{"stream_name":"stdout","time":851.534203624,"data":"my own probes of the public 0.941 configuration, one environment variable at a time\n"}
+,{"stream_name":"stdout","time":851.534287636,"data":"\n"}
+,{"stream_name":"stdout","time":851.534294338,"data":"                                 variable value_in_0941 value_probed                                                   kernel  submission       date  public_score delta_vs_0941\n"}
+,{"stream_name":"stdout","time":851.534299784,"data":"(none, the published 0.941 configuration)           NaN          NaN                                    busyaprime/bh-run-941    56053023 2026-09-06         0.941          base\n"}
+,{"stream_name":"stdout","time":851.534305236,"data":"                     BIOHUB_DET_THRESHOLD         0.965         0.96                                 busyaprime/bh-run-det096    56053765 2026-09-06         0.942        +0.001\n"}
+,{"stream_name":"stdout","time":851.534310717,"data":"                     BIOHUB_DET_THRESHOLD         0.965         0.94                                 busyaprime/bh-run-det094    56060188 2026-09-06         0.938        -0.003\n"}
+,{"stream_name":"stdout","time":851.534317086,"data":"               BIOHUB_SECONDARY_LINK_MODE        static     adaptive                                  busyaprime/bh-run-adapt    56060190 2026-09-06         0.941        +0.000\n"}
+,{"stream_name":"stdout","time":851.534322587,"data":"                     BIOHUB_DET_THRESHOLD         0.965         0.95                                 busyaprime/bh-run-det095    56064970 2026-09-07         0.940        -0.001\n"}
+,{"stream_name":"stdout","time":851.534328107,"data":"          BIOHUB_DEEPCENTER_GAP_THRESHOLD          0.25         0.35                                 busyaprime/bh-run-gap035    56064989 2026-09-07         0.941        +0.000\n"}
+,{"stream_name":"stdout","time":851.534334097,"data":"          BIOHUB_DUAL_SEED_EDGE_THRESHOLD          0.48         0.42                                busyaprime/bh-run-dual042    56065638 2026-09-07         0.941        +0.000\n"}
+,{"stream_name":"stdout","time":851.534339322,"data":"             BIOHUB_SECONDARY_EDGE_WEIGHT          0.15         0.25                                 busyaprime/bh-run-sec025    56065642 2026-09-07         0.942        +0.001\n"}
+,{"stream_name":"stdout","time":851.534356397,"data":"                     BIOHUB_DET_THRESHOLD         0.965         0.96 busyaprime/biohub-0-942-lb-one-knob-past-the-public-line    56066524 2026-09-07         0.942        +0.001\n"}
+,{"stream_name":"stdout","time":851.534360941,"data":"\n"}
+,{"stream_name":"stdout","time":851.534364578,"data":"BIOHUB_DET_THRESHOLD: the public 0.941 configuration sets 0.965, the code default is 0.99; first set to that value by stephennedumpally/pls-upvote-share-higher-scoring-ideas on 2026-08-24\n"}
+,{"stream_name":"stdout","time":851.534375644,"data":"public single-knob steps recorded on this variable anywhere on the lineage: 5\n"}
+,{"stream_name":"stdout","time":851.534379724,"data":"best scored probe: BIOHUB_DET_THRESHOLD = 0.96 at 0.942 (submission 56053765)\n"}
+,{"stream_name":"stdout","time":851.56888232,"data":"BIOHUB_PRESET: harmonic_v3_division_wide\n"}
+,{"stream_name":"stdout","time":851.568935396,"data":"BIOHUB_SCORE_AXIS: public 0.940 base + {\"BIOHUB_DEEPCENTER_SAFE_DIV_THRESHOLD\": \"0.25\", \"BIOHUB_GAP_CLOSE_UM\": \"5.0\"}\n"}
+,{"stream_name":"stdout","time":851.590205253,"data":"Configuration guard: PASS\n"}
+,{"stream_name":"stdout","time":851.59023253,"data":"Baseline: fixed-90 dual-seed clean pipeline (public LB 0.913)\n"}
+,{"stream_name":"stdout","time":851.59023855,"data":"Single model-level change: harmonic mutual-support association fusion\n"}
+,{"stream_name":"stdout","time":851.590243182,"data":"Reverse-time association weight: 0.200\n"}
+,{"stream_name":"stdout","time":851.634263011,"data":"Biohub learned UNet + node-transformer + ILP submission\n"}
+,{"stream_name":"stdout","time":851.634294773,"data":"COMP_DIR: /kaggle/input/competitions/biohub-cell-tracking-during-development exists: True\n"}
+,{"stream_name":"stdout","time":851.634303833,"data":"TEST_DIR: /kaggle/input/competitions/biohub-cell-tracking-during-development/test exists: True\n"}
+,{"stream_name":"stdout","time":851.63430687,"data":"{\n"}
+,{"stream_name":"stdout","time":851.6343098,"data":"  \"adaptive_short_track_rescue\": true,\n"}
+,{"stream_name":"stdout","time":851.634312667,"data":"  \"allow_artifact_fallback\": false,\n"}
+,{"stream_name":"stdout","time":851.634315467,"data":"  \"allow_pip_install\": false,\n"}
+,{"stream_name":"stdout","time":851.634318118,"data":"  \"deepcenter_checkpoint_default\": \"/kaggle/input/biohub-deepcenter-unet3d-center-prior-v1/weights/full_frame_center/best.pt\",\n"}
+,{"stream_name":"stdout","time":851.634321048,"data":"  \"deepcenter_expected_epoch\": 2,\n"}
+,{"stream_name":"stdout","time":851.634340501,"data":"  \"deepcenter_gap_add_gate\": true,\n"}
+,{"stream_name":"stdout","time":851.634345171,"data":"  \"deepcenter_gap_confirm_min_span_um\": 8.5,\n"}
+,{"stream_name":"stdout","time":851.634349971,"data":"  \"deepcenter_gap_threshold\": 0.25,\n"}
+,{"stream_name":"stdout","time":851.634354725,"data":"  \"deepcenter_safe_div_add_gate\": true,\n"}
+,{"stream_name":"stdout","time":851.634359066,"data":"  \"deepcenter_safe_div_threshold\": 0.25,\n"}
+,{"stream_name":"stdout","time":851.634362723,"data":"  \"det_threshold\": 0.96,\n"}
+,{"stream_name":"stdout","time":851.634366801,"data":"  \"div_drop_to_single_if_bad\": true,\n"}
+,{"stream_name":"stdout","time":851.634370723,"data":"  \"div_parent_max_um\": 10.5,\n"}
+,{"stream_name":"stdout","time":851.634374637,"data":"  \"div_sister_max_um\": 8.0,\n"}
+,{"stream_name":"stdout","time":851.634378461,"data":"  \"experiment_tag\": \"selected_101_dual_seed_near_balanced_center_confirmed_synthetic_gap\",\n"}
+,{"stream_name":"stdout","time":851.634382793,"data":"  \"gap2_frame_frac_cap\": 0.006,\n"}
+,{"stream_name":"stdout","time":851.634401631,"data":"  \"gap2_max_links_abs\": 180,\n"}
+,{"stream_name":"stdout","time":851.634406198,"data":"  \"gap2_max_links_frac\": 0.0045,\n"}
+,{"stream_name":"stdout","time":851.634410436,"data":"  \"gap2_max_step_um\": 4.4,\n"}
+,{"stream_name":"stdout","time":851.634414938,"data":"  \"gap2_max_total_um\": 10.2,\n"}
+,{"stream_name":"stdout","time":851.634419353,"data":"  \"gap2_require_context\": true,\n"}
+,{"stream_name":"stdout","time":851.634424243,"data":"  \"gap_close_effective_max_gap\": 1,\n"}
+,{"stream_name":"stdout","time":851.634428653,"data":"  \"gap_close_max_added_abs\": 2000,\n"}
+,{"stream_name":"stdout","time":851.634432535,"data":"  \"gap_close_max_added_frac\": 0.05,\n"}
+,{"stream_name":"stdout","time":851.634436936,"data":"  \"gap_close_max_gap\": 2,\n"}
+,{"stream_name":"stdout","time":851.634440896,"data":"  \"gap_close_reuse_existing\": true,\n"}
+,{"stream_name":"stdout","time":851.634444706,"data":"  \"gap_close_reuse_um\": 3.2,\n"}
+,{"stream_name":"stdout","time":851.634449156,"data":"  \"gap_close_um\": 5.0,\n"}
+,{"stream_name":"stdout","time":851.634453813,"data":"  \"gap_density_adaptive\": true,\n"}
+,{"stream_name":"stdout","time":851.634458431,"data":"  \"gap_density_gain\": 0.04,\n"}
+,{"stream_name":"stdout","time":851.634462928,"data":"  \"gap_density_max_step_delta_um\": 0.125,\n"}
+,{"stream_name":"stdout","time":851.634467186,"data":"  \"gap_density_neighbors\": 3,\n"}
+,{"stream_name":"stdout","time":851.634472023,"data":"  \"gap_density_reference_um\": 6.5,\n"}
+,{"stream_name":"stdout","time":851.634475951,"data":"  \"gap_refine_max_shift_um\": 3.2,\n"}
+,{"stream_name":"stdout","time":851.634479979,"data":"  \"gap_refine_synthetic\": true,\n"}
+,{"stream_name":"stdout","time":851.634483781,"data":"  \"gap_refine_win_yx\": 3,\n"}
+,{"stream_name":"stdout","time":851.634487532,"data":"  \"gap_refine_win_z\": 1,\n"}
+,{"stream_name":"stdout","time":851.634491338,"data":"  \"ilp_appearance_weight\": 0.0,\n"}
+,{"stream_name":"stdout","time":851.634495126,"data":"  \"ilp_disappearance_weight\": 2.0,\n"}
+,{"stream_name":"stdout","time":851.634499788,"data":"  \"ilp_division_weight\": 1.2,\n"}
+,{"stream_name":"stdout","time":851.634504486,"data":"  \"ilp_edge_weight\": -1.0,\n"}
+,{"stream_name":"stdout","time":851.634509058,"data":"  \"method\": \"unet_transformer\",\n"}
+,{"stream_name":"stdout","time":851.634513992,"data":"  \"motion_relink_learned_bonus\": 1.0,\n"}
+,{"stream_name":"stdout","time":851.634518702,"data":"  \"motion_relink_max_frame_nodes\": 2600,\n"}
+,{"stream_name":"stdout","time":851.634523699,"data":"  \"motion_relink_relaxed_um\": 10.0,\n"}
+,{"stream_name":"stdout","time":851.634528342,"data":"  \"motion_relink_tight_um\": 6.0,\n"}
+,{"stream_name":"stdout","time":851.634532231,"data":"  \"motion_relink_velocity_weight\": 0.5,\n"}
+,{"stream_name":"stdout","time":851.634536016,"data":"  \"output_division_geometry_filter\": false,\n"}
+,{"stream_name":"stdout","time":851.63454003,"data":"  \"output_edge_max_um\": 14.0,\n"}
+,{"stream_name":"stdout","time":851.634546432,"data":"  \"output_enforce_next_frame\": true,\n"}
+,{"stream_name":"stdout","time":851.634551203,"data":"  \"output_filter_short_tracks\": true,\n"}
+,{"stream_name":"stdout","time":851.634555591,"data":"  \"output_gap2_recovery\": true,\n"}
+,{"stream_name":"stdout","time":851.634559442,"data":"  \"output_gap_close\": true,\n"}
+,{"stream_name":"stdout","time":851.634563438,"data":"  \"output_keep_division_components\": true,\n"}
+,{"stream_name":"stdout","time":851.634567311,"data":"  \"output_linefit_smooth\": true,\n"}
+,{"stream_name":"stdout","time":851.634575721,"data":"  \"output_linefit_weight\": 0.8,\n"}
+,{"stream_name":"stdout","time":851.634580895,"data":"  \"output_linefit_window\": 2,\n"}
+,{"stream_name":"stdout","time":851.634585563,"data":"  \"output_min_track_len\": 6,\n"}
+,{"stream_name":"stdout","time":851.634590511,"data":"  \"output_motion_relink\": true,\n"}
+,{"stream_name":"stdout","time":851.634595234,"data":"  \"output_prune_isolated\": true,\n"}
+,{"stream_name":"stdout","time":851.634599213,"data":"  \"output_safe_divisions\": true,\n"}
+,{"stream_name":"stdout","time":851.63460303,"data":"  \"output_single_child_repair\": false,\n"}
+,{"stream_name":"stdout","time":851.634606854,"data":"  \"output_single_parent_repair\": true,\n"}
+,{"stream_name":"stdout","time":851.634610727,"data":"  \"primary_artifact_manifest\": \"/kaggle/input/datasets/pilkwang/biohub-tracking-support-pack-50ep-v1/ARTIFACT_MANIFEST.json\",\n"}
+,{"stream_name":"stdout","time":851.634615098,"data":"  \"safe_div_existing_child_max_um\": 10.0,\n"}
+,{"stream_name":"stdout","time":851.634618951,"data":"  \"safe_div_frame_frac_cap\": 0.0076,\n"}
+,{"stream_name":"stdout","time":851.634622846,"data":"  \"safe_div_global_frac_cap\": 0.00375,\n"}
+,{"stream_name":"stdout","time":851.634627505,"data":"  \"safe_div_max_um\": 9.0,\n"}
+,{"stream_name":"stdout","time":851.634632158,"data":"  \"safe_div_sister_max_um\": 14.0,\n"}
+,{"stream_name":"stdout","time":851.634636848,"data":"  \"short_track_rescue_max_mean_edge_dist_um\": 3.0,\n"}
+,{"stream_name":"stdout","time":851.634641321,"data":"  \"short_track_rescue_max_nodes_abs\": 120,\n"}
+,{"stream_name":"stdout","time":851.634645226,"data":"  \"short_track_rescue_max_nodes_frac\": 0.012,\n"}
+,{"stream_name":"stdout","time":851.634649202,"data":"  \"short_track_rescue_min_len\": 4,\n"}
+,{"stream_name":"stdout","time":851.634653043,"data":"  \"short_track_rescue_min_mean_edge_prob\": 0.88,\n"}
+,{"stream_name":"stdout","time":851.634656909,"data":"  \"short_track_rescue_trigger_removed_frac\": 0.1,\n"}
+,{"stream_name":"stdout","time":851.634660817,"data":"  \"slice\": \"\",\n"}
+,{"stream_name":"stdout","time":851.63466469,"data":"  \"target_artifact_slug\": \"biohub-tracking-support-pack-50ep-v1\",\n"}
+,{"stream_name":"stdout","time":851.634668778,"data":"  \"unet_batch_size\": 4,\n"}
+,{"stream_name":"stdout","time":851.634673056,"data":"  \"use_deepcenter_add_only_gate\": true,\n"}
+,{"stream_name":"stdout","time":851.634677749,"data":"  \"use_ilp\": true,\n"}
+,{"stream_name":"stdout","time":851.634681943,"data":"  \"weights\": \"weights/unet_transformer/split_0/edge_predictor_best.pth\"\n"}
+,{"stream_name":"stdout","time":851.634686093,"data":"}\n"}
+,{"stream_name":"stdout","time":851.769574065,"data":"ARTIFACTS: /kaggle/input/datasets/pilkwang/biohub-tracking-support-pack-50ep-v1\n"}
+,{"stream_name":"stdout","time":851.769609001,"data":"Has offline wheels: True\n"}
+,{"stream_name":"stdout","time":851.769612876,"data":"Artifact name: biohub-tracking-support-pack-400ep-snapshot-v1\n"}
+,{"stream_name":"stdout","time":851.769630736,"data":"Weight sha256: 12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771\n"}
+,{"stream_name":"stdout","time":851.769635322,"data":"Weight path: weights/unet_transformer/split_0/edge_predictor_best.pth\n"}
+,{"stream_name":"stdout","time":852.552640069,"data":"Installing missing packages from offline package dirs: ['polars']\n"}
+,{"stream_name":"stdout","time":852.552673864,"data":"Dependency resolver is disabled with --no-deps to avoid replacing Kaggle numpy/scipy in a live kernel.\n"}
+,{"stream_name":"stdout","time":852.552677541,"data":"Offline package dirs: ['/kaggle/input/datasets/pilkwang/biohub-tracking-support-pack-50ep-v1/wheels']\n"}
+,{"stream_name":"stdout","time":858.595108822,"data":"Offline dependency install succeeded.\n"}
+,{"stream_name":"stdout","time":858.595155106,"data":"Installing missing packages from offline package dirs: ['tracksdata', 'zarr', 'pyscipopt', 'geff', 'geff_spec', 'ilpy', 'imagecodecs', 'rustworkx', 'numcodecs', 'donfig', 'bidict']\n"}
+,{"stream_name":"stdout","time":858.595160471,"data":"Dependency resolver is disabled with --no-deps to avoid replacing Kaggle numpy/scipy in a live kernel.\n"}
+,{"stream_name":"stdout","time":858.595164766,"data":"Offline package dirs: ['/kaggle/input/datasets/pilkwang/biohub-tracking-support-pack-50ep-v1/wheels']\n"}
+,{"stream_name":"stdout","time":881.480053841,"data":"Offline dependency install succeeded.\n"}
+,{"stream_name":"stderr","time":888.842083241,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":888.842113494,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":888.842119282,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":888.842124938,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stderr","time":888.842129621,"data":"\n"}
+,{"stream_name":"stderr","time":888.842139071,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":888.842143446,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":888.842146557,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":888.842150134,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stdout","time":889.037844547,"data":"Required graph/Zarr/ILP packages import successfully.\n"}
+,{"stream_name":"stdout","time":889.037894518,"data":"Inference repo: /kaggle/working/tracking_repo\n"}
+,{"stream_name":"stdout","time":889.037902019,"data":"Weights: /kaggle/working/tracking_repo/weights/unet_transformer/split_0/edge_predictor_best.pth\n"}
+,{"stream_name":"stdout","time":889.998957655,"data":"Support repo Python manifest SHA256: 978b626d1fd1e7397435a437dfe68691defe1572fc3c20e61012d7c9b52ed029\n"}
+,{"stream_name":"stdout","time":889.999017336,"data":"Primary materialized SHA256: 12f6881ee3620a831697ca098ff8f48e687a24225f4e048b538deec3562fe771\n"}
+,{"stream_name":"stdout","time":889.999022715,"data":"DeepCenter materialized SHA256: 8040999a92f6b7bbd98fa8cf458141e045c0f9ad7c936bdb3b18e1f7edafe2a0\n"}
+,{"stream_name":"stdout","time":1083.010081977,"data":"Secondary artifact: /kaggle/input/datasets/pilkwang/biohub-temporal-unet3d-seed314159-v1\n"}
+,{"stream_name":"stdout","time":1083.010121018,"data":"Secondary weight: /kaggle/working/secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth\n"}
+,{"stream_name":"stdout","time":1083.010127717,"data":"Secondary SHA256: 9bac2fa0dadc4a6fc1899e0caf187f4b553e0a7cd90ba1261a68b35ffe9e305f\n"}
+,{"stream_name":"stdout","time":1083.01015128,"data":"Secondary edge-logit weight: 0.15\n"}
+,{"stream_name":"stdout","time":1083.010157279,"data":"Runtime integrity receipt: /kaggle/working/bidirectional_production_runtime_integrity.json\n"}
+,{"stream_name":"stdout","time":1087.108064215,"data":"CUDA device: Tesla T4\n"}
+,{"stream_name":"stdout","time":1087.108122042,"data":"TTA patch applied (400ep spatial D4-style)\n"}
+,{"stream_name":"stdout","time":1087.108128249,"data":"Calibrated dual-seed runtime patch applied\n"}
+,{"stream_name":"stdout","time":1087.108133202,"data":"Frozen frame retention guard applied at 0.90\n"}
+,{"stream_name":"stdout","time":1087.10813807,"data":"Bidirectional harmonic-probability association fusion applied | weight= 0.15\n"}
+,{"stream_name":"stdout","time":1087.108143269,"data":"Pre-ILP detector-coordinate manifest hook applied\n"}
+,{"stream_name":"stdout","time":1087.108148263,"data":"Found 4 test videos\n"}
+,{"stream_name":"stdout","time":1087.108152957,"data":"['44b6_0113de3b', '44b6_0b24845f', '6bba_05b6850b', '6bba_05db0fb1']\n"}
+,{"stream_name":"stdout","time":1087.108171384,"data":"Launching 2 independent video shards on CUDA devices ['0', '1']\n"}
+,{"stream_name":"stdout","time":1087.108177148,"data":"GPU shard 0: CUDA_VISIBLE_DEVICES=0 | /usr/bin/python3 scripts/predict_unet_transformer.py --data-dir /kaggle/input/competitions/biohub-cell-tracking-during-development/test --splits kaggle_test_splits_50ep.json --split 0 --weights weights/unet_transformer/split_0/edge_predictor_best.pth --unet-batch-size 4 --det-threshold 0.96 --ilp-edge-weight -1.0 --ilp-appearance-weight 0.0 --ilp-disappearance-weight 2.0 --ilp-division-weight 1.2 --use-ilp --method unet_transformer_gpu0 --slice 0::2\n"}
+,{"stream_name":"stdout","time":1087.108723665,"data":"GPU shard 1: CUDA_VISIBLE_DEVICES=1 | /usr/bin/python3 scripts/predict_unet_transformer.py --data-dir /kaggle/input/competitions/biohub-cell-tracking-during-development/test --splits kaggle_test_splits_50ep.json --split 0 --weights weights/unet_transformer/split_0/edge_predictor_best.pth --unet-batch-size 4 --det-threshold 0.96 --ilp-edge-weight -1.0 --ilp-appearance-weight 0.0 --ilp-disappearance-weight 2.0 --ilp-division-weight 1.2 --use-ilp --method unet_transformer_gpu1 --slice 1::2\n"}
+,{"stream_name":"stderr","time":1092.7863247,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":1092.786391086,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":1092.791506383,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":1092.791533952,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stderr","time":1092.852016276,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":1092.852102066,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":1092.857567673,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":1092.857603535,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stderr","time":1092.988850243,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":1092.988884448,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":1092.988890515,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":1092.988896511,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stderr","time":1092.988901305,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":1092.988907786,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":1092.988913052,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":1092.988918494,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stderr","time":1092.988923241,"data":"\n"}
+,{"stream_name":"stderr","time":1092.988928105,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":1092.98893373,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":1092.988938181,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":1092.988943371,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stderr","time":1092.988949379,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":1092.988973748,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":1092.988978117,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":1092.988983653,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stdout","time":1093.497547884,"data":"Secondary model: /kaggle/working/secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth | edge weight=0.150 | detection weight=0.800 | link mode=low_margin_consensus | temperature=1.000 | low-margin max=0.350 | edge threshold=0.480\n"}
+,{"stream_name":"stdout","time":1093.497588362,"data":"Fold 0: 2 datasets | weights=weights/unet_transformer/split_0/edge_predictor_best.pth | device=cuda | window_size=2 | pool_kernel_um=3.0\n"}
+,{"stream_name":"stdout","time":1093.498824646,"data":"Secondary model: /kaggle/working/secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth | edge weight=0.150 | detection weight=0.800 | link mode=low_margin_consensus | temperature=1.000 | low-margin max=0.350 | edge threshold=0.480\n"}
+,{"stream_name":"stdout","time":1093.49884863,"data":"Fold 0: 2 datasets | weights=weights/unet_transformer/split_0/edge_predictor_best.pth | device=cuda | window_size=2 | pool_kernel_um=3.0\n"}
+,{"stream_name":"stdout","time":1093.700091674,"data":"Secondary model: /kaggle/working/secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth | edge weight=0.150 | detection weight=0.800 | link mode=low_margin_consensus | temperature=1.000 | low-margin max=0.350 | edge threshold=0.480\n"}
+,{"stream_name":"stdout","time":1093.700131523,"data":"Fold 0: 2 datasets | weights=weights/unet_transformer/split_0/edge_predictor_best.pth | device=cuda | window_size=2 | pool_kernel_um=3.0\n"}
+,{"stream_name":"stdout","time":1093.700135522,"data":"Secondary model: /kaggle/working/secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth | edge weight=0.150 | detection weight=0.800 | link mode=low_margin_consensus | temperature=1.000 | low-margin max=0.350 | edge threshold=0.480\n"}
+,{"stream_name":"stdout","time":1093.700139098,"data":"Fold 0: 2 datasets | weights=weights/unet_transformer/split_0/edge_predictor_best.pth | device=cuda | window_size=2 | pool_kernel_um=3.0\n"}
+,{"stream_name":"stdout","time":1096.281501603,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 397, \"dataset\": \"44b6_0b24845f\", \"frame\": 0, \"minimum_retention\": 0.9, \"primary_candidates\": 472, \"retention\": 0.8411016949152542, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1096.283110818,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 397, \"dataset\": \"44b6_0b24845f\", \"frame\": 1, \"minimum_retention\": 0.9, \"primary_candidates\": 451, \"retention\": 0.8802660753880266, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1096.48443939,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 397, \"dataset\": \"44b6_0b24845f\", \"frame\": 0, \"minimum_retention\": 0.9, \"primary_candidates\": 472, \"retention\": 0.8411016949152542, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1096.48447774,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 397, \"dataset\": \"44b6_0b24845f\", \"frame\": 1, \"minimum_retention\": 0.9, \"primary_candidates\": 451, \"retention\": 0.8802660753880266, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1101.306894706,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 337, \"dataset\": \"44b6_0b24845f\", \"frame\": 2, \"minimum_retention\": 0.9, \"primary_candidates\": 395, \"retention\": 0.8531645569620253, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1101.509613783,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 337, \"dataset\": \"44b6_0b24845f\", \"frame\": 2, \"minimum_retention\": 0.9, \"primary_candidates\": 395, \"retention\": 0.8531645569620253, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1103.333424774,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 370, \"dataset\": \"44b6_0b24845f\", \"frame\": 3, \"minimum_retention\": 0.9, \"primary_candidates\": 427, \"retention\": 0.8665105386416861, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1103.536443313,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 370, \"dataset\": \"44b6_0b24845f\", \"frame\": 3, \"minimum_retention\": 0.9, \"primary_candidates\": 427, \"retention\": 0.8665105386416861, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1105.4220624,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 347, \"dataset\": \"44b6_0b24845f\", \"frame\": 4, \"minimum_retention\": 0.9, \"primary_candidates\": 414, \"retention\": 0.8381642512077294, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1105.625053844,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 347, \"dataset\": \"44b6_0b24845f\", \"frame\": 4, \"minimum_retention\": 0.9, \"primary_candidates\": 414, \"retention\": 0.8381642512077294, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1107.39263069,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 330, \"dataset\": \"44b6_0b24845f\", \"frame\": 5, \"minimum_retention\": 0.9, \"primary_candidates\": 393, \"retention\": 0.8396946564885496, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1107.595582722,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 330, \"dataset\": \"44b6_0b24845f\", \"frame\": 5, \"minimum_retention\": 0.9, \"primary_candidates\": 393, \"retention\": 0.8396946564885496, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1109.423433932,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 336, \"dataset\": \"44b6_0b24845f\", \"frame\": 6, \"minimum_retention\": 0.9, \"primary_candidates\": 410, \"retention\": 0.8195121951219512, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1109.62650353,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 336, \"dataset\": \"44b6_0b24845f\", \"frame\": 6, \"minimum_retention\": 0.9, \"primary_candidates\": 410, \"retention\": 0.8195121951219512, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1111.472333139,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 317, \"dataset\": \"44b6_0b24845f\", \"frame\": 7, \"minimum_retention\": 0.9, \"primary_candidates\": 397, \"retention\": 0.7984886649874056, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1111.67446991,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 317, \"dataset\": \"44b6_0b24845f\", \"frame\": 7, \"minimum_retention\": 0.9, \"primary_candidates\": 397, \"retention\": 0.7984886649874056, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1113.486452116,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 388, \"dataset\": \"44b6_0b24845f\", \"frame\": 8, \"minimum_retention\": 0.9, \"primary_candidates\": 450, \"retention\": 0.8622222222222222, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1113.696566795,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 388, \"dataset\": \"44b6_0b24845f\", \"frame\": 8, \"minimum_retention\": 0.9, \"primary_candidates\": 450, \"retention\": 0.8622222222222222, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1115.636035881,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 369, \"dataset\": \"44b6_0b24845f\", \"frame\": 9, \"minimum_retention\": 0.9, \"primary_candidates\": 438, \"retention\": 0.8424657534246576, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1115.838466638,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 369, \"dataset\": \"44b6_0b24845f\", \"frame\": 9, \"minimum_retention\": 0.9, \"primary_candidates\": 438, \"retention\": 0.8424657534246576, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1117.768662242,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 341, \"dataset\": \"44b6_0b24845f\", \"frame\": 10, \"minimum_retention\": 0.9, \"primary_candidates\": 430, \"retention\": 0.7930232558139535, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1117.971084825,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 341, \"dataset\": \"44b6_0b24845f\", \"frame\": 10, \"minimum_retention\": 0.9, \"primary_candidates\": 430, \"retention\": 0.7930232558139535, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1119.972946888,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 385, \"dataset\": \"44b6_0b24845f\", \"frame\": 11, \"minimum_retention\": 0.9, \"primary_candidates\": 449, \"retention\": 0.8574610244988864, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1120.175517948,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 385, \"dataset\": \"44b6_0b24845f\", \"frame\": 11, \"minimum_retention\": 0.9, \"primary_candidates\": 449, \"retention\": 0.8574610244988864, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1122.122736205,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 311, \"dataset\": \"44b6_0b24845f\", \"frame\": 12, \"minimum_retention\": 0.9, \"primary_candidates\": 369, \"retention\": 0.8428184281842819, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1122.325015322,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 311, \"dataset\": \"44b6_0b24845f\", \"frame\": 12, \"minimum_retention\": 0.9, \"primary_candidates\": 369, \"retention\": 0.8428184281842819, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1124.190463106,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 324, \"dataset\": \"44b6_0b24845f\", \"frame\": 13, \"minimum_retention\": 0.9, \"primary_candidates\": 386, \"retention\": 0.8393782383419689, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1124.39311188,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 324, \"dataset\": \"44b6_0b24845f\", \"frame\": 13, \"minimum_retention\": 0.9, \"primary_candidates\": 386, \"retention\": 0.8393782383419689, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1126.32269554,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 342, \"dataset\": \"44b6_0b24845f\", \"frame\": 14, \"minimum_retention\": 0.9, \"primary_candidates\": 384, \"retention\": 0.890625, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1126.5252093,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 342, \"dataset\": \"44b6_0b24845f\", \"frame\": 14, \"minimum_retention\": 0.9, \"primary_candidates\": 384, \"retention\": 0.890625, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1138.989912619,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 292, \"dataset\": \"44b6_0b24845f\", \"frame\": 20, \"minimum_retention\": 0.9, \"primary_candidates\": 325, \"retention\": 0.8984615384615384, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1139.192618693,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 292, \"dataset\": \"44b6_0b24845f\", \"frame\": 20, \"minimum_retention\": 0.9, \"primary_candidates\": 325, \"retention\": 0.8984615384615384, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1141.062269032,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 275, \"dataset\": \"44b6_0b24845f\", \"frame\": 21, \"minimum_retention\": 0.9, \"primary_candidates\": 331, \"retention\": 0.8308157099697885, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1141.265568406,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 275, \"dataset\": \"44b6_0b24845f\", \"frame\": 21, \"minimum_retention\": 0.9, \"primary_candidates\": 331, \"retention\": 0.8308157099697885, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1143.117891765,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 294, \"dataset\": \"44b6_0b24845f\", \"frame\": 22, \"minimum_retention\": 0.9, \"primary_candidates\": 334, \"retention\": 0.8802395209580839, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1143.320288724,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 294, \"dataset\": \"44b6_0b24845f\", \"frame\": 22, \"minimum_retention\": 0.9, \"primary_candidates\": 334, \"retention\": 0.8802395209580839, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1147.279800705,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 265, \"dataset\": \"44b6_0b24845f\", \"frame\": 24, \"minimum_retention\": 0.9, \"primary_candidates\": 314, \"retention\": 0.8439490445859873, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1147.490038294,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 265, \"dataset\": \"44b6_0b24845f\", \"frame\": 24, \"minimum_retention\": 0.9, \"primary_candidates\": 314, \"retention\": 0.8439490445859873, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1151.49068871,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 278, \"dataset\": \"44b6_0b24845f\", \"frame\": 26, \"minimum_retention\": 0.9, \"primary_candidates\": 314, \"retention\": 0.8853503184713376, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1151.693145273,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 278, \"dataset\": \"44b6_0b24845f\", \"frame\": 26, \"minimum_retention\": 0.9, \"primary_candidates\": 314, \"retention\": 0.8853503184713376, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1153.605715186,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 262, \"dataset\": \"44b6_0b24845f\", \"frame\": 27, \"minimum_retention\": 0.9, \"primary_candidates\": 308, \"retention\": 0.8506493506493507, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1153.808034285,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 262, \"dataset\": \"44b6_0b24845f\", \"frame\": 27, \"minimum_retention\": 0.9, \"primary_candidates\": 308, \"retention\": 0.8506493506493507, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1164.674825139,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 258, \"dataset\": \"44b6_0b24845f\", \"frame\": 32, \"minimum_retention\": 0.9, \"primary_candidates\": 305, \"retention\": 0.8459016393442623, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1164.877637651,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 258, \"dataset\": \"44b6_0b24845f\", \"frame\": 32, \"minimum_retention\": 0.9, \"primary_candidates\": 305, \"retention\": 0.8459016393442623, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1166.855482662,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 241, \"dataset\": \"44b6_0b24845f\", \"frame\": 33, \"minimum_retention\": 0.9, \"primary_candidates\": 284, \"retention\": 0.8485915492957746, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1167.058228345,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 241, \"dataset\": \"44b6_0b24845f\", \"frame\": 33, \"minimum_retention\": 0.9, \"primary_candidates\": 284, \"retention\": 0.8485915492957746, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1197.696362995,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 271, \"dataset\": \"44b6_0b24845f\", \"frame\": 47, \"minimum_retention\": 0.9, \"primary_candidates\": 312, \"retention\": 0.8685897435897436, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1197.907458083,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 271, \"dataset\": \"44b6_0b24845f\", \"frame\": 47, \"minimum_retention\": 0.9, \"primary_candidates\": 312, \"retention\": 0.8685897435897436, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1206.725866146,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 327, \"dataset\": \"44b6_0b24845f\", \"frame\": 51, \"minimum_retention\": 0.9, \"primary_candidates\": 367, \"retention\": 0.8910081743869209, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1206.928447045,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 327, \"dataset\": \"44b6_0b24845f\", \"frame\": 51, \"minimum_retention\": 0.9, \"primary_candidates\": 367, \"retention\": 0.8910081743869209, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1211.322194523,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 312, \"dataset\": \"44b6_0b24845f\", \"frame\": 53, \"minimum_retention\": 0.9, \"primary_candidates\": 352, \"retention\": 0.8863636363636364, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1211.524972162,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 312, \"dataset\": \"44b6_0b24845f\", \"frame\": 53, \"minimum_retention\": 0.9, \"primary_candidates\": 352, \"retention\": 0.8863636363636364, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1223.031401053,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 267, \"dataset\": \"44b6_0b24845f\", \"frame\": 58, \"minimum_retention\": 0.9, \"primary_candidates\": 324, \"retention\": 0.8240740740740741, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1223.23491797,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 267, \"dataset\": \"44b6_0b24845f\", \"frame\": 58, \"minimum_retention\": 0.9, \"primary_candidates\": 324, \"retention\": 0.8240740740740741, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1225.350097568,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 310, \"dataset\": \"44b6_0b24845f\", \"frame\": 59, \"minimum_retention\": 0.9, \"primary_candidates\": 355, \"retention\": 0.8732394366197183, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1225.553094365,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 310, \"dataset\": \"44b6_0b24845f\", \"frame\": 59, \"minimum_retention\": 0.9, \"primary_candidates\": 355, \"retention\": 0.8732394366197183, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1227.698402721,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 345, \"dataset\": \"44b6_0b24845f\", \"frame\": 60, \"minimum_retention\": 0.9, \"primary_candidates\": 403, \"retention\": 0.8560794044665012, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1227.900843112,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 345, \"dataset\": \"44b6_0b24845f\", \"frame\": 60, \"minimum_retention\": 0.9, \"primary_candidates\": 403, \"retention\": 0.8560794044665012, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1230.115649645,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 281, \"dataset\": \"44b6_0b24845f\", \"frame\": 61, \"minimum_retention\": 0.9, \"primary_candidates\": 342, \"retention\": 0.8216374269005848, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1230.331330227,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 281, \"dataset\": \"44b6_0b24845f\", \"frame\": 61, \"minimum_retention\": 0.9, \"primary_candidates\": 342, \"retention\": 0.8216374269005848, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1232.58452998,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 310, \"dataset\": \"44b6_0b24845f\", \"frame\": 62, \"minimum_retention\": 0.9, \"primary_candidates\": 355, \"retention\": 0.8732394366197183, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1232.787343996,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 310, \"dataset\": \"44b6_0b24845f\", \"frame\": 62, \"minimum_retention\": 0.9, \"primary_candidates\": 355, \"retention\": 0.8732394366197183, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1237.450678452,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 302, \"dataset\": \"44b6_0b24845f\", \"frame\": 64, \"minimum_retention\": 0.9, \"primary_candidates\": 353, \"retention\": 0.8555240793201133, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1237.653734369,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 302, \"dataset\": \"44b6_0b24845f\", \"frame\": 64, \"minimum_retention\": 0.9, \"primary_candidates\": 353, \"retention\": 0.8555240793201133, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1239.839070164,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 336, \"dataset\": \"44b6_0b24845f\", \"frame\": 65, \"minimum_retention\": 0.9, \"primary_candidates\": 386, \"retention\": 0.8704663212435233, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1240.042174535,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 336, \"dataset\": \"44b6_0b24845f\", \"frame\": 65, \"minimum_retention\": 0.9, \"primary_candidates\": 386, \"retention\": 0.8704663212435233, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1242.22817865,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 329, \"dataset\": \"44b6_0b24845f\", \"frame\": 66, \"minimum_retention\": 0.9, \"primary_candidates\": 388, \"retention\": 0.8479381443298969, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1242.430382158,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 329, \"dataset\": \"44b6_0b24845f\", \"frame\": 66, \"minimum_retention\": 0.9, \"primary_candidates\": 388, \"retention\": 0.8479381443298969, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1251.626749424,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 274, \"dataset\": \"44b6_0b24845f\", \"frame\": 70, \"minimum_retention\": 0.9, \"primary_candidates\": 315, \"retention\": 0.8698412698412699, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1251.829852278,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 274, \"dataset\": \"44b6_0b24845f\", \"frame\": 70, \"minimum_retention\": 0.9, \"primary_candidates\": 315, \"retention\": 0.8698412698412699, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1258.515853836,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 206, \"dataset\": \"44b6_0b24845f\", \"frame\": 73, \"minimum_retention\": 0.9, \"primary_candidates\": 269, \"retention\": 0.7657992565055762, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1258.720425037,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 206, \"dataset\": \"44b6_0b24845f\", \"frame\": 73, \"minimum_retention\": 0.9, \"primary_candidates\": 269, \"retention\": 0.7657992565055762, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1260.81430312,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 232, \"dataset\": \"44b6_0b24845f\", \"frame\": 74, \"minimum_retention\": 0.9, \"primary_candidates\": 296, \"retention\": 0.7837837837837838, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1261.054320181,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 232, \"dataset\": \"44b6_0b24845f\", \"frame\": 74, \"minimum_retention\": 0.9, \"primary_candidates\": 296, \"retention\": 0.7837837837837838, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1263.10990215,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 330, \"dataset\": \"44b6_0b24845f\", \"frame\": 75, \"minimum_retention\": 0.9, \"primary_candidates\": 383, \"retention\": 0.8616187989556136, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1263.312419055,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 330, \"dataset\": \"44b6_0b24845f\", \"frame\": 75, \"minimum_retention\": 0.9, \"primary_candidates\": 383, \"retention\": 0.8616187989556136, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1265.374814139,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 332, \"dataset\": \"44b6_0b24845f\", \"frame\": 76, \"minimum_retention\": 0.9, \"primary_candidates\": 390, \"retention\": 0.8512820512820513, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1265.577297432,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 332, \"dataset\": \"44b6_0b24845f\", \"frame\": 76, \"minimum_retention\": 0.9, \"primary_candidates\": 390, \"retention\": 0.8512820512820513, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1267.712809463,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 256, \"dataset\": \"44b6_0b24845f\", \"frame\": 77, \"minimum_retention\": 0.9, \"primary_candidates\": 341, \"retention\": 0.750733137829912, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1267.914936411,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 256, \"dataset\": \"44b6_0b24845f\", \"frame\": 77, \"minimum_retention\": 0.9, \"primary_candidates\": 341, \"retention\": 0.750733137829912, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1270.00438823,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 295, \"dataset\": \"44b6_0b24845f\", \"frame\": 78, \"minimum_retention\": 0.9, \"primary_candidates\": 402, \"retention\": 0.7338308457711443, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1270.207096116,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 295, \"dataset\": \"44b6_0b24845f\", \"frame\": 78, \"minimum_retention\": 0.9, \"primary_candidates\": 402, \"retention\": 0.7338308457711443, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1272.364061627,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 316, \"dataset\": \"44b6_0b24845f\", \"frame\": 79, \"minimum_retention\": 0.9, \"primary_candidates\": 433, \"retention\": 0.7297921478060047, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1272.566567648,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 316, \"dataset\": \"44b6_0b24845f\", \"frame\": 79, \"minimum_retention\": 0.9, \"primary_candidates\": 433, \"retention\": 0.7297921478060047, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1274.681274727,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 310, \"dataset\": \"44b6_0b24845f\", \"frame\": 80, \"minimum_retention\": 0.9, \"primary_candidates\": 398, \"retention\": 0.7788944723618091, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1274.88469887,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 310, \"dataset\": \"44b6_0b24845f\", \"frame\": 80, \"minimum_retention\": 0.9, \"primary_candidates\": 398, \"retention\": 0.7788944723618091, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1276.953795244,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 311, \"dataset\": \"44b6_0b24845f\", \"frame\": 81, \"minimum_retention\": 0.9, \"primary_candidates\": 391, \"retention\": 0.7953964194373402, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1277.156377409,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 311, \"dataset\": \"44b6_0b24845f\", \"frame\": 81, \"minimum_retention\": 0.9, \"primary_candidates\": 391, \"retention\": 0.7953964194373402, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1279.255527222,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 290, \"dataset\": \"44b6_0b24845f\", \"frame\": 82, \"minimum_retention\": 0.9, \"primary_candidates\": 392, \"retention\": 0.7397959183673469, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1279.458335581,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 290, \"dataset\": \"44b6_0b24845f\", \"frame\": 82, \"minimum_retention\": 0.9, \"primary_candidates\": 392, \"retention\": 0.7397959183673469, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1281.570664666,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 275, \"dataset\": \"44b6_0b24845f\", \"frame\": 83, \"minimum_retention\": 0.9, \"primary_candidates\": 392, \"retention\": 0.701530612244898, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1281.773220055,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 275, \"dataset\": \"44b6_0b24845f\", \"frame\": 83, \"minimum_retention\": 0.9, \"primary_candidates\": 392, \"retention\": 0.701530612244898, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1283.870895941,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 294, \"dataset\": \"44b6_0b24845f\", \"frame\": 84, \"minimum_retention\": 0.9, \"primary_candidates\": 371, \"retention\": 0.7924528301886793, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1284.073555581,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 294, \"dataset\": \"44b6_0b24845f\", \"frame\": 84, \"minimum_retention\": 0.9, \"primary_candidates\": 371, \"retention\": 0.7924528301886793, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1286.183161478,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 205, \"dataset\": \"44b6_0b24845f\", \"frame\": 85, \"minimum_retention\": 0.9, \"primary_candidates\": 306, \"retention\": 0.6699346405228758, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1286.386946516,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 205, \"dataset\": \"44b6_0b24845f\", \"frame\": 85, \"minimum_retention\": 0.9, \"primary_candidates\": 306, \"retention\": 0.6699346405228758, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1288.461893798,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 178, \"dataset\": \"44b6_0b24845f\", \"frame\": 86, \"minimum_retention\": 0.9, \"primary_candidates\": 294, \"retention\": 0.6054421768707483, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1288.664164752,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 178, \"dataset\": \"44b6_0b24845f\", \"frame\": 86, \"minimum_retention\": 0.9, \"primary_candidates\": 294, \"retention\": 0.6054421768707483, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1290.796001929,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 243, \"dataset\": \"44b6_0b24845f\", \"frame\": 87, \"minimum_retention\": 0.9, \"primary_candidates\": 336, \"retention\": 0.7232142857142857, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1291.00348904,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 243, \"dataset\": \"44b6_0b24845f\", \"frame\": 87, \"minimum_retention\": 0.9, \"primary_candidates\": 336, \"retention\": 0.7232142857142857, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1293.050171753,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 301, \"dataset\": \"44b6_0b24845f\", \"frame\": 88, \"minimum_retention\": 0.9, \"primary_candidates\": 371, \"retention\": 0.8113207547169812, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1293.276709724,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 301, \"dataset\": \"44b6_0b24845f\", \"frame\": 88, \"minimum_retention\": 0.9, \"primary_candidates\": 371, \"retention\": 0.8113207547169812, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1295.32303525,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 235, \"dataset\": \"44b6_0b24845f\", \"frame\": 89, \"minimum_retention\": 0.9, \"primary_candidates\": 331, \"retention\": 0.7099697885196374, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1295.526189783,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 235, \"dataset\": \"44b6_0b24845f\", \"frame\": 89, \"minimum_retention\": 0.9, \"primary_candidates\": 331, \"retention\": 0.7099697885196374, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1297.738413615,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 185, \"dataset\": \"44b6_0b24845f\", \"frame\": 90, \"minimum_retention\": 0.9, \"primary_candidates\": 277, \"retention\": 0.6678700361010831, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1297.94113937,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 185, \"dataset\": \"44b6_0b24845f\", \"frame\": 90, \"minimum_retention\": 0.9, \"primary_candidates\": 277, \"retention\": 0.6678700361010831, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1300.126422804,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 147, \"dataset\": \"44b6_0b24845f\", \"frame\": 91, \"minimum_retention\": 0.9, \"primary_candidates\": 244, \"retention\": 0.6024590163934426, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1300.331172824,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 147, \"dataset\": \"44b6_0b24845f\", \"frame\": 91, \"minimum_retention\": 0.9, \"primary_candidates\": 244, \"retention\": 0.6024590163934426, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1302.539104844,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 160, \"dataset\": \"44b6_0b24845f\", \"frame\": 92, \"minimum_retention\": 0.9, \"primary_candidates\": 294, \"retention\": 0.54421768707483, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1302.74221954,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 160, \"dataset\": \"44b6_0b24845f\", \"frame\": 92, \"minimum_retention\": 0.9, \"primary_candidates\": 294, \"retention\": 0.54421768707483, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1304.901868854,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 142, \"dataset\": \"44b6_0b24845f\", \"frame\": 93, \"minimum_retention\": 0.9, \"primary_candidates\": 259, \"retention\": 0.5482625482625483, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1305.104741218,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 142, \"dataset\": \"44b6_0b24845f\", \"frame\": 93, \"minimum_retention\": 0.9, \"primary_candidates\": 259, \"retention\": 0.5482625482625483, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1307.211202694,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 181, \"dataset\": \"44b6_0b24845f\", \"frame\": 94, \"minimum_retention\": 0.9, \"primary_candidates\": 298, \"retention\": 0.6073825503355704, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1307.414550255,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 181, \"dataset\": \"44b6_0b24845f\", \"frame\": 94, \"minimum_retention\": 0.9, \"primary_candidates\": 298, \"retention\": 0.6073825503355704, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1309.502038344,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 151, \"dataset\": \"44b6_0b24845f\", \"frame\": 95, \"minimum_retention\": 0.9, \"primary_candidates\": 320, \"retention\": 0.471875, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1309.705313167,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 151, \"dataset\": \"44b6_0b24845f\", \"frame\": 95, \"minimum_retention\": 0.9, \"primary_candidates\": 320, \"retention\": 0.471875, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1311.794319853,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 138, \"dataset\": \"44b6_0b24845f\", \"frame\": 96, \"minimum_retention\": 0.9, \"primary_candidates\": 279, \"retention\": 0.4946236559139785, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1311.997411099,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 138, \"dataset\": \"44b6_0b24845f\", \"frame\": 96, \"minimum_retention\": 0.9, \"primary_candidates\": 279, \"retention\": 0.4946236559139785, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1314.104949581,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 191, \"dataset\": \"44b6_0b24845f\", \"frame\": 97, \"minimum_retention\": 0.9, \"primary_candidates\": 335, \"retention\": 0.5701492537313433, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1314.307604129,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 191, \"dataset\": \"44b6_0b24845f\", \"frame\": 97, \"minimum_retention\": 0.9, \"primary_candidates\": 335, \"retention\": 0.5701492537313433, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1316.410094444,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 171, \"dataset\": \"44b6_0b24845f\", \"frame\": 98, \"minimum_retention\": 0.9, \"primary_candidates\": 303, \"retention\": 0.5643564356435643, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1316.612917044,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 171, \"dataset\": \"44b6_0b24845f\", \"frame\": 98, \"minimum_retention\": 0.9, \"primary_candidates\": 303, \"retention\": 0.5643564356435643, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1318.757591257,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 119, \"dataset\": \"44b6_0b24845f\", \"frame\": 99, \"minimum_retention\": 0.9, \"primary_candidates\": 238, \"retention\": 0.5, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1318.960455212,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 119, \"dataset\": \"44b6_0b24845f\", \"frame\": 99, \"minimum_retention\": 0.9, \"primary_candidates\": 238, \"retention\": 0.5, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":1523.469387879,"data":"Saved 2 predictions to /kaggle/working/tracking_repo/predictions/unknown/unet_transformer_gpu0/split_0\n"}
+,{"stream_name":"stdout","time":1523.691122847,"data":"Saved 2 predictions to /kaggle/working/tracking_repo/predictions/unknown/unet_transformer_gpu0/split_0\n"}
+,{"stream_name":"stdout","time":1685.920193266,"data":"Saved 2 predictions to /kaggle/working/tracking_repo/predictions/unknown/unet_transformer_gpu1/split_0\n"}
+,{"stream_name":"stdout","time":1686.133639039,"data":"Saved 2 predictions to /kaggle/working/tracking_repo/predictions/unknown/unet_transformer_gpu1/split_0\n"}
+,{"stream_name":"stdout","time":1689.208190548,"data":"Merged 4 prediction graphs into /kaggle/working/tracking_repo/predictions/unknown/unet_transformer/split_0\n"}
+,{"stream_name":"stdout","time":1689.208249971,"data":"Prediction completed in 10.04 minutes\n"}
+,{"stream_name":"stdout","time":2149.395625172,"data":"Trying DeepCenter add-only gate checkpoint: /kaggle/input/datasets/pilkwang/biohub-deepcenter-unet3d-center-prior-v1/weights/full_frame_center/best.pt\n"}
+,{"stream_name":"stdout","time":2149.718729259,"data":"Loaded DeepCenter add-only gate checkpoint: /kaggle/input/datasets/pilkwang/biohub-deepcenter-unet3d-center-prior-v1/weights/full_frame_center/best.pt\n"}
+,{"stream_name":"stdout","time":2149.718769028,"data":"DeepCenter checkpoint epoch: 2 best_score: -0.04500306242456039\n"}
+,{"stream_name":"stdout","time":2149.718775776,"data":"Found 4 prediction graphs\n"}
+,{"stream_name":"stdout","time":2173.173577645,"data":"  [44b6_0113de3b] after edge-filter+motion-relink: 25706 nodes, 24816 edges\n"}
+,{"stream_name":"stdout","time":2176.204830282,"data":"  [44b6_0113de3b] after gap-closing (single-frame + gap2): 25770 nodes, 24931 edges\n"}
+,{"stream_name":"stdout","time":2184.582356754,"data":"  [44b6_0113de3b] after safe-division repair: 25770 nodes, 24982 edges (geometric_candidates=179, deepcenter_rejected=114, post_veto_candidates=65, added=51, cap_skipped=0, mutual_nn_rejected=61, divergence_rejected=544)\n"}
+,{"stream_name":"stdout","time":2184.582405364,"data":"  [44b6_0113de3b] after division-geometry-filter+prune-isolated: 25763 nodes, 24982 edges\n"}
+,{"stream_name":"stdout","time":2184.582411512,"data":"  [44b6_0113de3b] after short-track filtering: 25507 nodes, 24784 edges (components_removed=58)\n"}
+,{"stream_name":"stdout","time":2190.251200241,"data":"  [44b6_0113de3b] FINAL: 25507 nodes, 24784 edges\n"}
+,{"stream_name":"stdout","time":2190.252131392,"data":"  [44b6_0113de3b] EXP011 no-division ablation: sources=51, removed_edges=51, remaining_edges=24733\n"}
+,{"stream_name":"stdout","time":2206.377052074,"data":"  [44b6_0b24845f] after edge-filter+motion-relink: 20340 nodes, 18338 edges\n"}
+,{"stream_name":"stdout","time":2215.398829403,"data":"  [44b6_0b24845f] after gap-closing (single-frame + gap2): 20685 nodes, 18967 edges\n"}
+,{"stream_name":"stdout","time":2221.984513356,"data":"  [44b6_0b24845f] after safe-division repair: 20685 nodes, 18977 edges (geometric_candidates=207, deepcenter_rejected=197, post_veto_candidates=10, added=10, cap_skipped=0, mutual_nn_rejected=61, divergence_rejected=773)\n"}
+,{"stream_name":"stdout","time":2221.984571759,"data":"  [44b6_0b24845f] after division-geometry-filter+prune-isolated: 20669 nodes, 18977 edges\n"}
+,{"stream_name":"stdout","time":2221.984597687,"data":"  [44b6_0b24845f] after short-track filtering: 18696 nodes, 17461 edges (components_removed=457)\n"}
+,{"stream_name":"stdout","time":2226.168280246,"data":"  [44b6_0b24845f] FINAL: 18696 nodes, 17461 edges\n"}
+,{"stream_name":"stdout","time":2226.168309906,"data":"  [44b6_0b24845f] EXP011 no-division ablation: sources=10, removed_edges=10, remaining_edges=17451\n"}
+,{"stream_name":"stdout","time":2228.304869818,"data":"  [6bba_05b6850b] after edge-filter+motion-relink: 6207 nodes, 5938 edges\n"}
+,{"stream_name":"stdout","time":2228.942836421,"data":"  [6bba_05b6850b] after gap-closing (single-frame + gap2): 6231 nodes, 5982 edges\n"}
+,{"stream_name":"stdout","time":2230.556409779,"data":"  [6bba_05b6850b] after safe-division repair: 6231 nodes, 5988 edges (geometric_candidates=20, deepcenter_rejected=14, post_veto_candidates=6, added=6, cap_skipped=0, mutual_nn_rejected=6, divergence_rejected=83)\n"}
+,{"stream_name":"stdout","time":2230.556539123,"data":"  [6bba_05b6850b] after division-geometry-filter+prune-isolated: 6230 nodes, 5988 edges\n"}
+,{"stream_name":"stdout","time":2230.556557233,"data":"  [6bba_05b6850b] after short-track filtering: 6048 nodes, 5849 edges (components_removed=43)\n"}
+,{"stream_name":"stdout","time":2231.776624226,"data":"  [6bba_05b6850b] FINAL: 6048 nodes, 5849 edges\n"}
+,{"stream_name":"stdout","time":2231.776701039,"data":"  [6bba_05b6850b] EXP011 no-division ablation: sources=6, removed_edges=6, remaining_edges=5843\n"}
+,{"stream_name":"stdout","time":2407.975823673,"data":"  [6bba_05db0fb1] after edge-filter+motion-relink: 69889 nodes, 67114 edges\n"}
+,{"stream_name":"stdout","time":2418.008024578,"data":"  [6bba_05db0fb1] after gap-closing (single-frame + gap2): 70331 nodes, 67939 edges\n"}
+,{"stream_name":"stdout","time":2427.770241243,"data":"  [6bba_05db0fb1] after safe-division repair: 70331 nodes, 67966 edges (geometric_candidates=284, deepcenter_rejected=249, post_veto_candidates=35, added=27, cap_skipped=0, mutual_nn_rejected=293, divergence_rejected=2718)\n"}
+,{"stream_name":"stdout","time":2427.770295599,"data":"  [6bba_05db0fb1] after division-geometry-filter+prune-isolated: 70302 nodes, 67966 edges\n"}
+,{"stream_name":"stdout","time":2428.179759406,"data":"  [6bba_05db0fb1] after short-track filtering: 69432 nodes, 67299 edges (components_removed=203)\n"}
+,{"stream_name":"stdout","time":2444.20022362,"data":"  [6bba_05db0fb1] FINAL: 69432 nodes, 67299 edges\n"}
+,{"stream_name":"stdout","time":2444.200291623,"data":"  [6bba_05db0fb1] EXP011 no-division ablation: sources=27, removed_edges=27, remaining_edges=67272\n"}
+,{"stream_name":"stdout","time":2445.104398729,"data":"Wrote /kaggle/working/submission.csv with 234,982 rows\n"}
+,{"stream_name":"stdout","time":2445.104434612,"data":"Node rows: 119,683 | edge rows: 115,299\n"}
+,{"stream_name":"stdout","time":2445.104441024,"data":"Wrote /kaggle/working/run_stats.csv\n"}
+,{"stream_name":"stdout","time":2445.880434284,"data":"{\n"}
+,{"stream_name":"stdout","time":2445.88046674,"data":"  \"configuration\": {\n"}
+,{"stream_name":"stdout","time":2445.88047372,"data":"    \"bidirectional_primary_weight\": 0.3,\n"}
+,{"stream_name":"stdout","time":2445.880479065,"data":"    \"deepcenter_gap_confirm_min_span_um\": 8.5,\n"}
+,{"stream_name":"stdout","time":2445.880484362,"data":"    \"deepcenter_gap_threshold\": 0.25,\n"}
+,{"stream_name":"stdout","time":2445.880490661,"data":"    \"detector_threshold\": 0.96875,\n"}
+,{"stream_name":"stdout","time":2445.880495895,"data":"    \"edge_candidate_threshold\": 0.48,\n"}
+,{"stream_name":"stdout","time":2445.880501776,"data":"    \"fallback_scope\": \"individual_frame\",\n"}
+,{"stream_name":"stdout","time":2445.880507117,"data":"    \"gap_close_um\": 5.8,\n"}
+,{"stream_name":"stdout","time":2445.88053732,"data":"    \"ilp_appearance_weight\": 0.0,\n"}
+,{"stream_name":"stdout","time":2445.880541827,"data":"    \"ilp_disappearance_weight\": 1.5,\n"}
+,{"stream_name":"stdout","time":2445.880546189,"data":"    \"minimum_candidate_retention\": 0.9,\n"}
+,{"stream_name":"stdout","time":2445.880550807,"data":"    \"secondary_detection_weight\": 0.475,\n"}
+,{"stream_name":"stdout","time":2445.880554814,"data":"    \"secondary_edge_weight\": 0.15,\n"}
+,{"stream_name":"stdout","time":2445.880558817,"data":"    \"secondary_link_mode\": \"low_margin_consensus\",\n"}
+,{"stream_name":"stdout","time":2445.88056298,"data":"    \"secondary_low_margin_max\": 0.35\n"}
+,{"stream_name":"stdout","time":2445.880567117,"data":"  },\n"}
+,{"stream_name":"stdout","time":2445.880570906,"data":"  \"diagnostics\": {\n"}
+,{"stream_name":"stdout","time":2445.880575161,"data":"    \"by_movie\": {\n"}
+,{"stream_name":"stdout","time":2445.880580137,"data":"      \"44b6_0113de3b\": {\n"}
+,{"stream_name":"stdout","time":2445.880584446,"data":"        \"fallback_frames\": 0,\n"}
+,{"stream_name":"stdout","time":2445.880588959,"data":"        \"frames\": 100,\n"}
+,{"stream_name":"stdout","time":2445.880593204,"data":"        \"median_retention\": 1.0118578927634045,\n"}
+,{"stream_name":"stdout","time":2445.880597667,"data":"        \"minimum_retention\": 0.9926739926739927\n"}
+,{"stream_name":"stdout","time":2445.880601313,"data":"      },\n"}
+,{"stream_name":"stdout","time":2445.880605162,"data":"      \"44b6_0b24845f\": {\n"}
+,{"stream_name":"stdout","time":2445.880609481,"data":"        \"fallback_frames\": 62,\n"}
+,{"stream_name":"stdout","time":2445.880613334,"data":"        \"frames\": 100,\n"}
+,{"stream_name":"stdout","time":2445.880617114,"data":"        \"median_retention\": 0.8675501411157149,\n"}
+,{"stream_name":"stdout","time":2445.88062113,"data":"        \"minimum_retention\": 0.471875\n"}
+,{"stream_name":"stdout","time":2445.88062502,"data":"      },\n"}
+,{"stream_name":"stdout","time":2445.880628735,"data":"      \"6bba_05b6850b\": {\n"}
+,{"stream_name":"stdout","time":2445.880633026,"data":"        \"fallback_frames\": 0,\n"}
+,{"stream_name":"stdout","time":2445.880637306,"data":"        \"frames\": 100,\n"}
+,{"stream_name":"stdout","time":2445.880641764,"data":"        \"median_retention\": 1.013273558368495,\n"}
+,{"stream_name":"stdout","time":2445.880646569,"data":"        \"minimum_retention\": 0.9054054054054054\n"}
+,{"stream_name":"stdout","time":2445.880651217,"data":"      },\n"}
+,{"stream_name":"stdout","time":2445.880655082,"data":"      \"6bba_05db0fb1\": {\n"}
+,{"stream_name":"stdout","time":2445.880658915,"data":"        \"fallback_frames\": 0,\n"}
+,{"stream_name":"stdout","time":2445.880662772,"data":"        \"frames\": 100,\n"}
+,{"stream_name":"stdout","time":2445.880666524,"data":"        \"median_retention\": 1.0111477718261637,\n"}
+,{"stream_name":"stdout","time":2445.880670462,"data":"        \"minimum_retention\": 0.975609756097561\n"}
+,{"stream_name":"stdout","time":2445.880674375,"data":"      }\n"}
+,{"stream_name":"stdout","time":2445.880678145,"data":"    },\n"}
+,{"stream_name":"stdout","time":2445.880681875,"data":"    \"fallback_frames\": 62,\n"}
+,{"stream_name":"stdout","time":2445.880685869,"data":"    \"rows\": 400\n"}
+,{"stream_name":"stdout","time":2445.880689629,"data":"  },\n"}
+,{"stream_name":"stdout","time":2445.880694034,"data":"  \"experiment\": \"harmonic_bidirectional_association_v1\",\n"}
+,{"stream_name":"stdout","time":2445.880699065,"data":"  \"hardware\": {\n"}
+,{"stream_name":"stdout","time":2445.880702568,"data":"    \"visible_gpu_count\": 2\n"}
+,{"stream_name":"stdout","time":2445.880712252,"data":"  },\n"}
+,{"stream_name":"stdout","time":2445.880717036,"data":"  \"leaderboard_feedback_used_for_configuration\": true,\n"}
+,{"stream_name":"stdout","time":2445.880721467,"data":"  \"method_attribution\": \"fixed-90 dual-seed baseline with harmonic mutual-support association fusion (rule from public CC0 notebook yusuketogashi/no-hack-biohub-cell-another-approch-3rd v18)\",\n"}
+,{"stream_name":"stdout","time":2445.880728033,"data":"  \"metric_hack_used\": false,\n"}
+,{"stream_name":"stdout","time":2445.880732227,"data":"  \"organizer_labels_used_for_configuration\": false,\n"}
+,{"stream_name":"stdout","time":2445.880736799,"data":"  \"parent_experiment\": \"paired_bidirectional_primary_weight020_vs_forward_v1\",\n"}
+,{"stream_name":"stdout","time":2445.880741239,"data":"  \"public_output_used\": false,\n"}
+,{"stream_name":"stdout","time":2445.88074569,"data":"  \"quality_promotion\": {\n"}
+,{"stream_name":"stdout","time":2445.880750317,"data":"    \"execute_push_submit\": \"FORBIDDEN_UNTIL_REQUIRED_CONDITION\",\n"}
+,{"stream_name":"stdout","time":2445.880757774,"data":"    \"required_condition\": \"promote=true\",\n"}
+,{"stream_name":"stdout","time":2445.88076193,"data":"    \"required_receipt\": \"bidirectional_blend_union13_receipt.json\",\n"}
+,{"stream_name":"stdout","time":2445.88076592,"data":"    \"status\": \"candidate_unverified\",\n"}
+,{"stream_name":"stdout","time":2445.880769836,"data":"    \"validated_receipt_sha256\": null\n"}
+,{"stream_name":"stdout","time":2445.880773577,"data":"  },\n"}
+,{"stream_name":"stdout","time":2445.880777233,"data":"  \"source_kernel\": \"raykkretzschmar/biohub-bidirectional-primary-union13-diagnostic-v1\",\n"}
+,{"stream_name":"stdout","time":2445.880799921,"data":"  \"source_notebook_sha256\": \"3e65ca691941949196bf417030ea84fccafe16baaec174b2a63540451bb937e8\",\n"}
+,{"stream_name":"stdout","time":2445.880804073,"data":"  \"status\": \"clean_graph_audit_pass_candidate_unverified_quality\",\n"}
+,{"stream_name":"stdout","time":2445.880808044,"data":"  \"submission\": {\n"}
+,{"stream_name":"stdout","time":2445.88081205,"data":"    \"datasets\": [\n"}
+,{"stream_name":"stdout","time":2445.880815944,"data":"      \"44b6_0113de3b\",\n"}
+,{"stream_name":"stdout","time":2445.880820182,"data":"      \"44b6_0b24845f\",\n"}
+,{"stream_name":"stdout","time":2445.880824113,"data":"      \"6bba_05b6850b\",\n"}
+,{"stream_name":"stdout","time":2445.880827838,"data":"      \"6bba_05db0fb1\"\n"}
+,{"stream_name":"stdout","time":2445.880831745,"data":"    ],\n"}
+,{"stream_name":"stdout","time":2445.88083559,"data":"    \"rows\": 234982,\n"}
+,{"stream_name":"stdout","time":2445.880840284,"data":"    \"sha256\": \"595327b66a5093af9a49d9011334a2ec2e9bea31f649e48e5df1d02d518d6993\"\n"}
+,{"stream_name":"stdout","time":2445.88084449,"data":"  },\n"}
+,{"stream_name":"stdout","time":2445.880848431,"data":"  \"topology\": {\n"}
+,{"stream_name":"stdout","time":2445.880852094,"data":"    \"44b6_0113de3b\": {\n"}
+,{"stream_name":"stdout","time":2445.880855765,"data":"      \"division_parents\": 0,\n"}
+,{"stream_name":"stdout","time":2445.880859546,"data":"      \"edges\": 24733,\n"}
+,{"stream_name":"stdout","time":2445.880863836,"data":"      \"max_indegree\": 1,\n"}
+,{"stream_name":"stdout","time":2445.880867704,"data":"      \"max_outdegree\": 1,\n"}
+,{"stream_name":"stdout","time":2445.880871445,"data":"      \"nodes\": 25507\n"}
+,{"stream_name":"stdout","time":2445.880875366,"data":"    },\n"}
+,{"stream_name":"stdout","time":2445.880879838,"data":"    \"44b6_0b24845f\": {\n"}
+,{"stream_name":"stdout","time":2445.880884014,"data":"      \"division_parents\": 0,\n"}
+,{"stream_name":"stdout","time":2445.880893567,"data":"      \"edges\": 17451,\n"}
+,{"stream_name":"stdout","time":2445.880898114,"data":"      \"max_indegree\": 1,\n"}
+,{"stream_name":"stdout","time":2445.880902107,"data":"      \"max_outdegree\": 1,\n"}
+,{"stream_name":"stdout","time":2445.880906064,"data":"      \"nodes\": 18696\n"}
+,{"stream_name":"stdout","time":2445.880910267,"data":"    },\n"}
+,{"stream_name":"stdout","time":2445.880914782,"data":"    \"6bba_05b6850b\": {\n"}
+,{"stream_name":"stdout","time":2445.880919386,"data":"      \"division_parents\": 0,\n"}
+,{"stream_name":"stdout","time":2445.880923859,"data":"      \"edges\": 5843,\n"}
+,{"stream_name":"stdout","time":2445.880928118,"data":"      \"max_indegree\": 1,\n"}
+,{"stream_name":"stdout","time":2445.880932479,"data":"      \"max_outdegree\": 1,\n"}
+,{"stream_name":"stdout","time":2445.880937169,"data":"      \"nodes\": 6048\n"}
+,{"stream_name":"stdout","time":2445.880942472,"data":"    },\n"}
+,{"stream_name":"stdout","time":2445.880946481,"data":"    \"6bba_05db0fb1\": {\n"}
+,{"stream_name":"stdout","time":2445.880950481,"data":"      \"division_parents\": 0,\n"}
+,{"stream_name":"stdout","time":2445.880954588,"data":"      \"edges\": 67272,\n"}
+,{"stream_name":"stdout","time":2445.880962912,"data":"      \"max_indegree\": 1,\n"}
+,{"stream_name":"stdout","time":2445.880967725,"data":"      \"max_outdegree\": 1,\n"}
+,{"stream_name":"stdout","time":2445.88098927,"data":"      \"nodes\": 69432\n"}
+,{"stream_name":"stdout","time":2445.880993732,"data":"    }\n"}
+,{"stream_name":"stdout","time":2445.880997547,"data":"  }\n"}
+,{"stream_name":"stdout","time":2445.881001401,"data":"}\n"}
+,{"stream_name":"stdout","time":2446.08108176,"data":"VALIDATOR: excluding 4 TRAIN stem(s) that also appear in TEST_DIR: ['44b6_0113de3b', '44b6_0b24845f', '6bba_05b6850b', '6bba_05db0fb1']\n"}
+,{"stream_name":"stdout","time":2528.042588446,"data":"VALIDATOR: selected 4 held-out TRAIN samples (2 per embryo-type prefix, 2 prefixes found, 4 contain a GT division)\n"}
+,{"stream_name":"stdout","time":2528.042626915,"data":"['44b6_12dfb391', '44b6_267148e4', '6bba_062c8d37', '6bba_07e24132']\n"}
+,{"stream_name":"stdout","time":2528.042634518,"data":"VALIDATOR: launching 2 shards on CUDA devices ['0', '1']\n"}
+,{"stream_name":"stderr","time":2533.451551142,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":2533.451599182,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":2533.457631878,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":2533.457716755,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stderr","time":2533.52275948,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":2533.522795431,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":2533.528933862,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":2533.529028702,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stderr","time":2533.655133473,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":2533.65517451,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":2533.655178994,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":2533.655199235,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stderr","time":2533.655204483,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":2533.655209888,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":2533.655214714,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":2533.655220439,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stderr","time":2533.655225105,"data":"\n"}
+,{"stream_name":"stderr","time":2533.655229001,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":2533.655233977,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":2533.655237982,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":2533.65524279,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stderr","time":2533.65524811,"data":"/usr/local/lib/python3.12/dist-packages/dask/array/image.py:7: FutureWarning: `find_available_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":2533.655258187,"data":"  from skimage.io import imread as sk_imread\n"}
+,{"stream_name":"stderr","time":2533.655261036,"data":"/usr/lib/python3.12/importlib/__init__.py:90: FutureWarning: `reset_plugins` is deprecated since version 0.25 and will be removed in version 0.27. The plugin infrastructure of `skimage.io` is deprecated. Instead, use `imageio` or other I/O packages directly.\n"}
+,{"stream_name":"stderr","time":2533.655264166,"data":"  return _bootstrap._gcd_import(name[level:], package, level)\n"}
+,{"stream_name":"stdout","time":2534.085867288,"data":"Secondary model: /kaggle/working/secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth | edge weight=0.150 | detection weight=0.800 | link mode=low_margin_consensus | temperature=1.000 | low-margin max=0.350 | edge threshold=0.480\n"}
+,{"stream_name":"stdout","time":2534.085907338,"data":"Fold 0: 2 datasets | weights=weights/unet_transformer/split_0/edge_predictor_best.pth | device=cuda | window_size=2 | pool_kernel_um=3.0\n"}
+,{"stream_name":"stdout","time":2534.132251652,"data":"Secondary model: /kaggle/working/secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth | edge weight=0.150 | detection weight=0.800 | link mode=low_margin_consensus | temperature=1.000 | low-margin max=0.350 | edge threshold=0.480\n"}
+,{"stream_name":"stdout","time":2534.132292606,"data":"Fold 0: 2 datasets | weights=weights/unet_transformer/split_0/edge_predictor_best.pth | device=cuda | window_size=2 | pool_kernel_um=3.0\n"}
+,{"stream_name":"stdout","time":2534.288572514,"data":"Secondary model: /kaggle/working/secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth | edge weight=0.150 | detection weight=0.800 | link mode=low_margin_consensus | temperature=1.000 | low-margin max=0.350 | edge threshold=0.480\n"}
+,{"stream_name":"stdout","time":2534.288606154,"data":"Fold 0: 2 datasets | weights=weights/unet_transformer/split_0/edge_predictor_best.pth | device=cuda | window_size=2 | pool_kernel_um=3.0\n"}
+,{"stream_name":"stdout","time":2534.288610577,"data":"Secondary model: /kaggle/working/secondary_seed_weights/unet_transformer/split_0/edge_predictor_best.pth | edge weight=0.150 | detection weight=0.800 | link mode=low_margin_consensus | temperature=1.000 | low-margin max=0.350 | edge threshold=0.480\n"}
+,{"stream_name":"stdout","time":2534.2886148,"data":"Fold 0: 2 datasets | weights=weights/unet_transformer/split_0/edge_predictor_best.pth | device=cuda | window_size=2 | pool_kernel_um=3.0\n"}
+,{"stream_name":"stdout","time":2577.763757658,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 440, \"dataset\": \"44b6_12dfb391\", \"frame\": 22, \"minimum_retention\": 0.9, \"primary_candidates\": 489, \"retention\": 0.8997955010224948, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2577.986904032,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 440, \"dataset\": \"44b6_12dfb391\", \"frame\": 22, \"minimum_retention\": 0.9, \"primary_candidates\": 489, \"retention\": 0.8997955010224948, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2587.58490404,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 454, \"dataset\": \"44b6_12dfb391\", \"frame\": 27, \"minimum_retention\": 0.9, \"primary_candidates\": 506, \"retention\": 0.8972332015810277, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2587.787834836,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 454, \"dataset\": \"44b6_12dfb391\", \"frame\": 27, \"minimum_retention\": 0.9, \"primary_candidates\": 506, \"retention\": 0.8972332015810277, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2603.588594634,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 452, \"dataset\": \"44b6_12dfb391\", \"frame\": 35, \"minimum_retention\": 0.9, \"primary_candidates\": 508, \"retention\": 0.889763779527559, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2603.791011688,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 452, \"dataset\": \"44b6_12dfb391\", \"frame\": 35, \"minimum_retention\": 0.9, \"primary_candidates\": 508, \"retention\": 0.889763779527559, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2605.604270319,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 460, \"dataset\": \"44b6_12dfb391\", \"frame\": 36, \"minimum_retention\": 0.9, \"primary_candidates\": 513, \"retention\": 0.8966861598440545, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2605.807414943,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 460, \"dataset\": \"44b6_12dfb391\", \"frame\": 36, \"minimum_retention\": 0.9, \"primary_candidates\": 513, \"retention\": 0.8966861598440545, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2646.109890067,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 479, \"dataset\": \"44b6_12dfb391\", \"frame\": 56, \"minimum_retention\": 0.9, \"primary_candidates\": 537, \"retention\": 0.8919925512104283, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2646.333266051,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 479, \"dataset\": \"44b6_12dfb391\", \"frame\": 56, \"minimum_retention\": 0.9, \"primary_candidates\": 537, \"retention\": 0.8919925512104283, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2648.122577855,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 470, \"dataset\": \"44b6_12dfb391\", \"frame\": 57, \"minimum_retention\": 0.9, \"primary_candidates\": 528, \"retention\": 0.8901515151515151, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2648.325157891,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 470, \"dataset\": \"44b6_12dfb391\", \"frame\": 57, \"minimum_retention\": 0.9, \"primary_candidates\": 528, \"retention\": 0.8901515151515151, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2650.153840151,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 468, \"dataset\": \"44b6_12dfb391\", \"frame\": 58, \"minimum_retention\": 0.9, \"primary_candidates\": 530, \"retention\": 0.8830188679245283, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2650.356508058,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 468, \"dataset\": \"44b6_12dfb391\", \"frame\": 58, \"minimum_retention\": 0.9, \"primary_candidates\": 530, \"retention\": 0.8830188679245283, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2652.215811225,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 468, \"dataset\": \"44b6_12dfb391\", \"frame\": 59, \"minimum_retention\": 0.9, \"primary_candidates\": 536, \"retention\": 0.8731343283582089, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2652.418469929,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 468, \"dataset\": \"44b6_12dfb391\", \"frame\": 59, \"minimum_retention\": 0.9, \"primary_candidates\": 536, \"retention\": 0.8731343283582089, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2656.321560227,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 477, \"dataset\": \"44b6_12dfb391\", \"frame\": 61, \"minimum_retention\": 0.9, \"primary_candidates\": 546, \"retention\": 0.8736263736263736, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2656.524331977,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 477, \"dataset\": \"44b6_12dfb391\", \"frame\": 61, \"minimum_retention\": 0.9, \"primary_candidates\": 546, \"retention\": 0.8736263736263736, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2660.490798586,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 498, \"dataset\": \"44b6_12dfb391\", \"frame\": 63, \"minimum_retention\": 0.9, \"primary_candidates\": 554, \"retention\": 0.8989169675090253, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2660.694018731,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 498, \"dataset\": \"44b6_12dfb391\", \"frame\": 63, \"minimum_retention\": 0.9, \"primary_candidates\": 554, \"retention\": 0.8989169675090253, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2670.852412024,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 511, \"dataset\": \"44b6_12dfb391\", \"frame\": 68, \"minimum_retention\": 0.9, \"primary_candidates\": 568, \"retention\": 0.8996478873239436, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2671.057400592,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 511, \"dataset\": \"44b6_12dfb391\", \"frame\": 68, \"minimum_retention\": 0.9, \"primary_candidates\": 568, \"retention\": 0.8996478873239436, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2672.91768558,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 488, \"dataset\": \"44b6_12dfb391\", \"frame\": 69, \"minimum_retention\": 0.9, \"primary_candidates\": 577, \"retention\": 0.8457538994800693, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2673.120232651,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 488, \"dataset\": \"44b6_12dfb391\", \"frame\": 69, \"minimum_retention\": 0.9, \"primary_candidates\": 577, \"retention\": 0.8457538994800693, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2674.983521016,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 482, \"dataset\": \"44b6_12dfb391\", \"frame\": 70, \"minimum_retention\": 0.9, \"primary_candidates\": 550, \"retention\": 0.8763636363636363, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2675.186912823,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 482, \"dataset\": \"44b6_12dfb391\", \"frame\": 70, \"minimum_retention\": 0.9, \"primary_candidates\": 550, \"retention\": 0.8763636363636363, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2677.097362663,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 498, \"dataset\": \"44b6_12dfb391\", \"frame\": 71, \"minimum_retention\": 0.9, \"primary_candidates\": 562, \"retention\": 0.8861209964412812, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2677.331726871,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 498, \"dataset\": \"44b6_12dfb391\", \"frame\": 71, \"minimum_retention\": 0.9, \"primary_candidates\": 562, \"retention\": 0.8861209964412812, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2679.154907296,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 497, \"dataset\": \"44b6_12dfb391\", \"frame\": 72, \"minimum_retention\": 0.9, \"primary_candidates\": 565, \"retention\": 0.879646017699115, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2679.356921408,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 497, \"dataset\": \"44b6_12dfb391\", \"frame\": 72, \"minimum_retention\": 0.9, \"primary_candidates\": 565, \"retention\": 0.879646017699115, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2685.321154712,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 484, \"dataset\": \"44b6_12dfb391\", \"frame\": 75, \"minimum_retention\": 0.9, \"primary_candidates\": 572, \"retention\": 0.8461538461538461, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2685.523456049,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 484, \"dataset\": \"44b6_12dfb391\", \"frame\": 75, \"minimum_retention\": 0.9, \"primary_candidates\": 572, \"retention\": 0.8461538461538461, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2687.374526718,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 514, \"dataset\": \"44b6_12dfb391\", \"frame\": 76, \"minimum_retention\": 0.9, \"primary_candidates\": 587, \"retention\": 0.8756388415672913, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2687.576987519,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 514, \"dataset\": \"44b6_12dfb391\", \"frame\": 76, \"minimum_retention\": 0.9, \"primary_candidates\": 587, \"retention\": 0.8756388415672913, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2689.44531506,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 514, \"dataset\": \"44b6_12dfb391\", \"frame\": 77, \"minimum_retention\": 0.9, \"primary_candidates\": 588, \"retention\": 0.8741496598639455, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2689.647898616,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 514, \"dataset\": \"44b6_12dfb391\", \"frame\": 77, \"minimum_retention\": 0.9, \"primary_candidates\": 588, \"retention\": 0.8741496598639455, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2691.549591932,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 531, \"dataset\": \"44b6_12dfb391\", \"frame\": 78, \"minimum_retention\": 0.9, \"primary_candidates\": 594, \"retention\": 0.8939393939393939, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2691.752138053,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 531, \"dataset\": \"44b6_12dfb391\", \"frame\": 78, \"minimum_retention\": 0.9, \"primary_candidates\": 594, \"retention\": 0.8939393939393939, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2702.236075278,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 487, \"dataset\": \"44b6_12dfb391\", \"frame\": 83, \"minimum_retention\": 0.9, \"primary_candidates\": 567, \"retention\": 0.8589065255731922, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2702.438404088,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 487, \"dataset\": \"44b6_12dfb391\", \"frame\": 83, \"minimum_retention\": 0.9, \"primary_candidates\": 567, \"retention\": 0.8589065255731922, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2704.386610149,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 512, \"dataset\": \"44b6_12dfb391\", \"frame\": 84, \"minimum_retention\": 0.9, \"primary_candidates\": 573, \"retention\": 0.893542757417103, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2704.589780627,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 512, \"dataset\": \"44b6_12dfb391\", \"frame\": 84, \"minimum_retention\": 0.9, \"primary_candidates\": 573, \"retention\": 0.893542757417103, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2714.944485336,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 545, \"dataset\": \"44b6_12dfb391\", \"frame\": 89, \"minimum_retention\": 0.9, \"primary_candidates\": 623, \"retention\": 0.8747993579454254, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2715.166678856,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 545, \"dataset\": \"44b6_12dfb391\", \"frame\": 89, \"minimum_retention\": 0.9, \"primary_candidates\": 623, \"retention\": 0.8747993579454254, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2717.037278074,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 543, \"dataset\": \"44b6_12dfb391\", \"frame\": 90, \"minimum_retention\": 0.9, \"primary_candidates\": 606, \"retention\": 0.8960396039603961, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2717.239542185,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 543, \"dataset\": \"44b6_12dfb391\", \"frame\": 90, \"minimum_retention\": 0.9, \"primary_candidates\": 606, \"retention\": 0.8960396039603961, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2837.124493543,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 59, \"dataset\": \"6bba_062c8d37\", \"frame\": 28, \"minimum_retention\": 0.9, \"primary_candidates\": 66, \"retention\": 0.8939393939393939, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2837.358899694,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 59, \"dataset\": \"6bba_062c8d37\", \"frame\": 28, \"minimum_retention\": 0.9, \"primary_candidates\": 66, \"retention\": 0.8939393939393939, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2842.365284183,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 351, \"dataset\": \"6bba_07e24132\", \"frame\": 32, \"minimum_retention\": 0.9, \"primary_candidates\": 396, \"retention\": 0.8863636363636364, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2842.567979398,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 351, \"dataset\": \"6bba_07e24132\", \"frame\": 32, \"minimum_retention\": 0.9, \"primary_candidates\": 396, \"retention\": 0.8863636363636364, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2925.702584164,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 59, \"dataset\": \"6bba_062c8d37\", \"frame\": 73, \"minimum_retention\": 0.9, \"primary_candidates\": 68, \"retention\": 0.8676470588235294, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2925.918885055,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 59, \"dataset\": \"6bba_062c8d37\", \"frame\": 73, \"minimum_retention\": 0.9, \"primary_candidates\": 68, \"retention\": 0.8676470588235294, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2927.647215844,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 62, \"dataset\": \"6bba_062c8d37\", \"frame\": 74, \"minimum_retention\": 0.9, \"primary_candidates\": 69, \"retention\": 0.8985507246376812, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2927.850337597,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 62, \"dataset\": \"6bba_062c8d37\", \"frame\": 74, \"minimum_retention\": 0.9, \"primary_candidates\": 69, \"retention\": 0.8985507246376812, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2947.428630841,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 65, \"dataset\": \"6bba_062c8d37\", \"frame\": 84, \"minimum_retention\": 0.9, \"primary_candidates\": 73, \"retention\": 0.8904109589041096, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2947.631214511,"data":"BIOHUB_RETENTION_GUARD {\"blended_candidates\": 65, \"dataset\": \"6bba_062c8d37\", \"frame\": 84, \"minimum_retention\": 0.9, \"primary_candidates\": 73, \"retention\": 0.8904109589041096, \"use_primary\": true}\n"}
+,{"stream_name":"stdout","time":2981.76478293,"data":"Saved 2 predictions to /kaggle/working/tracking_repo/predictions/unknown/unet_transformer_val_gpu0/split_0\n"}
+,{"stream_name":"stdout","time":2981.991437085,"data":"Saved 2 predictions to /kaggle/working/tracking_repo/predictions/unknown/unet_transformer_val_gpu0/split_0\n"}
+,{"stream_name":"stdout","time":3023.9910834,"data":"Saved 2 predictions to /kaggle/working/tracking_repo/predictions/unknown/unet_transformer_val_gpu1/split_0\n"}
+,{"stream_name":"stdout","time":3024.211256325,"data":"Saved 2 predictions to /kaggle/working/tracking_repo/predictions/unknown/unet_transformer_val_gpu1/split_0\n"}
+,{"stream_name":"stdout","time":3025.872098647,"data":"VALIDATOR: merged 4 prediction graphs into /kaggle/working/tracking_repo/predictions/unknown/unet_transformer_val/split_0\n"}
+,{"stream_name":"stdout","time":3025.872137326,"data":"VALIDATOR: prediction completed in 8.30 minutes\n"}
+,{"stream_name":"stdout","time":3093.199938277,"data":"  [44b6_12dfb391] after edge-filter+motion-relink: 43403 nodes, 41067 edges\n"}
+,{"stream_name":"stdout","time":3102.48293164,"data":"  [44b6_12dfb391] after gap-closing (single-frame + gap2): 44066 nodes, 42315 edges\n"}
+,{"stream_name":"stdout","time":3109.893274524,"data":"  [44b6_12dfb391] after safe-division repair: 44066 nodes, 42333 edges (geometric_candidates=146, deepcenter_rejected=128, post_veto_candidates=18, added=18, cap_skipped=0, mutual_nn_rejected=56, divergence_rejected=1514)\n"}
+,{"stream_name":"stdout","time":3109.893330541,"data":"  [44b6_12dfb391] after division-geometry-filter+prune-isolated: 44062 nodes, 42333 edges\n"}
+,{"stream_name":"stdout","time":3109.893337071,"data":"  [44b6_12dfb391] after short-track filtering: 42802 nodes, 41364 edges (components_removed=291)\n"}
+,{"stream_name":"stdout","time":3119.665192639,"data":"  [44b6_12dfb391] FINAL: 42802 nodes, 41364 edges\n"}
+,{"stream_name":"stdout","time":3137.922018699,"data":"  [44b6_267148e4] after edge-filter+motion-relink: 21666 nodes, 20283 edges\n"}
+,{"stream_name":"stdout","time":3145.456802147,"data":"  [44b6_267148e4] after gap-closing (single-frame + gap2): 21938 nodes, 20779 edges\n"}
+,{"stream_name":"stdout","time":3151.989684326,"data":"  [44b6_267148e4] after safe-division repair: 21938 nodes, 20801 edges (geometric_candidates=202, deepcenter_rejected=173, post_veto_candidates=29, added=22, cap_skipped=0, mutual_nn_rejected=117, divergence_rejected=1000)\n"}
+,{"stream_name":"stdout","time":3151.989739227,"data":"  [44b6_267148e4] after division-geometry-filter+prune-isolated: 21887 nodes, 20801 edges\n"}
+,{"stream_name":"stdout","time":3151.98974532,"data":"  [44b6_267148e4] after short-track filtering: 21052 nodes, 20170 edges (components_removed=204)\n"}
+,{"stream_name":"stdout","time":3156.747328966,"data":"  [44b6_267148e4] FINAL: 21052 nodes, 20170 edges\n"}
+,{"stream_name":"stdout","time":3158.614161583,"data":"  [6bba_062c8d37] after edge-filter+motion-relink: 6005 nodes, 5649 edges\n"}
+,{"stream_name":"stdout","time":3159.586482705,"data":"  [6bba_062c8d37] after gap-closing (single-frame + gap2): 6054 nodes, 5741 edges\n"}
+,{"stream_name":"stdout","time":3160.877959982,"data":"  [6bba_062c8d37] after safe-division repair: 6054 nodes, 5746 edges (geometric_candidates=14, deepcenter_rejected=9, post_veto_candidates=5, added=5, cap_skipped=0, mutual_nn_rejected=4, divergence_rejected=67)\n"}
+,{"stream_name":"stdout","time":3160.878038214,"data":"  [6bba_062c8d37] after division-geometry-filter+prune-isolated: 6028 nodes, 5746 edges\n"}
+,{"stream_name":"stdout","time":3160.878046723,"data":"  [6bba_062c8d37] after short-track filtering: 5862 nodes, 5627 edges (components_removed=47)\n"}
+,{"stream_name":"stdout","time":3162.243856722,"data":"  [6bba_062c8d37] FINAL: 5862 nodes, 5627 edges\n"}
+,{"stream_name":"stdout","time":3185.0897423,"data":"  [6bba_07e24132] after edge-filter+motion-relink: 25031 nodes, 23529 edges\n"}
+,{"stream_name":"stdout","time":3193.081897445,"data":"  [6bba_07e24132] after gap-closing (single-frame + gap2): 25358 nodes, 24129 edges\n"}
+,{"stream_name":"stdout","time":3197.601946106,"data":"  [6bba_07e24132] after safe-division repair: 25358 nodes, 24135 edges (geometric_candidates=84, deepcenter_rejected=77, post_veto_candidates=7, added=6, cap_skipped=0, mutual_nn_rejected=49, divergence_rejected=926)\n"}
+,{"stream_name":"stdout","time":3197.6020136,"data":"  [6bba_07e24132] after division-geometry-filter+prune-isolated: 25344 nodes, 24135 edges\n"}
+,{"stream_name":"stdout","time":3197.602023813,"data":"  [6bba_07e24132] after short-track filtering: 24290 nodes, 23323 edges (components_removed=242)\n"}
+,{"stream_name":"stdout","time":3203.310934311,"data":"  [6bba_07e24132] FINAL: 24290 nodes, 23323 edges\n"}
+,{"stream_name":"stdout","time":3203.321691966,"data":"\n"}
+,{"stream_name":"stdout","time":3203.321722539,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":3203.321729631,"data":"LOCAL VALIDATOR -- proxy score using the official metric formula\n"}
+,{"stream_name":"stdout","time":3203.321737084,"data":"(https://github.com/royerlab/kaggle-cell-tracking-competition/blob/main/metrics.md)\n"}
+,{"stream_name":"stdout","time":3203.321747036,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":3203.321750929,"data":"  44b6_12dfb391                edge_jaccard=0.9046 adj_edge_jaccard=0.9291 T_pred=42802 T_true=58672.0 div(tp/fp/fn)=(0/0/1)\n"}
+,{"stream_name":"stdout","time":3203.321755034,"data":"      errors: missed_gt_nodes=6 spurious_pred_nodes=42020 recovered=740 fragmented=25 lost_to_detection=8 wrong_association=0\n"}
+,{"stream_name":"stdout","time":3203.321758731,"data":"  44b6_267148e4                edge_jaccard=0.8226 adj_edge_jaccard=0.8143 T_pred=21052 T_true=19130.0 div(tp/fp/fn)=(0/0/1)\n"}
+,{"stream_name":"stdout","time":3203.321762279,"data":"      errors: missed_gt_nodes=2 spurious_pred_nodes=20774 recovered=255 fragmented=18 lost_to_detection=4 wrong_association=0\n"}
+,{"stream_name":"stdout","time":3203.32177851,"data":"  6bba_062c8d37                edge_jaccard=0.9801 adj_edge_jaccard=0.9828 T_pred=5862 T_true=6030.0 div(tp/fp/fn)=(1/0/0)\n"}
+,{"stream_name":"stdout","time":3203.321781485,"data":"      errors: missed_gt_nodes=6 spurious_pred_nodes=4938 recovered=887 fragmented=5 lost_to_detection=6 wrong_association=0\n"}
+,{"stream_name":"stdout","time":3203.321784276,"data":"  6bba_07e24132                edge_jaccard=0.8443 adj_edge_jaccard=0.8332 T_pred=24290 T_true=21485.0 div(tp/fp/fn)=(0/0/2)\n"}
+,{"stream_name":"stdout","time":3203.321787031,"data":"      errors: missed_gt_nodes=22 spurious_pred_nodes=23953 recovered=309 fragmented=9 lost_to_detection=27 wrong_association=0\n"}
+,{"stream_name":"stdout","time":3203.321789752,"data":"\n"}
+,{"stream_name":"stdout","time":3203.321792307,"data":"n=4  adjusted_edge_jaccard=0.9199  division_jaccard=0.2000  PROXY_SCORE=0.9399\n"}
+,{"stream_name":"stdout","time":3203.321794907,"data":"  totals -- missed_gt_nodes=36 spurious_pred_nodes=91685 recovered=2191 fragmented=57 lost_to_detection=45 wrong_association=0\n"}
+,{"stream_name":"stdout","time":3203.321797594,"data":"\n"}
+,{"stream_name":"stdout","time":3203.3218,"data":"Per-sample validator rows written to /kaggle/working/validator_results.csv\n"}
+,{"stream_name":"stdout","time":3203.360462698,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":3203.360495796,"data":"PIPELINE MANIFEST -- resolved state, not just config\n"}
+,{"stream_name":"stdout","time":3203.360501507,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":3203.360506448,"data":"Dual-seed ensemble:      requested=True  weights_found=True\n"}
+,{"stream_name":"stdout","time":3203.360513693,"data":"Bidirectional fusion:    weight=0.15  active=True  mode=harmonic_probability\n"}
+,{"stream_name":"stdout","time":3203.360517839,"data":"DeepCenter veto:         requested=True  loaded=True\n"}
+,{"stream_name":"stdout","time":3203.360522322,"data":"  - checkpoint file:     /kaggle/input/datasets/pilkwang/biohub-deepcenter-unet3d-center-prior-v1/weights/full_frame_center/best.pt\n"}
+,{"stream_name":"stdout","time":3203.36052719,"data":"  - expected epoch:      2\n"}
+,{"stream_name":"stdout","time":3203.36053176,"data":"  - gap veto:            True\n"}
+,{"stream_name":"stdout","time":3203.360536312,"data":"  - safe-div veto:       True\n"}
+,{"stream_name":"stdout","time":3203.360541273,"data":"Safe-div thresholds:     parent\u003c=9.0um  sister\u003c=14.0um  global_cap=0.00375  frame_cap=0.0076\n"}
+,{"stream_name":"stdout","time":3203.36054658,"data":"Validator:               enabled=True  held_out_samples=4  match_radius=7.0um\n"}
+,{"stream_name":"stdout","time":3203.360550759,"data":"==============================================================================\n"}
+,{"stream_name":"stdout","time":3203.360554931,"data":"EXP011 no-division ablation: True\n"}
+,{"stream_name":"stdout","time":3390.849495833,"data":"DIVISION AUDIT stage summary:\n"}
+,{"stream_name":"stdout","time":3390.849537969,"data":"  raw_ilp                   forks=   0 TP= 0 FN= 5\n"}
+,{"stream_name":"stdout","time":3390.8495449,"data":"  edge_filter               forks=   0 TP= 0 FN= 5\n"}
+,{"stream_name":"stdout","time":3390.849549863,"data":"  motion_relink             forks=   0 TP= 0 FN= 5\n"}
+,{"stream_name":"stdout","time":3390.849554813,"data":"  single_parent             forks=   0 TP= 0 FN= 5\n"}
+,{"stream_name":"stdout","time":3390.849559895,"data":"  single_child              forks=   0 TP= 0 FN= 5\n"}
+,{"stream_name":"stdout","time":3390.849575761,"data":"  gap_close                 forks=   0 TP= 0 FN= 5\n"}
+,{"stream_name":"stdout","time":3390.849580286,"data":"  gap2                      forks=   0 TP= 0 FN= 5\n"}
+,{"stream_name":"stdout","time":3390.849584733,"data":"  safe_div_geometry         forks=   0 TP= 0 FN= 5\n"}
+,{"stream_name":"stdout","time":3390.849588307,"data":"  safe_div_post_veto        forks=   0 TP= 0 FN= 5\n"}
+,{"stream_name":"stdout","time":3390.849592373,"data":"  safe_div_selected         forks=  51 TP= 1 FN= 4\n"}
+,{"stream_name":"stdout","time":3390.849596786,"data":"  division_geometry_filter  forks=  51 TP= 1 FN= 4\n"}
+,{"stream_name":"stdout","time":3390.849601822,"data":"  prune_isolated            forks=  51 TP= 1 FN= 4\n"}
+,{"stream_name":"stdout","time":3390.84960562,"data":"  short_track               forks=  51 TP= 1 FN= 4\n"}
+,{"stream_name":"stdout","time":3390.849610164,"data":"  final                     forks=  51 TP= 1 FN= 4\n"}
+,{"stream_name":"stdout","time":3390.849614007,"data":"DIVISION AUDIT candidate gate status:\n"}
+,{"stream_name":"stdout","time":3390.849617898,"data":"  gt_daughter_has_incoming_edge          3\n"}
+,{"stream_name":"stdout","time":3390.84962262,"data":"  candidate_survived_gates               1\n"}
+,{"stream_name":"stdout","time":3390.849626928,"data":"  divergence_distance_gate               1\n"}
+,{"stream_name":"stdout","time":3390.849630941,"data":"Wrote /kaggle/working/division_stage_summary.csv /kaggle/working/division_stage_audit.csv /kaggle/working/division_candidate_audit.csv\n"}
+,{"stream_name":"stderr","time":3396.361731227,"data":"/usr/local/lib/python3.12/dist-packages/mistune.py:435: SyntaxWarning: invalid escape sequence '\\|'\n"}
+,{"stream_name":"stderr","time":3396.361765561,"data":"  cells[i][c] = re.sub('\\\\\\\\\\|', '|', cell)\n"}
+,{"stream_name":"stderr","time":3396.509927232,"data":"/usr/local/lib/python3.12/dist-packages/nbconvert/filters/filter_links.py:36: SyntaxWarning: invalid escape sequence '\\_'\n"}
+,{"stream_name":"stderr","time":3396.509980463,"data":"  text = re.sub(r'_', '\\_', text) # Escape underscores in display text\n"}
+,{"stream_name":"stderr","time":3397.294765891,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to notebook\n"}
+,{"stream_name":"stderr","time":3397.691413925,"data":"[NbConvertApp] Writing 335348 bytes to __notebook__.ipynb\n"}
+,{"stream_name":"stderr","time":3400.584189376,"data":"[NbConvertApp] Converting notebook __notebook__.ipynb to html\n"}
+,{"stream_name":"stderr","time":3402.450471976,"data":"[NbConvertApp] Writing 1278271 bytes to __results__.html\n"}
+]
